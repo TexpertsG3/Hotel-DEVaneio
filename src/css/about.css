@@ -1,0 +1,37 @@
+.about {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    min-height: 768px;
+    width: 100%;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.about__text-content, .about__img-content {
+    display: flex;
+    flex-basis: 48%;
+    align-items: center;
+}
+
+.about__text-content {
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.about__header {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.about__header .about__header-title {
+    width: 100%;
+}
+
+.about__img-content img {
+    width: 100%;
+}
