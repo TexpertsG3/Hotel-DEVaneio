@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hotel DEVaneio</title>
+     <link rel="shortcut icon" href="src/assets/images/favicon/android-chrome-512x512.png" type="image/x-icon">
 </head>
 
 <body>
@@ -14,40 +18,38 @@
 
             <div> <!-- Mostrar quando o usuário estiver logado -->
                 <p>Olá Usuário</p>
-
-                <nav>
-                    <ul><a href="#">Sair</a></ul>
-                </nav>
-            </div>
-
-            <div> <!-- Mostrar quando o usuário não estiver logado -->
-                <nav>
-                    <ul><a href="#">Cadastre-se</a></ul>
-                </nav>
-            </div>
-        </div>
-
-        <div>
-            <div><img src="/images/logo.png" alt="Logo"></div>
-            <h1>Frase do Slogan</h1>
+               <nav>
+            <ul>
+                <li><a href="#"><img src="src/assets/images/icons/user-interface.png" alt=""> Login</a>
+                </li>
+                <li><a href="#"><img src="src/assets/images/icons/enter.png" alt=""> Sair</a></li>
+            </ul>
+        </nav>
+                
+            <div>
+                 <!-- Mostrar quando o usuário não estiver logado -->
+            <a href="#"><img src="src/assets/images/logo/logo.svg" alt="Logo do hotel"></a>
+            <h1>Melhor lugar para debugar sua vida</h1>
+            <a href="#"><img src="src/assets/images/icons/cadastro.png" alt=""> Cadastre-se</a>
         </div>
 
         <div> <!-- Menu de navegação da página -->
             <nav>
                 <ul>
-                    <li><a href="#">Barra de navegação</a></li>
-                </ul>
-            </nav>
+                <li><a href="#">Barra de Navegação</a></li>
+            </ul>
+        </nav>
         </div>
-
     </header>
 
     <main>
         <section>
             <header>
                 <h2>Sobre o nosso Hotel</h2>
+                  <picture>
+                <img src="src/assets/images/Home/hotel-small.jpg" alt="Fachada do Hotel">
+            </picture>
             </header>
-
             <article>
                 <img src="src/assets/images/hotel-small.jpg" alt="">
 
@@ -56,63 +58,37 @@
                     maxime, quo dignissimos itaque?</p>
             </article>
         </section>
-
         <section>
+            <article>
             <h2><strong>Nossas Acomodações</strong></h2>
-            <table>
-                <tr>
-                    <td style="text-align: center;">Spa Ruby<picture><img
-                                src="src/assets/images/acomodacao/relaxation-3065577_640.jpg" alt="Spa Ruby"
-                                width="180px" height="180px"></picture>
-                    </td>
-                    <td style="text-align: center;">Coffe Lab Java <picture><img
-                                src="src/assets/images/acomodacao/coffee-2565441_640.jpg" alt="" width="180px"
-                                height="180px">
+            <picture>
+                    <img
+                                src="src/assets/images/acomodacao/Quarto C++.jpg" alt="">
                         </picture>
-                    </td>
-                    <td style="text-align: center;">Luderia Unplug <picture><img
-                                src="src/assets/images/acomodacao/game-1140711_640.png" alt="" width="180px"
-                                height="180px">
-                        </picture>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="4" style="text-align: center;">Quarto C++ <picture><img
-                                src="src/assets/images/acomodacao/Quarto C++.jpg" alt="" width="100%" height="180px">
-                        </picture>
-                    </td>
-                </tr>
-
-            </table>
+                        <picture>
+                    <img src="src/assets/images/Home/dark-room2.jpg" alt="Quarto escuro para DEV's">
+                </picture>
+                <picture>
+                    <img src="src/assets/images/Home/pool.jpg" alt="Piscina do Hotel">
+                    </picture>
+                    <picture>
+                    <img src="src/assets/images/Home/lobby.jpg" alt="Hall de entrada do Hotel">
+                    </picture>
+                    <nav> <button><a href="acomodacao.html">Conheça mais sobre nossos serviços</a></button></nav>
+                       </article>
         </section>
 
         <section>
             <header>
                 <h2>Gastronomia</h2>
             </header>
-             <table>
-                <tr>
-                    <td style="text-align: center;">Café da manhã<picture><img
-                                src="src/assets/images/gastronomia/cafe-da-manha.jpg" alt="Café da manhã"
-                                width="180px" height="180px"></picture>
-                    </td>
-                    <td style="text-align: center;">Almoço com as melhores vistas<picture><img
-                                src="src/assets/images/gastronomia/prato-com-vista.jpg" alt="Almoço com as melhores vistas" width="180px"
-                                height="180px">
-                        </picture>
-                    </td>
-                        <td style="text-align: center;">Pratos Saudáveis<picture><img
-                                src="src/assets/images/gastronomia/comida-saudavel.jpg" alt="Pratos Saudáveis" width="180px"
-                                height="180px">
-                        </picture>
-                    </td>
-                </tr>
-            </table>
-            <article>
-                <figure></figure>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio, temporibus, ab impedit
-                    deserunt vel repudiandae quasi, quidem repellendus fugit illum molestiae fuga architecto expedita
-                    maxime et possimus consequatur accusantium.</p>
+           <picture>
+                <img src="src/assets/images/Home/gastronomia.jpg" alt="Café servido.">
+                </picture>
+           <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum distinctio laudantium
+                    suscipit ea nemo ex ipsum architecto, aut aliquam incidunt harum aspernatur doloribus ratione,
+                    commodi eius nam, minima saepe?</p>
             </article>
         </section>
     </main>
@@ -166,7 +142,7 @@
                     <a href="#ola"><button>Voltar ao início</button></a>
                         </div>
                   <div>
-                <p>&copy;Todos os direitos reservados</p>
+                <p>&copy;2022. Todos os direitos reservados</p>
                     </div> 
             </nav>
         </article>
