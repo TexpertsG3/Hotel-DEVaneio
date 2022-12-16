@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
           integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="src/css/about.css">
     <title>Hotel DEVaneio</title>
     <link rel="shortcut icon" href="src/assets/images/favicon/android-chrome-512x512.png" type="image/x-icon">
 </head>
@@ -46,24 +47,31 @@
 </header>
 
 <main>
-    <section>
-        <header>
-            <h2>Sobre o nosso Hotel</h2>
+    <section class="about">
 
-            <picture>
-                <img src="src/assets/images/Home/hotel-small.jpg" alt="Fachada do Hotel">
-            </picture>
-        </header>
+        <div class="about__content">
+            <div class="about__text-content">
+                <header class="about__header">
+                    <h2 class="about__header-title">Sobre o nosso Hotel</h2>
+                </header>
 
-        <article>
-            <img src="src/assets/images/hotel-small.jpg" alt="">
+                <article class="about__description">
 
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repellendus quas, pariatur fugiat
-                ducimus aut voluptatum amet quos sint excepturi beatae minima dolorum architecto possimus vero
-                maxime, quo dignissimos itaque?
-            </p>
-        </article>
+                    <p class="about__description-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repellendus quas, pariatur
+                        fugiat
+                        ducimus aut voluptatum amet quos sint excepturi beatae minima dolorum architecto possimus vero
+                        maxime, quo dignissimos itaque?
+                    </p>
+                </article>
+            </div>
+
+            <div class="about__img-content">
+                <picture>
+                    <img src="src/assets/images/Home/hotel-small.jpg" alt="Fachada do Hotel">
+                </picture>
+            </div>
+        </div>
     </section>
 
     <section>
