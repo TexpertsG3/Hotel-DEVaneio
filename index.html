@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -8,66 +8,84 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>DEVaneio</title>
-    <link rel="shortcut icon" href="src/assets/images/favicon/android-chrome-512x512.png" type="image/x-icon">
+    <title>Hotel DEVaneio</title>
+     <link rel="shortcut icon" href="src/assets/images/favicon/android-chrome-512x512.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <nav>
+        <div> <!-- Top menu -->
+
+            <div> <!-- Mostrar quando o usuário estiver logado -->
+                <p>Olá Usuário</p>
+               <nav>
             <ul>
-                <li><a href="#"><img src="src/assets/images/icons/user-interface.png" alt=""> Olá usuário ou Login</a>
+                <li><a href="#"><img src="src/assets/images/icons/user-interface.png" alt=""> Login</a>
                 </li>
                 <li><a href="#"><img src="src/assets/images/icons/enter.png" alt=""> Sair</a></li>
             </ul>
         </nav>
-
-        <div>
+                
+            <div>
+                 <!-- Mostrar quando o usuário não estiver logado -->
             <a href="#"><img src="src/assets/images/logo/logo.svg" alt="Logo do hotel"></a>
             <h1>Melhor lugar para debugar sua vida</h1>
             <a href="#"><img src="src/assets/images/icons/cadastro.png" alt=""> Cadastre-se</a>
         </div>
 
-        <nav>
-            <ul>
+        <div> <!-- Menu de navegação da página -->
+            <nav>
+                <ul>
                 <li><a href="#">Barra de Navegação</a></li>
             </ul>
         </nav>
+        </div>
     </header>
 
     <main>
-
         <section>
-            <h2>Sobre o nosso Hotel</h2>
-            <picture>
-                <img src="src/assets/images/hotel-small.jpg" alt="Fachada do Hotel">
+            <header>
+                <h2>Sobre o nosso Hotel</h2>
+                  <picture>
+                <img src="src/assets/images/Home/hotel-small.jpg" alt="Fachada do Hotel">
             </picture>
+            </header>
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum distinctio laudantium
-                    suscipit ea nemo ex ipsum architecto, aut aliquam incidunt harum aspernatur doloribus ratione,
-                    commodi eius nam, minima saepe?</p>
+                <img src="src/assets/images/hotel-small.jpg" alt="">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repellendus quas, pariatur fugiat
+                    ducimus aut voluptatum amet quos sint excepturi beatae minima dolorum architecto possimus vero
+                    maxime, quo dignissimos itaque?</p>
             </article>
         </section>
-
         <section>
             <article>
-                <h2>Nossas acomodações</h2>
-                <picture>
-                    <img src="src/assets/images/dark-room.jpg" alt="Quarto escuro para DEV's">
-                    <img src="src/assets/images/dark-room2.jpg" alt="Quarto escuro para DEV's">
-                    <img src="src/assets/images/pool.jpg" alt="Piscina do Hotel">
-                    <img src="src/assets/images/lobby.jpg" alt="Hall de entrada do Hotel">
+            <h2><strong>Nossas Acomodações</strong></h2>
+            <picture>
+                    <img
+                                src="src/assets/images/acomodacao/Quarto C++.jpg" alt="">
+                        </picture>
+                        <picture>
+                    <img src="src/assets/images/Home/dark-room2.jpg" alt="Quarto escuro para DEV's">
                 </picture>
-                <button><a href="#">Conheça mais sobre nossos serviços</a></button>
-            </article>
+                <picture>
+                    <img src="src/assets/images/Home/pool.jpg" alt="Piscina do Hotel">
+                    </picture>
+                    <picture>
+                    <img src="src/assets/images/Home/lobby.jpg" alt="Hall de entrada do Hotel">
+                    </picture>
+                    <nav> <button><a href="acomodacao.html">Conheça mais sobre nossos serviços</a></button></nav>
+                       </article>
         </section>
 
         <section>
-            <h2>Gastronomia</h2>
-            <picture>
-                <img src="src/assets/images/gastronomia.jpg" alt="Café servido.">
-            </picture>
-            <article>
+            <header>
+                <h2>Gastronomia</h2>
+            </header>
+           <picture>
+                <img src="src/assets/images/Home/gastronomia.jpg" alt="Café servido.">
+                </picture>
+           <article>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum distinctio laudantium
                     suscipit ea nemo ex ipsum architecto, aut aliquam incidunt harum aspernatur doloribus ratione,
                     commodi eius nam, minima saepe?</p>
@@ -76,17 +94,61 @@
     </main>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="#"><img src="src/assets/images/icons/phone-call.png" alt="">Contatos</a></li>
-                <li><a href="#"><img src="src/assets/images/icons/tool.png" alt=""> Localização</a></li>
-                <li><a href="#">Barra de navegação</a></li>
-            </ul>
-        </nav>
+        <article>
+            <nav>
+                <!-- add icons -->
+                <img src="src/assets/images/favicon/favicon.ico" alt="logo">
+                <br>
+                | <a href="https://web.whatsapp.com/" target="_blank" alt="WhatsApp"><button><i class="fa-brands fa-whatsapp"></i></button></a> | <a href="https://www.instagram.com/" target="_blank" alt="Instagram"><button><i class="fa-brands fa-instagram"></i></button></a> | 
+                  <a href="https://goo.gl/maps/53QUdKm8Yc9NgxPb8" target="_blank" alt="Maps"><button><i class="fa-solid fa-map"></i></button></a> | <a href="https://www.facebook.com/" target="_blank" alt="Facebook"><button><i class="fa-brands fa-facebook"></i></button></a> |
+                <ul>
+                    <li>
+                        <b>Nosso Endereço:</b>
+                    </li>
+                    <p>
+                       Rua das flores, 123
+                       <br> Brasil
+                    </p>
+                    <li>
+                        <b>Nosso Horário:</b>
+                    </li>
+                    <p>
+                        Segunda a Sexta </br> das 10:00 ás 22:00
+                    </p>
+                    <li>
+                        <b>
+                            Contato:
+                        </b>
+                    </li>
+                    <p>(00) 00000-0000</p>
+                    <li>
+                        <b>Email:</b>
+                    </li>
+                    <p>
+                        hoteldevaneio@gmail.com
+                    </p>
+                </ul>
+                  <br>
+                  <a href="#"><img src="src/assets/images/icons/user-interface.png" alt=""> Olá usuário ou Login</a> |
+                        </li>
+                        </li>
+                    <a href="#sobre">Sobre nós</a></li> |
+                    <a href="#gastronomia">Gastronomia</a></li> |
+                    <a href="#acomodacoes">Acomodações</a></li> |
+
+                    <a href="#"><img src="src/assets/images/icons/enter.png" alt=""> Sair</a> |
+                <hr>
+                <div>
+                    <a href="#ola"><button>Voltar ao início</button></a>
+                        </div>
+            </nav>
+        </article>
     </footer>
-    <a href="https://www.flaticon.com/br/icones-gratis/cerca" title="cerca ícones">Cerca ícones criados por Freepik -
+      <a href="https://www.flaticon.com/br/icones-gratis/cerca" title="cerca ícones">Cerca ícones criados por Freepik -
         Flaticon</a>
     <p><a href="#">&copy;</a> 2022. Todos os direitos reservados.</p>
 </body>
 
 </html>
+
+  
