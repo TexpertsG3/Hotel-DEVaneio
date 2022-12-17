@@ -12,7 +12,8 @@
     width: 80%;
 }
 
-.about__text-content, .about__img-content {
+.about__text-content,
+.about__img-content {
     display: flex;
     flex-basis: 48%;
     align-items: center;
@@ -36,7 +37,8 @@
     width: 100%;
 }
 
-.about__header-title, .about__description-text {
+.about__header-title,
+.about__description-text {
     font-family: 'Ubuntu';
     color: #262126;
 }
