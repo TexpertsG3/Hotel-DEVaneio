@@ -9,22 +9,24 @@
           integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="src/css/about.css">
-    <title>Hotel DEVaneio</title>
+    <link rel="stylesheet" href="src/css/header.css">
+   <!-- <title>Hotel DEVaneio</title> --> 
     <link rel="shortcut icon" href="src/assets/images/favicon/android-chrome-512x512.png" type="image/x-icon">
 </head>
 
 <body>
 <header>
-    <div>
+    <div class="cabecalhoGeral">
         <div> <!-- Mostrar quando o usuário não estiver logado -->
-            <a href="#"><img src="src/assets/images/logo/logo.svg" alt="Logo do hotel"></a>
+            <div class="cabecalhoNone">
+                <a id="imageLogo" href="#"><img class="imageLogo" src="src/assets/images/logo/logo.svg" alt="Logo do hotel"></a>
 
+                <ul class="cadasLogin">
+                    <li id="cadastro"><a class="cadastro" href="#"><img src="src/assets/images/icons/cadastro.png" alt=""> Cadastre-se</a></li>
+                    <li id="login"><a class="login" href="#"><img src="src/assets/images/icons/user-interface.png" alt=""> Login</a></li>
+                </ul>
+            </div>
             <h1>Melhor lugar para debugar sua vida</h1>
-
-            <ul>
-                <li><a href="#"><img src="src/assets/images/icons/cadastro.png" alt=""> Cadastre-se</a></li>
-                <li><a href="#"><img src="src/assets/images/icons/user-interface.png" alt=""> Login</a></li>
-            </ul>
         </div>
 
         <div> <!-- Mostrar quando o usuário estiver logado -->
@@ -34,9 +36,9 @@
         </div>
     </div>
 
-    <div> <!-- Menu de navegação da página -->
+    <div class="menusGeral"> <!-- Menu de navegação da página -->
         <nav>
-            <ul>
+            <ul class="menus">
                 <li><a href="#">Menu 1</a></li>
                 <li><a href="#">Menu 2</a></li>
                 <li><a href="#">Menu 3</a></li>
