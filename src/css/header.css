@@ -37,10 +37,12 @@ li#cadastro{
     list-style: none;
     top: 5%;
     right: 10%;
-    border: 1px solid rgb(16, 117, 3) ;
+    border: 1px solid #a2a648;
     background-color: rgb(26, 16, 4);
     height: 30px;
-    width: 120px;
+    width: 110px;
+    display: flex; 
+    align-items: center ;
 }
 
 .cadastro{
@@ -60,10 +62,12 @@ li#login{
     list-style: none;
     top: 5%;
     right: 2%;
-    border: 1px solid rgb(16, 117, 3) ;
-    background-color: rgb(16, 117, 3);
+    border: 1px solid #a2a648;
+    background-color: #a2a648;
     height: 30px;
-    width: 100px;
+    width: 70px;
+    display: flex; 
+    align-items: center;
 }
 
 .menusGeral{
