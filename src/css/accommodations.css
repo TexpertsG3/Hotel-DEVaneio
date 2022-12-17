@@ -1,0 +1,54 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.accommodations {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  min-height: 768px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.accommodations_content {
+  flex: 1 1 100%;
+  justify-content: space-between;
+  width: 80%;
+  flex-wrap: wrap;
+  margin: 0 8%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.accommodations_content > div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.accommodations_header_title {
+  font-family: Ubuntu, sans-serif;
+}
+
+.accommodations_description {
+  font-family: Ubuntu, sans-serif;
+  text-align: justify;
+}
+
+.accommodations_button {
+  border: 2px solid #a2a648;
+  padding: 24px;
+  height: 1vh;
+  width: 8vw;
+}
+
+.accommodations_button a {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  text-decoration: none;
+  color: black;
+  font-family: Ubuntu, sans-serif;
+  justify-content: center;
+}
