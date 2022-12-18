@@ -37,10 +37,11 @@
     filter: invert(100%);
 }
 
+/*
 .header__buttons a img:hover {
     filter: none;
 }
-
+*/
 
 .header__image-logo {
     width: 100%;
@@ -94,7 +95,8 @@
 }
 
 .btn-primary:hover {
-    color: #262126;
+    background-color: #6f7232;
+    border-color: #6f7232;;
 }
 
 .btn-second {
@@ -105,8 +107,7 @@
 }
 
 .btn-second:hover {
-    background-color: #a2a648;
-    color: #262126;
+    background-color: #363136;
 }
 
 .header__space {
