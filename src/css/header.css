@@ -1,84 +1,93 @@
-/* .cabecalhoGeral {
-    
-    Cabeçalho geral, deixando em aberto para futuras ideias
-    Abrange a div com o logo, os links de cadastre-se e login e o primeiro h1
-    
-} */
+.header, .header__content, .header__logo, .header__image-logo {
+    display:flex;
 
-.cabecalhoGeral h1 {
-    text-align: center;
 }
 
-.cabecalhoNone {
-    height: 150px;
+.header {
+    flex-wrap: wrap;
     background-color: #262126;
-    /* background-image: url(../assets/images/header/images/giphy.gif); */
+    justify-content: center;
+    
 }
 
-.cadasLogin {
-    /*
-    classe da lista ul onde se encontra cadastro e login para futuras alterações exclusivas para esses dois links
-    */
-    color: white;
-    text-decoration: none;
-}
-
-.imageLogo {
-    /* margin-top: 1%;
-    margin-left: 1%; */
-    height: 150px;
-}
-
-li#cadastro {
-    position: absolute;
-    text-align: center;
-    list-style: none;
-    top: 5%;
-    right: 10%;
-    border: 1px solid #a2a648;
-    background-color: rgb(26, 16, 4);
-    height: 30px;
-    width: 110px;
-    display: flex;
+.header__content {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100px;    
     align-items: center;
 }
 
-.cadastro {
-    color: white;
-    text-decoration: none;
+.header__logo {
+    flex-basis: 10%;
+
 }
 
-.login {
-    color: white;
-    text-decoration: none;
+.header__buttons {
+    display:flex;
+    flex-basis: 22%;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
-li#login {
-    position: absolute;
-    text-align: center;
-    list-style: none;
-    top: 5%;
-    right: 2%;
-    border: 1px solid #a2a648;
+.header__image-logo {
+    width: 100%;
+}
+
+.d-none {
+    display:none;
+}
+
+.header__menu {
+    flex-basis: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.header__menu-list {
+    display:flex;
+    list-style-type: none;
+    
+}
+
+.header__menu-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color .5s ease;
+
+}
+
+.header__menu-list li a:hover {
+    color: #a2a648;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+.btn img {
+    margin-right: 5px;
+}
+
+.btn-primary {
+    color: white;
     background-color: #a2a648;
-    height: 30px;
-    width: 70px;
-    display: flex;
-    align-items: center;
+    border: 2px solid #a2a648;
 }
 
-.menusGeral {
-    text-align: center;
-    margin-top: -13%;
-}
-
-.menus li {
-    list-style: none;
-    display: inline;
-}
-
-.menus li a {
-    text-decoration: none;
+.btn-second {
     color: white;
-    padding-right: 20px;
+    border: 2px solid #a2a648;
+}
+
+.header__space {
+    height: 2px;
+    width: 80%;
+    background-color: white;
 }
