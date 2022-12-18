@@ -3,7 +3,7 @@
 .header__logo,
 .header__image-logo {
     display: flex;
-
+    font-family: 'Ubuntu';
 }
 
 .header {
