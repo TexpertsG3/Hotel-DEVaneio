@@ -91,7 +91,8 @@
     color: white;
     background-color: #a2a648;
     border: 2px solid #a2a648;
-    transition: color .5s ease;
+    transition: background-color .5s ease;
+    transition: border .4s ease;
 }
 
 .btn-primary:hover {
@@ -102,7 +103,7 @@
 .btn-second {
     color: white;
     border: 2px solid #a2a648;
-    transition: color .5s ease;
+    transition: background-color .5s ease;
 
 }
 
