@@ -1,0 +1,26 @@
+.footer {
+    width: 100%; 
+    height: 55vh;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    background-color:  #414141;
+}
+.footerIcons {
+    position: absolute;
+    display: contents; 
+    margin-right: 50px;
+    padding: 150px;
+    width: 100px;
+    border-radius: 50%;
+}
+.footerInformations{
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+

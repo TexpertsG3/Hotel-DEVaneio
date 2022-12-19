@@ -10,9 +10,11 @@
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="src/css/about.css">
     <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
     <link rel="shortcut icon" href="src/assets/images/favicon/android-chrome-512x512.png" type="image/x-icon">
     <title>Hotel DEVaneio</title>
 
@@ -126,8 +128,9 @@
 </main>
 
 <footer>
-    <article>
-        <nav>
+    <section class="footer">
+        <article>   <!-- UMA DIV? -->
+        <nav class="footerIcons">
             <!-- add icons -->
             <img src="src/assets/images/favicon/favicon.ico" alt="logo">
             <br>
@@ -141,7 +144,8 @@
             </a> | <a href="https://www.facebook.com/" target="_blank" alt="Facebook">
             <button><i class="fa-brands fa-facebook"></i></button>
         </a> |
-            <ul>
+        <div>
+            <ul class="footerInformations">
                 <li>
                     <b>Nosso Endereço:</b>
                 </li>
@@ -168,6 +172,7 @@
                     hoteldevaneio@gmail.com
                 </p>
             </ul>
+        </div>
             <br>
             <a href="#"><img src="src/assets/images/icons/user-interface.png" alt=""> Olá usuário ou Login</a> |
 
@@ -183,14 +188,15 @@
                     <a href="#"><img src="src/assets/images/icons/enter.png" alt=""> Sair</a> |
                 <hr>
                 <div>
-                    <a href="#ola"><button>Voltar ao início</button></a>
+                    <a href="#"><button>Voltar ao início</button></a>
                         </div>
                   <div>
                 <p>&copy;Todos os direitos reservados</p>
                     </div> 
-            </nav>
+        </nav>
         </article>
-    </footer>
+    </section>
+</footer>
 </body>
 
 </html>
