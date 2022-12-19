@@ -35,6 +35,7 @@
 
 .about__img-content img {
     width: 100%;
+    border-radius: 25px;
 }
 
 .about__header-title,
