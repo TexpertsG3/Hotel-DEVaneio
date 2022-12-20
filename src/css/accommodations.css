@@ -5,12 +5,12 @@
 
 .accommodations {
   display: flex;
-  height: 50vh;
+  height: 100vh;
   justify-content: center;
   min-height: 768px;
   width: 100%;
   flex-wrap: wrap;
-  margin-top: 0;
+  margin-bottom: 15%;
 }
 
 .accommodations_content {
@@ -25,7 +25,8 @@
 
 .accommodations_content > div {
   flex: 1 1 200px;
-  margin: 10px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
 
 .accommodations_text_content,
@@ -61,20 +62,24 @@
 }
 
 .accommodations_header_title {
+  text-align: center;
   font-size: 36px;
 }
 
-.accommodations_description_text {
+.accommodations_text_description {
   font-size: 16px;
   text-align: justify;
 }
 
 .accommodations_button {
+  border-radius: 12px;
   border: 2px solid #a2a648;
   vertical-align: middle;
   padding: 24px;
   height: 1rem;
   width: 8vw;
+  margin: 40px auto auto auto;
+  min-width: 100px;
 }
 
 .accommodations_button a {
@@ -86,20 +91,13 @@
   justify-content: center;
 }
 
-.menusGeralAcomodacao {
-  display: inline-flex;
-  text-align: center;
-  margin-top: -13%;
-  flex-wrap: wrap;
+.accommodations_button {
+  transition: all 0.38s;
+  cursor: pointer;
 }
 
-.menusAcomodacao li {
-  list-style: none;
-  display: inline;
-}
-
-.menusAcomodacao li a {
-  text-decoration: none;
-  color: black;
-  padding-right: 20px;
+.accommodations_button:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }
