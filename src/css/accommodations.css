@@ -86,5 +86,13 @@
   justify-content: center;
 }
 
+.accommodations_button {
+  transition: all 0.38s;
+  cursor: pointer;
+}
+
 .accommodations_button:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }
