@@ -19,37 +19,31 @@
 </head>
 
 <body>
-<header>
-    <div class="cabecalhoGeral">
-        <div> <!-- Mostrar quando o usuário não estiver logado -->
-            <div class="cabecalhoNone">
-                <a id="imageLogo" href="#"><img class="imageLogo" src="src/assets/images/logo/logo.svg" alt="Logo do hotel"></a>
+<header class="header">
+    <div class="header__content">            
+        <a id="imageLogo" class="header__logo" href="#"><img class="header__image-logo" src="src/assets/images/logo/logo_sem_fundo.png" alt="Logo do hotel"></a>
 
-                <ul class="cadasLogin">
-                    <li id="cadastro"><a class="cadastro" href="#"><img src="src/assets/images/icons/cadastro.png" alt=""> Cadastre-se</a></li>
-                    <li id="login"><a class="login" href="#"><img src="src/assets/images/icons/user-interface.png" alt=""> Login</a></li>
-                </ul>
-            </div>
-            <h1>Melhor lugar para debugar sua vida</h1>
-        </div>
-
-        <div> <!-- Mostrar quando o usuário estiver logado -->
+        <div class="header__buttons">   
+            <a class="btn btn-second" href="#"><img src="src/assets/images/icons/cadastro.png" alt="">Cadastre-se</a>
+            <a class="btn btn-primary"  href="#"><img src="src/assets/images/icons/user-interface.png" alt="">Login</a>
+        </div> 
+        <div class="header__buttons d-none"> <!-- Mostrar quando o usuário estiver logado -->
             <p>Olá Usuário</p>
 
             <a href="#"><img src="src/assets/images/icons/enter.png" alt="">Sair</a>
         </div>
     </div>
 
-    <div class="menusGeral"> <!-- Menu de navegação da página -->
-        <nav>
-            <ul class="menus">
-                <li><a href="#">Menu 1</a></li>
-                <li><a href="#">Menu 2</a></li>
-                <li><a href="#">Menu 3</a></li>
-                <li><a href="#">Menu 4</a></li>
-            </ul>
-        </nav>
-    </div>
+    <div class="header__space"></div>
+    <nav class="header__menu">
+        <ul class="header__menu-list">
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+            <li><a href="#">Menu 4</a></li>
+        </ul>
+    </nav>
+   
 </header>
 
 <main>
@@ -180,17 +174,19 @@
                 |
             </ul>
 
-                    <a href="#"><img src="src/assets/images/icons/enter.png" alt=""> Sair</a> |
-                <hr>
-                <div>
-                    <a href="#ola"><button>Voltar ao início</button></a>
-                        </div>
-                  <div>
-                <p>&copy;Todos os direitos reservados</p>
-                    </div> 
-            </nav>
-        </article>
-    </footer>
+            <a href="#"><img src="src/assets/images/icons/enter.png" alt=""> Sair</a> |
+            <hr>
+            <div>
+                <a href="#ola">
+                    <button>Voltar ao início</button>
+                </a>
+            </div>
+        </nav>
+    </article>
+</footer>
+<a href="https://www.flaticon.com/br/icones-gratis/cerca" title="cerca ícones">Cerca ícones criados por Freepik -
+    Flaticon</a>
+<p><a href="#">&copy;</a> 2022. Todos os direitos reservados.</p>
 </body>
 
 </html>
