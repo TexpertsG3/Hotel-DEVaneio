@@ -28,5 +28,3 @@ com as seguintes funcionalidades:</p>
 <p align="center">
   <img src="src/assets/images/layoutHome.png">
 </p>
-
-Nova alteração
