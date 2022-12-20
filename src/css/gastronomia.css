@@ -1,0 +1,42 @@
+.gastronomy {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #CBD4C9;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gastronomy_article {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.gastronomy_article h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.gastronomy_article-paragraph {
+    /* color: black; */
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.gastronomy_readmore-button {
+    border: solid 2px #a2a648;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: 500;
+    padding: 15px 30px;
+    background-color: transparent;
+    transition: background-color .1s, scale .1s;
+}
+
+.gastronomy_readmore-button:hover {
+    cursor: pointer;
+    background-color: #b4bb2b;
+    scale: 1.05;
+}
