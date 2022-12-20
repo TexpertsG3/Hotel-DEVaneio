@@ -23,7 +23,6 @@
 
 .header__logo {
     flex-basis: 10%;
-
 }
 
 .header__buttons {
@@ -66,13 +65,16 @@
 .header__menu-list li a {
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
-    transition: color .5s ease;
-
+    padding: 10px 20px;
+    /*transition: color .5s ease; */
+    transition: background-color .5s ease;
+    border-radius: 3px;
+    margin: 0px 15px;
 }
 
 .header__menu-list li a:hover {
-    color: #a2a648;
+    /*color: #a2a648; */
+    background-color: #a2a648;
 }
 
 .btn {
