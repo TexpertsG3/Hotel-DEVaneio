@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .accommodations {
   display: flex;
   height: 50vh;
@@ -5,6 +10,7 @@
   min-height: 768px;
   width: 100%;
   flex-wrap: wrap;
+  margin-top: 0;
 }
 
 .accommodations_content {
@@ -78,4 +84,22 @@
   color: black;
   font-family: Ubuntu, sans-serif;
   justify-content: center;
+}
+
+.menusGeralAcomodacao {
+  display: inline-flex;
+  text-align: center;
+  margin-top: -13%;
+  flex-wrap: wrap;
+}
+
+.menusAcomodacao li {
+  list-style: none;
+  display: inline;
+}
+
+.menusAcomodacao li a {
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
 }
