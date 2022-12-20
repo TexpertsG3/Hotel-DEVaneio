@@ -1,3 +1,4 @@
 {
-    "cSpell.words": ["Bugs", "checkin", "checkout"]
+  "cSpell.words": ["Bugs", "checkin", "checkout"],
+  "liveServer.settings.port": 5501
 }
