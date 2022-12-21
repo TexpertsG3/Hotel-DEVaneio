@@ -49,6 +49,7 @@
 
 .footer__informations {
     color: #fff;
+    flex-basis: 30%;
 }
 
 .footer__rights {
