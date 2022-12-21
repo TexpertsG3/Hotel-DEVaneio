@@ -56,6 +56,10 @@
   color: #262126;
 }
 
+.accommodations_description {
+  margin-bottom: 4vh;
+}
+
 .accommodations_header_title {
   text-align: center;
   font-size: 36px;
