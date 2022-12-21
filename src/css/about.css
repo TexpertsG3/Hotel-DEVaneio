@@ -4,7 +4,6 @@
     justify-content: center;
     min-height: 768px;
     width: 100%;
-    margin: 0;
 }
 
 .about__content {
@@ -13,8 +12,7 @@
     width: 80%;
 }
 
-.about__text-content,
-.about__img-content {
+.about__text-content, .about__img-content {
     display: flex;
     flex-basis: 48%;
     align-items: center;
@@ -36,11 +34,9 @@
 
 .about__img-content img {
     width: 100%;
-    border-radius: 25px;
 }
 
-.about__header-title,
-.about__description-text {
+.about__header-title, .about__description-text {
     font-family: 'Ubuntu';
     color: #262126;
 }

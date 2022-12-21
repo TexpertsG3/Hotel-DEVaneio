@@ -1,21 +1,23 @@
-/* .cabecalhoGeral {
-    
+.cabecalhoGeral{
+    /*
     Cabeçalho geral, deixando em aberto para futuras ideias
     Abrange a div com o logo, os links de cadastre-se e login e o primeiro h1
-    
-} */
-
-.cabecalhoGeral h1 {
-    text-align: center;
+    */
 }
 
-.cabecalhoNone {
+.cabecalhoGeral h1{
+    text-align: center;
+    
+}
+
+.cabecalhoNone{
     height: 150px;
     background-color: #262126;
-    /* background-image: url(../assets/images/header/images/giphy.gif); */
+   /* background-image: url(../assets/images/header/images/giphy.gif); */
 }
 
-.cadasLogin {
+
+.cadasLogin{
     /*
     classe da lista ul onde se encontra cadastro e login para futuras alterações exclusivas para esses dois links
     */
@@ -23,61 +25,58 @@
     text-decoration: none;
 }
 
-.imageLogo {
-    /* margin-top: 1%;
+.imageLogo{
+   /* margin-top: 1%;
     margin-left: 1%; */
     height: 150px;
 }
 
-li#cadastro {
+li#cadastro{
     position: absolute;
     text-align: center;
     list-style: none;
     top: 5%;
     right: 10%;
-    border: 1px solid #a2a648;
+    border: 1px solid rgb(16, 117, 3) ;
     background-color: rgb(26, 16, 4);
     height: 30px;
-    width: 110px;
-    display: flex;
-    align-items: center;
+    width: 120px;
 }
 
-.cadastro {
+.cadastro{
+    color: white;
+    text-decoration: none;
+
+}
+
+.login{
     color: white;
     text-decoration: none;
 }
 
-.login {
-    color: white;
-    text-decoration: none;
-}
-
-li#login {
+li#login{
     position: absolute;
     text-align: center;
     list-style: none;
     top: 5%;
     right: 2%;
-    border: 1px solid #a2a648;
-    background-color: #a2a648;
+    border: 1px solid rgb(16, 117, 3) ;
+    background-color: rgb(16, 117, 3);
     height: 30px;
-    width: 70px;
-    display: flex;
-    align-items: center;
+    width: 100px;
 }
 
-.menusGeral {
+.menusGeral{
     text-align: center;
     margin-top: -13%;
 }
 
-.menus li {
+.menus li{
     list-style: none;
     display: inline;
 }
 
-.menus li a {
+.menus li a{
     text-decoration: none;
     color: white;
     padding-right: 20px;
