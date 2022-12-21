@@ -9,6 +9,7 @@
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/about.css">
+    <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/accommodations.css">
     <link rel="stylesheet" href="src/css/gastronomia.css">
@@ -54,7 +55,7 @@
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
 
             <div class="about__content">
                 <div class="about__text-content">
@@ -137,74 +138,47 @@
         </section>
     </main>
 
-    <footer>
-        <article>
-            <nav>
-                <!-- add icons -->
-                <img src="src/assets/images/favicon/favicon.ico" alt="logo">
-                <br>
-                | <a href="https://web.whatsapp.com/" target="_blank" alt="WhatsApp">
-                    <button><i class="fa-brands fa-whatsapp"></i></button>
-                </a> | <a href="https://www.instagram.com/" target="_blank" alt="Instagram">
-                    <button><i class="fa-brands fa-instagram"></i></button>
-                </a> |
-                <a href="https://goo.gl/maps/53QUdKm8Yc9NgxPb8" target="_blank" alt="Maps">
-                    <button><i class="fa-solid fa-map"></i></button>
-                </a> | <a href="https://www.facebook.com/" target="_blank" alt="Facebook">
-                    <button><i class="fa-brands fa-facebook"></i></button>
-                </a> |
-                <ul>
-                    <li>
-                        <b>Nosso Endereço:</b>
-                    </li>
-                    <p>
-                        Rua das flores, 123
-                        <br> Brasil
-                    </p>
-                    <li>
-                        <b>Nosso Horário:</b>
-                    </li>
-                    <p>
-                        Segunda a Sexta </br> das 10:00 ás 22:00
-                    </p>
-                    <li>
-                        <b>
-                            Contato:
-                        </b>
-                    </li>
-                    <p>(00) 00000-0000</p>
-                    <li>
-                        <b>Email:</b>
-                    </li>
-                    <p>
-                        hoteldevaneio@gmail.com
-                    </p>
-                </ul>
-                <br>
-                <a href="#"><img src="src/assets/images/icons/user-interface.png" alt=""> Olá usuário ou Login</a> |
-
-                <ul>
-                    <li><a href="#sobre">Sobre nós</a></li>
-                    |
-                    <li><a href="#gastronomia">Gastronomia</a></li>
-                    |
-                    <li><a href="#acomodacoes">Acomodações</a></li>
-                    |
-                </ul>
-
-                <a href="#"><img src="src/assets/images/icons/enter.png" alt=""> Sair</a> |
-                <hr>
-                <div>
-                    <a href="#ola">
-                        <button>Voltar ao início</button>
-                    </a>
-                </div>
-            </nav>
-        </article>
-    </footer>
-    <a href="https://www.flaticon.com/br/icones-gratis/cerca" title="cerca ícones">Cerca ícones criados por Freepik -
-        Flaticon</a>
-    <p><a href="#">&copy;</a> 2022. Todos os direitos reservados.</p>
+    <footer class="footer">
+        <div class="footer_title">
+          <div class="footer_list">
+            <!-- Logo -->
+            <a href="#"
+              ><img src="src/assets/images/logo/logo.svg" alt="Logo DEV.aneio"
+            /></a>
+            <!--ícones das redes sociais --->
+            <div class="footer_icons">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""> <i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer_navigation">
+            <ul>
+              <li><a href="#">Sobre nós</a></li>
+              <li><a href="#">Gastronomia</a></li>
+              <li><a href="#">Acomodações</a></li>
+            </ul>
+          </div>
+          <div class="footer_address">
+            <h3>Nosso Endereço</h3>
+            <p>
+              Via Costeira, n° 34, <br />
+              Parque das Dunas<br />
+              Natal - RN, Brasil.
+            </p>
+          </div>
+          <div class="footer_contact">
+            <h3>Contato</h3>
+            <p>(84) 99999-9999</p>
+            <p>(84) 88888-8888</p>
+          </div>
+        </div>
+        <hr />
+        <div class="footer_copy">
+          <p>&copy; Todos os direitos reservados 2022</p>
+        </div>
+      </footer>
 </body>
 
 </html>
