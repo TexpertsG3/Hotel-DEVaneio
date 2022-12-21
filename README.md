@@ -26,5 +26,5 @@ com as seguintes funcionalidades:</p>
 #### <b> Layout Atual </b>
 
 <p align="center">
-  <img src="src/assets/images/layoutHome.png">
+  <img src="src/assets/images/layoutHome.png" width="400px">
 </p>
