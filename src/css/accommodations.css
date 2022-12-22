@@ -61,13 +61,13 @@
 }
 
 .accommodations_header_title {
-  text-align: center;
+  text-align: left;
   font-size: 36px;
 }
 
 .accommodations_text_description {
   font-size: 16px;
-  text-align: justify;
+  text-align: left;
 }
 
 .accommodations_button {
