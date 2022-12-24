@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faça sua Reserva</title>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="last-name">Sobrenome</label>
+        <input type="text" name="last-name" id="last-name" />
+
+        <label for="acommodations">Acomodações</label>
+        <select name="acommodations" id="acommodations">
+            <option value="acomodacao1">Acomodação 1</option>
+            <option value="acomodacao2">Acomodação 2</option>
+            <option value="acomodacao3">Acomodação 3</option>
+        </select>
+
+        <label for="check-in">Check-in</label>
+        <input type="date" name="check-in" id="check-in">
+
+        <label for="night">Noites</label>
+        <input type="number" name="night" id="night" min="1" max="100">
+        
+        <label for="adult">Adultos</label>
+        <select name="adult" id="adult">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <label for="child">Crianças</label>
+        <select name="child" id="child">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <label for="infants">Bebês</label>
+        <select name="infants" id="infants">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <input type="submit" value="Reservar">
+      </form>
+    </main>
+  </body>
+</html>
