@@ -1,5 +1,5 @@
 :root {
-  --font-padrao: "Ubuntu", sans-serif;
+  --font-padrao: Ubuntu;
 }
 
 .accommodations {
@@ -37,7 +37,7 @@
 }
 
 .accommodations_header_title,
-.accommodations_description_text {
+.accommodations_text_description {
   font-family: var(--font-padrao);
   color: #262126;
   text-align: left;
