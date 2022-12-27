@@ -1,48 +1,34 @@
+:root {
+  --font-padrao: Ubuntu;
+}
+
 .accommodations {
   display: flex;
-  height: 100vh;
-  justify-content: center;
   min-height: 768px;
-  width: 100%;
-  flex-wrap: wrap;
   margin-bottom: 15%;
 }
 
 .accommodations_content {
   display: flex;
-  flex: 1 1 100%;
-  justify-content: space-between;
-  width: 80%;
+  height: 100vh;
+  width: 85%;
   flex-direction: row-reverse;
-  margin: 0 9%;
+  margin: 0 7.2%;
   flex-wrap: wrap;
 }
 
 .accommodations_content > div {
   flex: 1 1 200px;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .accommodations_text_content,
 .accommodations_img_content {
   display: flex;
-  flex-basis: 48%;
   align-items: center;
-}
-
-.accommodations_text_content {
   align-content: center;
   flex-wrap: wrap;
-}
-
-.accommodations_header {
-  display: flex;
-  flex-basis: 100%;
-}
-
-.accommodations_header .accommodations_header_title {
-  width: 100%;
 }
 
 .accommodations_img_content img {
@@ -51,48 +37,43 @@
 }
 
 .accommodations_header_title,
-.accommodations_description_text {
-  font-family: "Ubuntu";
+.accommodations_text_description {
+  font-family: var(--font-padrao);
   color: #262126;
+  text-align: left;
 }
 
 .accommodations_description {
+  /*Excencial para um espaçamento do botão para a imagem em telas mobile.*/
   margin-bottom: 4vh;
 }
 
 .accommodations_header_title {
-  text-align: center;
   font-size: 36px;
 }
 
 .accommodations_text_description {
   font-size: 16px;
-  text-align: justify;
 }
 
 .accommodations_button {
   border-radius: 12px;
   border: 2px solid #a2a648;
-  vertical-align: middle;
-  padding: 24px;
-  height: 1rem;
-  width: 8vw;
-  margin: 40px auto auto auto;
+  padding: 1.5rem;
+  width: 2.7rem;
+  margin: auto;
   min-width: 100px;
+  transition: all 0.38s;
+  cursor: pointer;
 }
 
 .accommodations_button a {
   display: flex;
   align-content: center;
   text-decoration: none;
-  color: black;
-  font-family: Ubuntu, sans-serif;
+  color: #262126;
+  font-family: var(--font-padrao);
   justify-content: center;
-}
-
-.accommodations_button {
-  transition: all 0.38s;
-  cursor: pointer;
 }
 
 .accommodations_button:hover {
