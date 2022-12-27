@@ -25,14 +25,14 @@
   margin-right: 35px;
 }
 
-.gastronomy_text_content,
-.gastronomy_img_content {
+.gastronomy_left_content,
+.gastronomy_right_content {
   display: flex;
   flex-basis: 48%;
   align-items: center;
 }
 
-.gastronomy_text_content {
+.gastronomy_left_content {
   align-content: center;
   flex-wrap: wrap;
 }
@@ -42,16 +42,16 @@
   flex-basis: 100%;
 }
 
-.gastronomy_header .gastronomy_header_title {
+.gastronomy_header .gastronomy_title {
   width: 100%;
 }
 
-.gastronomy_img_content img {
+.gastronomy_right_content img {
   border-radius: 25px;
   width: 100%;
 }
 
-.gastronomy_header_title,
+.gastronomy_title,
 .gastronomy_text_description {
   font-family: "Ubuntu";
   color: black;
@@ -59,9 +59,11 @@
 
 .gastronomy_description {
   margin-bottom: 4vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.gastronomy_header_title {
+.gastronomy_title {
   text-align: left;
   font-size: 36px;
 }
@@ -74,27 +76,13 @@
 .gastronomy_button {
   border-radius: 12px;
   border: 2px solid #a2a648;
-  vertical-align: middle;
-  padding: 24px;
-  height: 1rem;
-  width: 8vw;
-  margin: 40px auto auto auto;
-  min-width: 100px;
-}
-
-.gastronomy_button a {
-  display: flex;
-  align-content: center;
-  text-decoration: none;
-  color: black;
-  font-family: Ubuntu, sans-serif;
-  justify-content: center;
-}
-
-.gastronomy_button {
   transition: all 0.38s;
   cursor: pointer;
   background-color: #b4bb2b;
+  padding: 20px 40px;
+  align-self: center;
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 25px;
 }
 
 .gastronomy_button:hover {
