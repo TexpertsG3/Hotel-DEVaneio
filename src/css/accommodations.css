@@ -43,7 +43,7 @@
 }
 
 .accomodations_nav_menu {
- display: flex;
+  display: flex;
   flex: 1 1 100%;
   justify-content: space-between;
   width: 80%;
