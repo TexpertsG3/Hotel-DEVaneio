@@ -2,6 +2,7 @@
   display: flex;
   height: 100vh;
   justify-content: center;
+  align-content: center;
   min-height: 768px;
   width: 100%;
   flex-wrap: wrap;
@@ -39,6 +40,40 @@
 .accommodations_header {
   display: flex;
   flex-basis: 100%;
+}
+
+.accomodations_nav_menu {
+ display: flex;
+  flex: 1 1 100%;
+  justify-content: space-between;
+  width: 80%;
+  flex-direction: row-reverse;
+  margin: 0 9%;
+  flex-wrap: wrap;
+}
+
+.accomodations_div_menu_item {
+  display: flex;
+  border-bottom: 2px solid #a2a648;
+  padding: 0 10px;
+}
+
+.accomodations_div_menu_item a {
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  align-content: center;
+  text-decoration: none;
+  color: black;
+  height: min-content;
+}
+
+.accomodations_div_menu_list:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 .accommodations_header .accommodations_header_title {
@@ -99,4 +134,16 @@
   -webkit-transform: scale(1.08);
   -ms-transform: scale(1.08);
   transform: scale(1.08);
+}
+
+.accomodations_final_button {
+}
+
+/* Media Query */
+@media (max-width: 415px) and (orientation: portrait) {
+  .accomodations_nav_menu {
+    display: block;
+    justify-content: center;
+    margin: auto;
+  }
 }

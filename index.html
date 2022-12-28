@@ -1,185 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/css/about.css">
-    <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/accommodations.css">
-    <link rel="stylesheet" href="src/css/gastronomia.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="src/assets/images/favicon/devaneio_favicon.png" type="image/x-icon">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/css/about.css" />
+    <link rel="stylesheet" href="src/css/footer.css" />
+    <link rel="stylesheet" href="src/css/header.css" />
+    <link rel="stylesheet" href="src/css/accommodations.css" />
+    <link rel="stylesheet" href="src/css/gastronomia.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/assets/images/favicon/devaneio_favicon.png"
+      type="image/x-icon"
+    />
     <title>Hotel DEVaneio</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <div class="header__content">
-            <a id="imageLogo" class="header__logo" href="#"><img class="header__image-logo"
-                    src="src/assets/images/logo/logo_sem_fundo.png" alt="Logo do hotel"></a>
+      <div class="header__content">
+        <a id="imageLogo" class="header__logo" href="#"
+          ><img
+            class="header__image-logo"
+            src="src/assets/images/logo/logo_sem_fundo.png"
+            alt="Logo do hotel"
+        /></a>
 
-            <div class="header__buttons">
-                <a class="btn btn-second" href="#"><img src="src/assets/images/icons/cadastro.png"
-                        alt="">Cadastre-se</a>
-                <a class="btn btn-primary" href="#"><img src="src/assets/images/icons/user-interface.png"
-                        alt="">Login</a>
-            </div>
-            <div class="header__buttons d-none"> <!-- Mostrar quando o usuário estiver logado -->
-                <p>Olá Usuário</p>
-
-                <a href="#"><img src="src/assets/images/icons/enter.png" alt="">Sair</a>
-            </div>
+        <div class="header__buttons">
+          <a class="btn btn-second" href="#"
+            ><img
+              src="src/assets/images/icons/cadastro.png"
+              alt=""
+            />Cadastre-se</a
+          >
+          <a class="btn btn-primary" href="#"
+            ><img
+              src="src/assets/images/icons/user-interface.png"
+              alt=""
+            />Login</a
+          >
         </div>
+        <div class="header__buttons d-none">
+          <!-- Mostrar quando o usuário estiver logado -->
+          <p>Olá Usuário</p>
 
-        <div class="header__space"></div>
-        <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#accommodations">Acomodações</a></li>
-                <li><a href="#gastronomy">Gastronomia</a></li>
-                <li><a href="#">Menu 4</a></li>
-            </ul>
-        </nav>
+          <a href="#"
+            ><img src="src/assets/images/icons/enter.png" alt="" />Sair</a
+          >
+        </div>
+      </div>
 
+      <div class="header__space"></div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#accommodations">Acomodações</a></li>
+          <li><a href="#gastronomy">Gastronomia</a></li>
+          <li><a href="#">Menu 4</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="about" id="about">
+      <section class="about" id="about">
+        <div class="about__content">
+          <div class="about__text-content">
+            <header class="about__header">
+              <h2 class="about__header-title">Sobre o nosso Hotel</h2>
+            </header>
 
-            <div class="about__content">
-                <div class="about__text-content">
-                    <header class="about__header">
-                        <h2 class="about__header-title">Sobre o nosso Hotel</h2>
-                    </header>
+            <article class="about__description">
+              <p class="about__description-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt, repellendus quas, pariatur fugiat ducimus aut
+                voluptatum amet quos sint excepturi beatae minima dolorum
+                architecto possimus vero maxime, quo dignissimos itaque?
+              </p>
+            </article>
+          </div>
 
-                    <article class="about__description">
+          <div class="about__img-content">
+            <img
+              src="src/assets/images/home/hotel-small.jpg"
+              alt="Fachada do Hotel"
+            />
+          </div>
+        </div>
+      </section>
 
-                        <p class="about__description-text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repellendus quas,
-                            pariatur
-                            fugiat
-                            ducimus aut voluptatum amet quos sint excepturi beatae minima dolorum architecto possimus
-                            vero
-                            maxime, quo dignissimos itaque?
-                        </p>
-                    </article>
-                </div>
+      <section class="accommodations" id="accommodations">
+        <nav class="accomodations_nav_menu">
+          <div class="accomodations_div_menu_item">
+            <a href="">Acomodação C</a>
+          </div>
+          <div class="accomodations_div_menu_item">
+            <a href="">Acomodação C++</a>
+          </div>
+          <div class="accomodations_div_menu_item">
+            <a href="">Acomodação C#</a>
+          </div>
+        </nav>
+        <div class="accommodations_content">
+          <div class="accommodations_text_content">
+            <header class="accommodations_header">
+              <h2 class="accommodations_header_title">
+                <strong>Nossas Acomodações</strong>
+              </h2>
+            </header>
 
-                <div class="about__img-content">
-                    <img src="src/assets/images/home/hotel-small.jpg" alt="Fachada do Hotel">
-                </div>
-            </div>
-        </section>
+            <article class="accommodations_description">
+              <p class="accommodations_text_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Delectus totam ea quidem nobis praesentium quibusdam porro
+                repellendus assumenda blanditiis quod, labore ratione harum
+                aperiam, doloribus quis dolorem ab? Assumenda, commodi ea! A
+                doloremque consectetur, incidunt at asperiores ab doloribus
+                magni! Cum cumque et beatae quo tempore voluptatibus,
+                accusantium exercitationem, ut dolores ea quia. Ex, quas ullam
+                pariatur maiores minima explicabo facilis quasi quod sint
+                debitis tempora rerum impedit doloribus officiis consectetur
+                magni eos fuga aspernatur ipsa voluptate doloremque. Tenetur,
+                asperiores?
+              </p>
+              <div class="accommodations_button">
+                <a href="#">Saiba mais...</a>
+              </div>
+            </article>
+          </div>
 
-        <section class="accommodations" id="accommodations">
-            <div class="accommodations_content">
+          <div class="accommodations_img_content">
+            <img src="src/assets/images/acomodacao/Quarto C++.jpg" alt="" />
+          </div>
+        </div>
+      </section>
 
-                <div class="accommodations_text_content">
-                    <header class="accommodations_header">
-                        <h2 class="accommodations_header_title"><strong>Nossas Acomodações</strong></h2>
-                    </header>
+      <section class="gastronomy" id="gastronomy">
+        <div class="gastronomy_content">
+          <div class="gastronomy_text_content">
+            <header class="gastronomy_header">
+              <h2 class="gastronomy_header_title">
+                <strong>Nossa Cozinha</strong>
+              </h2>
+            </header>
 
-                    <article class="accommodations_description">
-                        <p class="accommodations_text_description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus totam ea quidem nobis
-                            praesentium quibusdam porro repellendus assumenda blanditiis quod, labore ratione harum
-                            aperiam, doloribus quis dolorem ab? Assumenda, commodi ea! A doloremque consectetur,
-                            incidunt at asperiores ab doloribus magni! Cum cumque et beatae quo tempore voluptatibus,
-                            accusantium exercitationem, ut dolores ea quia. Ex, quas ullam pariatur maiores minima
-                            explicabo facilis quasi quod sint debitis tempora rerum impedit doloribus officiis
-                            consectetur magni eos fuga aspernatur ipsa voluptate doloremque. Tenetur, asperiores?
-                        </p>
-                        <div class="accommodations_button">
-                            <a href="#">Saiba mais...</a>
-                        </div>
-                    </article>
-                </div>
+            <article class="gastronomy_description">
+              <p class="gastronomy_text_description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+                temporibus iste commodi assumenda dicta totam fugiat modi? Nisi
+                voluptate explicabo eligendi, labore ducimus error unde impedit
+                non quibusdam accusantium excepturi quasi dolore? Tempora illum
+                soluta ex tempore! Quasi, nemo nostrum ipsa beatae impedit
+                aperiam dolore libero provident, cumque consectetur facere
+                aliquid. Non aliquid ut quibusdam! Explicabo omnis voluptas quo
+                cum laboriosam, voluptate culpa blanditiis delectus vitae. Nemo
+                officia assumenda aspernatur sapiente eius vel? Ducimus natus
+                perspiciatis non, totam quas exercitationem quia quidem et id
+                quaerat? Eaque soluta saepe amet, ducimus fugiat dolor, dolorum
+                sed officia veniam rerum tenetur facere alias esse asperiores
+                sint. Numquam a deleniti laboriosam sapiente natus nostrum
+                inventore adipisci, ullam obcaecati, officia perspiciatis nihil
+                facere ut repellendus.
+              </p>
+              <div class="gastronomy_button">
+                <a href="#">Saiba mais...</a>
+              </div>
+            </article>
+          </div>
 
-                <div class="accommodations_img_content">
-                    <img src="src/assets/images/acomodacao/Quarto C++.jpg" alt="">
-                </div>
-            </div>
-
-        </section>
-
-        <section class="gastronomy" id="gastronomy">
-            <div class="gastronomy_content">
-
-                <div class="gastronomy_text_content">
-                    <header class="gastronomy_header">
-                        <h2 class="gastronomy_header_title"><strong>Nossa Cozinha</strong></h2>
-                    </header>
-
-                    <article class="gastronomy_description">
-                        <p class="gastronomy_text_description">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus iste commodi assumenda dicta totam fugiat modi? Nisi voluptate explicabo eligendi, labore ducimus error unde impedit non quibusdam accusantium excepturi quasi dolore? Tempora illum soluta ex tempore! Quasi, nemo nostrum ipsa beatae impedit aperiam dolore libero provident, cumque consectetur facere aliquid. Non aliquid ut quibusdam! Explicabo omnis voluptas quo cum laboriosam, voluptate culpa blanditiis delectus vitae. Nemo officia assumenda aspernatur sapiente eius vel? Ducimus natus perspiciatis non, totam quas exercitationem quia quidem et id quaerat? Eaque soluta saepe amet, ducimus fugiat dolor, dolorum sed officia veniam rerum tenetur facere alias esse asperiores sint. Numquam a deleniti laboriosam sapiente natus nostrum inventore adipisci, ullam obcaecati, officia perspiciatis nihil facere ut repellendus.
-                        </p>
-                        <div class="gastronomy_button">
-                            <a href="#">Saiba mais...</a>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="gastronomy_img_content">
-                    <img src="src/assets/images/gastronomia/cozinha-gastronomia.jpg" alt="">
-                </div>
-            </div>
-        </section>
-
+          <div class="gastronomy_img_content">
+            <img
+              src="src/assets/images/gastronomia/cozinha-gastronomia.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="footer_title">
-          <div class="footer_list">
-            <!-- Logo -->
-            <a href="#"
-              ><img src="src/assets/images/logo/logo.svg" alt="Logo DEV.aneio"
-            /></a>
-            <!--ícones das redes sociais --->
-            <div class="footer_icons">
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-              <a href=""><i class="fa-brands fa-twitter"></i></a>
-              <a href=""> <i class="fa-brands fa-youtube"></i></a>
-            </div>
-          </div>
-          <div class="footer_navigation">
-            <ul>
-              <li><a href="#">Sobre nós</a></li>
-              <li><a href="#">Gastronomia</a></li>
-              <li><a href="#">Acomodações</a></li>
-            </ul>
-          </div>
-          <div class="footer_address">
-            <h3>Nosso Endereço</h3>
-            <p>
-              Via Costeira, n° 34, <br />
-              Parque das Dunas<br />
-              Natal - RN, Brasil.
-            </p>
-          </div>
-          <div class="footer_contact">
-            <h3>Contato</h3>
-            <p>(84) 99999-9999</p>
-            <p>(84) 88888-8888</p>
+      <div class="footer_title">
+        <div class="footer_list">
+          <!-- Logo -->
+          <a href="#"
+            ><img src="src/assets/images/logo/logo.svg" alt="Logo DEV.aneio"
+          /></a>
+          <!--ícones das redes sociais --->
+          <div class="footer_icons">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""> <i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
-        <hr />
-        <div class="footer_copy">
-          <p>&copy; Todos os direitos reservados 2022</p>
+        <div class="footer_navigation">
+          <ul>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Gastronomia</a></li>
+            <li><a href="#">Acomodações</a></li>
+          </ul>
         </div>
-      </footer>
-</body>
-
+        <div class="footer_address">
+          <h3>Nosso Endereço</h3>
+          <p>
+            Via Costeira, n° 34, <br />
+            Parque das Dunas<br />
+            Natal - RN, Brasil.
+          </p>
+        </div>
+        <div class="footer_contact">
+          <h3>Contato</h3>
+          <p>(84) 99999-9999</p>
+          <p>(84) 88888-8888</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer_copy">
+        <p>&copy; Todos os direitos reservados 2022</p>
+      </div>
+    </footer>
+  </body>
 </html>
