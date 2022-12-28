@@ -52,7 +52,7 @@
 }
 
 .gastronomy_header_title,
-.gastronomy_description_text {
+.gastronomy_text_description {
   font-family: "Ubuntu";
   color: black;
 }
@@ -62,13 +62,13 @@
 }
 
 .gastronomy_header_title {
-  text-align: center;
+  text-align: left;
   font-size: 36px;
 }
 
 .gastronomy_text_description {
   font-size: 16px;
-  text-align: justify;
+  text-align: left;
 }
 
 .gastronomy_button {
@@ -102,4 +102,3 @@
   -ms-transform: scale(1.08);
   transform: scale(1.08);
 }
-
