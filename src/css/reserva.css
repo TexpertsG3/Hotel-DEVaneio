@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form__full-name,
+.form__acommodations,
+.form__checkin-and-nights,
+.form__guests-type {
+    display: flex;
+    flex-basis: 100%;
+    margin-bottom: 1em;
+}
+
+.form__name,
+.form__last-name,
+.form__nights,
+.form__check-in {
+    flex-basis: 48%;
+}
+
+.form__full-name,
+.form__checkin-and-nights,
+.form__guests-type {
+    justify-content: space-between;
+}
+
+.form__adult,
+.form__child,
+.form__infants {
+    flex-basis: 30%;
+}
+
+.form__name,
+.form__last-name,
+.form__acommodations,
+.form__check-in,
+.form__nights,
+.form__adult,
+.form__child,
+.form__infants {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div label,
+div input,
+div select {
+    flex-basis: 100%;
+    border: none;
+    line-height: 2.4em;
+    height: 2.4em;
+    padding: 0;
+    font-size: 16px;
+}
+
+div input:focus ,
+div select:focus {
+    outline: none;
+    border-color: #262126;
+}
+
+.form__name input,
+.form__last-name input,
+.form__acommodations select,
+.form__check-in input,
+.form__nights input,
+.form__adult select,
+.form__child select,
+.form__infants select {
+    background-color: #eee;
+    border-bottom: 2px solid #978797;
+}
+
+input[type=submit] {
+    border: none;
+    font-size: 16px;
+}
+
+.form__btn {
+    margin: 1em auto 0;
+}
+
+.btn {
+    height: 50px;
+    padding: 0 80px;
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: #a2a648;
+    color: white;
+}
