@@ -4,12 +4,6 @@
 
 .accommodations {
   display: flex;
-<<<<<<< HEAD:src/css/accommodations.css
-  height: 100vh;
-  justify-content: center;
-  align-content: center;
-=======
->>>>>>> b21f9427f31aee5793f6a32086040753e951a359:src/css/client/home/accommodations.css
   min-height: 768px;
   margin-bottom: 15%;
 }
@@ -37,7 +31,6 @@
   flex-wrap: wrap;
 }
 
-<<<<<<< HEAD:src/css/accommodations.css
 .accommodations_header {
   display: flex;
   flex-basis: 100%;
@@ -81,8 +74,6 @@
   width: 100%;
 }
 
-=======
->>>>>>> b21f9427f31aee5793f6a32086040753e951a359:src/css/client/home/accommodations.css
 .accommodations_img_content img {
   border-radius: 25px;
   width: 100%;
