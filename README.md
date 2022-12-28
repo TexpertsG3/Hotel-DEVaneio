@@ -11,12 +11,12 @@ ___
 
 <p>Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento de um hotel,com as seguintes funcionalidades:</p>
 
-- Monitoramento do fluxo de hospedes
-- Serviços prestados nos apartamentos
-- Entrada e saída dos funcionários e seus rodízios de trabalho
-- Reservas
-- Checkin e checkout
-
+* Monitoramento do fluxo de hospedes 
+* Serviços prestados nos apartamentos
+* Entrada e saída dos funcionários e seus rodízios de trabalho
+* Reservas
+* Checkin e checkout
+    
 <p>O sistema contempla a lógica pela visão do usuário e do administrador.</p>
 
 ---
