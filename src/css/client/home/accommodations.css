@@ -8,6 +8,38 @@
   margin-bottom: 15%;
 }
 
+.accommodations_nav_menu {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 9%;
+  flex-wrap: wrap;
+}
+
+.accommodations_div_menu_item {
+  display: flex;
+  border-bottom: 2px solid #a2a648;
+  padding: 0 10px;
+  margin-bottom: auto;
+}
+
+.accommodations_div_menu_item a {
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  justify-content: center;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  height: min-content;
+}
+
+.accommodations_div_menu_item:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
 .accommodations_content {
   display: flex;
   height: 100vh;
@@ -31,47 +63,16 @@
   flex-wrap: wrap;
 }
 
-.accommodations_header {
-  display: flex;
-  flex-basis: 100%;
-}
-
-.accomodations_nav_menu {
-  display: flex;
-  flex: 1 1 100%;
-  justify-content: space-between;
-  width: 80%;
-  flex-direction: row-reverse;
-  margin: 0 9%;
-  flex-wrap: wrap;
-}
-
-.accomodations_div_menu_item {
-  display: flex;
-  border-bottom: 2px solid #a2a648;
-  padding: 0 10px;
-}
-
-.accomodations_div_menu_item a {
-  display: flex;
-  font-family: "Ubuntu", sans-serif;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  align-content: center;
-  text-decoration: none;
-  color: black;
-  height: min-content;
-}
-
-.accomodations_div_menu_list:hover {
-  -webkit-transform: scale(1.08);
-  -ms-transform: scale(1.08);
-  transform: scale(1.08);
-}
-
-.accommodations_header .accommodations_header_title {
+.accommodations_img_content img {
+  border-radius: 25px;
   width: 100%;
+}
+
+.accommodations_header_title,
+.accommodations_text_description {
+  font-family: var(--font-padrao);
+  color: #262126;
+  text-align: left;
 }
 
 .accommodations_img_content img {
@@ -125,14 +126,14 @@
   transform: scale(1.08);
 }
 
-.accomodations_final_button {
-}
-
 /* Media Query */
-@media (max-width: 415px) and (orientation: portrait) {
-  .accomodations_nav_menu {
-    display: block;
+@media (max-width: 590px) and (orientation: portrait) {
+  .accommodations_nav_menu {
+    display: grid;
     justify-content: center;
     margin: auto;
+    border-bottom: 0 10px;
   }
 }
+
+/* Anotando para não esquecer as alterações, ajustei a  margem para auto para que a borda não ficasse distante do conteúdo, no media query coloquei o display grid, para que os itens ficassem emparelhados ao reduzir a tela, alterei o max-width no emdia query para 590, pois é onde começava a quebrar a nav, e deixei a nav dentro de content, pois estava fora e ficava desalinhado*/
