@@ -4,36 +4,32 @@
 
 <br>
 
-___
-
+---
 
 ## **Sobre o projeto:** <br>
 
 <p>Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento de um hotel,com as seguintes funcionalidades:</p>
 
-* Monitoramento do fluxo de hospedes 
-* Serviços prestados nos apartamentos
-* Entrada e saída dos funcionários e seus rodízios de trabalho
-* Reservas
-* Checkin e checkout
-    
+- Monitoramento do fluxo de hospedes
+- Serviços prestados nos apartamentos
+- Entrada e saída dos funcionários e seus rodízios de trabalho
+- Reservas
+- Checkin e checkout
+
 <p>O sistema contempla a lógica pela visão do usuário e do administrador.</p>
 
 ---
+
 </br>
 </br>
 
 ### <b> Layout Proposto </b>
+
 </br>
 
 <p align="center">
-  <img src="src/assets/images/README-ESCOPO.png" width="400px>
+  <img src="src/assets/images/README-ESCOPO.png">
 </p>
-
-___
-___
-</br>
-</br>
 
 ### <b> Layout Atual </b>
 
@@ -56,30 +52,32 @@ ___
 - Considerar blocos aside
 
 - Escolher a imagem do logo
-Escolher as imagens das acomodações (Pense em 3 tipos. 
+  Escolher as imagens das acomodações (Pense em 3 tipos.
 
 - As páginas devem ser linkadas
 
 - A imagem do Logo deve estar em todas as páginas
-Importante!
+  Importante!
 
 - ### <b> Não aplicar Javascript </b>
 
 ### <b>Páginas: </b>
 
 <b> Área Pública:</b>
-- Login 
+
+- Login
 - Form
 - Home
 - O Hotel
 - Acomodações com imagens dos quartos
-- Reservas 
+- Reservas
 - Form
-Contato 
+  Contato
 - Form
-Área Administrativa (deve estar numa pasta ‘admin’)
+  Área Administrativa (deve estar numa pasta ‘admin’)
 
 <b>Login: </b>
+
 - Form
 - Home
 - Funcionários
@@ -88,7 +86,7 @@ Contato
 
 ## <b> Refinamento da Estrutura Item 1.1 </b>
 
- <b>PÚBLICA</b>
+<b>PÚBLICA</b>
 
 - Formulário de Reservas
 - Data do checkin - Input Date
@@ -106,8 +104,8 @@ Contato
 - Departamento Financeiro
 - Mensagem - TextArea
 
-
 <b>ADMIN</b>
+
 - Funcionários
 - Tabela
 - Código
