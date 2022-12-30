@@ -8,60 +8,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
         integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/about.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/client/home/about.css">
+    <link rel="stylesheet" href="src/css/client/home/footer.css">
+    <link rel="stylesheet" href="src/css/client/home/header.css">
+    <link rel="stylesheet" href="src/css/client/home/accommodations.css">
+    <link rel="stylesheet" href="src/css/client/home/gastronomy.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="src/assets/images/favicon/android-chrome-512x512.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/46f0268777.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="src/assets/images/favicon/devaneio_favicon.png" type="image/x-icon">
     <title>Hotel DEVaneio</title>
 
 </head>
 
 <body>
-    <header>
-        <div class="cabecalhoGeral">
-            <div> <!-- Mostrar quando o usuário não estiver logado -->
-                <div class="cabecalhoNone">
-                    <a id="imageLogo" href="#"><img class="imageLogo" src="src/assets/images/logo/devaneio_logo.png"
-                            alt="Logo do hotel"></a>
+    <header class="header">
+        <div class="header__content">
+            <a id="imageLogo" class="header__logo" href="#"><img class="header__image-logo"
+                    src="src/assets/images/logo/logo_sem_fundo.png" alt="Logo do hotel"></a>
 
-                    <ul class="cadasLogin">
-                        <li id="cadastro"><a class="cadastro" href="#"><img src="src/assets/images/icons/cadastro.png"
-                                    alt=""> Cadastre-se</a></li>
-                        <li id="login"><a class="login" href="#"><img src="src/assets/images/icons/user-interface.png"
-                                    alt=""> Login</a></li>
-                    </ul>
-                </div>
-                <h1>Melhor lugar para debugar sua vida</h1>
+            <div class="header__buttons">
+                <a class="btn btn-second" href="#"><img src="src/assets/images/icons/cadastro.png"
+                        alt="">Cadastre-se</a>
+                <a class="btn btn-primary" href="#"><img src="src/assets/images/icons/user-interface.png"
+                        alt="">Login</a>
             </div>
-
-            <div> <!-- Mostrar quando o usuário estiver logado -->
+            <div class="header__buttons d-none"> <!-- Mostrar quando o usuário estiver logado -->
                 <p>Olá Usuário</p>
 
                 <a href="#"><img src="src/assets/images/icons/enter.png" alt="">Sair</a>
             </div>
         </div>
 
-        <div class="menusGeral"> <!-- Menu de navegação da página -->
-            <nav>
-                <ul class="menus">
-                    <li><a href="#">Menu 1</a></li>
-                    <li><a href="#">Menu 2</a></li>
-                    <li><a href="#">Menu 3</a></li>
-                    <li><a href="#">Menu 4</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div class="header__space"></div>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#accommodations">Acomodações</a></li>
+                <li><a href="#gastronomy">Gastronomia</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+        </nav>
+
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
 
             <div class="about__content">
                 <div class="about__text-content">
@@ -88,7 +82,7 @@
             </div>
         </section>
 
-        <section class="accommodations">
+        <section class="accommodations" id="accommodations">
             <div class="accommodations_content">
 
                 <div class="accommodations_text_content">
@@ -106,97 +100,79 @@
                             explicabo facilis quasi quod sint debitis tempora rerum impedit doloribus officiis
                             consectetur magni eos fuga aspernatur ipsa voluptate doloremque. Tenetur, asperiores?
                         </p>
+                        <div class="accommodations_button">
+                            <a href="#">Saiba mais...</a>
+                        </div>
                     </article>
                 </div>
 
                 <div class="accommodations_img_content">
-                    <img src="src/assets/images/acomodacao/Quarto C++.jpg" alt="">
-                </div>
-                <br>
-                <div class="accommodations_button">
-                    <a href="acomodacao.html">Conheça mais sobre nossos serviços</a>
+                    <img src="src/assets/images/accommodations/Quarto C++.jpg" alt="">
                 </div>
             </div>
+
         </section>
 
+        <section class="gastronomy" id="gastronomy">
+            <article class="gastronomy_content">
 
+                <div class="gastronomy_left_content">
+                    <h2 class="gastronomy_title"><strong>Nossa Cozinha</strong></h2>
+                    <p class="gastronomy_description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus iste commodi assumenda dicta totam fugiat modi? Nisi voluptate explicabo eligendi, labore ducimus error unde impedit non quibusdam accusantium excepturi quasi dolore? Tempora illum soluta ex tempore! Quasi, nemo nostrum ipsa beatae impedit aperiam dolore libero provident, cumque consectetur facere aliquid. Non aliquid ut quibusdam! Explicabo omnis voluptas quo cum laboriosam, voluptate culpa blanditiis delectus vitae. Nemo officia assumenda aspernatur sapiente eius vel? Ducimus natus perspiciatis non, totam quas exercitationem quia quidem et id quaerat? Eaque soluta saepe amet, ducimus fugiat dolor, dolorum sed officia veniam rerum tenetur facere alias esse asperiores sint. Numquam a deleniti laboriosam sapiente natus nostrum inventore adipisci, ullam obcaecati, officia perspiciatis nihil facere ut repellendus.
+                    </p>
+                    <button class="gastronomy_button">Saiba mais...</button>
+                </div>
 
-        <section>
-            <header>
-                <h2>Gastronomia</h2>
-            </header>
-            <picture><img src="src/assets/images/gastronomia/cafe-da-manha.jpg" alt="Café da manhã" width="180px"
-                    height="180px"></picture>
-            <picture><img src="src/assets/images/gastronomia/prato-com-vista.jpg" alt="Almoço com as melhores vistas"
-                    width="180px" height="180px">
-            </picture>
-            <picture><img src="src/assets/images/gastronomia/comida-saudavel.jpg" alt="Pratos Saudáveis" width="180px"
-                    height="180px">
-            </picture>
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nostrum distinctio laudantium
-                    suscipit ea nemo ex ipsum architecto, aut aliquam incidunt harum aspernatur doloribus ratione,
-                    commodi eius nam, minima saepe?</p>
+                <div class="gastronomy_right_content">
+                    <img src="src/assets/images/gastronomy/cozinha-gastronomia.jpg" alt="">
+                </div>
             </article>
         </section>
+
     </main>
 
     <footer class="footer">
-        <div class="footer__top">
-            <div class="footer__menu">
-                <img src="src/assets/images/favicon/devaneio_logo.png" alt="logo" class="footer__logo">
-                <nav class="footer__menu-nav">
-                    <ul>
-                        <li><a href="#">menu 1</a></li>
-                        <li><a href="#">menu 2</a></li>
-                        <li><a href="#">menu 3</a></li>
-                        <li><a href="#">menu 4</a></li>
-                    </ul>
-                </nav>
+        <div class="footer_title">
+          <div class="footer_list">
+            <!-- Logo -->
+            <a href="#"
+              ><img src="src/assets/images/logo/logo.svg" alt="Logo DEV.aneio"
+            /></a>
+            <!--ícones das redes sociais --->
+            <div class="footer_icons">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""> <i class="fa-brands fa-youtube"></i></a>
             </div>
-            <div class="footer__informations">
-                <p>
-                    Nosso Horário:
-                </p>
-                <p>
-                    Segunda a Sexta das 10:00 ás 22:00
-                </p>
-                <p>
-                    Contato:
-                </p>
-                <p>
-                    (00) 00000-0000
-                </p>
-                <p>
-                    Email:
-                </p>
-                <p>
-                    hoteldevaneio@gmail.com
-                </p>
-            </div>
-            <div class="footer__address">
-                <p>
-                    Nosso Endereço:
-                </p>
-                <p><a href="">Rua Tal, N° 99, Bairro Tal,
-                        Cidade Tal, Estado Tal,
-                        Brasil</a>
-                </p>
-            </div>
+          </div>
+          <div class="footer_navigation">
+            <ul>
+              <li><a href="#about">Sobre nós</a></li>
+              <li><a href="#accommodations">Acomodações</a></li>
+              <li><a href="#gastronomy">Gastronomia</a></li>
+            </ul>
+          </div>
+          <div class="footer_address">
+            <h3>Nosso Endereço</h3>
+            <p>
+              Via Costeira, n° 34, <br />
+              Parque das Dunas<br />
+              Natal - RN, Brasil.
+            </p>
+          </div>
+          <div class="footer_contact">
+            <h3>Contato</h3>
+            <p>(84) 99999-9999</p>
+            <p>(84) 88888-8888</p>
+          </div>
         </div>
-        <div class="footer__space"></div>
-        <div class="footer__rights">
-            <a href="">Voltar ao início</a>
-            <span>&copy; 2022 DEVaneio Todos os direitos reservados</span>
-           <div class="footer__icons">
-            <nav>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </nav>
+        <hr />
+        <div class="footer_copy">
+          <p>&copy; Todos os direitos reservados 2022</p>
         </div>
-        </div>
-    </footer>
+      </footer>
 </body>
+
 </html>
