@@ -1,6 +1,6 @@
 # Projeto Hotel
 
-> **_<p align="center">Status do projeto: :hammer_and_wrench: Em desenvolvimento :hammer_and_wrench:</p>_**
+**_<p align="center">Status do projeto: :hammer_and_wrench: Em desenvolvimento :hammer_and_wrench:</p>_**
 
 <br>
 
@@ -41,7 +41,7 @@
 
 ---
 
-> ## Início do Projeto (Front-End):
+## Início do Projeto (Front-End):
 
 - Criar a estrutura de diretórios
 
@@ -113,12 +113,12 @@
 - Tempo de empresa
 - Atividade Atual (select)
 
-- - Recepção
-- - Restaurante
-- - Garagem
-- - Serviço de Quarto
-- - Gerência
-- - Concierge
-- - Supervisor de Andar
-- - Férias (rádio) Sim | Não
-- - Afastamento médico (rádio) Sim | Não
+   - Recepção
+   - Restaurante
+   - Garagem
+   - Serviço de Quarto
+   - Gerência
+   - Concierge
+   - Supervisor de Andar
+   - Férias (rádio) Sim | Não
+   - Afastamento médico (rádio) Sim | Não
