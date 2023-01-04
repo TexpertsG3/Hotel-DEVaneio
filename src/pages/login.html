@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/client/home/footer.css">
+    <link rel="stylesheet" href="../css/client/home/header.css">
+    <link rel="stylesheet" href="/src/css/login/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="src/assets/images/favicon/devaneio_favicon.png" type="image/x-icon">
+    <title>Hotel DEVaneio</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <a id="imageLogo" class="header__logo" href="#"><img class="header__image-logo"
+                    src="../assets/images/logo/logo_sem_fundo.png" alt="Logo do hotel"></a>
+
+            <div class="header__buttons">
+                <!-- <a class="btn btn-second" href="#"><img src="src/assets/images/icons/cadastro.png"
+                        alt="">Cadastre-se</a> -->
+                <a class="btn btn-primary" href="/src/pages/login.html"><img src="../assets/images/icons/user-interface.png"
+                        alt="">Login</a>
+            </div>
+            <div class="header__buttons d-none"> <!-- Mostrar quando o usuário estiver logado -->
+                <p>Olá Usuário</p>
+
+                <a href="#"><img src="../assets/images/icons/enter.png" alt="">Sair</a>
+            </div>
+        </div>
+
+        <div class="header__space"></div>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#accommodations">Acomodações</a></li>
+                <li><a href="#gastronomy">Gastronomia</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="login">
+        <form action="get">
+            <h2>Entrar</h2>
+            <p>Usuário</p>
+            <input type="text" name="user" id="user" placeholder="Insira seu usuario">
+            <p>Senha</p>
+            <input type="password" name="password" id="password" placeholder="Insira sua senha">
+            <input type="button" value="enter">
+        </form>
+    </div><!-- 
+
+     
+    --><div class="register">
+        <form action="get">
+            <h2>Registrar</h2>
+            <p>E-mail</p>
+            <input type="email" name="email" id="email" placeholder="Coloque seu E-mail">
+            <p>Usuário</p>
+            <input type="text" name="user1" id="user1" placeholder="Insira seu usuario">
+            <p>Senha</p>
+            <input type="password" name="password1" id="password1" placeholder="Insira sua senha">
+            <input type="button" value="register">
+        </form>   
+    </div>
+
+    <div class="back">
+        <h2>Voltar</h2>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_title">
+          <div class="footer_list">
+            <!-- Logo -->
+            <a href="#"
+              ><img src="../assets/images/logo/logo.svg" alt="Logo DEV.aneio"
+            /></a>
+            <!--ícones das redes sociais --->
+            <div class="footer_icons">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""> <i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer_navigation">
+            <ul>
+              <li><a href="#about">Sobre nós</a></li>
+              <li><a href="#accommodations">Acomodações</a></li>
+              <li><a href="#gastronomy">Gastronomia</a></li>
+            </ul>
+          </div>
+          <div class="footer_address">
+            <h3>Nosso Endereço</h3>
+            <p>
+              Via Costeira, n° 34, <br />
+              Parque das Dunas<br />
+              Natal - RN, Brasil.
+            </p>
+          </div>
+          <div class="footer_contact">
+            <h3>Contato</h3>
+            <p>(84) 99999-9999</p>
+            <p>(84) 88888-8888</p>
+          </div>
+        </div>
+        <hr />
+        <div class="footer_copy">
+          <p>&copy; Todos os direitos reservados 2022</p>
+        </div>
+      </footer>
+</body>
+
+</html>

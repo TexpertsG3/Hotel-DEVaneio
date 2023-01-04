@@ -1,0 +1,19 @@
+.login,
+.register,
+.back {
+    font-family: "Ubuntu";
+}
+
+.login {
+    /* position: relative; */
+    /* position: absolute; */
+    width: 50%;
+    display: inline-block;
+}
+
+.register {
+    /* position: relative;  */ 
+    width: 50%;
+    display: inline-block;
+    
+}
