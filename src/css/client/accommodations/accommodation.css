@@ -1,0 +1,239 @@
+@charset "UTF-8";
+@import url("/src/css/client/home/footer.css");
+@import url("/src/css/client/home/header.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+:root {
+  --font-padrao: Ubuntu;
+}
+
+.accommodations {
+  padding-bottom: 0;
+  display: flex;
+  min-height: 600px;
+  height: 100vh;
+}
+
+.accommodations_nav_menu {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 9%;
+  flex-wrap: wrap;
+}
+
+.accommodations_div_menu_item_first,
+.accommodations_div_menu_item_second,
+.accommodations_div_menu_item_third {
+  display: flex;
+  border-bottom: 2px solid #a2a648;
+  padding: 0 10px;
+  margin-bottom: auto;
+}
+
+.accommodations_div_menu_item_first a,
+.accommodations_div_menu_item_second a,
+.accommodations_div_menu_item_third a {
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  justify-content: center;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  height: min-content;
+}
+
+.accommodations_div_menu_item_first:hover,
+.accommodations_div_menu_item_second:hover,
+.accommodations_div_menu_item_third:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.accommodations_content {
+  display: flex;
+  height: 100vh;
+  width: 85%;
+  flex-direction: row-reverse;
+  margin: 0 7.2%;
+  flex-wrap: wrap;
+}
+
+.accommodations_content > div {
+  flex: 1 1 200px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.accommodations_text_content,
+.accommodations_img_content {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.accommodations_img_content img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.accommodations_header_title,
+.accommodations_text_description {
+  font-family: var(--font-padrao);
+  color: #262126;
+  text-align: left;
+}
+
+.accommodations_img_content img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.accommodations_header_title,
+.accommodations_text_description {
+  font-family: var(--font-padrao);
+  color: #262126;
+  text-align: left;
+}
+
+.accommodations_description {
+  /*Excencial para um espaçamento do botão para a imagem em telas mobile.*/
+  margin-bottom: 4vh;
+}
+
+.accommodations_header_title {
+  font-size: 36px;
+}
+
+.accommodations_text_description {
+  font-size: 16px;
+}
+
+.accommodations_button {
+  border-radius: 12px;
+  border: 2px solid #a2a648;
+  padding: 1.5rem;
+  width: 2.7rem;
+  margin: auto;
+  min-width: 100px;
+  transition: all 0.38s;
+  cursor: pointer;
+}
+
+.accommodations_button a {
+  display: flex;
+  align-content: center;
+  text-decoration: none;
+  color: #262126;
+  font-family: var(--font-padrao);
+  justify-content: center;
+}
+
+.accommodations_button:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.accommodations__rooms {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+.accommodations__rooms__card {
+  margin: 1.5rem 2rem;
+  height: 250px;
+  min-width: 250px;
+  border: 1px solid black;
+}
+.accommodations__rooms .item7 {
+  grid-column: 1/4;
+  width: 85%;
+}
+
+.accommodations__button {
+  display: flex;
+  border-radius: 12px;
+  border: 2px solid #a2a648;
+  padding: 1.5rem;
+  width: 2.7rem;
+  margin: auto;
+  min-width: 100px;
+  transition: all 0.38s;
+  cursor: pointer;
+}
+.accommodations__button a {
+  text-decoration: none;
+  text-align: center;
+  color: #262126;
+  font-family: var(--font-padrao);
+}
+.accommodations__button:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+  background-color: rgba(38, 33, 38, 0.1);
+}
+
+.accommodations__buttons {
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+}
+.accommodations__buttons .accommodations__button__accommodations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  height: 8rem;
+}
+.accommodations__buttons .accommodations__button__reservations {
+  position: absolute;
+  top: 10rem;
+}
+
+/* Media Query */
+@media (max-width: 600px) and (orientation: portrait) {
+  .accommodations_nav_menu {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    border-bottom: 0 10px;
+  }
+  .accommodations_div_menu_item_third,
+  .accommodations_div_menu_item_second {
+    visibility: hidden;
+  }
+  .accommodations__rooms {
+    display: block;
+    margin: 50% auto auto auto;
+    justify-items: center;
+  }
+  .accommodations__rooms__card {
+    display: block;
+    margin-top: 40%;
+  }
+  .accommodations__rooms .item1,
+  .accommodations__rooms .item2,
+  .accommodations__rooms .item3,
+  .accommodations__rooms .item4,
+  .accommodations__rooms .item5,
+  .accommodations__rooms .item6 {
+    display: none;
+  }
+}
+@media (max-width: 460px) and (orientation: portrait) {
+  .accommodations_img_content {
+    visibility: hidden;
+  }
+}
+/* Anotando para não esquecer as alterações, ajustei a  margem para auto para que a borda não ficasse distante do conteúdo, no media query coloquei o display grid, para que os itens ficassem emparelhados ao reduzir a tela, alterei o max-width no emdia query para 590, pois é onde começava a quebrar a nav, e deixei a nav dentro de content, pois estava fora e ficava desalinhado*/
+/* Na imagem coloquei um media query visibility hidden para a imagem, pois ela está avançando em Gastronomia, na tela pequena */
+
+/*# sourceMappingURL=accommodation.css.map */
