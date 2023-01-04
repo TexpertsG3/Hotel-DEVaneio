@@ -66,3 +66,7 @@ input {
 .btn__register:hover {
     background-color: #6f7232;
 }
+
+::placeholder {
+    color: #dedede;
+}
