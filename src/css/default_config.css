@@ -1,0 +1,39 @@
+@import url("/src/css/client/home/footer.css");
+@import url("/src/css/client/home/header.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+p {
+  line-height: 1.4rem;
+}
+
+.btn {
+  border: 2px solid #a2a648;
+  display: flex;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 2.5rem;
+  margin: auto;
+  min-width: 100px;
+  transition: all 0.38s;
+  cursor: pointer;
+}
+.btn a {
+  text-decoration: none;
+  text-align: center;
+  color: #262126;
+  font-family: "Ubuntu", sans-serif;
+}
+.btn:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+/*# sourceMappingURL=default_config.css.map */
