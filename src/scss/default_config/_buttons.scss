@@ -1,0 +1,26 @@
+@use "variaveis" as v;
+
+.btn {
+    border: 2px solid v.$color-2;
+    display: flex;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 2.5rem;
+    margin: auto;
+    min-width: 100px;
+    transition: all 0.38s;
+    cursor: pointer;
+
+    & a {
+        text-decoration: none;
+        text-align: center;
+        color: v.$color-1;
+        font-family: v.$base-font;
+    }
+
+    &:hover {
+        -webkit-transform: scale(1.08);
+        -ms-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+}

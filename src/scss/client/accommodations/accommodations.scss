@@ -1,84 +1,69 @@
-@use "../import";
-
-:root {
-    --font-padrao: Ubuntu;
-}
+@use "../../default_config/default_config.scss";
+@use "../../default_config/variaveis" as v;
 
 .accommodations {
     padding-bottom: 0;
     display: flex;
     min-height: 600px;
     height: 100vh;
-}
 
-.accommodations_nav_menu {
-    display: flex;
-    flex: 1 1 100%;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 9%;
-    flex-wrap: wrap;
-}
+    &_nav_menu {
+        display: flex;
+        flex: 1 1 100%;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 9%;
+        flex-wrap: wrap;
+    }
 
-.accommodations_div_menu_item_first,
-.accommodations_div_menu_item_second,
-.accommodations_div_menu_item_third {
-    display: flex;
-    border-bottom: 2px solid #a2a648;
-    padding: 0 10px;
-    margin-bottom: auto;
-}
+    &_div_menu_item_first,
+    &_div_menu_item_second,
+    &_div_menu_item_third {
+        display: flex;
+        border-bottom: 2px solid #a2a648;
+        padding: 0 10px;
+        margin-bottom: auto;
 
-.accommodations_div_menu_item_first a,
-.accommodations_div_menu_item_second a,
-.accommodations_div_menu_item_third a {
-    display: flex;
-    font-family: "Ubuntu", sans-serif;
-    justify-content: center;
-    text-decoration: none;
-    align-content: center;
-    color: black;
-    height: min-content;
-}
-.accommodations_div_menu_item_first:hover,
-.accommodations_div_menu_item_second:hover,
-.accommodations_div_menu_item_third:hover {
-    -webkit-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    transform: scale(1.08);
-}
+        & a {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            align-content: center;
+            color: black;
+            height: min-content;
+        }
+    }
 
-.accommodations_content {
-    display: flex;
-    height: 100vh;
-    width: 85%;
-    flex-direction: row-reverse;
-    margin: 0 7.2%;
-    flex-wrap: wrap;
-}
+    &_content {
+        display: flex;
+        height: 100vh;
+        width: 85%;
+        flex-direction: row-reverse;
+        margin: 0 7.2%;
+        flex-wrap: wrap;
 
-.accommodations_content > div {
-    flex: 1 1 200px;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-}
+        & div {
+            flex: 1 1 200px;
+        }
+    }
 
-.accommodations_text_content,
-.accommodations_img_content {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
+    &_text_content,
+    &_img_content {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
 
-.accommodations_img_content img {
-    border-radius: 25px;
-    width: 100%;
+        & img {
+            border-radius: 25px;
+            width: 100%;
+        }
+    }
 }
 
 .accommodations_header_title,
 .accommodations_text_description {
-    font-family: var(--font-padrao);
+    font-family: v.$base-font;
     color: #262126;
     text-align: left;
 }
@@ -90,17 +75,18 @@
 
 .accommodations_header_title,
 .accommodations_text_description {
-    font-family: var(--font-padrao);
+    font-family: v.$base-font;
     color: #262126;
     text-align: left;
 }
 
 .accommodations_description {
     /*Excencial para um espaçamento do botão para a imagem em telas mobile.*/
-    margin-bottom: 4vh;
+    margin: 4vh;
 }
 
 .accommodations_header_title {
+    margin: 0 8vh;
     font-size: 36px;
 }
 
@@ -108,23 +94,12 @@
     font-size: 16px;
 }
 
-.accommodations_button {
-    border-radius: 12px;
-    border: 2px solid #a2a648;
-    padding: 1.5rem;
-    width: 2.7rem;
-    margin: auto;
-    min-width: 100px;
-    transition: all 0.38s;
-    cursor: pointer;
-}
-
 .accommodations_button a {
     display: flex;
     align-content: center;
     text-decoration: none;
     color: #262126;
-    font-family: var(--font-padrao);
+    font-family: v.$base-font;
     justify-content: center;
 }
 
@@ -158,7 +133,7 @@
     border: 2px solid #a2a648;
     padding: 1.5rem;
     width: 2.7rem;
-    margin: auto;
+    margin: auto auto auto auto;
     min-width: 100px;
     transition: all 0.38s;
     cursor: pointer;
@@ -167,13 +142,13 @@
         text-decoration: none;
         text-align: center;
         color: #262126;
-        font-family: var(--font-padrao);
+        font-family: v.$base-font;
     }
     &:hover {
         -webkit-transform: scale(1.08);
         -ms-transform: scale(1.08);
         transform: scale(1.08);
-        background-color: rgba(38, 33, 38, 0.1);
+        // background-color: rgba(38, 33, 38, 0.1);
     }
 }
 
