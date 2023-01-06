@@ -29,7 +29,7 @@
     flex-basis: 100%;
 }
 
-.about__header .about__header-title {
+.about__header, .about__header-title {
     width: 100%;
 }
 
@@ -39,12 +39,14 @@
 }
 
 .about__header-title,
-.about__description-text {
+.about__description-text,
+.about__header-details {
     font-family: 'Ubuntu';
     color: #262126;
 }
 
-.about__header-title {
+.about__header-title,
+.about__header-details {
     font-size: 36px;
 }
 
@@ -52,8 +54,80 @@
     font-size: 16px;
 }
 
-@media (max-width: 415px) and (orientation:portrait){
-    .about__img-content{
+.about__images {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    min-height: 50px;
+    width: 100%;
+}
+
+.about__images-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.about__images-img {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+}
+
+.about__images-img img{
+    width: 100%;
+    border-radius: 25px;
+    margin: 1%;
+    border-radius: 12px;
+    border: 3px solid #a2a648;
+    padding: 0.1rem;
+    transition: all 0.38s;
+    cursor: pointer;
+}
+.about__images-img img:hover {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+}
+.about__title-content {
+    display: flex;
+    justify-content: right;
+    min-height: 40px;
+    width: 100%;
+}
+.about__header-details {
+    display: flex;
+    width: 90%;
+}
+
+@media (max-width: 415px) and (orientation:portrait) {
+    .about__img-content {
         display: none;
     }
+}
+
+.about__button {
+    border-radius: 12px;
+    border: 2px solid #a2a648;
+    padding: 1.5rem;
+    width: 2.7rem;
+    margin: auto;
+    min-width: 100px;
+    transition: all 0.38s;
+    cursor: pointer;
+}
+
+.about__button a {
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+    color: #262126;
+    font-family: var(--font-padrao);
+    justify-content: center;
+}
+
+.about__button:hover {
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
 }
