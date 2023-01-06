@@ -40,7 +40,7 @@
 
 .about__header-title,
 .about__description-text {
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     color: #262126;
 }
 
@@ -52,8 +52,8 @@
     font-size: 16px;
 }
 
-@media (max-width: 415px) and (orientation:portrait){
-    .about__img-content{
+@media (max-width: 415px) and (orientation: portrait) {
+    .about__img-content {
         display: none;
     }
 }
