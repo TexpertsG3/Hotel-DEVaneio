@@ -1,6 +1,6 @@
 @use "../../default_config/default_config.scss";
 @use "../../default_config/variaveis" as v;
-@use "../../default_config/mixins" as mx;
+@use "mixins_c_plus_plus" as mx;
 
 .rooms {
     display: flex;
@@ -89,6 +89,7 @@
     justify-content: space-around;
 
     .accommodations__card {
+        border-radius: 25px;
         width: 31%;
         // margin-right: 0.6rem;
         margin-bottom: 1rem;

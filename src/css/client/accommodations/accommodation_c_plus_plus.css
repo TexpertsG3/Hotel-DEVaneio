@@ -324,6 +324,114 @@ p {
   padding: 1rem 0.5rem;
 }
 
+#item1 {
+  background-image: url("/src/assets/images/accommodations/quarto-c4.jpg");
+  background-size: cover;
+}
+#item1 h2:before {
+  content: "Quaro C Simples";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#item2 {
+  background-image: url("/src/assets/images/accommodations/quarto-c1.jpg");
+  background-size: cover;
+}
+#item2 h2:before {
+  content: "Quarto C Simples Aconchegante";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#item3 {
+  background-image: url("/src/assets/images/accommodations/quarto-c2.jpg");
+  background-size: cover;
+}
+#item3 h2:before {
+  content: "Quarto C Simples Confortável++";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#item4 {
+  background-image: url("/src/assets/images/accommodations/quarto-c3.jpg");
+  background-size: cover;
+}
+#item4 h2:before {
+  content: "Quarto C Tech";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#item5 {
+  background-image: url("/src/assets/images/accommodations/cafe1.jpg");
+  background-size: cover;
+}
+#item5 h2:before {
+  content: "Refeitório para seus cafés";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#item6 {
+  background-image: url("/src/assets/images/accommodations/cafe2.jpg");
+  background-size: cover;
+}
+#item6 h2:before {
+  content: "Café com os Amigos";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#item7 {
+  background-image: url("/src/assets/images/accommodations/jogos1.jpg");
+  background-size: cover;
+}
+#item7 h2:before {
+  content: "Faça a sua Reserva";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#item8 {
+  background-image: url("/src/assets/images/accommodations/quarto-c.jpg");
+  background-size: cover;
+}
+#item8 h2:before {
+  content: "Acomodações C";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#item9 {
+  background-image: url("/src/assets/images/accommodations/quarto-c-sharp.jpg");
+  background-size: cover;
+}
+#item9 h2:before {
+  content: "Acomodações C#";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
 .rooms {
   display: flex;
   margin-top: 8%;
@@ -420,6 +528,7 @@ p {
   justify-content: space-around;
 }
 .accommodations__rooms .accommodations__card {
+  border-radius: 25px;
   width: 31%;
   margin-bottom: 1rem;
   height: 400px;
@@ -497,4 +606,4 @@ p {
 /* Anotando para não esquecer as alterações, ajustei a  margem para auto para que a borda não ficasse distante do conteúdo, no media query coloquei o display grid, para que os itens ficassem emparelhados ao reduzir a tela, alterei o max-width no emdia query para 590, pois é onde começava a quebrar a nav, e deixei a nav dentro de content, pois estava fora e ficava desalinhado*/
 /* Na imagem coloquei um media query visibility hidden para a imagem, pois ela está avançando em Gastronomia, na tela pequena */
 
-/*# sourceMappingURL=accommodation.css.map */
+/*# sourceMappingURL=accommodation_c_plus_plus.css.map */
