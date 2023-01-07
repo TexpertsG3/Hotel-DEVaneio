@@ -29,7 +29,8 @@
     flex-basis: 100%;
 }
 
-.about__header, .about__header-title {
+.about__header,
+.about__header-title {
     width: 100%;
 }
 
@@ -41,7 +42,7 @@
 .about__header-title,
 .about__description-text,
 .about__header-details {
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     color: #262126;
 }
 
@@ -73,7 +74,7 @@
     align-items: center;
 }
 
-.about__images-img img{
+.about__images-img img {
     width: 100%;
     min-height: 100px;
     max-height: 150px;
@@ -104,8 +105,9 @@
     width: 90%;
 }
 
-@media (max-width: 415px) and (orientation:portrait) {
-    .about__img-content, .about__images {
+@media (max-width: 415px) and (orientation: portrait) {
+    .about__img-content,
+    .about__images {
         display: none;
     }
 }

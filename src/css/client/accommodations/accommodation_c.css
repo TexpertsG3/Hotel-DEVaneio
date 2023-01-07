@@ -324,154 +324,118 @@ p {
   padding: 1rem 0.5rem;
 }
 
-.about {
-  display: flex;
-  height: 50%;
-  justify-content: center;
-  min-height: 500px;
-  width: 100%;
+#item1 {
+  background-image: url("/src/assets/images/accommodations/quarto-c4.jpg");
+  background-size: cover;
+}
+#item1 h2:before {
+  content: "Quaro C Simples";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
-.about__content {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
+#item2 {
+  background-image: url("/src/assets/images/accommodations/quarto-c1.jpg");
+  background-size: cover;
+}
+#item2 h2:before {
+  content: "Quarto C Simples Aconchegante";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
-.about__text-content,
-.about__img-content {
-  display: flex;
-  flex-basis: 48%;
-  align-items: center;
+#item3 {
+  background-image: url("/src/assets/images/accommodations/quarto-c2.jpg");
+  background-size: cover;
+}
+#item3 h2:before {
+  content: "Quarto C Simples Confortável++";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
-.about__text-content {
-  align-content: center;
-  flex-wrap: wrap;
+#item4 {
+  background-image: url("/src/assets/images/accommodations/quarto-c3.jpg");
+  background-size: cover;
+}
+#item4 h2:before {
+  content: "Quarto C Tech";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
-.about__header {
-  display: flex;
-  flex-basis: 100%;
+#item5 {
+  background-image: url("/src/assets/images/accommodations/cafe1.jpg");
+  background-size: cover;
+}
+#item5 h2:before {
+  content: "Refeitório para seus cafés";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
-.about__header,
-.about__header-title {
-  width: 100%;
+#item6 {
+  background-image: url("/src/assets/images/accommodations/cafe2.jpg");
+  background-size: cover;
+}
+#item6 h2:before {
+  content: "Café com os Amigos";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
-.about__img-content img {
-  width: 100%;
-  border-radius: 25px;
+#item7 {
+  background-image: url("/src/assets/images/accommodations/jogos1.jpg");
+  background-size: cover;
+}
+#item7 h2:before {
+  content: "Faça a sua Reserva";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
-.about__header-title,
-.about__description-text,
-.about__header-details {
-  font-family: "Ubuntu";
-  color: #262126;
+#item8 {
+  background-image: url("/src/assets/images/accommodations/quarto-c-plus-plus.jpg");
+  background-size: cover;
+}
+#item8 h2:before {
+  content: "Acomodações C++";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
-.about__header-title,
-.about__header-details {
-  font-size: 36px;
+#item9 {
+  background-image: url("/src/assets/images/accommodations/quarto-c-sharp.jpg");
+  background-size: cover;
 }
-
-.about__description-text {
-  font-size: 16px;
-}
-
-.about__images {
-  display: flex;
-  height: 50%;
-  justify-content: center;
-  width: 100%;
-}
-
-.about__images-content {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-}
-
-.about__images-img {
-  display: flex;
-  flex-basis: 100%;
-  align-items: center;
-}
-
-.about__images-img img {
-  width: 100%;
-  min-height: 100px;
-  max-height: 150px;
-  border-radius: 25px;
-  margin: 1%;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 4%;
-  border-radius: 12px;
-  border: 3px solid #a2a648;
-  padding: 0.1rem;
-  transition: all 0.38s;
-  cursor: pointer;
-}
-
-.about__images-img img:hover {
-  -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  transform: scale(1.15);
-}
-
-.about__title-content {
-  display: flex;
-  justify-content: right;
-  min-height: 40px;
-  width: 100%;
-}
-
-.about__header-details {
-  display: flex;
-  width: 90%;
-}
-
-@media (max-width: 415px) and (orientation: portrait) {
-  .about__img-content,
-  .about__images {
-    display: none;
-  }
-}
-.about__button {
-  border-radius: 12px;
-  border: 2px solid #a2a648;
-  padding: 1.5rem;
-  width: 2.7rem;
-  margin: auto;
-  min-width: 100px;
-  transition: all 0.38s;
-  cursor: pointer;
-}
-
-.about__button a {
-  display: flex;
-  align-content: center;
-  text-decoration: none;
-  color: #262126;
-  font-family: var(--font-padrao);
-  justify-content: center;
-}
-
-.about__button:hover {
-  -webkit-transform: scale(1.08);
-  -ms-transform: scale(1.08);
-  transform: scale(1.08);
+#item9 h2:before {
+  content: "Acomodações C#";
+  display: block;
+  background-color: rgba(38, 33, 38, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
 }
 
 .rooms {
   display: flex;
-  min-height: 768px;
-  margin-bottom: 15%;
+  margin-top: 8%;
 }
-
 .rooms__menu {
   display: flex;
   flex: 1 1 100%;
@@ -480,14 +444,12 @@ p {
   margin: 0 9%;
   flex-wrap: wrap;
 }
-
 .rooms__item {
   display: flex;
   border-bottom: 2px solid #a2a648;
   padding: 0 10px;
   margin-bottom: auto;
 }
-
 .rooms__item a {
   display: flex;
   font-family: "Ubuntu", sans-serif;
@@ -497,65 +459,122 @@ p {
   color: black;
   height: min-content;
 }
-
 .rooms__item:hover {
   -webkit-transform: scale(1.08);
   -ms-transform: scale(1.08);
   transform: scale(1.08);
 }
-
 .rooms__content {
   display: flex;
-  height: 100vh;
+  height: 85vh;
   width: 85%;
   flex-direction: row-reverse;
   margin: 0 7.2%;
   flex-wrap: wrap;
 }
-
-.rooms__content > div {
+.rooms__content div {
   flex: 1 1 200px;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
-
-.rooms__text,
-.rooms_img {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-.rooms__img img {
-  border-radius: 25px;
-  width: 100%;
-}
-
-.rooms__title,
-.rooms__text {
-  font-family: var(--font-padrao);
-  color: #262126;
-  text-align: left;
-}
-
 .rooms__info {
   /*Excencial para um espaçamento do botão para a imagem em telas mobile.*/
   margin-bottom: 4vh;
 }
-
+.rooms__description {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.rooms__text {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  color: #262126;
+  text-align: left;
+}
+.rooms__img img {
+  min-width: 300px;
+  border-radius: 25px;
+  width: 100%;
+}
 .rooms__title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  color: #262126;
+  text-align: left;
+  display: inline;
   font-size: 36px;
 }
 
-.rooms__text {
-  font-size: 16px;
+.accommodations__rooms {
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.accommodations__rooms .accommodations__card {
+  flex-wrap: wrap;
+  border-radius: 25px;
+  width: 31%;
+  margin-bottom: 1rem;
+  height: 350px;
+  box-shadow: 8px 8px 10px #999;
+}
+.accommodations__rooms #item7 {
+  width: 85%;
+}
+.accommodations__rooms .card__titulos {
+  text-align: center;
+}
+.accommodations__rooms .card__btn {
+  position: relative;
+  top: 19%;
+  border: 2px solid #a2a648;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 15rem;
+  margin: auto;
+  min-width: 100px;
+  transition: all 0.38s;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #262126;
+  font-family: "Ubuntu", sans-serif;
+}
+.accommodations__rooms .card__btn:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+  background-color: rgba(162, 166, 72, 0.5);
 }
 
 /* Media Query */
+@media (max-width: 900px) and (orientation: portrait) {
+  .rooms {
+    margin-bottom: 30vh;
+  }
+}
 @media (max-width: 590px) and (orientation: portrait) {
   .rooms {
-    margin-bottom: 25%;
+    margin-bottom: 30vh;
   }
   .rooms__menu {
     display: grid;
@@ -564,93 +583,38 @@ p {
     border-bottom: 0 10px;
   }
   .rooms__item + div {
-    visibility: hidden;
+    display: none;
+  }
+  .accommodations__rooms {
+    min-width: 300px;
+    margin: 8% auto auto auto;
+    justify-items: center;
+    width: 100%;
+  }
+  .accommodations__rooms__card {
+    display: block;
+    margin-top: 25%;
+  }
+  .accommodations__rooms #item1,
+  .accommodations__rooms #item2,
+  .accommodations__rooms #item3,
+  .accommodations__rooms #item4,
+  .accommodations__rooms #item5,
+  .accommodations__rooms #item6,
+  .accommodations__rooms #item8,
+  .accommodations__rooms #item9 {
+    display: none;
+  }
+  .accommodations__rooms #item7 {
+    color: #fff;
   }
 }
 @media (max-width: 460px) and (orientation: portrait) {
-  .accommodations_img_content {
-    visibility: hidden;
+  .rooms__item + div {
+    display: none;
   }
 }
 /* Anotando para não esquecer as alterações, ajustei a  margem para auto para que a borda não ficasse distante do conteúdo, no media query coloquei o display grid, para que os itens ficassem emparelhados ao reduzir a tela, alterei o max-width no emdia query para 590, pois é onde começava a quebrar a nav, e deixei a nav dentro de content, pois estava fora e ficava desalinhado*/
 /* Na imagem coloquei um media query visibility hidden para a imagem, pois ela está avançando em Gastronomia, na tela pequena */
-.gastronomy {
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  min-height: 768px;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-bottom: 15%;
-  background-color: #cbd4c9;
-}
 
-.gastronomy_content {
-  display: flex;
-  flex: 100% 1 1;
-  justify-content: space-between;
-  width: 80%;
-  flex-direction: row;
-  margin: 0 9%;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.gastronomy_content > div {
-  flex: 200px;
-  margin-inline: 35px;
-}
-
-.gastronomy_left_content,
-.gastronomy_right_content {
-  display: flex;
-  flex-basis: 48%;
-  align-items: center;
-}
-
-.gastronomy_left_content {
-  align-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
-.gastronomy_title {
-  font-family: "Ubuntu";
-  color: black;
-  text-align: left;
-  font-size: 36px;
-  align-self: start;
-  width: 100%;
-}
-
-.gastronomy_description {
-  margin-bottom: 4vh;
-  font-size: 16px;
-  text-align: left;
-  font-family: "Ubuntu", sans-serif;
-  line-height: 1.2;
-}
-
-.gastronomy_button {
-  height: 4rem;
-  width: 12vw;
-  border-radius: 12px;
-  border: 2px solid #a2a648;
-  transition: all 0.38s;
-  cursor: pointer;
-  background-color: #b4bb2b;
-}
-
-.gastronomy_button:hover {
-  -webkit-transform: scale(1.08);
-  -ms-transform: scale(1.08);
-  transform: scale(1.08);
-  cursor: pointer;
-}
-
-.gastronomy_right_content img {
-  border-radius: 25px;
-  width: 100%;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=accommodation_c.css.map */
