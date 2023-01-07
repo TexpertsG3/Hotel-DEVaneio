@@ -1,13 +1,15 @@
 @use "variaveis" as v;
 
 .btn {
-    border: 2px solid v.$color-2;
+    border: 2px solid #a2a648;
     display: flex;
+    justify-content: center;
     border-radius: 12px;
     padding: 1rem;
     width: 2.5rem;
     margin: auto;
     min-width: 100px;
+    max-width: 100px;
     transition: all 0.38s;
     cursor: pointer;
 
