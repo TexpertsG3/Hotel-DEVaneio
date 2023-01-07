@@ -1,8 +1,8 @@
 .about {
     display: flex;
-    height: 100vh;
+    height: 50%;
     justify-content: center;
-    min-height: 768px;
+    min-height: 500px;
     width: 100%;
 }
 
@@ -29,7 +29,8 @@
     flex-basis: 100%;
 }
 
-.about__header, .about__header-title {
+.about__header,
+.about__header-title {
     width: 100%;
 }
 
@@ -39,14 +40,9 @@
 }
 
 .about__header-title,
-<<<<<<< HEAD:src/scss/client/home/_about.scss
-.about__description-text {
-    font-family: "Ubuntu";
-=======
 .about__description-text,
 .about__header-details {
-    font-family: 'Ubuntu';
->>>>>>> dev:src/css/client/home/about.css
+    font-family: "Ubuntu";
     color: #262126;
 }
 
@@ -59,14 +55,10 @@
     font-size: 16px;
 }
 
-<<<<<<< HEAD:src/scss/client/home/_about.scss
-@media (max-width: 415px) and (orientation: portrait) {
-=======
 .about__images {
     display: flex;
-    height: 50vh;
+    height: 50%;
     justify-content: center;
-    min-height: 50px;
     width: 100%;
 }
 
@@ -82,10 +74,15 @@
     align-items: center;
 }
 
-.about__images-img img{
+.about__images-img img {
     width: 100%;
+    min-height: 100px;
+    max-height: 150px;
     border-radius: 25px;
     margin: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
     border-radius: 12px;
     border: 3px solid #a2a648;
     padding: 0.1rem;
@@ -108,9 +105,9 @@
     width: 90%;
 }
 
-@media (max-width: 415px) and (orientation:portrait) {
->>>>>>> dev:src/css/client/home/about.css
-    .about__img-content {
+@media (max-width: 415px) and (orientation: portrait) {
+    .about__img-content,
+    .about__images {
         display: none;
     }
 }

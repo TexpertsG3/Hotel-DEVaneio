@@ -2,7 +2,6 @@
 @use "../../default_config/default_config.scss";
 
 @mixin box {
-    min-width: 1170px;
     margin: 0 auto;
     padding: 1.5rem 0;
     width: 90%;
