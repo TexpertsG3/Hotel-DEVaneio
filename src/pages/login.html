@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/client/home/main.css" />
+    <link rel="stylesheet" href="/src/css/login/login.css">
+    <link
+      rel="shortcut icon"
+      href="src/assets/images/logo/"
+      type="image/x-icon"
+    />
+    <title>Hotel DEVaneio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../css/client/home/footer.css">
-  <link rel="stylesheet" href="../css/client/home/header.css">
-  <link rel="stylesheet" href="/src/css/login/login.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="shortcut icon" href="src/assets/images/favicon/devaneio_favicon.png" type="image/x-icon">
-  <title>Hotel DEVaneio</title>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <a id="imageLogo" class="header__logo" href="#"
+          ><img
+            class="header__image-logo"
+            src="/src/assets/images/logo/logo_sem_fundo.png"
+            alt="Logo do hotel"
+        /></a>
 
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__content">
-      <a id="imageLogo" class="header__logo" href="#"><img class="header__image-logo"
-          src="../assets/images/logo/logo_sem_fundo.png" alt="Logo do hotel"></a>
-
-      <div class="header__buttons">
-        <!-- <a class="btn btn-second" href="#"><img src="src/assets/images/icons/cadastro.png"
+        <div class="header__buttons">
+          <!-- <a class="btn btn-second" href="#"><img src="src/assets/images/icons/cadastro.png"
                         alt="">Cadastre-se</a> -->
-        <a class="btn btn-primary" href="/index.html">Voltar</a>
+          <a class="btn btn-primary" href="/index.html"
+            ><img
+              src="src/assets/images/icons/user-interface.png"
+              alt=""
+            />Voltar</a
+          >
+        </div>
+        <div class="header__buttons d-none">
+          <!-- Mostrar quando o usuário estiver logado -->
+          <p>Olá Usuário</p>
+
+          <a href="#"
+            ><img src="src/assets/images/icons/enter.png" alt="" />Sair</a
+          >
+        </div>
       </div>
-      <div class="header__buttons d-none"> <!-- Mostrar quando o usuário estiver logado -->
-        <p>Olá Usuário</p>
 
-        <a href="#"><img src="../assets/images/icons/enter.png" alt="">Sair</a>
-      </div>
-    </div>
+      <div class="header__space"></div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#rooms">Acomodações</a></li>
+          <li><a href="#gastronomy">Gastronomia</a></li>
+          <li>
+            <a href="/src/pages/client/reservations.html" target="_blank"
+              >Reservas</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="header__space"></div>
-    <nav class="header__menu">
-      <ul class="header__menu-list">
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#accommodations">Acomodações</a></li>
-        <li><a href="#gastronomy">Gastronomia</a></li>
-        <li><a href="#">Menu 4</a></li>
-      </ul>
-    </nav>
-
-  </header>
   <div class="login">
     <div class="login__login">
       <form action="get">
