@@ -330,7 +330,7 @@ p {
   background-size: cover;
 }
 #item1 h2:before {
-  content: "Quaro C Simples";
+  content: "Quarto C Simples";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
