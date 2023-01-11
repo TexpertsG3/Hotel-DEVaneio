@@ -40,9 +40,9 @@
     filter: none;
 }
 */
-
 .header__image-logo {
   width: 100%;
+  margin-left: 30%;
 }
 
 .d-none {
@@ -92,7 +92,6 @@
   border: 2px solid #a2a648;
   transition: background-color 0.5s ease;
   transition: border 0.4s ease;
-  border-radius: 3px;
 }
 
 .btn-primary:hover {
@@ -115,3 +114,5 @@
   width: 80%;
   background-color: white;
 }
+
+/*# sourceMappingURL=header.css.map */
