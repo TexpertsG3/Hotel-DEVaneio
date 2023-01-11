@@ -27,12 +27,14 @@ p {
   transition: all 0.38s;
   cursor: pointer;
 }
+
 .btn a {
   text-decoration: none;
   text-align: center;
   color: #262126;
   font-family: "Ubuntu", sans-serif;
 }
+
 .btn:hover {
   -webkit-transform: scale(1.08);
   -ms-transform: scale(1.08);
@@ -144,7 +146,6 @@ p {
 */
 .header__image-logo {
   width: 100%;
-  margin-left: 30%;
 }
 
 .d-none {
@@ -221,6 +222,7 @@ p {
   background-image: url("/src/assets/images/accommodations/quarto-c4.jpg");
   background-size: cover;
 }
+
 #item1 h2:before {
   content: "Quaro C Simples";
   display: block;
@@ -233,6 +235,7 @@ p {
   background-image: url("/src/assets/images/accommodations/quarto-c1.jpg");
   background-size: cover;
 }
+
 #item2 h2:before {
   content: "Quarto C Simples Aconchegante";
   display: block;
@@ -245,6 +248,7 @@ p {
   background-image: url("/src/assets/images/accommodations/quarto-c2.jpg");
   background-size: cover;
 }
+
 #item3 h2:before {
   content: "Quarto C Simples Confortável++";
   display: block;
@@ -257,6 +261,7 @@ p {
   background-image: url("/src/assets/images/accommodations/quarto-c3.jpg");
   background-size: cover;
 }
+
 #item4 h2:before {
   content: "Quarto C Tech";
   display: block;
@@ -269,6 +274,7 @@ p {
   background-image: url("/src/assets/images/accommodations/cafe1.jpg");
   background-size: cover;
 }
+
 #item5 h2:before {
   content: "Refeitório para seus cafés";
   display: block;
@@ -281,6 +287,7 @@ p {
   background-image: url("/src/assets/images/accommodations/cafe2.jpg");
   background-size: cover;
 }
+
 #item6 h2:before {
   content: "Café com os Amigos";
   display: block;
@@ -293,6 +300,7 @@ p {
   background-image: url("/src/assets/images/accommodations/jogos1.jpg");
   background-size: cover;
 }
+
 #item7 h2:before {
   content: "Faça a sua Reserva";
   display: block;
@@ -305,6 +313,7 @@ p {
   background-image: url("/src/assets/images/accommodations/quarto-c-plus-plus.jpg");
   background-size: cover;
 }
+
 #item8 h2:before {
   content: "Acomodações C++";
   display: block;
@@ -317,6 +326,7 @@ p {
   background-image: url("/src/assets/images/accommodations/quarto-c-sharp.jpg");
   background-size: cover;
 }
+
 #item9 h2:before {
   content: "Acomodações C#";
   display: block;
@@ -325,90 +335,194 @@ p {
   padding: 1rem 0.5rem;
 }
 
-.form {
+.rooms {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin: auto;
-  font-size: 16px;
-  font-family: "Ubuntu", sans-serif;
-}
-.form .form__full-name,
-.form .form__acommodations,
-.form .form__checkin-and-nights,
-.form .form__guests-type {
-  display: flex;
-  flex-basis: 100%;
-  margin-bottom: 1em;
-}
-.form .form__name,
-.form .form__last-name,
-.form .form__nights,
-.form .form__check-in {
-  flex-basis: 48%;
-}
-.form .form__full-name,
-.form .form__checkin-and-nights,
-.form .form__guests-type {
-  justify-content: space-between;
-}
-.form .form__adult,
-.form .form__child,
-.form .form__infants {
-  flex-basis: 30%;
-}
-.form .form__name,
-.form .form__last-name,
-.form .form__acommodations,
-.form .form__check-in,
-.form .form__nights,
-.form .form__adult,
-.form .form__child,
-.form .form__infants {
-  display: flex;
-  flex-wrap: wrap;
-}
-.form div label,
-.form div input,
-.form div select {
-  flex-basis: 100%;
-  border: none;
-  line-height: 2.4em;
-  height: 2.4em;
-  padding: 0;
-  font-size: 16px;
-}
-.form div input:focus,
-.form div select:focus {
-  outline: none;
-  border-color: #262126;
-}
-.form .form__name input,
-.form .form__last-name input,
-.form .form__acommodations select,
-.form .form__check-in input,
-.form .form__nights input,
-.form .form__adult select,
-.form .form__child select,
-.form .form__infants select {
-  background-color: #eee;
-  border-bottom: 2px solid #978797;
-}
-.form input[type=submit] {
-  border: none;
-  font-size: 16px;
-}
-.form .form__btn {
-  margin: 1em auto 0;
-}
-.form .btn {
-  height: 50px;
-  padding: 0 80px;
-  background-color: transparent;
-}
-.form .btn-primary {
-  background-color: #a2a648;
-  color: white;
+  margin-top: 8%;
 }
 
-/*# sourceMappingURL=reservations.css.map */
+.rooms__menu {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 9%;
+  flex-wrap: wrap;
+}
+
+.rooms__item {
+  display: flex;
+  border-bottom: 2px solid #a2a648;
+  padding: 0 10px;
+  margin-bottom: auto;
+}
+
+.rooms__item a {
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  justify-content: center;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  height: min-content;
+}
+
+.rooms__item:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.rooms__content {
+  display: flex;
+  height: 85vh;
+  width: 85%;
+  flex-direction: row-reverse;
+  margin: 0 7.2%;
+  flex-wrap: wrap;
+}
+
+.rooms__content div {
+  flex: 1 1 200px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.rooms__info {
+  /*Excencial para um espaçamento do botão para a imagem em telas mobile.*/
+  margin-bottom: 4vh;
+}
+
+.rooms__description {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rooms__text {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  color: #262126;
+  text-align: left;
+}
+
+.rooms__img img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+.rooms__title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  color: #262126;
+  text-align: left;
+  display: inline;
+  font-size: 36px;
+}
+
+.accommodations__rooms {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.accommodations__rooms .accommodations__card {
+  width: 31%;
+  margin-bottom: 1rem;
+  height: 400px;
+  box-shadow: 8px 8px 10px #999;
+}
+
+.accommodations__rooms #item7 {
+  grid-column: 1/4;
+  width: 85%;
+}
+
+.accommodations__rooms .card__titulos {
+  text-align: center;
+}
+
+.accommodations__rooms .card__btn {
+  position: relative;
+  top: 19%;
+  border: 2px solid #a2a648;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 15rem;
+  margin: auto;
+  min-width: 100px;
+  transition: all 0.38s;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  color: #262126;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.accommodations__rooms .card__btn:hover {
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+  background-color: rgba(162, 166, 72, 0.5);
+}
+
+/* Media Query */
+@media (max-width: 590px) and (orientation: portrait) {
+  .rooms {
+    margin-bottom: 55%;
+  }
+  .rooms__menu {
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    border-bottom: 0 10px;
+  }
+  .rooms__item + div {
+    display: none;
+  }
+  .accommodations__rooms {
+    display: block;
+    margin: 8% auto auto auto;
+    justify-items: center;
+  }
+  .accommodations__rooms__card {
+    display: block;
+    margin-top: 25%;
+  }
+  .accommodations__rooms #item1,
+  .accommodations__rooms #item2,
+  .accommodations__rooms #item3,
+  .accommodations__rooms #item4,
+  .accommodations__rooms #item5,
+  .accommodations__rooms #item6 {
+    display: none;
+  }
+}
+@media (max-width: 460px) and (orientation: portrait) {
+  .rooms__item + div {
+    display: none;
+  }
+}
+/* Anotando para não esquecer as alterações, ajustei a  margem para auto para que a borda não ficasse distante do conteúdo, no media query coloquei o display grid, para que os itens ficassem emparelhados ao reduzir a tela, alterei o max-width no emdia query para 590, pois é onde começava a quebrar a nav, e deixei a nav dentro de content, pois estava fora e ficava desalinhado*/
+/* Na imagem coloquei um media query visibility hidden para a imagem, pois ela está avançando em Gastronomia, na tela pequena */
+/*# sourceMappingURL=accommodation.css.map */
+
+/*# sourceMappingURL=accommodations_rooms.css.map */
