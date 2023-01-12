@@ -1,8 +1,7 @@
 .rooms {
     display: flex;
-    height: 100vh;
-    margin: 0 7vw;
     min-height: 768px;
+    margin-bottom: 15%;
 }
 
 .rooms__menu {
@@ -38,7 +37,6 @@
 
 .rooms__content {
     display: flex;
-    align-content: center;
     height: 100vh;
     width: 85%;
     flex-direction: row-reverse;
@@ -52,25 +50,17 @@
     margin-right: 2.5rem;
 }
 
-.rooms__text {
+.rooms__text,
+.rooms_img {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     align-content: center;
     flex-wrap: wrap;
 }
-.rooms__img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
 
-    & img {
-        min-width: 350px;
-        border-radius: 25px;
-        width: 100%;
-    }
+.rooms__img img {
+    border-radius: 25px;
+    width: 100%;
 }
 
 .rooms__title,
@@ -94,48 +84,26 @@
 }
 
 /* Media Query */
-
-@media (max-width: 1024px) {
+@media (max-width: 590px) and (orientation: portrait) {
     .rooms {
-        margin-top: 10vh;
-        margin-bottom: 18vh;
+        margin-bottom: 25%;
+    }
+
+    .rooms__menu {
+        display: grid;
+        justify-content: center;
+        margin: auto;
+        border-bottom: 0 10px;
+    }
+
+    .rooms__item + div {
+        visibility: hidden;
     }
 }
 
-@media (max-width: 700px) {
-    .rooms {
-        margin-top: 10vh;
-        margin-bottom: 18vh;
-
-        &__menu {
-            display: grid;
-            justify-content: center;
-            margin: auto;
-            border-bottom: 0 10px;
-        }
-
-        &__item + div {
-            visibility: hidden;
-        }
-    }
-}
-
-@media (max-width: 495px) and (orientation: portrait) {
-    .rooms {
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-
-        &__content {
-            justify-content: center;
-        }
-
-        &__img img {
-            display: none;
-        }
-
-        &__title {
-            text-align: center;
-        }
+@media (max-width: 460px) and (orientation: portrait) {
+    .accommodations_img_content {
+        visibility: hidden;
     }
 }
 
