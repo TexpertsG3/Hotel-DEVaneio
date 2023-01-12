@@ -7,5 +7,8 @@
   },
   "devDependencies": {
     "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "package.json": "^0.0.0"
   }
 }
