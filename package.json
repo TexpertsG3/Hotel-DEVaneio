@@ -9,6 +9,7 @@
     "sass": "^1.57.1"
   },
   "dependencies": {
+    "package": "^1.0.1",
     "package.json": "^0.0.0"
   }
 }
