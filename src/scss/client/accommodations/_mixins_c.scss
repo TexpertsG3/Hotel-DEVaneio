@@ -2,27 +2,27 @@
 @use "../../default_config/default_config.scss";
 
 @mixin box {
-    margin: 0 auto;
-    padding: 1.5rem 0;
-    width: 90%;
-    position: relative;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
 }
 
 @mixin flex-center {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @mixin content {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    border-radius: 25px;
-    width: 100%;
-    font-family: v.$base-font;
-    color: #262126;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  width: 100%;
+  font-family: v.$base-font;
+  color: #262126;
+  text-align: left;
 }
 
 $imgs: (
@@ -37,20 +37,32 @@ $imgs: (
   "Acomodações C#": "quarto-c-sharp.jpg",
 );
 
-
 $n: 0;
 @each $titulo, $url in $imgs {
-    $n: $n + 1;
-    #item#{$n} {
-        background-image: url("/src/assets/images/accommodations/#{$url}");
-        background-size: cover;
+  $n: $n + 1;
+  #item#{$n} {
+    background-image: url("/src/assets/images/accommodations/#{$url}");
+    background-size: cover;
+    // border-radius: 12px;
+    // border: 3px solid #a2a648;
+    // max-height: 270px;
+    // max-width: 270px;
+    // padding: 0.1rem;
+    // transition: all 0.38s;
+    // cursor: pointer;
 
-        & h2:before {
-            content: "#{$titulo}";
-            display: block;
-            background-color: rgba(v.$color-1, 0.4);
-            color: #fff;
-            padding: 1rem 0.5rem;
-        }
+    // &:hover {
+    //   -webkit-transform: scale(1.15);
+    //   -ms-transform: scale(1.15);
+    //   transform: scale(1.15);
+    // }
+
+    & h2:before {
+      content: "#{$titulo}";
+      display: block;
+      background-color: rgba(v.$color-1, 0.4);
+      color: #fff;
+      padding: 1rem 0.5rem;
     }
+  }
 }

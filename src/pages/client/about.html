@@ -1,128 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/client/home/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/client/home/main.css" />
     <title>Hotel DEVaneio</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header">
-        <div class="header__content">
-            <a id="imageLogo" class="header__logo" href="#"><img class="header__image-logo"
-                    src="../../assets/images/logo/logo.png" alt="Logo do hotel"></a>
+      <div class="header__content">
+        <a id="imageLogo" class="header__logo" href="/index.html"
+          ><img
+            class="header__image-logo"
+            src="../../assets/images/logo/logo_sem_fundo.png"
+            alt="Logo do hotel"
+        /></a>
 
-            <div class="header__buttons">
-                <a class="btn btn-second" href="#"><img src="src/assets/images/icons/cadastro.png"
-                        alt="">Cadastre-se</a>
-                <a class="btn btn-primary" href="#"><img src="src/assets/images/icons/user-interface.png"
-                        alt="">Login</a>
-            </div>
-            <div class="header__buttons d-none"> <!-- Mostrar quando o usuário estiver logado -->
-                <p>Olá Usuário</p>
-
-                <a href="#"><img src="src/assets/images/icons/enter.png" alt="">Sair</a>
-            </div>
+        <div class="header__buttons">
+          <a class="btn btn-primary" href="/src/pages/login.html"
+            ><img
+              src="../../assets/images/icons/user-interface.png"
+              alt=""
+            />Login</a
+          >
         </div>
+        <div class="header__buttons d-none">
+          <!-- Mostrar quando o usuário estiver logado -->
+          <p>Olá Usuário</p>
 
-        <div class="header__space"></div>
-        <nav class="header__menu">
-            <ul class="header__menu-list">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#accommodations">Acomodações</a></li>
-                <li><a href="#gastronomy">Gastronomia</a></li>
-                <li><a href="#">Menu 4</a></li>
-            </ul>
-        </nav>
+          <a href="#"
+            ><img src="../../assets/images/icons/enter.png" alt="" />Sair</a
+          >
+        </div>
+      </div>
+
+      <div class="header__space"></div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#rooms">Acomodações</a></li>
+          <li><a href="#gastronomy">Gastronomia</a></li>
+          <li>
+            <a
+              href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/client/reservations.html"
+              target="_blank"
+              >Reservas</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="about" id="about">
-
-            <div class="about__content">
-                <div class="about__text-content">
-                    <header class="about__header">
-                        <h2 class="about__header-title">Sobre o nosso Hotel</h2>
-                    </header>
-                    <article class="about__description">
-
-                        <p class="about__description-text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repellendus quas,
-                            pariatur
-                            fugiat
-                            ducimus aut voluptatum amet quos sint excepturi beatae minima dolorum architecto possimus
-                            vero
-                            maxime, quo dignissimos itaque?
-                        </p>
-                    </article>
-                </div>
-
-                <div class="about__img-content">
-                    <img src="../../assets/images/home/lobby.jpg" alt="Fachada do Hotel">
-                </div>
-            </div>
-        </section>
-        <div class="about__title-content">
-            <header class="about__header-details">
-                <h5>Mais detalhes:</h5>
+      <section class="about" id="about">
+        <div class="about__content">
+          <div class="about__text-content">
+            <header class="about__header">
+              <h2 class="about__header-title">Sobre o nosso Hotel</h2>
             </header>
-        </div>
-        <section class="about__images">
-            <div class="about__images-content">
-                <div class="about__images-img">
-                    <img src="../../assets/images/accommodations/computer-no-hotel.jpg" alt="">
-                    <img src="../../assets/images/accommodations/laptop-no-hotel.jpg" alt="">
-                    <img src="../../assets/images/accommodations/coffee-2565441_640.jpg" alt="">
-                </div>
-            </div>
-            <div class="about__images-img">
-                <img src="../../assets/images/accommodations/computer-no-hotel.jpg" alt="">
-                <img src="../../assets/images/accommodations/laptop-no-hotel.jpg" alt="">
-                <img src="../../assets/images/accommodations/coffee-2565441_640.jpg" alt="">
-            </div>
-         </div>
-        </section>
-</body>
+            <article class="about__description">
+              <p class="about__description-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt, repellendus quas, pariatur fugiat ducimus aut
+                voluptatum amet quos sint excepturi beatae minima dolorum
+                architecto possimus vero maxime, quo dignissimos itaque?
+              </p>
+            </article>
+          </div>
 
-<footer class="footer">
-    <div class="footer_title">
+          <div class="about__img-content">
+            <img
+              src="../../assets/images/home/lobby.jpg"
+              alt="Fachada do Hotel"
+            />
+          </div>
+        </div>
+      </section>
+      <div class="about__title-content">
+        <header class="about__header-details">
+          <h5>Mais detalhes:</h5>
+        </header>
+      </div>
+      <section class="about__images">
+        <div class="about__images-content">
+          <div class="about__images-img">
+            <img
+              src="../../assets/images/accommodations/computer-no-hotel.jpg"
+              alt=""
+            />
+            <img
+              src="../../assets/images/accommodations/laptop-no-hotel.jpg"
+              alt=""
+            />
+            <img
+              src="../../assets/images/accommodations/coffee-2565441_640.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_title">
         <div class="footer_list">
-            <!-- Logo -->
-            <a href="#"><img src="src/assets/images/logo/logo.svg" alt="Logo DEV.aneio" /></a>
-            <!--ícones das redes sociais --->
-            <div class="footer_icons">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""> <i class="fa-brands fa-youtube"></i></a>
-            </div>
+          <!-- Logo -->
+          <a href="#"
+            ><img src="src/assets/images/logo/logo.svg" alt="Logo DEV.aneio"
+          /></a>
+          <!--ícones das redes sociais --->
+          <div class="footer_icons">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""> <i class="fa-brands fa-youtube"></i></a>
+          </div>
         </div>
         <div class="footer_navigation">
-            <ul>
-                <li><a href="#about">Sobre nós</a></li>
-                <li><a href="#accommodations">Acomodações</a></li>
-                <li><a href="#gastronomy">Gastronomia</a></li>
-            </ul>
+          <ul>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#accommodations">Acomodações</a></li>
+            <li><a href="#gastronomy">Gastronomia</a></li>
+          </ul>
         </div>
         <div class="footer_address">
-            <h3>Nosso Endereço</h3>
-            <p>
-                Via Costeira, n° 34, <br />
-                Parque das Dunas<br />
-                Natal - RN, Brasil.
-            </p>
+          <h3>Nosso Endereço</h3>
+          <p>
+            Via Costeira, n° 34, <br />
+            Parque das Dunas<br />
+            Natal - RN, Brasil.
+          </p>
         </div>
         <div class="footer_contact">
-            <h3>Contato</h3>
-            <p>(84) 99999-9999</p>
-            <p>(84) 88888-8888</p>
+          <h3>Contato</h3>
+          <p>(84) 99999-9999</p>
+          <p>(84) 88888-8888</p>
         </div>
-    </div>
-    <hr />
-    <div class="footer_copy">
+      </div>
+      <hr />
+      <div class="footer_copy">
         <p>&copy; Todos os direitos reservados 2022</p>
-    </div>
-</footer>
+      </div>
+    </footer>
+  </body>
+</html>
