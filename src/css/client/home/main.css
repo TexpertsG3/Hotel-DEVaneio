@@ -15,19 +15,18 @@ p {
 }
 
 .btn {
+  position: relative;
+  top: 19%;
   border: 2px solid #a2a648;
   display: flex;
   justify-content: center;
   border-radius: 12px;
-  padding: 1rem;
-  width: 2.5rem;
+  padding: 1.3rem;
   margin: auto;
   min-width: 100px;
-  max-width: 100px;
+  max-width: 150px;
   transition: all 0.38s;
   cursor: pointer;
-}
-.btn a {
   text-decoration: none;
   text-align: center;
   color: #262126;
@@ -464,12 +463,12 @@ p {
 .rooms {
   display: flex;
   height: 100vh;
-  margin: 0 7vw;
-  min-height: 768px;
+  min-height: 720px;
 }
 
 .rooms__menu {
   display: flex;
+  height: 10vh;
   flex: 1 1 100%;
   justify-content: space-between;
   width: 80%;
@@ -558,16 +557,22 @@ p {
 }
 
 /* Media Query */
+@media (max-width: 2048) {
+  .rooms {
+    margin-top: 13rem;
+    margin-bottom: 8rem;
+  }
+}
 @media (max-width: 1024px) {
   .rooms {
-    margin-top: 10vh;
-    margin-bottom: 18vh;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
   }
 }
 @media (max-width: 700px) {
   .rooms {
-    margin-top: 10vh;
-    margin-bottom: 18vh;
+    margin-top: 11rem;
+    margin-bottom: 3rem;
   }
   .rooms__menu {
     display: grid;
@@ -579,10 +584,11 @@ p {
     visibility: hidden;
   }
 }
-@media (max-width: 495px) and (orientation: portrait) {
+@media (max-width: 550px) and (orientation: portrait) {
   .rooms {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    min-height: 600px;
   }
   .rooms__content {
     justify-content: center;
