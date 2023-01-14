@@ -7,7 +7,6 @@
 .about {
     display: flex;
     justify-content: center;
-    min-height: 500px;
     height: 60vh;
     width: 100%;
 }
@@ -60,6 +59,12 @@
 .about__description-text {
     font-size: 16px;
 }
+.about__header-title{
+    display:flex;
+}
+.about__title{
+    display: flex;
+}
 
 .about__images {
     display: flex;
@@ -81,6 +86,7 @@
 }
 
 .about__img {
+    display: flex;
     width: 100%;
     min-height: 130x;
     max-height: 175px;
@@ -115,12 +121,24 @@
 }
 
 @media (max-width: 375px) and (orientation: portrait) {
-   .about__text-content {
+   .about__description-text{
     margin: 1.5rem;
+    text-align: center;
   }
   .about__img-content{
     display: none;
 }
+.about__header{
+    margin: 2%;
+    flex-wrap: wrap;
+}
+    .about__images-img{
+        flex-flow: column;
+    }
+    .about__title, .about__description-text, .about__title-content, .about__header-details, .about__header,.about__header-title,.about__img-content{
+        margin: 5%;
+        flex-wrap: wrap;
+    }
 }
 
 .about__button {
