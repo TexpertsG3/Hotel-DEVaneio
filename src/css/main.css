@@ -462,8 +462,7 @@ p {
 .rooms {
   display: flex;
   height: 100vh;
-  margin: 0 7vw;
-  min-height: 768px;
+  min-height: 720px;
 }
 
 .rooms__menu {
@@ -557,16 +556,22 @@ p {
 }
 
 /* Media Query */
+@media (max-width: 2048) {
+  .rooms {
+    margin-top: 13rem;
+    margin-bottom: 8rem;
+  }
+}
 @media (max-width: 1024px) {
   .rooms {
-    margin-top: 10vh;
-    margin-bottom: 18vh;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
   }
 }
 @media (max-width: 700px) {
   .rooms {
-    margin-top: 10vh;
-    margin-bottom: 18vh;
+    margin-top: 11rem;
+    margin-bottom: 3rem;
   }
   .rooms__menu {
     display: grid;
@@ -578,10 +583,11 @@ p {
     visibility: hidden;
   }
 }
-@media (max-width: 495px) and (orientation: portrait) {
+@media (max-width: 550px) and (orientation: portrait) {
   .rooms {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    min-height: 600px;
   }
   .rooms__content {
     justify-content: center;
