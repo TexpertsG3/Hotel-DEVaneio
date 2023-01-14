@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/main.css" />
+    <link rel="stylesheet" href="/src/css/client/home/main.css" />
     <link
       rel="shortcut icon"
       href="src/assets/images/logo/"
@@ -16,7 +16,7 @@
   <body>
     <header class="header">
       <div class="header__content">
-        <a id="imageLogo" class="header__logo" href="#"
+        <a id="imageLogo" class="header__logo" href="/index.html"
           ><img
             class="header__image-logo"
             src="src/assets/images/logo/logo_sem_fundo.png"
@@ -24,8 +24,6 @@
         /></a>
 
         <div class="header__buttons">
-          <!-- <a class="btn btn-second" href="#"><img src="src/assets/images/icons/cadastro.png"
-                        alt="">Cadastre-se</a> -->
           <a class="btn btn-primary" href="/src/pages/login.html"
             ><img
               src="src/assets/images/icons/user-interface.png"
@@ -46,6 +44,7 @@
       <div class="header__space"></div>
       <nav class="header__menu">
         <ul class="header__menu-list">
+          <li><a href="/index.html">Home</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#rooms">Acomodações</a></li>
           <li><a href="#gastronomy">Gastronomia</a></li>
@@ -92,13 +91,21 @@
         <div class="rooms__content">
           <nav class="rooms__menu">
             <div class="rooms__item">
-              <a href="">Acomodação C</a>
+              <a href="/src/pages/client/accommodations/accommodations_c.html"
+                >Acomodação C</a
+              >
             </div>
             <div class="rooms__item">
-              <a href="">Acomodação C++</a>
+              <a
+                href="/src/pages/client/accommodations/accommodations_c_plus_plus.html"
+                >Acomodação C++</a
+              >
             </div>
             <div class="rooms__item">
-              <a href="">Acomodação C#</a>
+              <a
+                href="/src/pages/client/accommodations/accommodations_c_sharp.html"
+                >Acomodação C#</a
+              >
             </div>
           </nav>
           <div class="rooms__info">
@@ -194,9 +201,7 @@
             <li><a href="#rooms">Acomodações</a></li>
             <li><a href="#gastronomy">Gastronomia</a></li>
             <li>
-              <a
-                href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/client/reservations.html"
-                target="_blank"
+              <a href="/src/pages/client/reservations.html" target="_blank"
                 >Reservas</a
               >
             </li>

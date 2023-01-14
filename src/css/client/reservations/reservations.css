@@ -186,6 +186,7 @@ p {
   border: 2px solid #a2a648;
   transition: background-color 0.5s ease;
   transition: border 0.4s ease;
+  text-decoration: none;
 }
 
 .btn-primary:hover {

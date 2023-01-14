@@ -186,6 +186,7 @@ p {
   border: 2px solid #a2a648;
   transition: background-color 0.5s ease;
   transition: border 0.4s ease;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -323,7 +324,7 @@ p {
   border: 3px solid #a2a648;
 }
 #item1 h2:before {
-  content: "Quarto C Simples";
+  content: "Quarto C Premium";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -336,7 +337,7 @@ p {
   border: 3px solid #a2a648;
 }
 #item2 h2:before {
-  content: "Quarto C Simples Aconchegante";
+  content: "Quarto C Deluxe";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -349,7 +350,7 @@ p {
   border: 3px solid #a2a648;
 }
 #item3 h2:before {
-  content: "Quarto C Simples Confortável++";
+  content: "Quarto C Super Deluxe";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -375,7 +376,7 @@ p {
   border: 3px solid #a2a648;
 }
 #item5 h2:before {
-  content: "Refeitório para seus cafés";
+  content: "Restaurante";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -388,7 +389,7 @@ p {
   border: 3px solid #a2a648;
 }
 #item6 h2:before {
-  content: "Café com os Amigos";
+  content: "Coffe Lab Java";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -409,12 +410,12 @@ p {
 }
 
 #item8 {
-  background-image: url("/src/assets/images/accommodations/quarto-c-plus-plus.jpg");
+  background-image: url("/src/assets/images/accommodations/quarto-c.jpg");
   background-size: cover;
   border: 3px solid #a2a648;
 }
 #item8 h2:before {
-  content: "Acomodações C++";
+  content: "Acomodações C";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
