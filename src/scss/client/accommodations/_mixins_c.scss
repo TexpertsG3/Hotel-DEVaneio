@@ -43,6 +43,7 @@ $n: 0;
     #item#{$n} {
         background-image: url("/src/assets/images/accommodations/#{$url}");
         background-size: cover;
+        border: 3px solid #a2a648;
 
         & h2:before {
             content: "#{$titulo}";
