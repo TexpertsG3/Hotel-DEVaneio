@@ -667,6 +667,22 @@ p {
   line-height: 1.2;
 }
 
+@media (max-width: 550px) and (orientation: portrait) {
+  .gastronomy {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    min-height: 600px;
+  }
+  .gastronomy__content {
+    justify-content: center;
+  }
+  .gastronomy__right__content img {
+    display: none;
+  }
+  .gastronomy__title {
+    text-align: center;
+  }
+}
 .form {
   display: flex;
   flex-wrap: wrap;

@@ -63,3 +63,23 @@
     font-family: "Ubuntu", sans-serif;
     line-height: 1.2;
 }
+
+@media (max-width: 550px) and (orientation: portrait) {
+    .gastronomy {
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+        min-height: 600px;
+
+        &__content {
+            justify-content: center;
+        }
+
+        &__right__content img {
+            display: none;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+}
