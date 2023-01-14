@@ -1,0 +1,11 @@
+{
+  "name": "Hotel-DEVaneio",
+  "version": "1.0.0",
+  "scripts": {
+    "sass:watch": "sass src/scss:src/css --watch",
+    "sass:build": "sass src/scss:src/css"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
