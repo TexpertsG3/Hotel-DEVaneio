@@ -15,19 +15,18 @@ p {
 }
 
 .btn {
+  position: relative;
+  top: 19%;
   border: 2px solid #a2a648;
   display: flex;
   justify-content: center;
   border-radius: 12px;
-  padding: 1rem;
-  width: 2.5rem;
+  padding: 1.3rem;
   margin: auto;
   min-width: 100px;
-  max-width: 100px;
+  max-width: 150px;
   transition: all 0.38s;
   cursor: pointer;
-}
-.btn a {
   text-decoration: none;
   text-align: center;
   color: #262126;
