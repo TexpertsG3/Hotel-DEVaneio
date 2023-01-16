@@ -11,6 +11,7 @@
   .form__full-name,
   .form__acommodations,
   .form__checkin-and-nights,
+  .form__checkout-and-nights,
   .form__guests-type {
     display: flex;
     flex-basis: 100%;
@@ -20,12 +21,14 @@
   .form__name,
   .form__last-name,
   .form__nights,
-  .form__check-in {
+  .form__check-in,
+  .form__check-out {
     flex-basis: 48%;
   }
 
   .form__full-name,
   .form__checkin-and-nights,
+  .form__checkout-and-nights,
   .form__guests-type {
     justify-content: space-between;
   }
@@ -40,6 +43,7 @@
   .form__last-name,
   .form__acommodations,
   .form__check-in,
+  .form__check-out,
   .form__nights,
   .form__adult,
   .form__child,
@@ -70,6 +74,7 @@
   .form__last-name input,
   .form__acommodations select,
   .form__check-in input,
+  .form__check-out input,
   .form__nights input,
   .form__adult select,
   .form__child select,
