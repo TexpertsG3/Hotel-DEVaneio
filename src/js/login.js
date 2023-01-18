@@ -33,23 +33,25 @@ var senhaTemp = ["1234"];
 
 /* Operações do Login e autenticação. */
 function login() {
-  let username = document.querySelector("#username").value;
-  let password = document.querySelector("#password").value;
+  let email = document.querySelector("#username").value.trim().replace(/'/g, "").replace(/"/g, "");
+  let username = document.querySelector("#username").value.trim().replace(/'/g, "").replace(/"/g, "");
+  let password = document.querySelector("#password").value.trim().replace(/'/g, "").replace(/"/g, "");
 
+  localStorage.setItem("mail", email);
   localStorage.setItem("usuario", username);
   localStorage.setItem("senha", password);
 
+  const mail = localStorage.getItem("mail");
   const usuario = localStorage.getItem("usuario");
   const senha = localStorage.getItem("senha");
+
 
   for (let i = 0; i < loginTemp.length; i++) {
     if (usuario.length < 3) {
       alert("Por favor, preencha adequadamente os campos.");
       break;
     } else if (
-      (usuario === loginTemp[i] && senha === senhaTemp) ||
-      usuario === localStorage.getItem("usuario") ||
-      (localStorage.getItem("mail") && localStorage.getItem("senha"))
+      (usuario === loginTemp[i] && senha === senhaTemp)
     ) {
       alert("Login bem sucedigo, você será redirecionado.");
       location.href = "../../index.html";
@@ -68,21 +70,9 @@ function login() {
 
 /* Operações do registro */
 function register() {
-  let email = document
-    .querySelector("#new_userEmail")
-    .value.trim()
-    .replace(/'/g, "")
-    .replace(/"/g, "");
-  let username = document
-    .querySelector("#new_userUsuario")
-    .value.trim()
-    .replace(/'/g, "")
-    .replace(/"/g, "");
-  let password = document
-    .querySelector("#new_userPassword")
-    .value.trim()
-    .replace(/'/g, "")
-    .replace(/"/g, "");
+  let email = document.querySelector("#new_userEmail").value.trim().replace(/'/g, "").replace(/"/g, "");
+  let username = document.querySelector("#new_userUsuario").value.trim().replace(/'/g, "").replace(/"/g, "");
+  let password = document.querySelector("#new_userPassword").value.trim().replace(/'/g, "").replace(/"/g, "");
 
   localStorage.setItem("mail", email);
   localStorage.setItem("usuario", username);
