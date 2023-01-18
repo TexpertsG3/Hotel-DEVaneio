@@ -1,0 +1,73 @@
+@use "sass:math";
+@use "breakpoints" as bp;
+
+$grid-columns: 12;
+
+@include bp.xs {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-xs {
+      width: math.div(100%, $i);
+    }
+  }
+}
+
+@include bp.sm {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-sm {
+      width: math.div(100%, $i);
+    }
+  }
+}
+
+@include bp.md {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-md {
+      width: math.div(100%, $i);
+    }
+  }
+}
+
+@include bp.lg {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-lg {
+      width: math.div(100%, $i);
+    }
+  }
+}
+
+@include bp.xl {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-xl {
+      width: math.div(100%, $i);
+    }
+  }
+}
+
+//Gaps
+@for $i from 1 through 3 {
+  .gap-#{$i} {
+    margin-left: -($i * 10px);
+    margin-right: -($i * 10px);
+
+    & > * {
+      padding-left: $i * 10px;
+      padding-right: $i * 10px;
+    }
+  }
+}
+
+// Justify
+$justify: (
+  flex-start,
+  flex-end,
+  center,
+  space-between,
+  space-around,
+  space-evenly
+);
+
+@each $value in $justify {
+  .j-#{$value} {
+    justify-content: $value;
+  }
+}

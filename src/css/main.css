@@ -694,6 +694,7 @@ p {
 .form .form__full-name,
 .form .form__acommodations,
 .form .form__checkin-and-nights,
+.form .form__checkout-and-nights,
 .form .form__guests-type {
   display: flex;
   flex-basis: 100%;
@@ -702,11 +703,13 @@ p {
 .form .form__name,
 .form .form__last-name,
 .form .form__nights,
-.form .form__check-in {
+.form .form__check-in,
+.form .form__check-out {
   flex-basis: 48%;
 }
 .form .form__full-name,
 .form .form__checkin-and-nights,
+.form .form__checkout-and-nights,
 .form .form__guests-type {
   justify-content: space-between;
 }
@@ -719,6 +722,7 @@ p {
 .form .form__last-name,
 .form .form__acommodations,
 .form .form__check-in,
+.form .form__check-out,
 .form .form__nights,
 .form .form__adult,
 .form .form__child,
@@ -745,6 +749,7 @@ p {
 .form .form__last-name input,
 .form .form__acommodations select,
 .form .form__check-in input,
+.form .form__check-out input,
 .form .form__nights input,
 .form .form__adult select,
 .form .form__child select,

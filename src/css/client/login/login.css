@@ -1,0 +1,73 @@
+.login,
+.login__login,
+.login__register {
+  display: flex;
+  font-family: "Ubuntu";
+}
+
+.body__login {
+  background-image: linear-gradient(#262126, #dedede);
+}
+
+.login {
+  flex-wrap: nowrap;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  color: white;
+}
+
+.login__login {
+  margin-left: 10%;
+  width: 50%;
+  display: block;
+}
+
+label:after {
+  content: " *";
+  color: red;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+.login__register {
+  width: 50%;
+  display: block;
+}
+
+input {
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  width: 70%;
+  height: 35px;
+}
+
+.btn__login,
+.btn__register {
+  display: block;
+  background-color: #a2a648;
+  color: white;
+  text-shadow: 0.5px 0.5px 0px black;
+  transition: background-color 0.5s ease;
+  width: 90px;
+  border-radius: 3px;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__login:hover,
+.btn__register:hover {
+  background-color: #6f7232;
+}
+
+::placeholder {
+  color: #dedede;
+}
+
+/*# sourceMappingURL=login.css.map */

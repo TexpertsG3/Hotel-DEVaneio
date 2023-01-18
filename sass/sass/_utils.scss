@@ -1,0 +1,37 @@
+@use "variables" as variables;
+
+@for $i from 1 through 3 {
+    .pd-#{$i} {
+        padding: variables.$base-padding * $i;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: variables.$base-padding * $i;
+    }
+    .pl-#{$i} {
+        padding-left: variables.$base-padding * $i;
+    }
+    .pr-#{$i} {
+        padding-right: variables.$base-padding * $i;
+    }
+    .pt-#{$i} {
+        padding-top: variables.$base-padding * $i;
+    }
+
+    .md-#{$i} {
+        margin: variables.$base-margin * $i;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: variables.$base-margin * $i;
+    }
+    .ml-#{$i} {
+        margin-left: variables.$base-margin * $i;
+    }
+    .mr-#{$i} {
+        margin-right: variables.$base-margin * $i;
+    }
+    .mt-#{$i} {
+        margin-top: variables.$base-margin * $i;
+    }
+}
