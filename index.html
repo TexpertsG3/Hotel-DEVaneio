@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="src/css/client/home/main.css"/>
+=======
+    <link rel="stylesheet" href="src/css/main.css" />
+>>>>>>> 549c4a0529fd1a5eeee66244716a61a185db217f
     <link
       rel="shortcut icon"
       href="src/assets/images/logo/"
@@ -16,7 +20,7 @@
   <body>
     <header class="header">
       <div class="header__content">
-        <a id="imageLogo" class="header__logo" href="#"
+        <a id="imageLogo" class="header__logo" href="/index.html"
           ><img
             class="header__image-logo"
             src="src/assets/images/logo/logo_sem_fundo.png"
@@ -24,8 +28,6 @@
         /></a>
 
         <div class="header__buttons">
-          <!-- <a class="btn btn-second" href="#"><img src="src/assets/images/icons/cadastro.png"
-                        alt="">Cadastre-se</a> -->
           <a class="btn btn-primary" href="/src/pages/login.html"
             ><img
               src="src/assets/images/icons/user-interface.png"
@@ -46,11 +48,12 @@
       <div class="header__space"></div>
       <nav class="header__menu">
         <ul class="header__menu-list">
+          <li><a href="/index.html">Home</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#rooms">Acomodações</a></li>
           <li><a href="#gastronomy">Gastronomia</a></li>
           <li>
-            <a href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/client/reservations.html" target="_blank"
+            <a href="src/pages/client/reservations.html" target="_blank"
               >Reservas</a
             >
           </li>
@@ -73,8 +76,15 @@
                 voluptatum amet quos sint excepturi beatae minima dolorum
                 architecto possimus vero maxime, quo dignissimos itaque?
               </p>
+<<<<<<< HEAD
               <div class="about__button">
                 <a href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/client/about.html">Saiba mais...</a>
+=======
+              <div>
+                <a class="btn" href="src/pages/client/about.html"
+                  >Saiba mais...</a
+                >
+>>>>>>> 549c4a0529fd1a5eeee66244716a61a185db217f
               </div>
             </article>
           </div>
@@ -92,13 +102,21 @@
         <div class="rooms__content">
           <nav class="rooms__menu">
             <div class="rooms__item">
-              <a href="">Acomodação C</a>
+              <a href="/src/pages/client/accommodations/accommodations_c.html"
+                >Acomodação C</a
+              >
             </div>
             <div class="rooms__item">
-              <a href="">Acomodação C++</a>
+              <a
+                href="/src/pages/client/accommodations/accommodations_c_plus_plus.html"
+                >Acomodação C++</a
+              >
             </div>
             <div class="rooms__item">
-              <a href="">Acomodação C#</a>
+              <a
+                href="/src/pages/client/accommodations/accommodations_c_sharp.html"
+                >Acomodação C#</a
+              >
             </div>
           </nav>
           <div class="rooms__info">
@@ -121,8 +139,10 @@
                 magni eos fuga aspernatur ipsa voluptate doloremque. Tenetur,
                 asperiores?
               </p>
-              <div class="btn">
-                <a href="src/pages/client/accommodations/accommodations_c.html"
+              <div>
+                <a
+                  class="btn"
+                  href="src/pages/client/accommodations/accommodations_c.html"
                   >Saiba mais...</a
                 >
               </div>
@@ -139,10 +159,10 @@
       </section>
 
       <section class="gastronomy" id="gastronomy">
-        <article class="gastronomy_content">
-          <div class="gastronomy_left_content">
-            <h2 class="gastronomy_title"><strong>Nossa Cozinha</strong></h2>
-            <p class="gastronomy_description">
+        <article class="gastronomy__content">
+          <div class="gastronomy__left__content">
+            <h2 class="gastronomy__title"><strong>Nossa Cozinha</strong></h2>
+            <p class="gastronomy__description">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
               temporibus iste commodi assumenda dicta totam fugiat modi? Nisi
               voluptate explicabo eligendi, labore ducimus error unde impedit
@@ -154,14 +174,16 @@
               aspernatur sapiente eius vel? Ducimus natus perspiciatis non,
               totam quas exercitationem quia quidem et id quaerat? Eaque soluta
               saepe amet, ducimus fugiat dolor, dolorum sed officia veniam rerum
-              tenetur facere alias esse asperiores sint. Numquam a deleniti
-              laboriosam sapiente natus nostrum inventore adipisci, ullam
-              obcaecati, officia perspiciatis nihil facere ut repellendus.
+              tenetur facere alias esse asperiores sint.
             </p>
-            <button class="gastronomy_button">Saiba mais...</button>
+            <div>
+              <a class="btn" href="src/pages/client/kitchen.html"
+                >Saiba mais...</a
+              >
+            </div>
           </div>
 
-          <div class="gastronomy_right_content">
+          <div class="gastronomy__right__content">
             <img
               src="src/assets/images/gastronomy/cozinha-gastronomia.jpg"
               alt=""

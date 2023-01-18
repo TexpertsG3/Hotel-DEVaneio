@@ -15,19 +15,18 @@ p {
 }
 
 .btn {
+  position: relative;
+  top: 19%;
   border: 2px solid #a2a648;
   display: flex;
   justify-content: center;
   border-radius: 12px;
-  padding: 1rem;
-  width: 2.5rem;
+  padding: 1.3rem;
   margin: auto;
   min-width: 100px;
-  max-width: 100px;
+  max-width: 150px;
   transition: all 0.38s;
   cursor: pointer;
-}
-.btn a {
   text-decoration: none;
   text-align: center;
   color: #262126;
@@ -177,13 +176,6 @@ p {
   background-color: #a2a648;
 }
 
-.btn {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 20px;
-}
-
 .btn img {
   margin-right: 5px;
 }
@@ -194,6 +186,7 @@ p {
   border: 2px solid #a2a648;
   transition: background-color 0.5s ease;
   transition: border 0.4s ease;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -328,9 +321,10 @@ p {
 #item1 {
   background-image: url("/src/assets/images/accommodations/quarto-c4.jpg");
   background-size: cover;
+  border: 3px solid #a2a648;
 }
 #item1 h2:before {
-  content: "Quaro C Simples";
+  content: "Quarto C Premium";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -340,9 +334,10 @@ p {
 #item2 {
   background-image: url("/src/assets/images/accommodations/quarto-c1.jpg");
   background-size: cover;
+  border: 3px solid #a2a648;
 }
 #item2 h2:before {
-  content: "Quarto C Simples Aconchegante";
+  content: "Quarto C Deluxe";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -352,9 +347,10 @@ p {
 #item3 {
   background-image: url("/src/assets/images/accommodations/quarto-c2.jpg");
   background-size: cover;
+  border: 3px solid #a2a648;
 }
 #item3 h2:before {
-  content: "Quarto C Simples Confortável++";
+  content: "Quarto C Super Deluxe";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -364,6 +360,7 @@ p {
 #item4 {
   background-image: url("/src/assets/images/accommodations/quarto-c3.jpg");
   background-size: cover;
+  border: 3px solid #a2a648;
 }
 #item4 h2:before {
   content: "Quarto C Tech";
@@ -376,9 +373,10 @@ p {
 #item5 {
   background-image: url("/src/assets/images/accommodations/cafe1.jpg");
   background-size: cover;
+  border: 3px solid #a2a648;
 }
 #item5 h2:before {
-  content: "Refeitório para seus cafés";
+  content: "Restaurante";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -388,9 +386,10 @@ p {
 #item6 {
   background-image: url("/src/assets/images/accommodations/cafe2.jpg");
   background-size: cover;
+  border: 3px solid #a2a648;
 }
 #item6 h2:before {
-  content: "Café com os Amigos";
+  content: "Coffe Lab Java";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -400,6 +399,7 @@ p {
 #item7 {
   background-image: url("/src/assets/images/accommodations/jogos1.jpg");
   background-size: cover;
+  border: 3px solid #a2a648;
 }
 #item7 h2:before {
   content: "Faça a sua Reserva";
@@ -410,11 +410,12 @@ p {
 }
 
 #item8 {
-  background-image: url("/src/assets/images/accommodations/quarto-c-plus-plus.jpg");
+  background-image: url("/src/assets/images/accommodations/quarto-c.jpg");
   background-size: cover;
+  border: 3px solid #a2a648;
 }
 #item8 h2:before {
-  content: "Acomodações C++";
+  content: "Acomodações C";
   display: block;
   background-color: rgba(38, 33, 38, 0.4);
   color: #fff;
@@ -424,6 +425,7 @@ p {
 #item9 {
   background-image: url("/src/assets/images/accommodations/quarto-c-sharp.jpg");
   background-size: cover;
+  border: 3px solid #a2a648;
 }
 #item9 h2:before {
   content: "Acomodações C#";
@@ -435,39 +437,13 @@ p {
 
 .rooms {
   display: flex;
-  margin-top: 8%;
-}
-.rooms__menu {
-  display: flex;
-  flex: 1 1 100%;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 9%;
-  flex-wrap: wrap;
-}
-.rooms__item {
-  display: flex;
-  border-bottom: 2px solid #a2a648;
-  padding: 0 10px;
-  margin-bottom: auto;
-}
-.rooms__item a {
-  display: flex;
-  font-family: "Ubuntu", sans-serif;
-  justify-content: center;
-  text-decoration: none;
-  align-content: center;
-  color: black;
-  height: min-content;
-}
-.rooms__item:hover {
-  -webkit-transform: scale(1.08);
-  -ms-transform: scale(1.08);
-  transform: scale(1.08);
+  margin-top: 5rem;
+  height: 100vh;
 }
 .rooms__content {
   display: flex;
-  height: 85vh;
+  align-content: center;
+  height: 100vh;
   width: 85%;
   flex-direction: row-reverse;
   margin: 0 7.2%;
@@ -499,6 +475,13 @@ p {
   color: #262126;
   text-align: left;
 }
+.rooms__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
 .rooms__img img {
   min-width: 300px;
   border-radius: 25px;
@@ -529,22 +512,30 @@ p {
   justify-content: space-around;
 }
 .accommodations__rooms .accommodations__card {
+  display: flex;
   flex-wrap: wrap;
   border-radius: 25px;
   width: 31%;
   margin-bottom: 1rem;
-  height: 350px;
+  height: 250px;
   box-shadow: 8px 8px 10px #999;
+  justify-content: center;
+}
+.accommodations__rooms .about__images-img img:hover {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
 }
 .accommodations__rooms #item7 {
   width: 85%;
 }
 .accommodations__rooms .card__titulos {
   text-align: center;
+  width: 100%;
 }
 .accommodations__rooms .card__btn {
   position: relative;
-  top: 19%;
+  top: -2.8rem;
   border: 2px solid #a2a648;
   display: flex;
   justify-content: center;
@@ -568,23 +559,15 @@ p {
 }
 
 /* Media Query */
-@media (max-width: 900px) and (orientation: portrait) {
+@media (max-width: 820px) {
   .rooms {
-    margin-bottom: 30vh;
+    min-height: 650px;
+    margin-top: 8rem;
   }
 }
-@media (max-width: 590px) and (orientation: portrait) {
+@media (max-width: 590px) {
   .rooms {
-    margin-bottom: 30vh;
-  }
-  .rooms__menu {
-    display: grid;
-    justify-content: center;
-    margin: auto;
-    border-bottom: 0 10px;
-  }
-  .rooms__item + div {
-    display: none;
+    margin-top: 8rem;
   }
   .accommodations__rooms {
     min-width: 300px;
@@ -611,6 +594,9 @@ p {
   }
 }
 @media (max-width: 460px) and (orientation: portrait) {
+  .rooms {
+    margin-top: 12rem;
+  }
   .rooms__item + div {
     display: none;
   }

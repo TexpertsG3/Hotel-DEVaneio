@@ -76,12 +76,12 @@
     background-color: #a2a648;
 }
 
-.btn {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-}
+// .btn {
+//     display: flex;
+//     align-items: center;
+//     text-decoration: none;
+//     padding: 10px 20px;
+// }
 
 .btn img {
     margin-right: 5px;
@@ -93,6 +93,7 @@
     border: 2px solid #a2a648;
     transition: background-color 0.5s ease;
     transition: border 0.4s ease;
+    text-decoration: none;
 }
 
 .btn-primary:hover {

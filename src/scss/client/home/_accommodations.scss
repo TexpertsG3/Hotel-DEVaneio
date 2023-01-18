@@ -1,111 +1,150 @@
 .rooms {
-    display: flex;
-    min-height: 768px;
-    margin-bottom: 15%;
+  display: flex;
+  height: 100vh;
+  min-height: 720px;
 }
 
 .rooms__menu {
-    display: flex;
-    flex: 1 1 100%;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 9%;
-    flex-wrap: wrap;
+  display: flex;
+  height: 10vh;
+  flex: 1 1 100%;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 9%;
+  flex-wrap: wrap;
 }
 
 .rooms__item {
-    display: flex;
-    border-bottom: 2px solid #a2a648;
-    padding: 0 10px;
-    margin-bottom: auto;
+  display: flex;
+  border-bottom: 2px solid #a2a648;
+  padding: 0 10px;
+  margin-bottom: auto;
 }
 
 .rooms__item a {
-    display: flex;
-    font-family: "Ubuntu", sans-serif;
-    justify-content: center;
-    text-decoration: none;
-    align-content: center;
-    color: black;
-    height: min-content;
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  justify-content: center;
+  text-decoration: none;
+  align-content: center;
+  color: black;
+  height: min-content;
 }
 .rooms__item:hover {
-    -webkit-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 .rooms__content {
-    display: flex;
-    height: 100vh;
-    width: 85%;
-    flex-direction: row-reverse;
-    margin: 0 7.2%;
-    flex-wrap: wrap;
+  display: flex;
+  align-content: center;
+  height: 100vh;
+  width: 85%;
+  flex-direction: row-reverse;
+  margin: 0 7.2%;
+  flex-wrap: wrap;
 }
 
 .rooms__content > div {
-    flex: 1 1 200px;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+  flex: 1 1 200px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
-.rooms__text,
-.rooms_img {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
+.rooms__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
-.rooms__img img {
+.rooms__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  & img {
+    min-width: 350px;
     border-radius: 25px;
     width: 100%;
+  }
 }
 
 .rooms__title,
 .rooms__text {
-    font-family: var(--font-padrao);
-    color: #262126;
-    text-align: left;
+  font-family: var(--font-padrao);
+  color: #262126;
+  text-align: left;
 }
 
 .rooms__info {
-    /*Excencial para um espaçamento do botão para a imagem em telas mobile.*/
-    margin-bottom: 4vh;
+  /*Excencial para um espaçamento do botão para a imagem em telas mobile.*/
+  margin-bottom: 4vh;
 }
 
 .rooms__title {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .rooms__text {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 /* Media Query */
-@media (max-width: 590px) and (orientation: portrait) {
-    .rooms {
-        margin-bottom: 25%;
-    }
 
-    .rooms__menu {
-        display: grid;
-        justify-content: center;
-        margin: auto;
-        border-bottom: 0 10px;
-    }
-
-    .rooms__item + div {
-        visibility: hidden;
-    }
+@media (max-width: 2048) {
+  .rooms {
+    margin-top: 13rem;
+    margin-bottom: 8rem;
+  }
 }
 
-@media (max-width: 460px) and (orientation: portrait) {
-    .accommodations_img_content {
-        visibility: hidden;
-    }
+@media (max-width: 1024px) {
+  .rooms {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
 }
 
+@media (max-width: 700px) {
+  .rooms {
+    margin-top: 11rem;
+    margin-bottom: 3rem;
+
+    &__menu {
+      display: grid;
+      justify-content: center;
+      margin: auto;
+      border-bottom: 0 10px;
+    }
+
+    &__item + div {
+      visibility: hidden;
+    }
+  }
+}
+
+@media (max-width: 550px) and (orientation: portrait) {
+  .rooms {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    min-height: 600px;
+
+    &__content {
+      justify-content: center;
+    }
+
+    &__img img {
+      display: none;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+}
 /* Anotando para não esquecer as alterações, ajustei a  margem para auto para que a borda não ficasse distante do conteúdo, no media query coloquei o display grid, para que os itens ficassem emparelhados ao reduzir a tela, alterei o max-width no emdia query para 590, pois é onde começava a quebrar a nav, e deixei a nav dentro de content, pois estava fora e ficava desalinhado*/
 /* Na imagem coloquei um media query visibility hidden para a imagem, pois ela está avançando em Gastronomia, na tela pequena */

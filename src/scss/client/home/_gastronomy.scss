@@ -5,11 +5,10 @@
     min-height: 768px;
     width: 100%;
     flex-wrap: wrap;
-    margin-bottom: 15%;
     background-color: #cbd4c9;
 }
 
-.gastronomy_content {
+.gastronomy__content {
     display: flex;
     flex: 100% 1 1;
     justify-content: space-between;
@@ -20,25 +19,35 @@
     align-items: center;
 }
 
-.gastronomy_content > div {
-    flex: 200px;
-    margin-inline: 35px;
+.gastronomy__content > div {
+    flex: 1 1 200px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
-.gastronomy_left_content,
-.gastronomy_right_content {
+.gastronomy__left__content {
     display: flex;
-    flex-basis: 48%;
-    align-items: center;
-}
-
-.gastronomy_left_content {
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
-.gastronomy_title {
+.gastronomy__right__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+    & img {
+        min-width: 350px;
+        border-radius: 25px;
+        width: 100%;
+    }
+}        
+
+.gastronomy__title {
     font-family: "Ubuntu";
     color: black;
     text-align: left;
@@ -47,7 +56,7 @@
     width: 100%;
 }
 
-.gastronomy_description {
+.gastronomy__description {
     margin-bottom: 4vh;
     font-size: 16px;
     text-align: left;
@@ -55,24 +64,22 @@
     line-height: 1.2;
 }
 
-.gastronomy_button {
-    height: 4rem;
-    width: 12vw;
-    border-radius: 12px;
-    border: 2px solid #a2a648;
-    transition: all 0.38s;
-    cursor: pointer;
-    background-color: #b4bb2b;
-}
+@media (max-width: 550px) and (orientation: portrait) {
+    .gastronomy {
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+        min-height: 600px;
 
-.gastronomy_button:hover {
-    -webkit-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    transform: scale(1.08);
-    cursor: pointer;
-}
+        &__content {
+            justify-content: center;
+        }
 
-.gastronomy_right_content img {
-    border-radius: 25px;
-    width: 100%;
+        &__right__content img {
+            display: none;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
 }
