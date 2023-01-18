@@ -14,12 +14,32 @@ let loginTemp = [
 
 let senhaTemp = "1234";
 
-export default { loginTemp, senhaTemp };
+function login() {
+  var username = document.querySelector("#username").value;
+  var password = document.querySelector("#password").value;
+  localStorage.setItem("usuario", username);
+  localStorage.setItem("senha", password);
+  const usuario = localStorage.getItem("usuario");
+  const senha = localStorage.getItem("senha");
 
-// username.indexOf('"') || username.indexOf("'")
-//   ? (username = username.replace('"', ""))
-//   : null;
+  for (let i = 0; i < loginTemp.length; i++) {
+    if (usuario.length < 3) {
+      alert("Por favor, preencha adequadamente os campos.");
+      break;
+    } else if (usuario === loginTemp[i] && senha === senhaTemp) {
+      alert("Login bem sucedigo, você será redirecionado.");
+      location.href = "../../index.html";
+      document.querySelector(
+        "#hello_user"
+      ).innerText = `Olá, ${localStorage.getItem(`usuario`)}`;
+      document.querySelector("#user_loged").classList.remove("d-none");
+      document.querySelector("#btn_sigin").classList.add("d-none");
+      break;
+    } else {
+      alert("Por favor, verifique suas credenciais.");
+      break;
+    }
+  }
+}
 
-// password.indexOf('"') || password.indexOf("'")
-//   ? (password = password.replace('"', ""))
-//   : null;
+export default { login };

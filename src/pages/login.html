@@ -96,24 +96,31 @@
           <input
             type="email"
             name="email"
-            id="email"
+            id="new_userEmail"
             placeholder=" Coloque seu E-mail"
           /><br />
           <label for="user2">Usuário</label><br />
           <input
             type="text"
             name="user2"
-            id="user2"
+            id="new_userUsuario"
             placeholder=" Crie o seu usuário"
           /><br />
           <label for="password2">Senha</label><br />
           <input
             type="password"
             name="password2"
-            id="password2"
+            id="new_userPassword"
             placeholder=" Crie a sua senha"
           />
-          <button class="btn__register" type="submit">Registrar</button>
+          <button
+            class="btn__register"
+            type="button"
+            id="btn_register"
+            onclick="register()"
+          >
+            Registrar
+          </button>
         </form>
       </div>
     </div>
