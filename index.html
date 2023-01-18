@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/css/main.css" />
     <link rel="shortcut icon" href="src/assets/images/" type="image/x-icon" />
     <title>Hotel DEVaneio</title>
+    <script src="src/js/main.js" async></script>
   </head>
   
   <body>
@@ -15,23 +16,23 @@
         <a id="imageLogo" class="header__logo" href="/index.html"
           ><img
             class="header__image-logo"
-            src="src/assets/images/logo/logo_sem_fundo.png"
+            src="/src/assets/images/logo/logo_sem_fundo.png"
             alt="Logo do hotel"
         /></a>
 
         <div class="header__buttons">
-          <a class="btn btn-primary" href="/src/pages/login.html"
+          <a class="btn btn-primary" href="/src/pages/login.html" id="btn_sigin"
             ><img
               src="src/assets/images/icons/user-interface.png"
               alt=""
             />Login</a
           >
         </div>
-        <div class="header__buttons d-none">
+        <div class="header__buttons d-none" id="user_loged">
           <!-- Mostrar quando o usuário estiver logado -->
-          <p>Olá Usuário</p>
+          <span id="hello_user"></span>
 
-          <a href="#"
+          <a href="#" id="out_user"
             ><img src="src/assets/images/icons/enter.png" alt="" />Sair</a
           >
         </div>
@@ -46,7 +47,7 @@
           <li><a href="#gastronomy">Gastronomia</a></li>
 
           <li>
-            <a href="src/pages/client/reservations.html" target="_blank"
+            <a href="/src/pages/client/reservations.html" target="_blank"
               >Reservas</a
             >
           </li>

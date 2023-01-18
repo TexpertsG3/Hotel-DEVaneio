@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/client/home/main.css" />
+    <link rel="stylesheet" href="../../src/css/main.css" />
     <link
       rel="shortcut icon"
       href="src/assets/images/logo/"
@@ -24,18 +24,18 @@
         /></a>
 
         <div class="header__buttons">
-          <a class="btn btn-primary" href="/src/pages/login.html"
+          <a class="btn btn-primary" href="/src/pages/login.html" id="btn_sigin"
             ><img
               src="src/assets/images/icons/user-interface.png"
               alt=""
             />Login</a
           >
         </div>
-        <div class="header__buttons d-none">
+        <div class="header__buttons d-none" id="user_loged">
           <!-- Mostrar quando o usuário estiver logado -->
-          <p>Olá Usuário</p>
+          <span id="hello_user"></span>
 
-          <a href="#"
+          <a href="#" id="out_user"
             ><img src="src/assets/images/icons/enter.png" alt="" />Sair</a
           >
         </div>
@@ -57,73 +57,115 @@
       </nav>
     </header>
 
-  <div class="login">
-    <div class="login__login">
-      <form action="get">
-        <h2>Entrar</h2>
-        <label>Usuário</label><br>
-        <input type="text" name="user" id="user" placeholder=" Insira seu usuário"><br>
-        <label>Senha</label><br>
-        <input type="password" name="password" id="password" placeholder=" Insira sua senha">
-        <button class="btn__login" type="submit">Entrar</button>
-      </form>
-    </div><!-- 
+    <div class="login">
+      <div class="login__login">
+        <form action="post">
+          <h2>Entrar</h2>
+          <label>Usuário</label><br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder=" Insira seu usuário"
+          /><br />
+          <label>Senha</label><br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder=" Insira sua senha"
+          />
+          <button
+            class="btn__login"
+            type="button"
+            id="btn_login"
+            onclick="login()"
+          >
+            Entrar
+          </button>
+        </form>
+      </div>
+      <!--
 
-     
+
     -->
-    <div class="login__register">
-      <form action="get">
-        <h2>Registrar</h2>
-        <label for="email">E-mail</label><br>
-        <input type="email" name="email" id="email" placeholder=" Coloque seu E-mail"><br>
-        <label for="user2">Usuário</label><br>
-        <input type="text" name="user2" id="user2" placeholder=" Crie o seu usuário"><br>
-        <label for="password2">Senha</label><br>
-        <input type="password" name="password2" id="password2" placeholder=" Crie a sua senha">
-        <button class="btn__register" type="submit">Registrar</button>
-      </form>
+      <div class="login__register">
+        <form>
+          <h2>Registrar</h2>
+          <label for="email">E-mail</label><br />
+          <input
+            type="email"
+            name="email"
+            id="new_userEmail"
+            placeholder=" Coloque seu E-mail"
+          /><br />
+          <label for="user2">Usuário</label><br />
+          <input
+            type="text"
+            name="user2"
+            id="new_userUsuario"
+            placeholder=" Crie o seu usuário"
+          /><br />
+          <label for="password2">Senha</label><br />
+          <input
+            type="password"
+            name="password2"
+            id="new_userPassword"
+            placeholder=" Crie a sua senha"
+          />
+          <button
+            class="btn__register"
+            type="button"
+            id="btn_register"
+            onclick="register()"
+          >
+            Registrar
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
 
-  <footer class="footer">
-    <div class="footer_title">
-      <div class="footer_list">
-        <!-- Logo -->
-        <a href="#"><img src="../assets/images/logo/logo.svg" alt="Logo DEV.aneio" /></a>
-        <!--ícones das redes sociais --->
-        <div class="footer_icons">
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""> <i class="fa-brands fa-youtube"></i></a>
+    <footer class="footer">
+      <div class="footer_title">
+        <div class="footer_list">
+          <!-- Logo -->
+          <a href="#"
+            ><img src="../assets/images/logo/logo.svg" alt="Logo DEV.aneio"
+          /></a>
+          <!--ícones das redes sociais --->
+          <div class="footer_icons">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""> <i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer_navigation">
+          <ul>
+            <li><a href="#about">Sobre nós</a></li>
+            <li><a href="#accommodations">Acomodações</a></li>
+            <li><a href="#gastronomy">Gastronomia</a></li>
+          </ul>
+        </div>
+        <div class="footer_address">
+          <h3>Nosso Endereço</h3>
+          <p>
+            Via Costeira, n° 34, <br />
+            Parque das Dunas<br />
+            Natal - RN, Brasil.
+          </p>
+        </div>
+        <div class="footer_contact">
+          <h3>Contato</h3>
+          <p>(84) 99999-9999</p>
+          <p>(84) 88888-8888</p>
         </div>
       </div>
-      <div class="footer_navigation">
-        <ul>
-          <li><a href="#about">Sobre nós</a></li>
-          <li><a href="#accommodations">Acomodações</a></li>
-          <li><a href="#gastronomy">Gastronomia</a></li>
-        </ul>
+      <hr />
+      <div class="footer_copy">
+        <p>&copy; Todos os direitos reservados 2022</p>
       </div>
-      <div class="footer_address">
-        <h3>Nosso Endereço</h3>
-        <p>
-          Via Costeira, n° 34, <br />
-          Parque das Dunas<br />
-          Natal - RN, Brasil.
-        </p>
-      </div>
-      <div class="footer_contact">
-        <h3>Contato</h3>
-        <p>(84) 99999-9999</p>
-        <p>(84) 88888-8888</p>
-      </div>
-    </div>
-    <hr />
-    <div class="footer_copy">
-      <p>&copy; Todos os direitos reservados 2022</p>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
+  <script src="../js/login.js" async></script>
 </html>
