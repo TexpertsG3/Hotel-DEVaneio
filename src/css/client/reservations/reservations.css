@@ -107,6 +107,10 @@ p {
   font-family: "Ubuntu";
 }
 
+#hello_user {
+  color: white;
+}
+
 .header {
   flex-wrap: wrap;
   background-color: #262126;
