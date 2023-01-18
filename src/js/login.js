@@ -29,7 +29,7 @@ var loginTemp = [
   "rafael@tex.com",
   ,
 ];
-var senhaTemp = "1234";
+var senhaTemp = ["1234"];
 
 /* Operações do Login e autenticação. */
 function login() {
@@ -46,7 +46,11 @@ function login() {
     if (usuario.length < 3) {
       alert("Por favor, preencha adequadamente os campos.");
       break;
-    } else if (usuario === loginTemp[i] && senha === senhaTemp) {
+    } else if (
+      (usuario === loginTemp[i] && senha === senhaTemp) ||
+      usuario === localStorage.getItem("usuario") ||
+      (localStorage.getItem("mail") && localStorage.getItem("senha"))
+    ) {
       alert("Login bem sucedigo, você será redirecionado.");
       location.href = "../../index.html";
       document.querySelector(
@@ -89,8 +93,15 @@ function register() {
   const senha = localStorage.getItem("senha");
 
   for (let i = 0; i < loginTemp.length; i++) {
-    if (mail == loginTemp[i] || usuario == loginTemp[i]) {
+    if (mail === loginTemp[i] || usuario === loginTemp[i]) {
       alert("Desculpe, esse usuário já exite.");
+      break;
+    } else {
+      loginTemp.push(mail);
+      loginTemp.push(usuario);
+      loginTemp.push(senha);
+      alert("Resgistro concluído com sucesso.");
+      location.href = "../../index.html";
       break;
     }
   }
