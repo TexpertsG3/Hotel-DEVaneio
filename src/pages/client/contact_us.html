@@ -7,30 +7,31 @@
     <title>DEVaneio - Cozinha</title>
     <link rel="stylesheet" href="/src/css/main.css" />
     <link rel="stylesheet" href="/sass/css/style.css" />
+     <link rel="shortcut icon" href="src/assets/images/logo/logo.png" type="image/x-icon" />
   </head>
   <body>
-    <header class="header">
+   <header class="header">
       <div class="header__content">
         <a id="imageLogo" class="header__logo" href="/index.html"
           ><img
             class="header__image-logo"
-            src="../../assets/images/logo/logo_sem_fundo.png"
+            src="/src/assets/images/logo/logo_sem_fundo.png"
             alt="Logo do hotel"
         /></a>
 
         <div class="header__buttons">
-          <a class="btn btn-primary" href="/src/pages/login.html"
+          <a class="btn btn-primary" href="/src/pages/login.html" id="btn_sigin"
             ><img
-              src="/src/assets/images/icons/user-interface.png"
+              src="src/assets/images/icons/user-interface.png"
               alt=""
             />Login</a
           >
         </div>
-        <div class="header__buttons d-none">
+        <div class="header__buttons d-none" id="user_loged">
           <!-- Mostrar quando o usuário estiver logado -->
-          <p>Olá Usuário</p>
+          <span id="hello_user"></span>
 
-          <a href="#"
+          <a href="#" id="out_user"
             ><img src="src/assets/images/icons/enter.png" alt="" />Sair</a
           >
         </div>
@@ -40,14 +41,18 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#rooms">Acomodações</a></li>
-          <li><a href="#gastronomy">Gastronomia</a></li>
+          <li><a href="/src/pages/client/about.html">Sobre</a></li>
+          <li><a href="/src/pages/client/accommodations/accommodations_c.html">Acomodações</a></li>
+          <li><a href="/src/pages/client/gastronomy.html">Gastronomia</a></li>
+
           <li>
-            <a
-              href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/client/reservations.html"
-              target="_blank"
+            <a href="/src/pages/client/reservations.html" target="_blank"
               >Reservas</a
+            >
+          </li>
+          <li>
+            <a href="src/pages/client/contact_us.html" target="_blank"
+              >Fale Conosco</a
             >
           </li>
         </ul>
