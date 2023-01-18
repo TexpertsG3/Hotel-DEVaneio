@@ -1,5 +1,6 @@
 var btn_login = document.getElementById("btn_login");
 var hello_user = document.getElementById("hello_user");
+var out_user = document.getElementById("out_user");
 
 function verificaUser() {
   const usuario = localStorage.getItem("usuario");
@@ -12,3 +13,8 @@ function verificaUser() {
 }
 
 localStorage.getItem("usuario") ? verificaUser() : null;
+
+out_user.addEventListener("click", () => {
+  document.querySelector("#user_loged").classList.add("d-none");
+  document.querySelector("#btn_sigin").classList.remove("d-none");
+});

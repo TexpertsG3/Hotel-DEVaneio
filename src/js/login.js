@@ -42,14 +42,17 @@ function login() {
       alert("Por favor, preencha adequadamente os campos.");
       break;
     } else if (usuario === loginTemp[i] && senha === senhaTemp) {
+      alert("Login bem sucedigo, você será redirecionado.");
       location.href = "../../index.html";
       document.querySelector(
         "#hello_user"
       ).innerText = `Olá, ${localStorage.getItem(`usuario`)}`;
       document.querySelector("#user_loged").classList.remove("d-none");
       document.querySelector("#btn_sigin").classList.add("d-none");
+      break;
     } else {
-      console.log("Tente novamente");
+      alert("Por favor, verifique suas credenciais.");
+      break;
     }
   }
 }
