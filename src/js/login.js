@@ -94,7 +94,7 @@ function register() {
 
   for (let i = 0; i < loginTemp.length; i++) {
     if (mail === loginTemp[i] || usuario === loginTemp[i]) {
-      alert("Desculpe, esse usuário já exite.");
+      alert("Desculpe, esse usuário já existe.");
       break;
     } else {
       loginTemp.push(mail);
