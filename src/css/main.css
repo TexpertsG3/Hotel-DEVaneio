@@ -687,6 +687,10 @@ p {
     text-align: center;
   }
 }
+body {
+  position: relative;
+}
+
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -778,6 +782,13 @@ p {
   color: white;
 }
 
+.reservations__container {
+  display: grid;
+}
+
+.reservations__option {
+  display: flex;
+}
 .login,
 .login__login,
 .login__register {

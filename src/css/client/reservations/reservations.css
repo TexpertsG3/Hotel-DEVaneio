@@ -322,6 +322,10 @@ p {
   padding: 1rem 0.5rem;
 }
 
+body {
+  position: relative;
+}
+
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -411,6 +415,14 @@ p {
 .form .btn-primary {
   background-color: #a2a648;
   color: white;
+}
+
+.reservations__container {
+  display: grid;
+}
+
+.reservations__option {
+  display: flex;
 }
 
 /*# sourceMappingURL=reservations.css.map */

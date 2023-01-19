@@ -1,5 +1,9 @@
 @use "../../default_config/default_config.scss";
 
+body {
+  position: relative;
+}
+
 .form {
   display: flex;
   flex-wrap: wrap;
@@ -104,9 +108,12 @@
   }
 }
 
+.reservations__container {
+  display: grid;
+}
 
-
-
-
-
-
+.reservations__option {
+  display: flex;
+  & img {
+  }
+}

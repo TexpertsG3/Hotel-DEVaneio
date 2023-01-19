@@ -10,11 +10,16 @@
       href="src/assets/images/logo/logo.png"
       type="image/x-icon"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://texpertsg3.github.io/Hotel-DEVaneio/src/css/client/reservations/reservations.css"
       type="text/css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="/src/css/client/reservations/reservations.css"
     />
+    <!-- <link rel="stylesheet" href="/src/css/main.css" /> -->
     <title>Faça sua Reserva</title>
   </head>
   <body>
@@ -87,9 +92,9 @@
         <div class="form__acommodations">
           <label for="acommodations">Acomodações</label>
           <select name="acommodations" id="acommodations">
-            <option value="acomodacao1">Acomodação 1</option>
-            <option value="acomodacao2">Acomodação 2</option>
-            <option value="acomodacao3">Acomodação 3</option>
+            <option value="acomodacao1">Acomodação C</option>
+            <option value="acomodacao2">Acomodação C++</option>
+            <option value="acomodacao3">Acomodação C#</option>
           </select>
         </div>
 
@@ -145,6 +150,91 @@
           value="Fazer Reservar"
         />
       </form>
+      <section class="reservations__container">
+        <div class="reservations__option">
+          <img
+            class="reservations__option__img"
+            src="/src/assets/images/accommodations/quarto-c1.jpg"
+            alt=""
+          />
+
+          <p class="reservations__option__room">Acomodação C</p>
+          <p class="reservations__option__detail">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus laboriosam labore sapiente, ipsum non laborum ad! Rerum
+            aut fuga sed!
+          </p>
+          <p class="reservations__price"><strong>R$190,00</strong></p>
+          <input
+            class="reservations__select"
+            type="radio"
+            name="reserva-acomodacao"
+            id="reserva-acomodacao"
+          />
+          Selecionar a acomodação C
+        </div>
+        <div class="reservations__option">
+          <div class="reservation-img">
+            <img
+              src="/src/assets/images/accommodations/quarto-c.jpg"
+              alt="Acomodaçao C++"
+            />
+          </div>
+
+          <p class="reservations__room">Acomodação C++</p>
+          <p class="reservations__detail">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus laboriosam labore sapiente, ipsum non laborum ad! Rerum
+            aut fuga sed!
+          </p>
+          <p class="reservation__price"><strong>R$190,00</strong></p>
+          <input
+            class="reservations__select"
+            type="radio"
+            name="reserva-acomodacao"
+            id="reserva-acomodacao"
+          />
+          Selecionar a acomodação C++
+        </div>
+        <div class="reservations__option">
+          <div class="reservations__img">
+            <img
+              class="img"
+              src="/src/assets/images/accommodations/quarto-c4.jpg"
+              alt="Acomodação C#"
+            />
+          </div>
+
+          <p class="reservations__room">Acomodação C#</p>
+          <p class="reservations__detail">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus laboriosam labore sapiente, ipsum non laborum ad! Rerum
+            aut fuga sed!
+          </p>
+          <p class="reservations__price"><strong>R$190,00</strong></p>
+          <input
+            class="reservations__select"
+            type="radio"
+            name="reserva-acomodacao"
+            id="reserva-acomodacao"
+          />Selecionar a acomodação C#
+        </div>
+      </section>
+      <section class="reservations_container">
+        <form class="form" action="resumo-reserva" method="post">
+          <fieldset>
+            <h2><strong>RESUMO RESERVA</strong></h2>
+            <fieldset>
+              <label>Apartamento:xxx</label>
+              <label>Check-in:xxx</label>
+              <label>Check-out:xxx</label>
+              <label>Pessoas:xxx</label>
+            </fieldset>
+            <p><a href="#">Adiconar Mais Serviços</a></p>
+            <button type="button">Confirmar</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer_title">
