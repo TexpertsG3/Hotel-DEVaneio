@@ -420,7 +420,8 @@ a {
   font-size: 16px;
   line-height: 1.4em;
 }
-.container .row {
+
+.row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1510,6 +1511,10 @@ a {
   outline: none;
   box-shadow: none;
   border-color: white;
+}
+
+.accommodations__iframe {
+  height: 600px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,10 +22,10 @@
     font-family: variables.$base-font;
     font-size: 16px;
     line-height: 1.4em;
+}
 
-    .row {
-        @include flex-layout;
-    }
+.row {
+    @include flex-layout;
 }
 
 .img {
