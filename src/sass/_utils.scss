@@ -1,6 +1,6 @@
 @use "variables" as variables;
 
-@for $i from 0 through 3 {
+@for $i from 0 through 6 {
     .pd-#{$i} {
         padding: variables.$base-padding * $i;
     }

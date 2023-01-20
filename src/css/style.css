@@ -597,6 +597,126 @@ a {
   margin-top: 30px;
 }
 
+.pd-4 {
+  padding: 40px;
+}
+
+.pb-4 {
+  padding-bottom: 40px;
+}
+
+.pl-4 {
+  padding-left: 40px;
+}
+
+.pr-4 {
+  padding-right: 40px;
+}
+
+.pt-4 {
+  padding-top: 40px;
+}
+
+.md-4 {
+  margin: 40px;
+}
+
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+.ml-4 {
+  margin-left: 40px;
+}
+
+.mr-4 {
+  margin-right: 40px;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.pd-5 {
+  padding: 50px;
+}
+
+.pb-5 {
+  padding-bottom: 50px;
+}
+
+.pl-5 {
+  padding-left: 50px;
+}
+
+.pr-5 {
+  padding-right: 50px;
+}
+
+.pt-5 {
+  padding-top: 50px;
+}
+
+.md-5 {
+  margin: 50px;
+}
+
+.mb-5 {
+  margin-bottom: 50px;
+}
+
+.ml-5 {
+  margin-left: 50px;
+}
+
+.mr-5 {
+  margin-right: 50px;
+}
+
+.mt-5 {
+  margin-top: 50px;
+}
+
+.pd-6 {
+  padding: 60px;
+}
+
+.pb-6 {
+  padding-bottom: 60px;
+}
+
+.pl-6 {
+  padding-left: 60px;
+}
+
+.pr-6 {
+  padding-right: 60px;
+}
+
+.pt-6 {
+  padding-top: 60px;
+}
+
+.md-6 {
+  margin: 60px;
+}
+
+.mb-6 {
+  margin-bottom: 60px;
+}
+
+.ml-6 {
+  margin-left: 60px;
+}
+
+.mr-6 {
+  margin-right: 60px;
+}
+
+.mt-6 {
+  margin-top: 60px;
+}
+
 .link-under-white, .link-white, .link-under-grey, .link-grey, .link-under-secondary, .link-secondary, .link-under-primary, .link-primary {
   font-size: 1rem;
   background-color: transparent;

@@ -1,177 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../src/css/main.css" />
-  <link rel="shortcut icon" href="src/assets/images/logo/logo.png" type="image/x-icon" />
-    <title>Hotel DEVaneio</title>
-  </head>
 
-  <body class="body__login">
-    <header class="header">
-      <div class="header__content">
-        <a id="imageLogo" class="header__logo" href="/index.html"
-          ><img
-            class="header__image-logo"
-            src="/src/assets/images/logo/logo_sem_fundo.png"
-            alt="Logo do hotel"
-        /></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="http://127.0.0.1:5500/src/assets/images/logo/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="http://127.0.0.1:5500/src/css/style.css">
 
-        <div class="header__buttons">
-          <a class="btn btn-primary" href="/src/pages/login.html" id="btn_sigin"
-            ><img
-              src="/src/assets/images/icons/user-interface.png"
-              alt=""
-            />Login</a
-          >
+  <title>Hotel DEVaneio -Login</title>
+</head>
+
+<body class="body__login">
+
+  <div class="bg-secondary">
+    <header class="container header">
+      <div class="row j-space-between col-12-xl a-center">
+        <a href="http://127.0.0.1:5500/" class="header__logo col-1-xl">
+          <img src="http://127.0.0.1:5500/src/assets/images/logo/logo_sem_fundo.png" alt="Logo" class="col-12-xl" />
+        </a>
+
+        <div class="row a-center">
+          <a href="http://127.0.0.1:5500/src/pages/login.html" class="btn-primary color-white">Login</a>
         </div>
-        <div class="header__buttons d-none" id="user_loged">
-          <!-- Mostrar quando o usuário estiver logado -->
-          <span id="hello_user"></span>
 
-          <a href="#" id="out_user"
-            ><img src="src/assets/images/icons/enter.png" alt="" />Sair</a
-          >
-        </div>
       </div>
-
-      <div class="header__space"></div>
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/src/pages/client/about.html">Sobre</a></li>
-          <li>
-            <a href="/src/pages/client/accommodations/accommodations_c.html"
-              >Acomodações</a
-            >
-          </li>
-          <li><a href="/src/pages/client/gastronomy.html">Gastronomia</a></li>
-
-          <li>
-            <a href="/src/pages/client/reservations.html" target="_blank"
-              >Reservas</a
-            >
-          </li>
-          <li>
-            <a href="/src/pages/client/contact_us.html" target="_blank"
-              >Fale Conosco</a
-            >
-          </li>
+      <span class="spacer bg-white"></span>
+      <nav class="nav-menu-primary color-white">
+        <ul>
+          <li><a href="http://127.0.0.1:5500/src/pages/about.html">Sobre</a></li>
+          <li><a href="http://127.0.0.1:5500/src/pages/accommodations/accommodations.html">Acomodações</a></li>
+          <li><a href="http://127.0.0.1:5500/src/pages/gastronomy.html">Gastronomia</a></li>
+          <li><a href="http://127.0.0.1:5500/src/pages/reservations.html">Reservas</a></li>
+          <li><a href="http://127.0.0.1:5500/src/pages/contact_us.html">Fale Conosco</a></li>
         </ul>
       </nav>
     </header>
+  </div>
 
-    <div class="login">
-      <div class="login__login">
-        <form action="post">
-          <h2>Entrar</h2>
-          <label>Usuário</label><br />
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder=" Insira seu usuário"
-          /><br />
-          <label>Senha</label><br />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder=" Insira sua senha"
-          />
-          <button
-            class="btn__login"
-            type="button"
-            id="btn_login"
-            onclick="login()"
-          >
-            Entrar
-          </button>
-        </form>
+  <div class="container row j-space-between pt-3 pb-3">
+    <form class="row col-5-xl gap-1 a-center">
+      <legend class="font-size-large col-12-xl">Entrar</legend>
+
+      <div class="row col-12-xl gap-1">
+        <label>Usuário</label>
+        <input type="text" name="username" id="username" placeholder=" Insira seu usuário" class="input-primary col-12-xl" />
       </div>
-      <!--
 
+      <div class="row col-12-xl gap-1">
+        <label>Senha</label>
+        <input type="password" name="password" id="password" placeholder=" Insira sua senha" class="input-primary col-12-xl" />
+      </div>
 
-    -->
-      <div class="login__register">
-        <form>
-          <h2>Registrar</h2>
-          <label for="email">E-mail</label><br />
-          <input
-            type="email"
-            name="email"
-            id="new_userEmail"
-            placeholder=" Coloque seu E-mail"
-          /><br />
-          <label for="user2">Usuário</label><br />
-          <input
-            type="text"
-            name="user2"
-            id="new_userUsuario"
-            placeholder=" Crie o seu usuário"
-          /><br />
-          <label for="password2">Senha</label><br />
-          <input
-            type="password"
-            name="password2"
-            id="new_userPassword"
-            placeholder=" Crie a sua senha"
-          />
-          <button
-            class="btn__register"
-            type="button"
-            id="btn_register"
-            onclick="register()"
-          >
-            Registrar
-          </button>
-        </form>
+      <input type="submit" id="btn_login" class="btn-primary color-white" value="Entrar">
+        
+    </form>
+
+    <form class="row col-5-xl gap-1 a-center">
+      <legend class="font-size-large col-12-xl">Registrar</legend>
+
+      <div class="row col-12-xl gap-1">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="new_userEmail" placeholder=" Coloque seu E-mail" class="input-primary col-12-xl" />
+      </div>
+
+      <div class="row col-12-xl gap-1">
+        <label for="user2">Usuário</label>
+        <input type="text" name="user2" id="new_userUsuario" placeholder=" Crie o seu usuário" class="input-primary col-12-xl" />
+      </div>
+
+      <div class="row col-12-xl gap-1">
+        <label for="password2">Senha</label>
+        <input type="password" name="password2" id="new_userPassword" placeholder=" Crie a sua senha" class="input-primary col-12-xl" />
+      </div>
+
+      <input class="btn-primary color-white" type="submit" id="btn_register" value="Registrar">
+
+    </form>
+  </div>
+
+  <footer class="bg-grey-lighten-4 color-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="row pt-3 pb-3 j-space-between">
+          <div class="row col-2-xl gap-1">
+            <!-- Logo -->
+            <a href="http://127.0.0.1:5500/" class="col-12-xl"><img
+                src="http://127.0.0.1:5500/src/assets/images/logo/logo.svg" alt="Logo DEV.aneio" class="img" /></a>
+            <!--ícones das redes sociais --->
+            <div class="row col-12-xl gap-2 j-center">
+              <a href=""><i class="fa-brands fa-instagram font-size-large"></i></a>
+              <a href=""><i class="fa-brands fa-facebook font-size-large"></i></a>
+              <a href=""><i class="fa-brands fa-twitter font-size-large"></i></a>
+              <a href=""> <i class="fa-brands fa-youtube font-size-large"></i></a>
+            </div>
+          </div>
+          <div class="row col-3-xl">
+            <ul class="row gap-1 a-center">
+              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/about.html">Sobre nós</a></li>
+              <li class="col-12-xl"><a
+                  href="http://127.0.0.1:5500/src/pages/accommodations/accommodations.html">Acomodações</a>
+              </li>
+              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/gastronomy.html">Gastronomia</a>
+              </li>
+              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/reservations.html">Reservas</a></li>
+            </ul>
+          </div>
+          <div class="row col-3-xl gap-1 a-center">
+            <h3 class="col-12-xl">Nosso Endereço</h3>
+            <p>
+              Via Costeira, n° 34,
+              Parque das Dunas
+              Natal - RN, Brasil.
+            </p>
+          </div>
+          <div class="row col-2-xl a-center gap-1">
+            <h3 class="col-12-xl">Contato</h3>
+            <a href="tel:+5584999999999" class="link-secondary col-12-xl">(84) 99999-9999</a>
+            <a href="tel:+5584999999999" class="link-secondary col-12-xl">(84) 88888-8888</a>
+          </div>
+        </div>
+
+        <span class="spacer bg-secondary"></span>
+
+        <div class="row pt-1 pb-1 j-center col-12-xl">
+          <p>&copy; Todos os direitos reservados 2022</p>
+        </div>
       </div>
     </div>
 
-    <footer class="footer">
-      <div class="footer_title">
-        <div class="footer_list">
-          <!-- Logo -->
-          <a href="#"
-            ><img src="../assets/images/logo/logo.svg" alt="Logo DEV.aneio"
-          /></a>
-          <!--ícones das redes sociais --->
-          <div class="footer_icons">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""> <i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-        <div class="footer_navigation">
-          <ul>
-            <li><a href="#about">Sobre nós</a></li>
-            <li><a href="#accommodations">Acomodações</a></li>
-            <li><a href="#gastronomy">Gastronomia</a></li>
-          </ul>
-        </div>
-        <div class="footer_address">
-          <h3>Nosso Endereço</h3>
-          <p>
-            Via Costeira, n° 34, <br />
-            Parque das Dunas<br />
-            Natal - RN, Brasil.
-          </p>
-        </div>
-        <div class="footer_contact">
-          <h3>Contato</h3>
-          <p>(84) 99999-9999</p>
-          <p>(84) 88888-8888</p>
-        </div>
-      </div>
-      <hr />
-      <div class="footer_copy">
-        <p>&copy; Todos os direitos reservados 2022</p>
-      </div>
-    </footer>
-  </body>
-  <script src="../js/login.js" async></script>
+  </footer>
+
+</body>
+<script src="../js/login.js" async></script>
+
 </html>
