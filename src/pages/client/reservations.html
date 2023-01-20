@@ -1,281 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--    Necessário colocar o link completo do servidor em que estiver hospedado -->
-    <link
-      rel="shortcut icon"
-      href="src/assets/images/logo/logo.png"
-      type="image/x-icon"
-    />
-    <!-- <link
-      rel="stylesheet"
-      href="https://texpertsg3.github.io/Hotel-DEVaneio/src/css/client/reservations/reservations.css"
-      type="text/css"
-    /> -->
-    <link
-      rel="stylesheet"
-      href="/src/css/client/reservations/reservations.css"
-    />
-    <!-- <link rel="stylesheet" href="/src/css/main.css" /> -->
-    <title>Faça sua Reserva</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <a id="imageLogo" class="header__logo" href="/index.html"
-          ><img
-            class="header__image-logo"
-            src="/src/assets/images/logo/logo_sem_fundo.png"
-            alt="Logo do hotel"
-        /></a>
 
-        <div class="header__buttons">
-          <a class="btn btn-primary" href="/src/pages/login.html" id="btn_sigin"
-            ><img
-              src="/src/assets/images/icons/user-interface.png"
-              alt=""
-            />Login</a
-          >
-        </div>
-        <div class="header__buttons d-none" id="user_loged">
-          <!-- Mostrar quando o usuário estiver logado -->
-          <span id="hello_user"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="http://127.0.0.1:5500/src/css/style.css">
 
-          <a href="#" id="out_user"
-            ><img src="src/assets/images/icons/enter.png" alt="" />Sair</a
-          >
-        </div>
+  <title>Faça sua Reserva</title>
+</head>
+
+<div class="bg-secondary">
+  <header class="container header">
+    <div class="row j-space-between col-12-xl a-center">
+      <a href="http://127.0.0.1:5500/" class="header__logo col-1-xl">
+        <img src="http://127.0.0.1:5500/src/assets/images/logo/logo_sem_fundo.png" alt="Logo" class="col-12-xl" />
+      </a>
+
+      <div class="row a-center">
+        <a href="http://127.0.0.1:5500/src/pages/login.html" class="btn-primary color-white">Login</a>
       </div>
 
-      <div class="header__space"></div>
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/src/pages/client/about.html">Sobre</a></li>
-          <li>
-            <a href="/src/pages/client/accommodations/accommodations_c.html"
-              >Acomodações</a
-            >
-          </li>
-          <li><a href="/src/pages/client/gastronomy.html">Gastronomia</a></li>
+    </div>
+    <span class="spacer bg-white"></span>
+    <nav class="nav-menu-primary color-white">
+      <ul>
+        <li><a href="http://127.0.0.1:5500/src/pages/client/about.html">Sobre</a></li>
+        <li><a href="http://127.0.0.1:5500/src/pages/client/accommodations/accommodations_c.html">Acomodações</a></li>
+        <li><a href="http://127.0.0.1:5500/src/pages/client/gastronomy.html">Gastronomia</a></li>
+        <li><a href="http://127.0.0.1:5500/src/pages/client/reservations.html">Reservas</a></li>
+        <li><a href="http://127.0.0.1:5500/src/pages/client/contact_us.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
 
-          <li>
-            <a href="/src/pages/client/reservations.html" target="_blank"
-              >Reservas</a
-            >
-          </li>
-          <li>
-            <a href="/src/pages/client/contact_us.html" target="_blank"
-              >Fale Conosco</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <form class="form" action="">
-        <div class="form__full-name">
-          <div class="form__name">
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name" />
+<body>
+
+  <main class="container color-secondary font-size-regular">
+    <section class="row pt-3 pb-3">
+      <header class="col-12-xl">
+        <h2 class="font-size-large">Minha Reserva</h2>
+      </header>
+
+      <form action="#" id="form-reservations" class="row gap-2 j-space-between">
+        <div class="row col-8-xl gap-1">
+          <label class="col-12-xl">Forneça a data de entrada, saída e quantidade de pessoas.</label>
+          <div class="row j-space-between col-12-xl">
+            <input type="date" name="chek-in" id="chek-in" class="col-2-xl input-primary color-secondary">
+            <input type="date" name="chek-out" id="chek-out" class="col-2-xl input-primary color-secondary ">
+            <input type="number" name="persons" id="persons" class="col-2-xl input-primary color-secondary">
           </div>
 
-          <div class="form__last-name">
-            <label for="last-name">Sobrenome</label>
-            <input type="text" name="last-name" id="last-name" />
+        </div>
+
+        <label class="col-12-xl">Escolha o quarto</label>
+
+        <div class="row gap-2 col-8-xl">
+          <div class="row j-space-between bg-grey-lighten-5 pd-1">
+            <label for="room-1" class="row j-space-between col-11-xl">
+              <img src="http://127.0.0.1:5500/src/assets/images/accommodations/quarto-c.jpg" alt=""
+                class="img col-3-xl">
+
+              <div class="col-8-xl">
+                <h2>Acomodação C</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, magnam architecto. Quibusdam
+                  dicta
+                  dolor enim, sint repudiandae ad excepturi accusantium.</p>
+                <p>R$ 99,00</p>
+              </div>
+
+            </label>
+
+            <input type="radio" name="room" id="room-1">
+          </div>
+
+          <div class="row j-space-between bg-grey-lighten-5 pd-1">
+            <label for="room-2" class="row j-space-between col-11-xl">
+              <img src="http://127.0.0.1:5500/src/assets/images/accommodations/quarto-c.jpg" alt=""
+                class="img col-3-xl">
+
+              <div class="col-8-xl">
+                <h2>Acomodação C</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, magnam architecto. Quibusdam
+                  dicta
+                  dolor enim, sint repudiandae ad excepturi accusantium.</p>
+                <p>R$ 99,00</p>
+              </div>
+
+            </label>
+
+            <input type="radio" name="room" id="room-2">
+          </div>
+
+          <div class="row j-space-between bg-grey-lighten-5 pd-1">
+            <label for="room-3" class="row j-space-between col-11-xl">
+              <img src="http://127.0.0.1:5500/src/assets/images/accommodations/quarto-c.jpg" alt=""
+                class="img col-3-xl">
+
+              <div class="col-8-xl">
+                <h2>Acomodação C</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, magnam architecto. Quibusdam
+                  dicta
+                  dolor enim, sint repudiandae ad excepturi accusantium.</p>
+                <p>R$ 99,00</p>
+              </div>
+
+            </label>
+
+            <input type="radio" name="room" id="room-3">
           </div>
         </div>
 
-        <div class="form__acommodations">
-          <label for="acommodations">Acomodações</label>
-          <select name="acommodations" id="acommodations">
-            <option value="acomodacao1">Acomodação C</option>
-            <option value="acomodacao2">Acomodação C++</option>
-            <option value="acomodacao3">Acomodação C#</option>
-          </select>
-        </div>
-
-        <div class="form__checkin-and-nights">
-          <div class="form__check-in">
-            <label for="check-in">Check-in</label>
-            <input type="date" name="check-in" id="check-in" />
+        <div id="form__resume" class="row col-3-xl a-center gap-2">
+          <h3 class="col-12-xl">RESUMO DA RESERVA</h3>
+          <div class="row col-12-xl gap-col gap-1">
+            <p class="col-12-xl">Apartamento:</p>
+            <p class="col-12-xl">Checkin:</p>
+            <p class="col-12-xl">Chekout:</p>
+            <p class="col-12-xl">Pessoas:</p>
           </div>
-
-          <div class="form__check-in">
-            <label for="check-out">Check-out</label>
-            <input type="date" name="check-out" id="check-out" />
-          </div>
-
-          <!-- <div class="form__nights">
-            <label for="night">Noites</label>
-            <input type="number" name="night" id="night" min="1" max="100" />
-          </div> -->
-        </div>
-
-        <div class="form__guests-type">
-          <div class="form__adult">
-            <label for="adult">Adultos</label>
-            <select name="adult" id="adult">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-
-          <div class="form__child">
-            <label for="child">Crianças</label>
-            <select name="child" id="child">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </div>
-
-          <div class="form__infants">
-            <label for="infants">Bebês</label>
-            <select name="infants" id="infants">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
+          <button class="col-12-xl link-under-primary color-secondary">Adcionar mais SERVIÇOS</button>
+          <div class="row j-center col-12-xl">
+            <input type="submit" value="Continuar" class="btn-primary color-white">
           </div>
         </div>
-
-        <input
-          class="form__btn btn btn-primary"
-          type="submit"
-          value="Fazer Reservar"
-        />
       </form>
-      <section class="reservations__container">
-        <div class="reservations__option">
-          <img
-            class="reservations__option__img"
-            src="/src/assets/images/accommodations/quarto-c1.jpg"
-            alt=""
-          />
+    </section>
 
-          <p class="reservations__option__room">Acomodação C</p>
-          <p class="reservations__option__detail">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus laboriosam labore sapiente, ipsum non laborum ad! Rerum
-            aut fuga sed!
-          </p>
-          <p class="reservations__price"><strong>R$190,00</strong></p>
-          <input
-            class="reservations__select"
-            type="radio"
-            name="reserva-acomodacao"
-            id="reserva-acomodacao"
-          />
-          Selecionar a acomodação C
-        </div>
-        <div class="reservations__option">
-          <div class="reservation-img">
-            <img
-              src="/src/assets/images/accommodations/quarto-c.jpg"
-              alt="Acomodaçao C++"
-            />
+  </main>
+
+  <footer class="bg-grey-lighten-4 color-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="row pt-3 pb-3 j-space-between">
+          <div class="row col-2-xl gap-1">
+            <!-- Logo -->
+            <a href="http://127.0.0.1:5500/" class="col-12-xl"><img
+                src="http://127.0.0.1:5500/src/assets/images/logo/logo.svg" alt="Logo DEV.aneio" class="img" /></a>
+            <!--ícones das redes sociais --->
+            <div class="row col-12-xl gap-2 j-center">
+              <a href=""><i class="fa-brands fa-instagram font-size-large"></i></a>
+              <a href=""><i class="fa-brands fa-facebook font-size-large"></i></a>
+              <a href=""><i class="fa-brands fa-twitter font-size-large"></i></a>
+              <a href=""> <i class="fa-brands fa-youtube font-size-large"></i></a>
+            </div>
           </div>
-
-          <p class="reservations__room">Acomodação C++</p>
-          <p class="reservations__detail">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus laboriosam labore sapiente, ipsum non laborum ad! Rerum
-            aut fuga sed!
-          </p>
-          <p class="reservation__price"><strong>R$190,00</strong></p>
-          <input
-            class="reservations__select"
-            type="radio"
-            name="reserva-acomodacao"
-            id="reserva-acomodacao"
-          />
-          Selecionar a acomodação C++
-        </div>
-        <div class="reservations__option">
-          <div class="reservations__img">
-            <img
-              class="img"
-              src="/src/assets/images/accommodations/quarto-c4.jpg"
-              alt="Acomodação C#"
-            />
+          <div class="row col-3-xl">
+            <ul class="row gap-1 a-center">
+              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/client/about.html">Sobre nós</a></li>
+              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/client/accommodations.html">Acomodações</a>
+              </li>
+              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/client/gastronomy.html">Gastronomia</a>
+              </li>
+              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/client/reservations.html">Reservas</a></li>
+            </ul>
           </div>
-
-          <p class="reservations__room">Acomodação C#</p>
-          <p class="reservations__detail">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus laboriosam labore sapiente, ipsum non laborum ad! Rerum
-            aut fuga sed!
-          </p>
-          <p class="reservations__price"><strong>R$190,00</strong></p>
-          <input
-            class="reservations__select"
-            type="radio"
-            name="reserva-acomodacao"
-            id="reserva-acomodacao"
-          />Selecionar a acomodação C#
-        </div>
-      </section>
-      <section class="reservations_container">
-        <form class="form" action="resumo-reserva" method="post">
-          <fieldset>
-            <h2><strong>RESUMO RESERVA</strong></h2>
-            <fieldset>
-              <label>Apartamento:xxx</label>
-              <label>Check-in:xxx</label>
-              <label>Check-out:xxx</label>
-              <label>Pessoas:xxx</label>
-            </fieldset>
-            <p><a href="#">Adiconar Mais Serviços</a></p>
-            <button type="button">Confirmar</button>
-          </fieldset>
-        </form>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer_title">
-        <div class="footer_list">
-          <!-- Logo -->
-          <a href="#"
-            ><img src="/src/assets/images/logo/logo.svg" alt="Logo DEV.aneio"
-          /></a>
-          <!--ícones das redes sociais --->
-          <div class="footer_icons">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""> <i class="fa-brands fa-youtube"></i></a>
+          <div class="row col-3-xl gap-1 a-center">
+            <h3 class="col-12-xl">Nosso Endereço</h3>
+            <p>
+              Via Costeira, n° 34, <br />
+              Parque das Dunas<br />
+              Natal - RN, Brasil.
+            </p>
+          </div>
+          <div class="row col-2-xl a-center gap-1">
+            <h3 class="col-12-xl">Contato</h3>
+            <a href="tel:+5584999999999" class="link-secondary col-12-xl">(84) 99999-9999</a>
+            <a href="tel:+5584999999999" class="link-secondary col-12-xl">(84) 88888-8888</a>
           </div>
         </div>
-        <div class="footer_navigation">
-          <ul>
-            <li><a href="/index.html#about">Sobre nós</a></li>
-            <li><a href="/index.html#rooms">Acomodações</a></li>
-            <li><a href="/index.html#gastronomy">Gastronomia</a></li>
-          </ul>
-        </div>
-        <div class="footer_address">
-          <h3>Nosso Endereço</h3>
-          <p>
-            Via Costeira, n° 34, <br />
-            Parque das Dunas<br />
-            Natal - RN, Brasil.
-          </p>
-        </div>
-        <div class="footer_contact">
-          <h3>Contato</h3>
-          <p>(84) 99999-9999</p>
-          <p>(84) 88888-8888</p>
+
+        <span class="spacer bg-secondary"></span>
+
+        <div class="row pt-1 pb-1 j-center col-12-xl">
+          <p>&copy; Todos os direitos reservados 2022</p>
         </div>
       </div>
-      <hr />
-      <div class="footer_copy">
-        <p>&copy; Todos os direitos reservados 2022</p>
-      </div>
-    </footer>
-  </body>
+    </div>
+
+  </footer>
+</body>
+
 </html>
