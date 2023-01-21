@@ -1,3 +1,6 @@
+import { loginTemp, senhaTemp } from './users.js';
+import { validateAccess } from './validation.js'
+
 var btn_login = document.getElementById("btn_login");
 var hello_user = document.getElementById("hello_user");
 var out_user = document.getElementById("out_user");
@@ -8,13 +11,17 @@ function verificaUser() {
   document.querySelector(
     "#hello_user"
   ).innerText = `Olá, ${localStorage.getItem(`usuario`)}`;
-  document.querySelector("#user_loged").classList.remove("d-none");
+  document.querySelector("#user_logged").classList.remove("d-none");
   document.querySelector("#btn_sigin").classList.add("d-none");
 }
 
 localStorage.getItem("usuario") ? verificaUser() : null;
 
 out_user.addEventListener("click", () => {
-  document.querySelector("#user_loged").classList.add("d-none");
+  const usuario = localStorage.getItem("usuario");
+  document.querySelector("#user_logged").classList.add("d-none");
   document.querySelector("#btn_sigin").classList.remove("d-none");
+
+  validateAccess(usuario, loginTemp) ? localStorage.clear() : null
+
 });

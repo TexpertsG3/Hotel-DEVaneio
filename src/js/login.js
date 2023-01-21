@@ -1,76 +1,43 @@
-// import * as users from "./users.js"; -- forma de importação que
+import { loginTemp, senhaTemp, loginAdmin } from './modules/users.js';
+import { validateAccess, validateEmail, validateCase } from './modules/validation.js'
 
 const btn_login = document.querySelector("#btn_login");
 const btn_register = document.querySelector("#btn_register");
-
-var user;
-var loginTemp = [
-  "Albino",
-  "albino@tex.com",
-  "Raissa",
-  "raissa@tex.com",
-  "Fernando",
-  "fernando@tex.com",
-  "Bruno",
-  "bruno@tex.com",
-  "Italo",
-  "italo@tex.com",
-  "Jefferson",
-  "jefferson@tex.com",
-  "Daniel",
-  "daniel@tex.com",
-  "Amanda",
-  "amanda@tex.com",
-  "Fabricio",
-  "fabricio@tex.com",
-  "Rafael",
-  "rafael@tex.com",
-  ,
-];
-var senhaTemp = ["1234"];
-
-function validateAccess(input, validStrings) {
-  return validStrings.includes(input);
-}
-
-function validateEmail(email) {
-  return /^\S+@\S+\.\S+$/.test(email);
-}
-
 
 /* Operações do Login e autenticação. */
 btn_login.addEventListener("click", () => {
   let email = document.querySelector("#username").value;
   let username = document.querySelector("#username").value;
   let password = document.querySelector("#password").value;
-  localStorage.setItem("mail", email);
-  localStorage.setItem("usuario", username);
+
+  username.includes('@') && username.includes('.com') ? localStorage.setItem("mail", email) : localStorage.setItem("usuario", username);
   localStorage.setItem("senha", password);
 
-  const mail = localStorage.getItem("mail");
   const usuario = localStorage.getItem("usuario");
   const senha = localStorage.getItem("senha");
 
+
+
   if (usuario.length < 3) {
     alert("Por favor, preencha adequadamente os campos.");
-  } else if (validateAccess(usuario, loginTemp) && senha == senhaTemp) {
-    alert("Login bem sucedigo, você será redirecionado.");
+    localStorage.clear();
+  } else if (validateAccess(usuario, loginAdmin) && senha == senhaTemp) {
+    alert("Login de adimnistrador bem sucedido, você será redirecionado.");
+    location.href = "../pages/admin/home_admin.html";
+  } else if (validateAccess(usuario, loginTemp) && senha == senhaTemp || validateAccess(usuario, localStorage.getItem('usuario')) && senha == senhaTemp) {
+    alert("Login bem sucedido, você será redirecionado.");
     location.href = "../../index.html";
-    document.querySelector(
-      "#hello_user"
-    ).innerText = `Olá, ${localStorage.getItem(`usuario`)}`;
-    document.querySelector("#user_loged").classList.remove("d-none");
-    document.querySelector("#btn_sigin").classList.add("d-none");
   } else {
     alert("Por favor, verifique suas credenciais.");
+    localStorage.clear();
   }
 });
 
 /* Operações do registro */
 btn_register.addEventListener("click", () => {
-  let email = document.querySelector("#new_userEmail").value.trim().replace(/'/g, "").replace(/"/g, "");
-  let username = document.querySelector("#new_userUsuario").value.trim().replace(/'/g, "").replace(/"/g, "");
-  let password = document.querySelector("#new_userPassword").value.trim().replace(/'/g, "").replace(/"/g, "");
+  let email = document.querySelector("#new_userEmail").value.trim().replace(/'/g, "").replace(/"/g, "").replace(" ", "");
+  let username = document.querySelector("#new_userUsuario").value.trim().replace(/'/g, "").replace(/"/g, "").replace(" ", "");
+  let password = document.querySelector("#new_userPassword").value.trim().replace(/'/g, "").replace(/"/g, "").replace(" ", "");
 
   localStorage.setItem("mail", email);
   localStorage.setItem("usuario", username);
@@ -80,10 +47,12 @@ btn_register.addEventListener("click", () => {
   const usuario = localStorage.getItem("usuario");
   const senha = localStorage.getItem("senha");
 
-  if (usuario.length < 3 || validateEmail(mail) == false) {
-    alert("Por favor, preencha adequadamente os campos solicitados.");
+  if (usuario.length < 3 || validateEmail(mail) == false || validateCase(mail)) {
+    alert("Por favor, preencha adequadamente os campos solicitados.(Sem aspas e letras maiúsculas.)");
+    localStorage.clear()
   } else if (validateAccess(usuario, loginTemp) || validateAccess(mail, loginTemp)) {
-    alert("Desculpe, esse usuário já exite. Por favor, escolha outro, ou escolha logar ao lado.")
+    alert("Desculpe, esse usuário já existe. Por favor, escolha outro, ou escolha logar ao lado.")
+    localStorage.clear()
   } else {
     loginTemp.push(mail);
     loginTemp.push(usuario);
@@ -92,3 +61,5 @@ btn_register.addEventListener("click", () => {
     location.href = "../../index.html";
   }
 });
+
+
