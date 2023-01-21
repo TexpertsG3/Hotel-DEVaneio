@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" href="http://127.0.0.1:5500/src/assets/images/logo/logo.png" type="image/x-icon" />
-  <link rel="stylesheet" href="http://127.0.0.1:5500/src/css/style.css">
+  <link rel="shortcut icon" href="http://localhost:63342/Hotel-DEVaneio/src/assets/images/logo/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="http://localhost:63342/Hotel-DEVaneio/src/css/style.css">
   <title>Hotel DEVaneio -Login</title>
 </head>
 
@@ -18,65 +18,69 @@
   <div class="bg-secondary">
     <header class="container header">
       <div class="row j-space-between col-12-xl a-center">
-        <a href="http://127.0.0.1:5500/" class="header__logo col-1-xl">
-          <img src="http://127.0.0.1:5500/src/assets/images/logo/logo_sem_fundo.png" alt="Logo" class="col-12-xl" />
+        <a href="http://localhost:63342/Hotel-DEVaneio/" class="header__logo col-1-xl">
+          <img src="http://localhost:63342/Hotel-DEVaneio/src/assets/images/logo/logo_sem_fundo.png" alt="Logo" class="col-12-xl" />
         </a>
 
         <div class="row a-center">
-          <a href="http://127.0.0.1:5500/src/pages/login.html" class="btn-primary color-white">Login</a>
+          <a href="http://localhost:63342/Hotel-DEVaneio/src/pages/login.html" class="btn-primary color-white">Login</a>
         </div>
 
       </div>
       <span class="spacer bg-white"></span>
       <nav class="nav-menu-primary color-white">
         <ul>
-          <li><a href="http://127.0.0.1:5500/src/pages/about.html">Sobre</a></li>
-          <li><a href="http://127.0.0.1:5500/src/pages/accommodations/accommodations.html">Acomodações</a></li>
-          <li><a href="http://127.0.0.1:5500/src/pages/gastronomy.html">Gastronomia</a></li>
-          <li><a href="http://127.0.0.1:5500/src/pages/reservations.html">Reservas</a></li>
-          <li><a href="http://127.0.0.1:5500/src/pages/contact_us.html">Fale Conosco</a></li>
+          <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/about.html">Sobre</a></li>
+          <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/accommodations/accommodations.html">Acomodações</a></li>
+          <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/gastronomy.html">Gastronomia</a></li>
+          <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/reservations.html">Reservas</a></li>
+          <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/contact_us.html">Fale Conosco</a></li>
         </ul>
       </nav>
     </header>
   </div>
 
   <div class="container row j-space-between pt-3 pb-3">
-    <form class="row col-5-xl gap-1 a-center">
+    <form class="row col-5-xl gap-1 a-center" id="form-login">
       <legend class="font-size-large col-12-xl">Entrar</legend>
 
+      <div class="row col-12-xl j-center pd-1 d-none"><span id="login-alert"></span></div>
+
       <div class="row col-12-xl gap-1">
-        <label>Usuário</label>
-        <input type="text" name="username" id="username" placeholder=" Insira seu usuário" class="input-primary col-12-xl" />
+        <label for="form-login__email">E-mail</label>
+        <input type="email" name="email" id="form-login__email" placeholder=" Insira seu usuário" class="input-primary col-12-xl" />
       </div>
 
       <div class="row col-12-xl gap-1">
-        <label>Senha</label>
-        <input type="password" name="password" id="password" placeholder=" Insira sua senha" class="input-primary col-12-xl" />
+        <label for="form-login__password">Senha</label>
+        <input type="password" name="password" id="form-login__password" placeholder=" Insira sua senha" class="input-primary col-12-xl" />
       </div>
 
-      <input type="submit" id="btn_login" class="btn-primary color-white" value="Entrar">
+      <input type="submit" id="btn__login" class="btn-primary color-white" value="Entrar">
         
     </form>
 
-    <form class="row col-5-xl gap-1 a-center">
+    <form class="row col-5-xl gap-1 a-center" id="form-registration">
       <legend class="font-size-large col-12-xl">Registrar</legend>
 
+      <div class="row col-12-xl j-center pd-1 d-none"><span id="register-alert"></span></div>
+
       <div class="row col-12-xl gap-1">
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="new_userEmail" placeholder=" Coloque seu E-mail" class="input-primary col-12-xl" />
+        <label for="form-registration__email">E-mail</label>
+        <input type="email" name="email" id="form-registration__email" placeholder=" Coloque seu E-mail" class="input-primary col-12-xl" />
       </div>
 
       <div class="row col-12-xl gap-1">
-        <label for="user2">Usuário</label>
-        <input type="text" name="user2" id="new_userUsuario" placeholder=" Crie o seu usuário" class="input-primary col-12-xl" />
+        <label for="form-registration__name">Nome</label>
+        <input type="text" name="name" id="form-registration__name" placeholder=" Crie o seu usuário" class="input-primary col-12-xl" />
       </div>
 
       <div class="row col-12-xl gap-1">
-        <label for="password2">Senha</label>
-        <input type="password" name="password2" id="new_userPassword" placeholder=" Crie a sua senha" class="input-primary col-12-xl" />
+        <label for="form-registration__password">Senha</label>
+        <input type="password" name="password" id="form-registration__password" placeholder=" Crie a sua senha" class="input-primary col-12-xl" />
       </div>
 
-      <input class="btn-primary color-white" type="submit" id="btn_register" value="Registrar">
+      <input class="btn-primary color-white" type="submit" id="btn__registeration" value="Registrar">
 
     </form>
   </div>
@@ -87,8 +91,8 @@
         <div class="row pt-3 pb-3 j-space-between">
           <div class="row col-2-xl gap-1">
             <!-- Logo -->
-            <a href="http://127.0.0.1:5500/" class="col-12-xl"><img
-                src="http://127.0.0.1:5500/src/assets/images/logo/logo.svg" alt="Logo DEV.aneio" class="img" /></a>
+            <a href="http://localhost:63342/Hotel-DEVaneio/" class="col-12-xl"><img
+                src="http://localhost:63342/Hotel-DEVaneio/src/assets/images/logo/logo.svg" alt="Logo DEV.aneio" class="img" /></a>
             <!--ícones das redes sociais --->
             <div class="row col-12-xl gap-2 j-center">
               <a href=""><i class="fa-brands fa-instagram font-size-large"></i></a>
@@ -99,13 +103,13 @@
           </div>
           <div class="row col-3-xl">
             <ul class="row gap-1 a-center">
-              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/about.html">Sobre nós</a></li>
+              <li class="col-12-xl"><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/about.html">Sobre nós</a></li>
               <li class="col-12-xl"><a
-                  href="http://127.0.0.1:5500/src/pages/accommodations/accommodations.html">Acomodações</a>
+                  href="http://localhost:63342/Hotel-DEVaneio/src/pages/accommodations/accommodations.html">Acomodações</a>
               </li>
-              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/gastronomy.html">Gastronomia</a>
+              <li class="col-12-xl"><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/gastronomy.html">Gastronomia</a>
               </li>
-              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/reservations.html">Reservas</a></li>
+              <li class="col-12-xl"><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/reservations.html">Reservas</a></li>
             </ul>
           </div>
           <div class="row col-3-xl gap-1 a-center">
@@ -133,7 +137,6 @@
 
   </footer>
 
+  <script src="http://localhost:63342/Hotel-DEVaneio/src/js/main.js" type="module"></script>
 </body>
-<script src="../js/login.js" async></script>
-
 </html>

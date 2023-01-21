@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
 }
 
 @mixin flex-a-center {

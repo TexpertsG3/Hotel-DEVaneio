@@ -335,6 +335,310 @@
   color: #b3b3b3;
 }
 
+.bg-red {
+  background-color: red;
+}
+
+.color-red {
+  color: red;
+}
+
+.bg-red-lighten-1 {
+  background-color: #ff1a1a;
+}
+
+.color-red-lighten-1 {
+  color: #ff1a1a;
+}
+
+.bg-red-darken-1 {
+  background-color: #e60000;
+}
+
+.color-red-darken-1 {
+  color: #e60000;
+}
+
+.bg-red-lighten-2 {
+  background-color: #ff3333;
+}
+
+.color-red-lighten-2 {
+  color: #ff3333;
+}
+
+.bg-red-darken-2 {
+  background-color: #cc0000;
+}
+
+.color-red-darken-2 {
+  color: #cc0000;
+}
+
+.bg-red-lighten-3 {
+  background-color: #ff4d4d;
+}
+
+.color-red-lighten-3 {
+  color: #ff4d4d;
+}
+
+.bg-red-darken-3 {
+  background-color: #b30000;
+}
+
+.color-red-darken-3 {
+  color: #b30000;
+}
+
+.bg-red-lighten-4 {
+  background-color: #ff6666;
+}
+
+.color-red-lighten-4 {
+  color: #ff6666;
+}
+
+.bg-red-darken-4 {
+  background-color: #990000;
+}
+
+.color-red-darken-4 {
+  color: #990000;
+}
+
+.bg-red-lighten-5 {
+  background-color: #ff8080;
+}
+
+.color-red-lighten-5 {
+  color: #ff8080;
+}
+
+.bg-red-darken-5 {
+  background-color: maroon;
+}
+
+.color-red-darken-5 {
+  color: maroon;
+}
+
+.bg-red-lighten-6 {
+  background-color: #ff9999;
+}
+
+.color-red-lighten-6 {
+  color: #ff9999;
+}
+
+.bg-red-darken-6 {
+  background-color: #660000;
+}
+
+.color-red-darken-6 {
+  color: #660000;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.color-green {
+  color: green;
+}
+
+.bg-green-lighten-1 {
+  background-color: #009a00;
+}
+
+.color-green-lighten-1 {
+  color: #009a00;
+}
+
+.bg-green-darken-1 {
+  background-color: #006700;
+}
+
+.color-green-darken-1 {
+  color: #006700;
+}
+
+.bg-green-lighten-2 {
+  background-color: #00b300;
+}
+
+.color-green-lighten-2 {
+  color: #00b300;
+}
+
+.bg-green-darken-2 {
+  background-color: #004d00;
+}
+
+.color-green-darken-2 {
+  color: #004d00;
+}
+
+.bg-green-lighten-3 {
+  background-color: #00cd00;
+}
+
+.color-green-lighten-3 {
+  color: #00cd00;
+}
+
+.bg-green-darken-3 {
+  background-color: #003400;
+}
+
+.color-green-darken-3 {
+  color: #003400;
+}
+
+.bg-green-lighten-4 {
+  background-color: #00e600;
+}
+
+.color-green-lighten-4 {
+  color: #00e600;
+}
+
+.bg-green-darken-4 {
+  background-color: #001a00;
+}
+
+.color-green-darken-4 {
+  color: #001a00;
+}
+
+.bg-green-lighten-5 {
+  background-color: #01ff01;
+}
+
+.color-green-lighten-5 {
+  color: #01ff01;
+}
+
+.bg-green-darken-5 {
+  background-color: #000100;
+}
+
+.color-green-darken-5 {
+  color: #000100;
+}
+
+.bg-green-lighten-6 {
+  background-color: #1aff1a;
+}
+
+.color-green-lighten-6 {
+  color: #1aff1a;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.color-yellow {
+  color: yellow;
+}
+
+.bg-yellow-lighten-1 {
+  background-color: #ffff1a;
+}
+
+.color-yellow-lighten-1 {
+  color: #ffff1a;
+}
+
+.bg-yellow-darken-1 {
+  background-color: #e6e600;
+}
+
+.color-yellow-darken-1 {
+  color: #e6e600;
+}
+
+.bg-yellow-lighten-2 {
+  background-color: #ffff33;
+}
+
+.color-yellow-lighten-2 {
+  color: #ffff33;
+}
+
+.bg-yellow-darken-2 {
+  background-color: #cccc00;
+}
+
+.color-yellow-darken-2 {
+  color: #cccc00;
+}
+
+.bg-yellow-lighten-3 {
+  background-color: #ffff4d;
+}
+
+.color-yellow-lighten-3 {
+  color: #ffff4d;
+}
+
+.bg-yellow-darken-3 {
+  background-color: #b3b300;
+}
+
+.color-yellow-darken-3 {
+  color: #b3b300;
+}
+
+.bg-yellow-lighten-4 {
+  background-color: #ffff66;
+}
+
+.color-yellow-lighten-4 {
+  color: #ffff66;
+}
+
+.bg-yellow-darken-4 {
+  background-color: #999900;
+}
+
+.color-yellow-darken-4 {
+  color: #999900;
+}
+
+.bg-yellow-lighten-5 {
+  background-color: #ffff80;
+}
+
+.color-yellow-lighten-5 {
+  color: #ffff80;
+}
+
+.bg-yellow-darken-5 {
+  background-color: olive;
+}
+
+.color-yellow-darken-5 {
+  color: olive;
+}
+
+.bg-yellow-lighten-6 {
+  background-color: #ffff99;
+}
+
+.color-yellow-lighten-6 {
+  color: #ffff99;
+}
+
+.bg-yellow-darken-6 {
+  background-color: #666600;
+}
+
+.color-yellow-darken-6 {
+  color: #666600;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -425,6 +729,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .img {
@@ -717,7 +1022,7 @@ a {
   margin-top: 60px;
 }
 
-.link-under-white, .link-white, .link-under-grey, .link-grey, .link-under-secondary, .link-secondary, .link-under-primary, .link-primary {
+.link-under-yellow, .link-yellow, .link-under-green, .link-green, .link-under-red, .link-red, .link-under-white, .link-white, .link-under-grey, .link-grey, .link-under-secondary, .link-secondary, .link-under-primary, .link-primary {
   font-size: 1rem;
   background-color: transparent;
   border: none;
@@ -781,6 +1086,51 @@ a {
 }
 .link-under-white:hover {
   color: white;
+}
+
+.link-red {
+  text-decoration: none;
+  color: red;
+}
+.link-red:hover {
+  text-decoration: underline;
+}
+
+.link-under-red {
+  text-decoration: underline;
+}
+.link-under-red:hover {
+  color: red;
+}
+
+.link-green {
+  text-decoration: none;
+  color: green;
+}
+.link-green:hover {
+  text-decoration: underline;
+}
+
+.link-under-green {
+  text-decoration: underline;
+}
+.link-under-green:hover {
+  color: green;
+}
+
+.link-yellow {
+  text-decoration: none;
+  color: yellow;
+}
+.link-yellow:hover {
+  text-decoration: underline;
+}
+
+.link-under-yellow {
+  text-decoration: underline;
+}
+.link-under-yellow:hover {
+  color: yellow;
 }
 
 @media (min-width: 0) {
@@ -1309,6 +1659,195 @@ a {
   transform: scale(1.08);
 }
 
+.btn-red {
+  display: block;
+  text-decoration: none;
+  background-color: red;
+  padding: 10px 20px;
+  border: 2px solid red;
+  border-radius: 12px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.btn-red:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-red:hover {
+  transform: scale(1.08);
+}
+
+.btn-red-wbg {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid red;
+  border-radius: 12px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.btn-red-wbg:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-red-wbg:hover {
+  transform: scale(1.08);
+}
+
+.btn-red-flat {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid red;
+  border-radius: 12px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.btn-red-flat:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-red-flat:hover {
+  transform: scale(1.08);
+}
+
+.btn-green {
+  display: block;
+  text-decoration: none;
+  background-color: green;
+  padding: 10px 20px;
+  border: 2px solid green;
+  border-radius: 12px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.btn-green:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-green:hover {
+  transform: scale(1.08);
+}
+
+.btn-green-wbg {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid green;
+  border-radius: 12px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.btn-green-wbg:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-green-wbg:hover {
+  transform: scale(1.08);
+}
+
+.btn-green-flat {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid green;
+  border-radius: 12px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.btn-green-flat:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-green-flat:hover {
+  transform: scale(1.08);
+}
+
+.btn-yellow {
+  display: block;
+  text-decoration: none;
+  background-color: yellow;
+  padding: 10px 20px;
+  border: 2px solid yellow;
+  border-radius: 12px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.btn-yellow:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-yellow:hover {
+  transform: scale(1.08);
+}
+
+.btn-yellow-wbg {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid yellow;
+  border-radius: 12px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.btn-yellow-wbg:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-yellow-wbg:hover {
+  transform: scale(1.08);
+}
+
+.btn-yellow-flat {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 2px solid yellow;
+  border-radius: 12px;
+  width: fit-content;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.btn-yellow-flat:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn-yellow-flat:hover {
+  transform: scale(1.08);
+}
+
 .table-primary {
   border: none;
   border-spacing: 0;
@@ -1433,10 +1972,104 @@ a {
   padding: 10px;
 }
 
+.table-red {
+  border: none;
+  border-spacing: 0;
+  text-align: center;
+}
+.table-red tr {
+  transition: all 0.3s ease;
+}
+.table-red tr:nth-child(odd) {
+  border: none;
+  background-color: #ff9999;
+}
+.table-red tr:nth-child(even) {
+  border: none;
+  background-color: #ffcccc;
+}
+.table-red tr:first-child {
+  background-color: #ff3333;
+}
+.table-red tr:hover:not(tr:first-child) {
+  background-color: #ff6666;
+}
+.table-red th {
+  border: none;
+  padding: 10px;
+}
+.table-red td {
+  border: none;
+  padding: 10px;
+}
+
+.table-green {
+  border: none;
+  border-spacing: 0;
+  text-align: center;
+}
+.table-green tr {
+  transition: all 0.3s ease;
+}
+.table-green tr:nth-child(odd) {
+  border: none;
+  background-color: #1aff1a;
+}
+.table-green tr:nth-child(even) {
+  border: none;
+  background-color: #4dff4d;
+}
+.table-green tr:first-child {
+  background-color: #00b300;
+}
+.table-green tr:hover:not(tr:first-child) {
+  background-color: #00e600;
+}
+.table-green th {
+  border: none;
+  padding: 10px;
+}
+.table-green td {
+  border: none;
+  padding: 10px;
+}
+
+.table-yellow {
+  border: none;
+  border-spacing: 0;
+  text-align: center;
+}
+.table-yellow tr {
+  transition: all 0.3s ease;
+}
+.table-yellow tr:nth-child(odd) {
+  border: none;
+  background-color: #ffff99;
+}
+.table-yellow tr:nth-child(even) {
+  border: none;
+  background-color: #ffffcc;
+}
+.table-yellow tr:first-child {
+  background-color: #ffff33;
+}
+.table-yellow tr:hover:not(tr:first-child) {
+  background-color: #ffff66;
+}
+.table-yellow th {
+  border: none;
+  padding: 10px;
+}
+.table-yellow td {
+  border: none;
+  padding: 10px;
+}
+
 .header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
   padding: 10px;
@@ -1445,6 +2078,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
   padding: 10px 0;
@@ -1455,6 +2089,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
 }
@@ -1463,6 +2098,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
   width: 100%;
@@ -1471,6 +2107,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
   padding: 10px 0;
@@ -1489,6 +2126,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
   width: 100%;
@@ -1497,6 +2135,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
   padding: 10px 0;
@@ -1515,6 +2154,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
   width: 100%;
@@ -1523,6 +2163,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
   padding: 10px 0;
@@ -1541,6 +2182,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
   width: 100%;
@@ -1549,6 +2191,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
   align-items: center;
   align-content: center;
   padding: 10px 0;
@@ -1561,6 +2204,90 @@ a {
 }
 .nav-menu-white ul li a:hover {
   color: white;
+}
+
+.nav-menu-red {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.nav-menu-red ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  padding: 10px 0;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+.nav-menu-red ul li a {
+  transition: all 0.3s ease;
+}
+.nav-menu-red ul li a:hover {
+  color: red;
+}
+
+.nav-menu-green {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.nav-menu-green ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  padding: 10px 0;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+.nav-menu-green ul li a {
+  transition: all 0.3s ease;
+}
+.nav-menu-green ul li a:hover {
+  color: green;
+}
+
+.nav-menu-yellow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.nav-menu-yellow ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  padding: 10px 0;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+.nav-menu-yellow ul li a {
+  transition: all 0.3s ease;
+}
+.nav-menu-yellow ul li a:hover {
+  color: yellow;
 }
 
 .spacer {
@@ -1633,8 +2360,78 @@ a {
   border-color: white;
 }
 
+.input-red {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background-color: #efefef;
+  padding: 0 10px;
+  line-height: 2em;
+  height: 2em;
+}
+.input-red:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: red;
+}
+
+.input-green {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background-color: #efefef;
+  padding: 0 10px;
+  line-height: 2em;
+  height: 2em;
+}
+.input-green:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: green;
+}
+
+.input-yellow {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background-color: #efefef;
+  padding: 0 10px;
+  line-height: 2em;
+  height: 2em;
+}
+.input-yellow:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: yellow;
+}
+
 .accommodations__iframe {
   height: 600px;
+}
+
+.modal {
+  display: none;
+  flex-wrap: wrap;
+  padding: 60px;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+.modal .modal__close {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  justify-content: flex-end;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

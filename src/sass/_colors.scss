@@ -2,12 +2,18 @@ $primary: #a2a648;
 $secondary: #262626;
 $grey: #aaaaaa;
 $white: white;
+$red: red;
+$green: green;
+$yellow: yellow;
 
 $colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "grey": $grey,
-  "white": white,
+        "primary": $primary,
+        "secondary": $secondary,
+        "grey": $grey,
+        "white": white,
+        "red": $red,
+        "green": $green,
+        "yellow": $yellow
 );
 
 @each $key, $value in $colors {
