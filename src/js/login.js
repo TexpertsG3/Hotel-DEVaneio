@@ -108,11 +108,11 @@ export function setLoggedUser(email, password) {
 
 
         if (user.roles === "ROLE_ADMIN") {
-            window.location.href = "http://localhost:63342/Hotel-DEVaneio/src/pages/admin/home_admin.html";
+            window.location.href = "https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/admin/home_admin.html";
             return;
         }
 
-        window.location.href = "http://localhost:63342/Hotel-DEVaneio/";
+        window.location.href = "https://texpertsg3.github.io/Hotel-DEVaneio/";
 
     }
 }
