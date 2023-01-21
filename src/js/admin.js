@@ -1,6 +1,6 @@
 import {getUsers} from "./ls.js";
 
-function tableReservations() {
+export function tableReservations() {
     let reservationsTbl = document.getElementById("admin__reservations-tbl");
 
     if (!reservationsTbl) {
@@ -42,6 +42,25 @@ function tableReservations() {
     }
 }
 
-export function addTableReservationsAction() {
-    tableReservations();
+export function tableClientes() {
+    let clientesTbl = document.getElementById("admin__clientes-tbl");
+
+    if (!clientesTbl) {
+        return;
+    }
+
+    let users = getUsers();
+
+    for (const user in users) {
+        let row = document.createElement("tr");
+        clientesTbl.appendChild(row)
+
+        let col = document.createElement("td");
+        row.appendChild(col);
+        col.innerHTML = users[user].name;
+
+        col = document.createElement("td");
+        row.appendChild(col);
+        col.innerHTML = user;
+    }
 }

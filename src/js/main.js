@@ -4,7 +4,7 @@ import {addLoginAction, addRegisterAction} from "./login.js";
 import {addReservatinAction, setUpdateAction} from "./resevations.js";
 import {addModalAction} from "./modal.js";
 import {headerLoggedAction} from "./header.js";
-import {addTableReservationsAction} from "./admin.js";
+import {tableClientes, tableReservations} from "./admin.js";
 
 ls.initUsers();
 
@@ -21,4 +21,5 @@ addModalAction();
 addReservatinAction();
 
 //Admin
-addTableReservationsAction();
+tableReservations();
+tableClientes();
