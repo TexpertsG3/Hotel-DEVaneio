@@ -1,0 +1,39 @@
+@use "reset";
+@use "variables" as variables;
+@use "fonts";
+
+@mixin flex-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@mixin flex-a-center {
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    font-family: variables.$base-font;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.row {
+    @include flex-layout;
+}
+
+.img {
+    height: auto;
+    display: block;
+    border-radius: variables.$btn-base-radius;
+}
+
+.d-none {
+    display: none;
+}

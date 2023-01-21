@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -10,22 +10,23 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="http://127.0.0.1:5500/src/assets/images/logo/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="http://127.0.0.1:5500/src/css/style.css">
-  <title>Hotel DEVaneio -Login</title>
+
+  <title>Faça sua Reserva</title>
 </head>
 
-<body class="body__login">
-
+<body>
+  
   <div class="bg-secondary">
     <header class="container header">
       <div class="row j-space-between col-12-xl a-center">
         <a href="http://127.0.0.1:5500/" class="header__logo col-1-xl">
           <img src="http://127.0.0.1:5500/src/assets/images/logo/logo_sem_fundo.png" alt="Logo" class="col-12-xl" />
         </a>
-
+  
         <div class="row a-center">
           <a href="http://127.0.0.1:5500/src/pages/login.html" class="btn-primary color-white">Login</a>
         </div>
-
+  
       </div>
       <span class="spacer bg-white"></span>
       <nav class="nav-menu-primary color-white">
@@ -39,47 +40,98 @@
       </nav>
     </header>
   </div>
+  <main class="container color-secondary font-size-regular">
+    <section class="row pt-3 pb-3">
+      <header class="col-12-xl">
+        <h2 class="font-size-large">Minha Reserva</h2>
+      </header>
 
-  <div class="container row j-space-between pt-3 pb-3">
-    <form class="row col-5-xl gap-1 a-center">
-      <legend class="font-size-large col-12-xl">Entrar</legend>
+      <form action="#" id="form-reservations" class="row gap-2 j-space-between">
+        <div class="row col-8-xl gap-1">
+          <legend class="col-12-xl">Forneça a data de entrada, saída e quantidade de pessoas.</legend>
+          <div class="row j-space-between col-12-xl">
+            <input type="date" name="chek-in" id="chek-in" class="col-2-xl input-primary color-secondary">
+            <input type="date" name="chek-out" id="chek-out" class="col-2-xl input-primary color-secondary ">
+            <input type="number" name="persons" id="persons" class="col-2-xl input-primary color-secondary">
+          </div>
 
-      <div class="row col-12-xl gap-1">
-        <label>Usuário</label>
-        <input type="text" name="username" id="username" placeholder=" Insira seu usuário" class="input-primary col-12-xl" />
-      </div>
+        </div>
 
-      <div class="row col-12-xl gap-1">
-        <label>Senha</label>
-        <input type="password" name="password" id="password" placeholder=" Insira sua senha" class="input-primary col-12-xl" />
-      </div>
+        <label class="col-12-xl">Escolha o quarto</label>
 
-      <input type="submit" id="btn_login" class="btn-primary color-white" value="Entrar">
+        <div class="row gap-2 col-8-xl">
+          <div class="row j-space-between bg-grey-lighten-5 pd-1 input-selectable-primary">
+            <label for="room-1" class="row j-space-between col-11-xl">
+              <img src="http://127.0.0.1:5500/src/assets/images/accommodations/quarto-c.jpg" alt=""
+                class="img col-3-xl">
 
-    </form>
+              <div class="col-8-xl">
+                <h2>Acomodação C</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, magnam architecto. Quibusdam
+                  dicta
+                  dolor enim, sint repudiandae ad excepturi accusantium.</p>
+                <p>R$ 99,00</p>
+              </div>
 
-    <form class="row col-5-xl gap-1 a-center">
-      <legend class="font-size-large col-12-xl">Registrar</legend>
+            </label>
 
-      <div class="row col-12-xl gap-1">
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="new_userEmail" placeholder=" Coloque seu E-mail" class="input-primary col-12-xl" />
-      </div>
+            <input type="radio" name="room" id="room-1">
+          </div>
 
-      <div class="row col-12-xl gap-1">
-        <label for="user2">Usuário</label>
-        <input type="text" name="user2" id="new_userUsuario" placeholder=" Crie o seu usuário" class="input-primary col-12-xl" />
-      </div>
+          <div class="row j-space-between bg-grey-lighten-5 pd-1">
+            <label for="room-2" class="row j-space-between col-11-xl">
+              <img src="http://127.0.0.1:5500/src/assets/images/accommodations/quarto-c.jpg" alt=""
+                class="img col-3-xl">
 
-      <div class="row col-12-xl gap-1">
-        <label for="password2">Senha</label>
-        <input type="password" name="password2" id="new_userPassword" placeholder=" Crie a sua senha" class="input-primary col-12-xl" />
-      </div>
+              <div class="col-8-xl">
+                <h2>Acomodação C</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, magnam architecto. Quibusdam
+                  dicta
+                  dolor enim, sint repudiandae ad excepturi accusantium.</p>
+                <p>R$ 99,00</p>
+              </div>
 
-      <input class="btn-primary color-white" type="submit" id="btn_register" value="Registrar">
+            </label>
 
-    </form>
-  </div>
+            <input type="radio" name="room" id="room-2">
+          </div>
+
+          <div class="row j-space-between bg-grey-lighten-5 pd-1">
+            <label for="room-3" class="row j-space-between col-11-xl">
+              <img src="http://127.0.0.1:5500/src/assets/images/accommodations/quarto-c.jpg" alt=""
+                class="img col-3-xl">
+
+              <div class="col-8-xl">
+                <h2>Acomodação C</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, magnam architecto. Quibusdam
+                  dicta
+                  dolor enim, sint repudiandae ad excepturi accusantium.</p>
+                <p>R$ 99,00</p>
+              </div>
+
+            </label>
+
+            <input type="radio" name="room" id="room-3">
+          </div>
+        </div>
+
+        <div id="form__resume" class="row col-3-xl a-center gap-2">
+          <h3 class="col-12-xl">RESUMO DA RESERVA</h3>
+          <div class="row col-12-xl gap-col gap-1">
+            <p class="col-12-xl">Apartamento:</p>
+            <p class="col-12-xl">Checkin:</p>
+            <p class="col-12-xl">Chekout:</p>
+            <p class="col-12-xl">Pessoas:</p>
+          </div>
+          <button class="col-12-xl link-under-primary color-secondary">Adcionar mais SERVIÇOS</button>
+          <div class="row j-center col-12-xl">
+            <input type="submit" value="Continuar" class="btn-primary color-white">
+          </div>
+        </div>
+      </form>
+    </section>
+
+  </main>
 
   <footer class="bg-grey-lighten-4 color-secondary">
     <div class="container">
@@ -111,8 +163,8 @@
           <div class="row col-3-xl gap-1 a-center">
             <h3 class="col-12-xl">Nosso Endereço</h3>
             <p>
-              Via Costeira, n° 34,
-              Parque das Dunas
+              Via Costeira, n° 34, <br />
+              Parque das Dunas<br />
               Natal - RN, Brasil.
             </p>
           </div>
@@ -132,8 +184,6 @@
     </div>
 
   </footer>
-
 </body>
-<script src="../js/login.js" async></script>
 
 </html>

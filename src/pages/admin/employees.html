@@ -1,255 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/admin/employees.css" />
-    <link rel="stylesheet" href="/src/css/client/home/main.css" />
-      <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    />
-    <title>Hotel DEVaneio - Área Administrativa</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__content">
-        <a id="imageLogo" class="header__logo" href="/home_admin.html"
-          ><img
-            class="header__image-logo"
-            src="../../assets/images/logo/logo_sem_fundo.png"
-            alt="Logo do hotel"
-        /></a>
+<html lang="pt-BR">
 
-        <div class="header__buttons">
-          <a class="btn btn-primary" href="../admin/login_admin.html"
-            ><img
-              src="../../assets/images/icons/user-interface.png"
-              alt=""
-            />User</a
-          >
-        </div>
-        <div class="header__buttons d-none">
-          <!-- Mostrar quando o usuário estiver logado -->
-          <p>Olá Usuário</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="http://127.0.0.1:5500/src/assets/images/logo/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="http://127.0.0.1:5500/src/css/style.css">
+  <title>Hotel DEVaneio - Funcionários</title>
+</head>
 
-          <a href="#"
-            ><img src="../../assets/images/icons/enter.png" alt="" />Sair</a
-          >
-        </div>
-      </div>
+<body>
+  <div class="bg-secondary">
+    <header class="container header j-space-between col-12-xl a-center a-items-center">
+      <a href="http://127.0.0.1:5500/src/pages/admin/home_admin.html" class="header__logo col-1-xl">
+        <img src="http://127.0.0.1:5500/src/assets/images/logo/logo_sem_fundo.png" alt="Logo" class="col-12-xl" />
+      </a>
 
-      <div class="header__space"></div>
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li><a href="/src/pages/admin/home_admin.html">Home</a></li>
-          <li><a href="/src/pages/admin/employees.html">Funcionários</a></li>
-          <li><a href="/src/pages/admin/guests.html">Clientes</a></li>
-          <li><a href="/src/pages/admin/reservations.html">Reservas</a></li>
-        </ul>
-      </nav>
+      <a href="http://127.0.0.1:5500/src/pages/login.html" class="btn-primary color-white">Login</a>
     </header>
+  </div>
 
-    <div class="admin__area"> <strong class="topic">Área Administrativa - Funcionários</strong>
-        </div>
+  <main class="container row j-center pb-3 pt-3">
+    <h1 class="font-size-extra-large">
+      Área Administrativa - Funcionários
+    </h1>
 
-    <main class="container table-responsive">
-      <div class="">
-        <table
-          class="my-4 table table-striped table-bordered table-hover table-sm table-light"
-        >
-          <tr>
-            <th>Código</th>
-            <th>Nome</th>
-            <th>Tempo de empresa</th>
-            <th>Atividade Atual</th>
-            <th>Férias</th>
-            <th>Afastamento médico</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Maria</td>
-            <td>5 anos</td>
-            <td>
-              <select name="atividade" id="atividade">
-                <option value="selecione">Selecione</option>
-                <option value="recepcao">Recepção</option>
-                <option value="restaurante">Restaurante</option>
-                <option value="garagem">Garagem</option>
-                <option value="serviço">Serviço de Quarto</option>
-                <option value="gerencia">Gerência</option>
-                <option value="concierge">Concierge</option>
-              </select>
-            </td>
-            <td>
-              <label for="ferias"></label>
-              <br />
-              <input type="radio" name="1" id="sim" />Sim
-              <input checked type="radio" name="1" id="nao" />Não
-            </td>
-            <td>
-              <label for="ferias"></label>
-              <br />
-              <input type="radio" name="2" id="sim" />Sim
-              <input checked type="radio" name="2" id="nao" />Não
-            </td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>José</td>
-            <td>1 ano</td>
-            <td>
-              <select name="atividade" id="atividade">
-                <option value="selecione">Selecione</option>
-                <option value="recepcao">Recepção</option>
-                <option value="restaurante">Restaurante</option>
-                <option value="garagem">Garagem</option>
-                <option value="serviço">Serviço de Quarto</option>
-                <option value="gerencia">Gerência</option>
-                <option value="concierge">Concierge</option>
-              </select>
-            </td>
-            <td>
-              <label for="ferias"></label>
-              <br />
-              <input type="radio" name="3" id="sim" />Sim
-              <input checked type="radio" name="3" id="nao" />Não
-            </td>
-            <td>
-              <label for="ferias"></label>
-              <br />
-              <input type="radio" name="4" id="sim" />Sim
-              <input checked type="radio" name="4" id="nao" />Não
-            </td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Sérgio</td>
-            <td>10 anos</td>
-            <td>
-              <select name="atividade" id="atividade">
-                <option value="selecione">Selecione</option>
-                <option value="recepcao">Recepção</option>
-                <option value="restaurante">Restaurante</option>
-                <option value="garagem">Garagem</option>
-                <option value="serviço">Serviço de Quarto</option>
-                <option value="gerencia">Gerência</option>
-                <option value="concierge">Concierge</option>
-              </select>
-            </td>
-            <td>
-              <label for="ferias"></label>
-              <br />
-              <input type="radio" name="5" id="sim" />Sim
-              <input checked type="radio" name="5" id="nao" />Não
-            </td>
-            <td>
-              <label for="ferias"></label>
-              <br />
-              <input type="radio" name="6" id="sim" />Sim
-              <input checked type="radio" name="6" id="nao" />Não
-            </td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>João</td>
-            <td>6 meses</td>
-            <td>
-              <select name="atividade" id="atividade">
-                <option value="selecione">Selecione</option>
-                <option value="recepcao">Recepção</option>
-                <option value="restaurante">Restaurante</option>
-                <option value="garagem">Garagem</option>
-                <option value="serviço">Serviço de Quarto</option>
-                <option value="gerencia">Gerência</option>
-                <option value="concierge">Concierge</option>
-              </select>
-            </td>
-            <td>
-              <label for="ferias"></label>
-              <br />
-              <input type="radio" name="7" id="sim" />Sim
-              <input checked type="radio" name="7" id="nao" />Não
-            </td>
-            <td>
-              <label for="ferias"></label>
-              <br />
-              <input type="radio" name="8" id="sim" />Sim
-              <input checked type="radio" name="8" id="nao" />Não
-            </td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>Ana</td>
-            <td>3 anos</td>
-            <td>
-              <select name="atividade" id="atividade">
-                <option value="selecione">Selecione</option>
-                <option value="recepcao">Recepção</option>
-                <option value="restaurante">Restaurante</option>
-                <option value="garagem">Garagem</option>
-                <option value="serviço">Serviço de Quarto</option>
-                <option value="gerencia">Gerência</option>
-                <option value="concierge">Concierge</option>
-              </select>
-            </td>
-            <td>
-              <label for="ferias"></label>
-              <input type="radio" name="9" id="sim" />Sim
-              <input checked type="radio" name="9" id="nao" />Não
-            </td>
-            <td>
-              <label for="ferias"></label>
-              <input type="radio" name="10" id="sim" />Sim
-              <input checked type="radio" name="10" id="nao" />Não
-            </td>
-          </tr>
-        </table>
-      </div>
-    </main>
+    <table class="table-primary mb-3 mt-3 color-secondary col-12-xl">
+      <tr class="">
+        <th>Código</th>
+        <th>Nome</th>
+        <th>Tempo de empresa</th>
+        <th>Atividade Atual</th>
+        <th>Férias</th>
+        <th>Afastamento médico</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Maria</td>
+        <td>5 anos</td>
+        <td>
+          <select name="atividade" id="atividade" class="input-secondary">
+            <option value="selecione">Selecione</option>
+            <option value="recepcao">Recepção</option>
+            <option value="restaurante">Restaurante</option>
+            <option value="garagem">Garagem</option>
+            <option value="serviço">Serviço de Quarto</option>
+            <option value="gerencia">Gerência</option>
+            <option value="concierge">Concierge</option>
+          </select>
+        </td>
+        <td>
+          <label for="ferias"></label>
+          <input type="radio" name="1" id="sim" />Sim
+          <input checked type="radio" name="1" id="nao" />Não
+        </td>
+        <td>
+          <label for="ferias"></label>
+          <input type="radio" name="2" id="sim" />Sim
+          <input checked type="radio" name="2" id="nao" />Não
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>José</td>
+        <td>1 ano</td>
+        <td>
+          <select name="atividade" id="atividade" class="input-secondary">
+            <option value="selecione">Selecione</option>
+            <option value="recepcao">Recepção</option>
+            <option value="restaurante">Restaurante</option>
+            <option value="garagem">Garagem</option>
+            <option value="serviço">Serviço de Quarto</option>
+            <option value="gerencia">Gerência</option>
+            <option value="concierge">Concierge</option>
+          </select>
+        </td>
+        <td>
+          <label for="ferias"></label>
+          <input type="radio" name="3" id="sim" />Sim
+          <input checked type="radio" name="3" id="nao" />Não
+        </td>
+        <td>
+          <label for="ferias"></label>
+          <input type="radio" name="4" id="sim" />Sim
+          <input checked type="radio" name="4" id="nao" />Não
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Sérgio</td>
+        <td>10 anos</td>
+        <td>
+          <select name="atividade" id="atividade" class="input-secondary">
+            <option value="selecione">Selecione</option>
+            <option value="recepcao">Recepção</option>
+            <option value="restaurante">Restaurante</option>
+            <option value="garagem">Garagem</option>
+            <option value="serviço">Serviço de Quarto</option>
+            <option value="gerencia">Gerência</option>
+            <option value="concierge">Concierge</option>
+          </select>
+        </td>
+        <td>
+          <label for="ferias"></label>
+          <input type="radio" name="5" id="sim" />Sim
+          <input checked type="radio" name="5" id="nao" />Não
+        </td>
+        <td>
+          <label for="ferias"></label>
+          <input type="radio" name="6" id="sim" />Sim
+          <input checked type="radio" name="6" id="nao" />Não
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>João</td>
+        <td>6 meses</td>
+        <td>
+          <select name="atividade" id="atividade" class="input-secondary">
+            <option value="selecione">Selecione</option>
+            <option value="recepcao">Recepção</option>
+            <option value="restaurante">Restaurante</option>
+            <option value="garagem">Garagem</option>
+            <option value="serviço">Serviço de Quarto</option>
+            <option value="gerencia">Gerência</option>
+            <option value="concierge">Concierge</option>
+          </select>
+        </td>
+        <td>
+          <label for="ferias"></label>
+          <input type="radio" name="7" id="sim" />Sim
+          <input checked type="radio" name="7" id="nao" />Não
+        </td>
+        <td>
+          <label for="ferias"></label>
+          <input type="radio" name="8" id="sim" />Sim
+          <input checked type="radio" name="8" id="nao" />Não
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Ana</td>
+        <td>3 anos</td>
+        <td>
+          <select name="atividade" id="atividade" class="input-secondary">
+            <option value="selecione">Selecione</option>
+            <option value="recepcao">Recepção</option>
+            <option value="restaurante">Restaurante</option>
+            <option value="garagem">Garagem</option>
+            <option value="serviço">Serviço de Quarto</option>
+            <option value="gerencia">Gerência</option>
+            <option value="concierge">Concierge</option>
+          </select>
+        </td>
+        <td>
+          <label for="ferias"></label>
+          <input type="radio" name="9" id="sim" />Sim
+          <input checked type="radio" name="9" id="nao" />Não
+        </td>
+        <td>
+          <label for="ferias"></label>
+          <input type="radio" name="10" id="sim" />Sim
+          <input checked type="radio" name="10" id="nao" />Não
+        </td>
+      </tr>
+    </table>
+  </main>
 
-    <footer class="footer">
-      <div class="footer_title">
-        <div class="footer_list">
-          <!-- Logo -->
-          <a href="#"
-            ><img src="../../assets/images/logo/logo.svg" alt="Logo DEV.aneio"
-          /></a>
-          <!--ícones das redes sociais --->
-          <div class="footer_icons">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""> <i class="fa-brands fa-youtube"></i></a>
+  <footer class="bg-grey-lighten-4 color-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="row pt-3 pb-3 j-space-between">
+          <div class="row col-2-xl gap-1">
+            <!-- Logo -->
+            <a href="http://127.0.0.1:5500/" class="col-12-xl"><img
+                src="http://127.0.0.1:5500/src/assets/images/logo/logo.svg" alt="Logo DEV.aneio" class="img" /></a>
+            <!--ícones das redes sociais --->
+            <div class="row col-12-xl gap-2 j-center">
+              <a href=""><i class="fa-brands fa-instagram font-size-large"></i></a>
+              <a href=""><i class="fa-brands fa-facebook font-size-large"></i></a>
+              <a href=""><i class="fa-brands fa-twitter font-size-large"></i></a>
+              <a href=""> <i class="fa-brands fa-youtube font-size-large"></i></a>
+            </div>
+          </div>
+          <div class="row col-3-xl">
+            <ul class="row gap-1 a-center">
+              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/about.html">Sobre nós</a></li>
+              <li class="col-12-xl"><a
+                  href="http://127.0.0.1:5500/src/pages/accommodations/accommodations.html">Acomodações</a>
+              </li>
+              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/gastronomy.html">Gastronomia</a>
+              </li>
+              <li class="col-12-xl"><a href="http://127.0.0.1:5500/src/pages/reservations.html">Reservas</a></li>
+            </ul>
+          </div>
+          <div class="row col-3-xl gap-1 a-center">
+            <h3 class="col-12-xl">Nosso Endereço</h3>
+            <p>
+              Via Costeira, n° 34, <br />
+              Parque das Dunas<br />
+              Natal - RN, Brasil.
+            </p>
+          </div>
+          <div class="row col-2-xl a-center gap-1">
+            <h3 class="col-12-xl">Contato</h3>
+            <a href="tel:+5584999999999" class="link-secondary col-12-xl">(84) 99999-9999</a>
+            <a href="tel:+5584999999999" class="link-secondary col-12-xl">(84) 88888-8888</a>
           </div>
         </div>
-        <div class="footer_navigation">
-          <ul>
-            <li><a href="/src/pages/admin/home_admin.html">Home</a></li>
-            <li><a href="/src/pages/admin/employees.html">Funcionários</a></li>
-            <li><a href="/src/pages/admin/guests.html">Clientes</a></li>
-            <li><a href="/src/pages/admin/reservations.html">Reservas</a></li>
-          </ul>
-        </div>
-        <div class="footer_address">
-          <h3>Nosso Endereço</h3>
-          <p>
-            Via Costeira, n° 34, <br />
-            Parque das Dunas<br />
-            Natal - RN, Brasil.
-          </p>
-        </div>
-        <div class="footer_contact">
-          <h3>Contato</h3>
-          <p>(84) 99999-9999</p>
-          <p>(84) 88888-8888</p>
+
+        <span class="spacer bg-secondary"></span>
+
+        <div class="row pt-1 pb-1 j-center col-12-xl">
+          <p>&copy; Todos os direitos reservados 2022</p>
         </div>
       </div>
-      <hr />
-      <div class="footer_copy">
-        <p>&copy; Todos os direitos reservados 2022</p>
-      </div>
-    </footer>
-  </body>
+    </div>
+
+  </footer>
+</body>
+
 </html>

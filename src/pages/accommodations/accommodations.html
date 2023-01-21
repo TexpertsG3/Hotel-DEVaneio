@@ -3,17 +3,19 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="http://127.0.0.1:5500/src/assets/images/logo/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="http://127.0.0.1:5500/src/css/style.css">
-  <title>Hotel DEVaneio -Login</title>
+
+  <title>Acomodações</title>
 </head>
 
-<body class="body__login">
+<body>
 
   <div class="bg-secondary">
     <header class="container header">
@@ -40,46 +42,85 @@
     </header>
   </div>
 
-  <div class="container row j-space-between pt-3 pb-3">
-    <form class="row col-5-xl gap-1 a-center">
-      <legend class="font-size-large col-12-xl">Entrar</legend>
+  <main class="row gap-3 pt-3 pb-3">
+    <section class="container">
+      <div class="row gap-2 a-center a-item-center">
+        <header class="row col-12-xl j-center">
+          <h2 class="font-size-large">
+            Acomodação C
+          </h2>
+        </header>
+        <article class="row a-center a-item-center j-space-between">
+          <div class="col-7-xl">
+            <img src="http://127.0.0.1:5500/src/assets/images/accommodations/quarto-c.jpg" alt=""
+              class="img col-12-xl" />
+          </div>
 
-      <div class="row col-12-xl gap-1">
-        <label>Usuário</label>
-        <input type="text" name="username" id="username" placeholder=" Insira seu usuário" class="input-primary col-12-xl" />
+          <div class="row col-4-xl gap-2">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nemo alias a impedit praesentium
+              aliquam, ratione nisi expedita libero deserunt dolore maiores vel eveniet soluta provident porro
+              accusamus ducimus voluptatum?
+            </p>
+            <a href="http://127.0.0.1:5500/src/pages/reservations.html"
+              class="btn-primary color-white">Faça uma reserva</a>
+          </div>
+        </article>
       </div>
+    </section>
 
-      <div class="row col-12-xl gap-1">
-        <label>Senha</label>
-        <input type="password" name="password" id="password" placeholder=" Insira sua senha" class="input-primary col-12-xl" />
+    <section class="container">
+      <div class="row gap-2 a-center a-item-center">
+        <header class="row col-12-xl j-center">
+          <h2 class="font-size-large">
+            Acomodação C#
+          </h2>
+        </header>
+        <article class="row a-center a-item-center j-space-between">
+          <div class="row col-4-xl gap-2">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nemo alias a impedit praesentium
+              aliquam, ratione nisi expedita libero deserunt dolore maiores vel eveniet soluta provident porro
+              accusamus ducimus voluptatum?
+            </p>
+            <a href="http://127.0.0.1:5500/src/pages/reservations.html"
+              class="btn-primary color-white">Faça uma reserva</a>
+          </div>
+
+          <div class="col-7-xl">
+            <img src="http://127.0.0.1:5500/src/assets/images/accommodations/quarto-c-sharp.jpg" alt=""
+              class="img col-12-xl" />
+          </div>
+        </article>
       </div>
+    </section>
 
-      <input type="submit" id="btn_login" class="btn-primary color-white" value="Entrar">
+    <section class="container">
+      <div class="row gap-2 a-center a-item-center">
+        <header class="row col-12-xl j-center">
+          <h2 class="font-size-large">
+            Acomodação C++
+          </h2>
+        </header>
+        <article class="row a-center a-item-center j-space-between">
+          <div class="col-7-xl">
+            <img src="http://127.0.0.1:5500/src/assets/images/accommodations/quarto-c-plus-plus.jpg" alt=""
+              class="img col-12-xl" />
+          </div>
 
-    </form>
-
-    <form class="row col-5-xl gap-1 a-center">
-      <legend class="font-size-large col-12-xl">Registrar</legend>
-
-      <div class="row col-12-xl gap-1">
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="new_userEmail" placeholder=" Coloque seu E-mail" class="input-primary col-12-xl" />
+          <div class="row col-4-xl gap-2">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nemo alias a impedit praesentium
+              aliquam, ratione nisi expedita libero deserunt dolore maiores vel eveniet soluta provident porro
+              accusamus ducimus voluptatum?
+            </p>
+            <a href="http://127.0.0.1:5500/src/pages/reservations.html"
+              class="btn-primary color-white">Faça uma reserva</a>
+          </div>
+        </article>
       </div>
-
-      <div class="row col-12-xl gap-1">
-        <label for="user2">Usuário</label>
-        <input type="text" name="user2" id="new_userUsuario" placeholder=" Crie o seu usuário" class="input-primary col-12-xl" />
-      </div>
-
-      <div class="row col-12-xl gap-1">
-        <label for="password2">Senha</label>
-        <input type="password" name="password2" id="new_userPassword" placeholder=" Crie a sua senha" class="input-primary col-12-xl" />
-      </div>
-
-      <input class="btn-primary color-white" type="submit" id="btn_register" value="Registrar">
-
-    </form>
-  </div>
+    </section>
+  </main>
 
   <footer class="bg-grey-lighten-4 color-secondary">
     <div class="container">
@@ -111,8 +152,8 @@
           <div class="row col-3-xl gap-1 a-center">
             <h3 class="col-12-xl">Nosso Endereço</h3>
             <p>
-              Via Costeira, n° 34,
-              Parque das Dunas
+              Via Costeira, n° 34, <br />
+              Parque das Dunas<br />
               Natal - RN, Brasil.
             </p>
           </div>
@@ -132,8 +173,6 @@
     </div>
 
   </footer>
-
 </body>
-<script src="../js/login.js" async></script>
 
 </html>
