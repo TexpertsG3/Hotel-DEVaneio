@@ -6,6 +6,11 @@ export function headerLoggedAction() {
 
     if (getLoggedUser()) {
         logged.style.display = "flex";
+        let name = document.getElementById("header__user-name");
+        if (name) {
+            name.innerHTML = getLoggedUser().name;
+        }
+
         login.style.display = "none";
     } else {
         logged.style.display = "none";

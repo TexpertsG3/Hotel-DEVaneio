@@ -1,8 +1,8 @@
 import * as ls from "./ls.js";
 export const users = {
-  "fernando@tex.com": {
-    "name": "Fernando Braga Alves",
-    "email": "fernando@tex.com",
+  "admin@tex.com": {
+    "name": "Administrador tx",
+    "email": "admin@tex.com",
     "password": "senha",
     "roles": "ROLE_ADMIN",
     "reservations": []
