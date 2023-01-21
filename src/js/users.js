@@ -18,5 +18,5 @@ export function addUser(name, email, password) {
     "reservations": []
   }
 
-  ls.loadUsers();
+  ls.loadUsers(users);
 }
