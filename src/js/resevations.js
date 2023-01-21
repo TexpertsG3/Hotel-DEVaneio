@@ -47,8 +47,6 @@ export function setUpdateAction() {
 }
 
 function validationReservation(checkin, checkout, persons, room) {
-    console.log(checkin);
-
     if (!checkin) {
         setAlert("Campo Check-in não pode ser vazio", "reservation-alert", "error");
         return false;
@@ -67,6 +65,8 @@ function validationReservation(checkin, checkout, persons, room) {
         setAlert("Selecione uma acomodação", "reservation-alert", "error");
         return false;
     }
+
+    return true;
 }
 
 function addReservatin() {
@@ -115,7 +115,7 @@ function addReservatin() {
         "services": services,
     }
 
-    if (validationReservation(reservation.checkin, reservation.checkout, reservation.persons, reservation.room)) {
+    if (!validationReservation(reservation.checkin, reservation.checkout, reservation.persons, reservation.room)) {
         return;
     }
 
