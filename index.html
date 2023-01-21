@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="http://127.0.0.1:5500/src/css/style.css">
   <link rel="shortcut icon" href="http://127.0.0.1:5500/src/assets/images/logo/logo.png" type="image/x-icon" />
   <title>Hotel DEVaneio</title>
-  <script src="http://127.0.0.1:5500/src/js/main.js" async></script>
+  <script src="http://127.0.0.1:5500/src/js/modules/logged.js" type="module" async></script>
 </head>
 
 <body>
@@ -22,8 +22,13 @@
           <img src="http://127.0.0.1:5500/src/assets/images/logo/logo_sem_fundo.png" alt="Logo" class="col-12-xl" />
         </a>
 
-        <div class="row a-center">
+        <div class="row a-center" id="btn_sigin" >
           <a href="http://127.0.0.1:5500/src/pages/login.html" class="btn-primary color-white">Login</a>
+        </div>
+
+        <div class="row a-center d-none" id="user_logged">
+          <span class="row a-center color-primary-lighten-5  pr-3" id="hello_user"></span>
+          <a href="#" class="btn-primary color-white" id="out_user">Sair</a>
         </div>
 
       </div>

@@ -11,6 +11,7 @@
   <link rel="shortcut icon" href="http://127.0.0.1:5500/src/assets/images/logo/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="http://127.0.0.1:5500/src/css/style.css">
   <title>Hotel DEVaneio -Login</title>
+  <script src="http://127.0.0.1:5500/src/js/login.js" type="module" async></script>
 </head>
 
 <body class="body__login">
@@ -24,6 +25,11 @@
 
         <div class="row a-center">
           <a href="http://127.0.0.1:5500/src/pages/login.html" class="btn-primary color-white">Login</a>
+        </div>
+
+        <div class="row a-center d-none" id="user_logged">
+          <span class="row a-center color-primary-lighten-5  pr-3" id="hello_user"></span>
+          <a href="#" class="btn-primary color-white" id="out_user">Sair</a>
         </div>
 
       </div>
@@ -54,7 +60,7 @@
         <input type="password" name="password" id="password" placeholder=" Insira sua senha" class="input-primary col-12-xl" />
       </div>
 
-      <input type="submit" id="btn_login" class="btn-primary color-white" value="Entrar">
+      <input type="button" id="btn_login" class="btn-primary color-white" value="Entrar">
 
     </form>
 
@@ -76,7 +82,7 @@
         <input type="password" name="password2" id="new_userPassword" placeholder=" Crie a sua senha" class="input-primary col-12-xl" />
       </div>
 
-      <input class="btn-primary color-white" type="submit" id="btn_register" value="Registrar">
+      <input class="btn-primary color-white" type="button" id="btn_register" value="Registrar">
 
     </form>
   </div>
@@ -134,6 +140,6 @@
   </footer>
 
 </body>
-<script src="../js/login.js" async></script>
+
 
 </html>

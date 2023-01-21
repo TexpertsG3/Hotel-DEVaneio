@@ -16,15 +16,13 @@ btn_login.addEventListener("click", () => {
   const usuario = localStorage.getItem("usuario");
   const senha = localStorage.getItem("senha");
 
-
-
   if (usuario.length < 3) {
     alert("Por favor, preencha adequadamente os campos.");
     localStorage.clear();
   } else if (validateAccess(usuario, loginAdmin) && senha == senhaTemp) {
     alert("Login de adimnistrador bem sucedido, você será redirecionado.");
     location.href = "../pages/admin/home_admin.html";
-  } else if (validateAccess(usuario, loginTemp) && senha == senhaTemp || validateAccess(usuario, localStorage.getItem('usuario')) && senha == senhaTemp) {
+  } else if (validateAccess(usuario, loginTemp) && senha == senhaTemp) {
     alert("Login bem sucedido, você será redirecionado.");
     location.href = "../../index.html";
   } else {
