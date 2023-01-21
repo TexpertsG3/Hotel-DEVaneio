@@ -2434,4 +2434,8 @@ a {
   cursor: pointer;
 }
 
+#header__logged {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

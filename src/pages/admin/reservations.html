@@ -12,6 +12,18 @@
   <link rel="shortcut icon" href="http://localhost:63342/Hotel-DEVaneio/src/assets/images/logo/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="http://localhost:63342/Hotel-DEVaneio/src/css/style.css">
   <title>Hotel DEVaneio - Reservas</title>
+
+  <script>
+    if (!localStorage.getItem("loggedUser")) {
+      window.location.href = "http://localhost:63342/Hotel-DEVaneio/src/pages/login.html";
+    }
+
+    let user = JSON.parse(localStorage.getItem("loggedUser"));
+
+    if (user.roles !== "ROLE_ADMIN") {
+      window.location.href = "http://localhost:63342/Hotel-DEVaneio/";
+    }
+  </script>
 </head>
 
 <body>
@@ -81,6 +93,8 @@
     </div>
 
   </footer>
+
+  <script src="http://localhost:63342/Hotel-DEVaneio/src/js/main.js" type="module"></script>
 </body>
 
 </html>

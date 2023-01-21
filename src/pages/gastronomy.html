@@ -11,33 +11,46 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" href="http://localhost:63342/Hotel-DEVaneio/src/assets/images/logo/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="http://localhost:63342/Hotel-DEVaneio/src/css/style.css">
+
+  <script>
+    if (!localStorage.getItem("loggedUser")) {
+      window.location.href = "http://localhost:63342/Hotel-DEVaneio/src/pages/login.html";
+    }
+  </script>
 </head>
 
 <body>
-  <div class="bg-secondary">
-    <header class="container header">
-      <div class="row j-space-between col-12-xl a-center">
-        <a href="http://localhost:63342/Hotel-DEVaneio/" class="header__logo col-1-xl">
-          <img src="http://localhost:63342/Hotel-DEVaneio/src/assets/images/logo/logo_sem_fundo.png" alt="Logo" class="col-12-xl" />
-        </a>
 
-        <div class="row a-center">
-          <a href="http://localhost:63342/Hotel-DEVaneio/src/pages/login.html" class="btn-primary color-white">Login</a>
-        </div>
+<div class="bg-secondary">
+  <header class="container header">
+    <div class="row j-space-between col-12-xl a-center a-item-center">
+      <a href="http://localhost:63342/Hotel-DEVaneio/" class="header__logo col-1-xl">
+        <img src="http://localhost:63342/Hotel-DEVaneio/src/assets/images/logo/logo_sem_fundo.png" alt="Logo"
+             class="col-12-xl"/>
+      </a>
 
+      <a id="header__login" href="http://localhost:63342/Hotel-DEVaneio/src/pages/login.html"
+         class="btn-primary color-white">Login</a>
+
+      <div id="header__logged" class="row a-item-center gap-2">
+        <p id="header__user-name" class="color-white"></p>
+        <a id="header__logout" class="btn-primary color-white" href="#">Sair</a>
       </div>
-      <span class="spacer bg-white"></span>
-      <nav class="nav-menu-primary color-white">
-        <ul>
-          <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/about.html">Sobre</a></li>
-          <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/accommodations/accommodations.html">Acomodações</a></li>
-          <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/gastronomy.html">Gastronomia</a></li>
-          <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/reservations.html">Reservas</a></li>
-          <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/contact_us.html">Fale Conosco</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+
+
+    </div>
+    <span class="spacer bg-white"></span>
+    <nav class="nav-menu-primary color-white">
+      <ul>
+        <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/about.html">Sobre</a></li>
+        <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/accommodations/accommodations.html">Acomodações</a></li>
+        <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/gastronomy.html">Gastronomia</a></li>
+        <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/reservations.html">Reservas</a></li>
+        <li><a href="http://localhost:63342/Hotel-DEVaneio/src/pages/contact_us.html">Fale Conosco</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
 
   <main class="container">
     <section class="row gap-2 j-center pb-3 pt-3">
@@ -133,6 +146,8 @@
     </div>
 
   </footer>
+
+  <script src="http://localhost:63342/Hotel-DEVaneio/src/js/main.js" type="module"></script>
 </body>
 
 </html>

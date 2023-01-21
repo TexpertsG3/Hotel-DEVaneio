@@ -14,3 +14,7 @@ export function loadUsers() {
 export function getUsers() {
     return JSON.parse(localStorage.getItem("users"));
 }
+
+export function getLogedUser() {
+    return localStorage.getItem("loggedUser");
+}
