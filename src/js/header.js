@@ -1,10 +1,10 @@
-import {getLogedUser} from "./ls.js";
+import {getLoggedUser} from "./ls.js";
 
 export function headerLoggedAction() {
     let logged = document.getElementById("header__logged");
     let login = document.getElementById("header__login");
 
-    if (getLogedUser()) {
+    if (getLoggedUser()) {
         logged.style.display = "flex";
         login.style.display = "none";
     } else {

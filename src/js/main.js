@@ -1,9 +1,10 @@
 import * as users from "./users.js";
 import * as ls from "./ls.js";
 import {addLoginAction, addRegisterAction} from "./login.js";
-import {setUpdateAction} from "./resevations.js";
+import {addReservatinAction, setUpdateAction} from "./resevations.js";
 import {addModalAction} from "./modal.js";
 import {headerLoggedAction} from "./header.js";
+import {addTableReservationsAction} from "./admin.js";
 
 ls.initUsers();
 
@@ -17,3 +18,7 @@ addLoginAction();
 //Reservations page
 setUpdateAction();
 addModalAction();
+addReservatinAction();
+
+//Admin
+addTableReservationsAction();

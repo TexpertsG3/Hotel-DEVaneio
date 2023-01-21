@@ -63,15 +63,15 @@
         <div class="modal bg-white gap-3" id="modal">
           <div class="modal__close" id="modal__close"><i class="fa-sharp fa-solid fa-xmark font-size-large"></i></div>
           <div class="col-12-xl">
-            <input type="checkbox" id="service-1">
+            <input type="checkbox" id="service-1" name="service-1" value="Café da Manhã">
             <label for="service-1">Café da Manhã</label>
           </div>
           <div class="col-12-xl">
-            <input type="checkbox" id="service-2">
+            <input type="checkbox" id="service-2" name="service-2" value="Guia Turístico">
             <label for="service-2">Guia Turístico</label>
           </div>
           <div class="col-12-xl">
-            <input type="checkbox" id="service-3">
+            <input type="checkbox" id="service-3" name="service-3" value="Comemoração no Restaurante">
             <label for="service-3">Comemoração no Restaurante</label>
           </div>
         </div>
@@ -146,6 +146,9 @@
 
         <div id="form__resume" class="row col-3-xl a-center gap-2">
           <h3 class="col-12-xl">RESUMO DA RESERVA</h3>
+
+          <div class="row col-12-xl j-center pd-1 d-none"><span id="reservation-alert"></span></div>
+
           <div class="row col-12-xl gap-col gap-1 bg-grey-lighten-4 pd-1">
             <p class="col-12-xl">Apartamento: <span id="resume-room"></span></p>
             <p class="col-12-xl">Checkin: <span id="resume-checkin"></span></p>
@@ -154,7 +157,7 @@
           </div>
           <button class="col-12-xl link-under-primary color-secondary" id="services">Adcionar mais SERVIÇOS</button>
           <div class="row j-center col-12-xl">
-            <input type="submit" value="Continuar" class="btn-primary color-white">
+            <input id="reservation__submit" type="submit" value="Continuar" class="btn-primary color-white">
           </div>
         </div>
       </form>

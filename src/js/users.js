@@ -5,7 +5,7 @@ export const users = {
     "email": "fernando@tex.com",
     "password": "senha",
     "roles": "ROLE_ADMIN",
-    "reservations": {}
+    "reservations": []
   }
 }
 
@@ -15,7 +15,7 @@ export function addUser(name, email, password) {
     "email": email,
     "password": password,
     "roles": "ROLE_USER",
-    "reservations": {}
+    "reservations": []
   }
 
   ls.loadUsers();

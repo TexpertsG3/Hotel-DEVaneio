@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,11 +33,31 @@
         <img src="http://localhost:63342/Hotel-DEVaneio/src/assets/images/logo/logo_sem_fundo.png" alt="Logo" class="col-12-xl" />
       </a>
 
-      <a href="http://localhost:63342/Hotel-DEVaneio/src/pages/login.html" class="btn-primary color-white">Login</a>
+      <a id="header__login" href="http://localhost:63342/Hotel-DEVaneio/src/pages/login.html"
+         class="btn-primary color-white">Login</a>
+
+      <div id="header__logged" class="row a-item-center gap-2">
+        <p id="header__user-name" class="color-white"></p>
+        <a id="header__logout" class="btn-primary color-white" href="#">Sair</a>
+      </div>
     </header>
   </div>
 
   <main>
+
+    <main class="container row j-center gap-2 pt-3 pb-3">
+      <h1 class="font-size-large">Reservas</h1>
+      <table id="admin__reservations-tbl" class="table-primary col-12-xl">
+        <tr>
+          <th>Nome</th>
+          <th>Check-in</th>
+          <th>Check-out</th>
+          <th>Nº de Pessoas</th>
+          <th>Acomodação</th>
+          <th>Serviços</th>
+        </tr>
+      </table>
+    </main>
    
   </main>
 

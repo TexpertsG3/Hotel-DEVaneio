@@ -28,7 +28,6 @@ export function addModalAction() {
 
     btn.addEventListener("click", evt => {
         evt.preventDefault();
-        console.log("open modal")
         modalOpen();
     });
     close.addEventListener("click", evt => modalClose());

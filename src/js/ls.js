@@ -7,7 +7,7 @@ export function initUsers() {
     localStorage.setItem("users", JSON.stringify(users));
 }
 
-export function loadUsers() {
+export function loadUsers(users) {
     localStorage.setItem("users", JSON.stringify(users));
 }
 
@@ -15,6 +15,6 @@ export function getUsers() {
     return JSON.parse(localStorage.getItem("users"));
 }
 
-export function getLogedUser() {
-    return localStorage.getItem("loggedUser");
+export function getLoggedUser() {
+    return JSON.parse(localStorage.getItem("loggedUser"));
 }

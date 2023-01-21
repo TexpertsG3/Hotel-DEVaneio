@@ -1,3 +1,6 @@
+import {getLoggedUser, getUsers, loadUsers} from "./ls.js";
+import {setAlert} from "./login.js";
+
 export function updateResume() {
     let form = new FormData(document.getElementById("form-reservations"));
 
@@ -42,3 +45,100 @@ export function setUpdateAction() {
         })
     })
 }
+
+function validationReservation(checkin, checkout, persons, room) {
+    console.log(checkin);
+
+    if (!checkin) {
+        setAlert("Campo Check-in não pode ser vazio", "reservation-alert", "error");
+        return false;
+    }
+    if (!checkout) {
+        setAlert("Campo Check-out não pode ser vazio", "reservation-alert", "error");
+        return false;
+    }
+
+    if (!persons) {
+        setAlert("Campo Pessoas não pode ser vazio", "reservation-alert", "error");
+        return false;
+    }
+
+    if (!room) {
+        setAlert("Selecione uma acomodação", "reservation-alert", "error");
+        return false;
+    }
+}
+
+function addReservatin() {
+    let form = new FormData(document.getElementById("form-reservations"));
+
+    if (!form) {
+        return;
+    }
+
+    let users = getUsers();
+    let loggedUser = getLoggedUser();
+    let checkin;
+    let checkout;
+    let services = [];
+
+    let date;
+    let dateFormated;
+
+    if (form.get("check-in")) {
+        date = Date.parse(form.get("check-in"));
+        dateFormated = new Intl.DateTimeFormat('pt-BR').format(date);
+        checkin = dateFormated;
+    }
+
+    if (form.get("check-out")) {
+        date = Date.parse(form.get("check-out"));
+        dateFormated = new Intl.DateTimeFormat('pt-BR').format(date);
+        checkout = dateFormated;
+    }
+
+    if (form.get("service-1")) {
+        services.push(form.get("service-1"))
+    }
+    if (form.get("service-2")) {
+        services.push(form.get("service-2"))
+    }
+    if (form.get("service-3")) {
+        services.push(form.get("service-3"))
+    }
+
+    let reservation = {
+        "checkin": checkin,
+        "checkout": checkout,
+        "persons": form.get("persons"),
+        "room": form.get("room"),
+        "services": services,
+    }
+
+    if (validationReservation(reservation.checkin, reservation.checkout, reservation.persons, reservation.room)) {
+        return;
+    }
+
+    loggedUser.reservations.push(reservation);
+    users[loggedUser.email] = loggedUser;
+
+    localStorage.setItem("loggedUser", JSON.stringify(loggedUser));
+    loadUsers(users);
+
+    setAlert("Reserva realizada com sucesso", "reservation-alert", "success");
+}
+
+export function addReservatinAction() {
+    let reservationSubmit = document.getElementById("reservation__submit");
+
+    if (!reservationSubmit) {
+        return;
+    }
+
+    reservationSubmit.addEventListener("click", ev => {
+        ev.preventDefault();
+        console.log("click");
+        addReservatin()
+    })
+}
+
