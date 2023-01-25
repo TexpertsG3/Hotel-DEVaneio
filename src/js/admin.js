@@ -38,6 +38,10 @@ export function tableReservations() {
             col = document.createElement("td");
             col.innerHTML = reservation.services;
             row.appendChild(col);
+
+            col = document.createElement("td");
+            col.innerHTML = reservation.price;
+            row.appendChild(col);
         })
     }
 }
