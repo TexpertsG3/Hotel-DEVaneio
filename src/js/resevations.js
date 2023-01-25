@@ -191,7 +191,6 @@ export function addReservatinAction() {
 
     reservationSubmit.addEventListener("click", ev => {
         ev.preventDefault();
-        console.log("click");
         addReservatin()
     })
 }
