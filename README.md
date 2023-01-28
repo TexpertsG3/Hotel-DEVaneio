@@ -1,21 +1,24 @@
-# Projeto Hotel
- 
-***<p align="center">Status do projeto: :hammer_and_wrench: Em desenvolvimento :hammer_and_wrench:</p>***
+# hotel-devaneio
 
-<br>
+## Project setup
+```
+npm install
+```
 
-### **Sobre o projeto:** <br>
-<p>Neste projeto o aluno aprenderá a desenvolver um sistema WEB de gerenciamento de um hotel,
-com as seguintes funcionalidades:</p>
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-* Monitoramento do fluxo de hospedes 
-* Serviços prestados nos apartamentos
-* Entrada e saída dos funcionários e seus rodízios de trabalho
-* Reservas
-* Checkin e checkout
-    
-<p>O sistema contempla a lógica pela visão do usuário e do administrador.</p>
+### Compiles and minifies for production
+```
+npm run build
+```
 
-<p align="center">
-  <img src="src/assets/images/README-ESCOPO.png">
-</p>
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,0 +1,78 @@
+@use "sass:math";
+@use "breakpoints" as bp;
+@use "variables" as variables;
+
+$grid-columns: 12;
+
+@include bp.xs {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-xs {
+      width: math.div(100%, $grid-columns) * $i;
+    }
+  }
+}
+
+@include bp.sm {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-sm {
+      width: math.div(100%, $grid-columns) * $i;
+    }
+  }
+}
+
+@include bp.md {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-md {
+      width: math.div(100%, $grid-columns) * $i;
+    }
+  }
+}
+
+@include bp.lg {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-lg {
+      width: math.div(100%, $grid-columns) * $i;
+    }
+  }
+}
+
+@include bp.xl {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-xl {
+      width: math.div(100%, $grid-columns) * $i;
+    }
+  }
+}
+
+//Gaps
+@for $i from 1 through 3 {
+  .gap-#{$i} {
+    gap: $i * variables.$base-padding;
+  }
+}
+
+// position
+$position: (flex-start, flex-end, center, space-between, space-around, space-evenly);
+$item-position: (flex-start, flex-end, center);
+
+@each $value in $position {
+  .j-#{$value} {
+    justify-content: $value;
+  }
+
+  //Align
+  .a-#{$value} {
+    align-content: $value;
+  }
+}
+
+@each $value in $item-position {
+  .j-item-#{$value} {
+    justify-items: $value;
+  }
+
+  //Align
+  .a-item-#{$value} {
+    align-items: $value;
+  }
+}
