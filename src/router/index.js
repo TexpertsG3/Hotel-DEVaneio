@@ -1,25 +1,47 @@
 import { createRouter, createWebHistory } from "vue-router";
-import about from "../views/about.vue";
-import Gastronomy from "../components/Gastronomy.vue";
-import MainContent from "../components/MainContent.vue";
+import about from "@/views/AboutContent.vue";
+import Gastronomy from "@/components/GastronomyContent.vue";
+import Rooms from "@/components/RoomsContent.vue";
+import ContactUs from "@/components/ContactUs.vue";
+import ReservationsContent from "@/components/ReservationsContent.vue";
+import MainContent from "@/components/MainContent.vue";
 
 const routes = [
   {
     path: "/about",
     name: "about",
-
     component:
       about
   },
   {
     path: "/",
     name: "home",
-    component: MainContent
+    component:
+      MainContent
   },
   {
-    path: "/Gastronomy",
+    path: "/reservations",
+    name: "reservations",
+    component:
+      ReservationsContent
+  },
+  {
+    path: "/contact-us",
+    name: "contactus",
+    component:
+    ContactUs
+  },
+  {
+    path: "/gastronomy",
     name: "gastronomy",
-    component: Gastronomy
+    component:
+      Gastronomy
+  },
+  {
+    path: "/rooms",
+    name: "rooms",
+    component:
+      Rooms
   }
 ]
 const router = createRouter({
