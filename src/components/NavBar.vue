@@ -21,22 +21,22 @@ export default {
         {
           item: "Acomodações",
           valor:
-            "/Rooms",
+            "/rooms",
         },
         {
           item: "Gastronomia",
           valor:
-            "/Gastronomy",
+            "/gastronomy",
         },
         {
           item: "Reservas",
           valor:
-            "/Reservations",
+            "/reservations",
         },
         {
           item: "Fale Conosco",
           valor:
-            "/ContactUs",
+            "/contact-us",
         },
       ],
     };
