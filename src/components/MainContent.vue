@@ -22,7 +22,7 @@
             <div>
               <a
                 class="btn-primary color-white"
-                href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/about.html"
+                href="http://localhost:5173/Hotel-DEVaneio/src/pages/about.html"
                 >Saiba mais</a
               >
             </div>
@@ -31,7 +31,7 @@
 
         <div class="row col-7-xl">
           <img
-            src="https://texpertsg3.github.io/Hotel-DEVaneio/src/assets/images/home/hotel-small.jpg"
+            src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/home/hotel-small.jpg"
             alt="Fachada do Hotel"
             class="img col-12-xl"
           />
@@ -48,7 +48,7 @@
           <ul class="">
             <li>
               <a
-                href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c.html"
+                href="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c.html"
                 target="accommodations__iframe"
                 class=""
                 >Acomodação C</a
@@ -56,7 +56,7 @@
             </li>
             <li>
               <a
-                href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c-sharp.html"
+                href="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c-sharp.html"
                 target="accommodations__iframe"
                 class=""
                 >Acomodação C#</a
@@ -64,7 +64,7 @@
             </li>
             <li>
               <a
-                href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c-plus-plus.html"
+                href="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c-plus-plus.html"
                 target="accommodations__iframe"
                 class=""
                 >Acomodação C++</a
@@ -74,7 +74,7 @@
         </nav>
 
         <iframe
-          src="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c.html"
+          src="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c.html"
           name="accommodations__iframe"
           title="Acomodações"
           class="accommodations__iframe col-12-xl"
@@ -96,14 +96,14 @@
             </p>
             <a
               class="btn-secondary-wbg color-secondary"
-              href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/gastronomy.html"
+              href="http://localhost:5173/Hotel-DEVaneio/src/pages/gastronomy.html"
             >
               Saiba mais
             </a>
           </div>
 
           <img
-            src="https://texpertsg3.github.io/Hotel-DEVaneio/src/assets/images/gastronomy/cozinha-gastronomia.jpg"
+            src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/gastronomy/cozinha-gastronomia.jpg"
             alt=""
             class="img col-7-xl"
           />

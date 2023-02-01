@@ -8,13 +8,13 @@ export default {
   components: {
     HeaderContent,
     MainContent,
-    FooterContent,
+    FooterContent
   },
 };
 </script>
 
 <template>
   <HeaderContent />
-  <MainContent />
+  <router-view />
   <FooterContent />
 </template>

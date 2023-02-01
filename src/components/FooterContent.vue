@@ -6,10 +6,10 @@
           <div class="row col-2-xl gap-1">
             <!-- Logo -->
             <a
-              href="https://texpertsg3.github.io/Hotel-DEVaneio/"
+              href="http://localhost:5173/Hotel-DEVaneio/"
               class="col-12-xl"
               ><img
-                src="https://texpertsg3.github.io/Hotel-DEVaneio/src/assets/images/logo/logo.svg"
+                src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/logo/logo.svg"
                 alt="Logo DEV.aneio"
                 class="img"
             /></a>
@@ -35,25 +35,25 @@
 
               <!-- <li class="col-12-xl">
                 <a
-                  href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/about.html"
+                  href="http://localhost:5173/Hotel-DEVaneio/src/pages/about.html"
                   >Sobre nós</a
                 >
               </li>
               <li class="col-12-xl">
                 <a
-                  href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/accommodations/accommodations.html"
+                  href="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/accommodations.html"
                   >Acomodações</a
                 >
               </li>
               <li class="col-12-xl">
                 <a
-                  href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/gastronomy.html"
+                  href="http://localhost:5173/Hotel-DEVaneio/src/pages/gastronomy.html"
                   >Gastronomia</a
                 >
               </li>
               <li class="col-12-xl">
                 <a
-                  href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/reservations.html"
+                  href="http://localhost:5173/Hotel-DEVaneio/src/pages/reservations.html"
                   >Reservas</a
                 >
               </li> -->

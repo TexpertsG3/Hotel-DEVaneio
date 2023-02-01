@@ -3,18 +3,18 @@
     <header class="container header">
       <div class="row j-space-between col-12-xl a-center a-item-center">
         <a
-          href="https://texpertsg3.github.io/Hotel-DEVaneio/"
+          href="http://localhost:5173/Hotel-DEVaneio/"
           class="header__logo col-1-xl"
         >
           <img
-            src="https://texpertsg3.github.io/Hotel-DEVaneio/src/assets/images/logo/logo_sem_fundo.png"
+            src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/logo/logo_sem_fundo.png"
             alt="Logo"
             class="col-12-xl"
           />
         </a>
         <a
           id="header__login"
-          href="https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/login.html"
+          href="http://localhost:5173/Hotel-DEVaneio/src/pages/login.html"
           class="btn-primary"
           >Login</a
         >

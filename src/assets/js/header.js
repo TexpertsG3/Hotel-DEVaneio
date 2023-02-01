@@ -30,7 +30,7 @@ function logoutAction() {
     logout.addEventListener("click", ev => {
         localStorage.removeItem("loggedUser");
 
-        window.location.href = "https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/login.html";
+        window.location.href = "http://localhost:5173/Hotel-DEVaneio/src/pages/login.html";
 
     });
 }

@@ -1,9 +1,11 @@
 <template>
   <ul>
-    <li v-for="(item, i) in menu" :key="item">
-      <a :href="menu[i].valor">{{ menu[i].item }}</a>
-    </li>
-  </ul>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/about">Sobre</router-link></li>
+        <li><router-link to="/Rooms">Acomodações</router-link></li>
+        <li><router-link to="/Gastronomy">Gastronomia</router-link></li>
+        <li><router-link to="/ContactUs">Fale Conosco</router-link></li>
+      </ul>
 </template>
 
 <script>
@@ -11,32 +13,30 @@ export default {
   name: "NavBar",
   data() {
     return {
-      colorNavBar: ["black", "white"],
       menu: [
         {
           item: "Sobre nós",
-          valor:
-            "https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/about.html",
-        },
+          valor:"http://localhost:5173/Hotel-DEVaneio/src/views/about.vue",
+          },
         {
           item: "Acomodações",
           valor:
-            "https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/accommodations/accommodations.html",
+            "http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/accommodations.html",
         },
         {
           item: "Gastronomia",
           valor:
-            "https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/gastronomy.html",
+            "http://localhost:5173/Hotel-DEVaneio/src/pages/gastronomy.html",
         },
         {
           item: "Reservas",
           valor:
-            "https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/reservations.html",
+            "http://localhost:5173/Hotel-DEVaneio/src/pages/reservations.html",
         },
         {
           item: "Fale Conosco",
           valor:
-            "https://texpertsg3.github.io/Hotel-DEVaneio/src/pages/contact_us.html",
+            "http://localhost:5173/Hotel-DEVaneio/src/pages/contact_us.html",
         },
       ],
     };
