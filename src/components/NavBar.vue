@@ -5,6 +5,8 @@
         <li><router-link to="/Rooms">Acomodações</router-link></li>
         <li><router-link to="/Gastronomy">Gastronomia</router-link></li>
         <li><router-link to="/ContactUs">Fale Conosco</router-link></li>
+        <li><router-link to="/Reservations">Fale Conosco</router-link></li>
+
       </ul>
 </template>
 
