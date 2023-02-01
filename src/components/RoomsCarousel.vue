@@ -6,7 +6,7 @@
     <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
       <SplideSlide>
         <img src="@/assets/images/accommodations/quarto-c.jpg" alt="Sample 1" />
-        <div class="row col-12-xl gap-2 col-2-lg ">
+        <!-- <div class="row col-12-xl gap-2 col-2-lg ">
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nemo alias a impedit praesentium
               aliquam, ratione nisi expedita libero deserunt dolore maiores vel eveniet soluta provident porro
@@ -14,7 +14,7 @@
             </p>
             <a href="/rooms" target="_blank"
               class="btn-primary color-white">Saiba mais...</a>
-          </div>
+          </div> -->
       </SplideSlide>
       <SplideSlide>
         <img

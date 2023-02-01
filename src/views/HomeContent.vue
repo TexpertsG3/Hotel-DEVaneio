@@ -91,14 +91,14 @@
             </p>
             <a
               class="btn-secondary-wbg color-secondary"
-              href="http://localhost:5173/Hotel-DEVaneio/src/pages/gastronomy.html"
+              href="@/views/GastronomyContent.vue"
             >
               Saiba mais
             </a>
           </div>
 
           <img
-            src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/gastronomy/cozinha-gastronomia.jpg"
+            src="@/assets/images/gastronomy/cozinha-gastronomia.jpg"
             alt=""
             class="img col-7-xl"
           />
