@@ -1,12 +1,6 @@
 <template>
   <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about">Sobre</router-link></li>
-        <li><router-link to="/Rooms">Acomodações</router-link></li>
-        <li><router-link to="/Gastronomy">Gastronomia</router-link></li>
-        <li><router-link to="/ContactUs">Fale Conosco</router-link></li>
-        <li><router-link to="/Reservations">Fale Conosco</router-link></li>
-
+        <li v-for="(item, i) in menu" :key="item"><router-link :to="menu[i].valor">{{ menu[i].item }}</router-link></li>
       </ul>
 </template>
 
@@ -16,29 +10,33 @@ export default {
   data() {
     return {
       menu: [
-        {
+      {
+          item: "Home",
+          valor:"/",
+          },  
+      {
           item: "Sobre nós",
-          valor:"http://localhost:5173/Hotel-DEVaneio/src/views/about.vue",
+          valor:"/about",
           },
         {
           item: "Acomodações",
           valor:
-            "http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/accommodations.html",
+            "/Rooms",
         },
         {
           item: "Gastronomia",
           valor:
-            "http://localhost:5173/Hotel-DEVaneio/src/pages/gastronomy.html",
+            "/Gastronomy",
         },
         {
           item: "Reservas",
           valor:
-            "http://localhost:5173/Hotel-DEVaneio/src/pages/reservations.html",
+            "/Reservations",
         },
         {
           item: "Fale Conosco",
           valor:
-            "http://localhost:5173/Hotel-DEVaneio/src/pages/contact_us.html",
+            "/ContactUs",
         },
       ],
     };
