@@ -1,3 +1,4 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
   <footer class="bg-grey-lighten-4 color-secondary">
     <div class="container">
@@ -5,58 +6,27 @@
         <div class="row pt-3 pb-3 j-space-between">
           <div class="row col-2-xl gap-1">
             <!-- Logo -->
-            <a
-              href="http://localhost:5173/Hotel-DEVaneio/"
-              class="col-12-xl"
+            <a href="/" class="col-12-xl"
               ><img
-                src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/logo/logo.svg"
+                src="@/assets/images/logo/logo.svg"
                 alt="Logo DEV.aneio"
                 class="img"
             /></a>
             <!--ícones das redes sociais --->
             <div class="row col-12-xl gap-2 j-center">
               <a href=""
-                ><i class="fa-brands fa-instagram font-size-large"></i
-              ></a>
+                ><i class="fa-brands fa-instagram font-size-large"></i></a>
               <a href=""
-                ><i class="fa-brands fa-facebook font-size-large"></i
-              ></a>
+                ><i class="fa-brands fa-facebook font-size-large"></i></a>
               <a href=""
-                ><i class="fa-brands fa-twitter font-size-large"></i
-              ></a>
+                ><i class="fa-brands fa-twitter font-size-large"></i></a>
               <a href="">
-                <i class="fa-brands fa-youtube font-size-large"></i
-              ></a>
+                <i class="fa-brands fa-youtube font-size-large"></i></a>
             </div>
           </div>
           <div class="row col-3-xl">
             <ul class="row gap-1 a-center">
               <NavBar class="col-12-xl" />
-
-              <!-- <li class="col-12-xl">
-                <a
-                  href="http://localhost:5173/Hotel-DEVaneio/src/pages/about.html"
-                  >Sobre nós</a
-                >
-              </li>
-              <li class="col-12-xl">
-                <a
-                  href="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/accommodations.html"
-                  >Acomodações</a
-                >
-              </li>
-              <li class="col-12-xl">
-                <a
-                  href="http://localhost:5173/Hotel-DEVaneio/src/pages/gastronomy.html"
-                  >Gastronomia</a
-                >
-              </li>
-              <li class="col-12-xl">
-                <a
-                  href="http://localhost:5173/Hotel-DEVaneio/src/pages/reservations.html"
-                  >Reservas</a
-                >
-              </li> -->
             </ul>
           </div>
           <div class="row col-3-xl gap-1 a-center">

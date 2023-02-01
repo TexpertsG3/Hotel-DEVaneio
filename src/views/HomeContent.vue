@@ -1,3 +1,4 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
   <main>
     <section class="container pt-3 pb-3" id="about">
@@ -20,18 +21,14 @@
               conosco!
             </p>
             <div>
-              <a
-                class="btn-primary color-white"
-                href="http://localhost:5173/Hotel-DEVaneio/src/pages/about.html"
-                >Saiba mais</a
-              >
+              <a class="btn-primary color-white" href="/about">Saiba mais</a>
             </div>
           </article>
         </div>
 
         <div class="row col-7-xl">
           <img
-            src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/home/hotel-small.jpg"
+            src="@/assets/images/home/hotel-small.jpg"
             alt="Fachada do Hotel"
             class="img col-12-xl"
           />
@@ -40,11 +37,9 @@
     </section>
 
     <section class="container" id="rooms">
-      <article class="row gap-2">
-        <header class="row j-center col-12-xl">
-          <h2 class="font-size-extra-large">Nossas Acomodações</h2>
-        </header>
-        <nav class="nav-menu-primary">
+      <article >
+        <RoomsCarousel class="row gap-2"/>
+        <!-- <nav class="nav-menu-primary">
           <ul class="">
             <li>
               <a
@@ -71,14 +66,14 @@
               >
             </li>
           </ul>
-        </nav>
-
+        </nav> -->
+<!--
         <iframe
           src="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c.html"
           name="accommodations__iframe"
           title="Acomodações"
           class="accommodations__iframe col-12-xl"
-        ></iframe>
+        ></iframe> -->
       </article>
     </section>
 
@@ -112,9 +107,14 @@
     </div>
   </main>
 </template>
-
+<!-- eslint-disable prettier/prettier -->
 <script>
+import RoomsCarousel from "@/components/RoomsCarousel.vue";
+
 export default {
-  name: "MainContent",
+  name: "HomeContent",
+  components: {
+    RoomsCarousel,
+  },
 };
 </script>

@@ -1,23 +1,16 @@
+<!-- eslint-disable prettier/prettier -->
 <template>
   <div class="bg-secondary">
     <header class="container header">
       <div class="row j-space-between col-12-xl a-center a-item-center">
-        <a
-          href="http://localhost:5173/Hotel-DEVaneio/"
-          class="header__logo col-1-xl"
-        >
+        <a href="/" class="header__logo col-1-xl">
           <img
-            src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/logo/logo_sem_fundo.png"
+            src="@/assets/images/logo/logo_sem_fundo.png"
             alt="Logo"
             class="col-12-xl"
           />
         </a>
-        <a
-          id="header__login"
-          href="http://localhost:5173/Hotel-DEVaneio/src/pages/login.html"
-          class="btn-primary"
-          >Login</a
-        >
+        <a id="header__login" href="/login" class="btn-primary">Login</a>
         <nav class="nav-menu-primary color-white">
           <NavBar />
         </nav>
@@ -32,7 +25,7 @@
     </header>
   </div>
 </template>
-
+<!-- eslint-disable prettier/prettier -->
 <script>
 import NavBar from "./NavBar.vue";
 export default {

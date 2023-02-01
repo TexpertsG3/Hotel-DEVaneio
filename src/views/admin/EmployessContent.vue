@@ -1,0 +1,322 @@
+<!-- eslint-disable prettier/prettier -->
+<template>
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+      <link
+        rel="shortcut icon"
+        href="http://localhost:5173/Hotel-DEVaneio/src/assets/images/logo/logo.png"
+        type="image/x-icon"
+      />
+      <link
+        rel="stylesheet"
+        href="http://localhost:5173/Hotel-DEVaneio/src/css/style.css"
+      />
+      <title>Hotel DEVaneio - Funcionários</title>
+
+      <script>
+        if (!localStorage.getItem("loggedUser")) {
+          window.location.href =
+            "http://localhost:5173/Hotel-DEVaneio/src/pages/login.html";
+        }
+
+        let user = JSON.parse(localStorage.getItem("loggedUser"));
+
+        if (user.roles !== "ROLE_ADMIN") {
+          window.location.href = "http://localhost:5173/Hotel-DEVaneio/";
+        }
+      </script>
+    </head>
+
+    <body>
+      <div class="bg-secondary">
+        <header
+          class="container header j-space-between col-12-xl a-center a-items-center"
+        >
+          <a
+            href="http://localhost:5173/Hotel-DEVaneio/src/pages/admin/home_admin.html"
+            class="header__logo col-1-xl"
+          >
+            <img
+              src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/logo/logo_sem_fundo.png"
+              alt="Logo"
+              class="col-12-xl"
+            />
+          </a>
+
+          <a
+            id="header__login"
+            href="http://localhost:5173/Hotel-DEVaneio/src/pages/login.html"
+            class="btn-primary color-white"
+            >Login</a
+          >
+
+          <div id="header__logged" class="row a-item-center gap-2 d-none">
+            <p id="header__user-name" class="color-white"></p>
+            <a id="header__logout" class="btn-primary color-white" href="#"
+              >Sair</a
+            >
+          </div>
+        </header>
+      </div>
+
+      <main class="container row j-center pb-3 pt-3">
+        <h1 class="font-size-extra-large">
+          Área Administrativa - Funcionários
+        </h1>
+
+        <table class="table-primary mb-3 mt-3 color-secondary col-12-xl">
+          <tr class="">
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Tempo de empresa</th>
+            <th>Atividade Atual</th>
+            <th>Férias</th>
+            <th>Afastamento médico</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Maria</td>
+            <td>5 anos</td>
+            <td>
+              <select name="atividade" class="input-secondary">
+                <option value="selecione">Selecione</option>
+                <option value="recepcao">Recepção</option>
+                <option value="restaurante">Restaurante</option>
+                <option value="garagem">Garagem</option>
+                <option value="serviço">Serviço de Quarto</option>
+                <option value="gerencia">Gerência</option>
+                <option value="concierge">Concierge</option>
+              </select>
+            </td>
+            <td>
+              <label for="ferias-nao-1">Sim</label>
+              <input type="radio" name="ferias-1" id="ferias-nao-1" />
+              <label for="ferias-sim-1">Não</label>
+              <input type="radio" name="ferias-1" id="ferias-sim-1" />
+            </td>
+            <td>
+              <label for="ferias-nao-2">Sim</label>
+              <input type="radio" name="ferias-2" id="ferias-nao-2" />
+              <label for="ferias-sim-2">Não</label>
+              <input type="radio" name="ferias-2" id="ferias-sim-2" />
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>José</td>
+            <td>1 ano</td>
+            <td>
+              <select name="atividade" class="input-secondary">
+                <option value="selecione">Selecione</option>
+                <option value="recepcao">Recepção</option>
+                <option value="restaurante">Restaurante</option>
+                <option value="garagem">Garagem</option>
+                <option value="serviço">Serviço de Quarto</option>
+                <option value="gerencia">Gerência</option>
+                <option value="concierge">Concierge</option>
+              </select>
+            </td>
+            <td>
+              <label for="ferias-nao-3">Sim</label>
+              <input type="radio" name="ferias-3" id="ferias-nao-3" />
+              <label for="ferias-sim-3">Não</label>
+              <input type="radio" name="ferias-3" id="ferias-sim-3" />
+            </td>
+            <td>
+              <label for="ferias-nao-4">Sim</label>
+              <input type="radio" name="ferias-4" id="ferias-nao-4" />
+              <label for="ferias-sim-4">Não</label>
+              <input type="radio" name="ferias-4" id="ferias-sim-4" />
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Sérgio</td>
+            <td>10 anos</td>
+            <td>
+              <select name="atividade" class="input-secondary">
+                <option value="selecione">Selecione</option>
+                <option value="recepcao">Recepção</option>
+                <option value="restaurante">Restaurante</option>
+                <option value="garagem">Garagem</option>
+                <option value="serviço">Serviço de Quarto</option>
+                <option value="gerencia">Gerência</option>
+                <option value="concierge">Concierge</option>
+              </select>
+            </td>
+            <td>
+              <label for="ferias-nao-5">Sim</label>
+              <input type="radio" name="ferias-5" id="ferias-nao-5" />
+              <label for="ferias-sim-5">Não</label>
+              <input type="radio" name="ferias-5" id="ferias-sim-5" />
+            </td>
+            <td>
+              <label for="ferias-nao7">Sim</label>
+              <input type="radio" name="ferias7" id="ferias-nao7" />
+              <label for="ferias-sim7">Não</label>
+              <input type="radio" name="ferias7" id="ferias-sim7" />
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>João</td>
+            <td>6 meses</td>
+            <td>
+              <select name="atividade" class="input-secondary">
+                <option value="selecione">Selecione</option>
+                <option value="recepcao">Recepção</option>
+                <option value="restaurante">Restaurante</option>
+                <option value="garagem">Garagem</option>
+                <option value="serviço">Serviço de Quarto</option>
+                <option value="gerencia">Gerência</option>
+                <option value="concierge">Concierge</option>
+              </select>
+            </td>
+            <td>
+              <label for="ferias-nao-8">Sim</label>
+              <input type="radio" name="ferias-8" id="ferias-nao-8" />
+              <label for="ferias-sim-8">Não</label>
+              <input type="radio" name="ferias-8" id="ferias-sim-8" />
+            </td>
+            <td>
+              <label for="ferias-nao-9">Sim</label>
+              <input type="radio" name="ferias-9" id="ferias-nao-9" />
+              <label for="ferias-sim-9">Não</label>
+              <input type="radio" name="ferias-9" id="ferias-sim-9" />
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Ana</td>
+            <td>3 anos</td>
+            <td>
+              <select name="atividade" class="input-secondary">
+                <option value="selecione">Selecione</option>
+                <option value="recepcao">Recepção</option>
+                <option value="restaurante">Restaurante</option>
+                <option value="garagem">Garagem</option>
+                <option value="serviço">Serviço de Quarto</option>
+                <option value="gerencia">Gerência</option>
+                <option value="concierge">Concierge</option>
+              </select>
+            </td>
+            <td>
+              <label for="ferias-nao-10">Sim</label>
+              <input type="radio" name="ferias-10" id="ferias-nao-10" />
+              <label for="ferias-sim-10">Não</label>
+              <input type="radio" name="ferias-10" id="ferias-sim-10" />
+            </td>
+            <td>
+              <label for="ferias-nao-11">Sim</label>
+              <input type="radio" name="ferias-11" id="ferias-nao-11" />
+              <label for="ferias-sim-11">Não</label>
+              <input type="radio" name="ferias-11" id="ferias-sim-11" />
+            </td>
+          </tr>
+        </table>
+      </main>
+
+      <footer class="bg-grey-lighten-4 color-secondary">
+        <div class="container">
+          <div class="row">
+            <div class="row pt-3 pb-3 j-space-between">
+              <div class="row col-2-xl gap-1">
+                <!-- Logo -->
+                <a
+                  href="http://localhost:5173/Hotel-DEVaneio/"
+                  class="col-12-xl"
+                  ><img
+                    src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/logo/logo.svg"
+                    alt="Logo DEV.aneio"
+                    class="img"
+                /></a>
+                <!--ícones das redes sociais --->
+                <div class="row col-12-xl gap-2 j-center">
+                  <a href=""
+                    ><i class="fa-brands fa-instagram font-size-large"></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-facebook font-size-large"></i
+                  ></a>
+                  <a href=""
+                    ><i class="fa-brands fa-twitter font-size-large"></i
+                  ></a>
+                  <a href="">
+                    <i class="fa-brands fa-youtube font-size-large"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="row col-3-xl">
+                <ul class="row gap-1 a-center">
+                  <li class="col-12-xl">
+                    <a
+                      href="http://localhost:5173/Hotel-DEVaneio/src/pages/about.html"
+                      >Sobre nós</a
+                    >
+                  </li>
+                  <li class="col-12-xl">
+                    <a
+                      href="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/accommodations.html"
+                      >Acomodações</a
+                    >
+                  </li>
+                  <li class="col-12-xl">
+                    <a
+                      href="http://localhost:5173/Hotel-DEVaneio/src/pages/gastronomy.html"
+                      >Gastronomia</a
+                    >
+                  </li>
+                  <li class="col-12-xl">
+                    <a
+                      href="http://localhost:5173/Hotel-DEVaneio/src/pages/reservations.html"
+                      >Reservas</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="row col-3-xl gap-1 a-center">
+                <h3 class="col-12-xl">Nosso Endereço</h3>
+                <p>
+                  Via Costeira, n° 34, <br />
+                  Parque das Dunas<br />
+                  Natal - RN, Brasil.
+                </p>
+              </div>
+              <div class="row col-2-xl a-center gap-1">
+                <h3 class="col-12-xl">Contato</h3>
+                <a href="tel:+5584999999999" class="link-secondary col-12-xl"
+                  >(84) 99999-9999</a
+                >
+                <a href="tel:+5584999999999" class="link-secondary col-12-xl"
+                  >(84) 88888-8888</a
+                >
+              </div>
+            </div>
+
+            <span class="spacer bg-secondary"></span>
+
+            <div class="row pt-1 pb-1 j-center col-12-xl">
+              <p>&copy; Todos os direitos reservados 2022</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script
+        src="@/assets/js/main.js"
+        type="module"
+      ></script>
+    </body>
+  </html>
+</template>

@@ -1,7 +1,9 @@
 <template>
   <ul>
-        <li v-for="(item, i) in menu" :key="item"><router-link :to="menu[i].valor">{{ menu[i].item }}</router-link></li>
-      </ul>
+    <li v-for="(item, i) in menu" :key="item">
+      <router-link :to="menu[i].valor">{{ menu[i].item }}</router-link>
+    </li>
+  </ul>
 </template>
 
 <script>
@@ -10,33 +12,29 @@ export default {
   data() {
     return {
       menu: [
-      {
+        {
           item: "Home",
-          valor:"/",
-          },  
-      {
+          valor: "/",
+        },
+        {
           item: "Sobre nós",
-          valor:"/about",
-          },
+          valor: "/about",
+        },
         {
           item: "Acomodações",
-          valor:
-            "/rooms",
+          valor: "/rooms",
         },
         {
           item: "Gastronomia",
-          valor:
-            "/gastronomy",
+          valor: "/gastronomy",
         },
         {
           item: "Reservas",
-          valor:
-            "/reservations",
+          valor: "/reservations",
         },
         {
           item: "Fale Conosco",
-          valor:
-            "/contact-us",
+          valor: "/contact-us",
         },
       ],
     };

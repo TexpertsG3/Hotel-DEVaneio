@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
     "package": "^1.0.1",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
