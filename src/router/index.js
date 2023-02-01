@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import about from "@/views/AboutContent.vue";
-import Gastronomy from "@/components/GastronomyContent.vue";
-import Rooms from "@/components/RoomsContent.vue";
-import ContactUs from "@/components/ContactUs.vue";
-import ReservationsContent from "@/components/ReservationsContent.vue";
+import Gastronomy from "@/views/GastronomyContent.vue";
+import Rooms from "@/views/RoomsContent.vue";
+import ContactUs from "@/views/ContactUs.vue";
+import ReservationsContent from "@/views/ReservationsContent.vue";
 import MainContent from "@/components/MainContent.vue";
 
 const routes = [
