@@ -11,6 +11,7 @@
   "dependencies": {
     "@splidejs/vue-splide": "^0.6.12",
     "package": "^1.0.1",
+    "packages": "^0.0.8",
     "pinia": "^2.0.28",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
