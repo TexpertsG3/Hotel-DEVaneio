@@ -77,15 +77,23 @@
             />
             <input
               type="number"
-              name="persons"
-              id="persons"
+              name="adults"
+              id="adults"
+              min="1"
+              value="1"
+              class="col-2-xl input-primary color-secondary"
+            />
+          </div>
+               <input
+              type="number"
+              name="children"
+              id="children"
               min="1"
               value="1"
               class="col-2-xl input-primary color-secondary"
             />
           </div>
         </div>
-
         <label class="col-12-xl">Escolha o quarto</label>
 
         <div class="row gap-2 col-8-xl">

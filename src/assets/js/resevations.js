@@ -14,7 +14,8 @@ export function updateResume() {
     let room = document.getElementById("resume-room");
     let checkin = document.getElementById("resume-checkin");
     let checkout = document.getElementById("resume-checkout");
-    let persons = document.getElementById("resume-persons");
+    let adults = document.getElementById("resume-adults");
+    let children = document.getElementById("resume-children");
     let price = document.getElementById("resume-price");
 
     room.innerHTML = form.get("room");
@@ -35,7 +36,8 @@ export function updateResume() {
     }
 
 
-    persons.innerHTML = form.get("persons");
+    adults.innerHTML = form.get("adults");
+    children.innerHTML = form.get("children");
 
     let one_day=1000*60*60*24;
     let days = (Date.parse(form.get("check-out"))) - (Date.parse(form.get("check-in")));
@@ -45,19 +47,20 @@ export function updateResume() {
         days = 0;
     }
 
-    if (isNaN(persons.textContent)) {
-        persons = 1;
+    if (isNaN(adults.textContent,children.textContent)) {
+        adults = 1;
+        children = 1;
     }
 
     let priceValue;
 
     let roomPrice = room.textContent ? prices[room.textContent] : 0;
 
-    if (persons.textContent > 1) {
-        priceValue = roomPrice * persons.textContent * 1.1 * days;
+    if (adults.textContent > 1 || children.textContent > 1) {
+        priceValue = roomPrice * adults.textContent * 1.1 * days;
     }
     else {
-        priceValue = roomPrice * persons.textContent * days;
+        priceValue = roomPrice * adults.textContent * days;
     }
 
     let priceFormated = (priceValue)
