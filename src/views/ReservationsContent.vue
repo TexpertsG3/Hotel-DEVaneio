@@ -93,7 +93,6 @@
               class="col-2-xl input-primary color-secondary"
             />
           </div>
-        </div>
         <label class="col-12-xl">Escolha o quarto</label>
 
         <div class="row gap-2 col-8-xl">

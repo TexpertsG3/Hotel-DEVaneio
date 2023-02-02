@@ -1,4 +1,9 @@
 <!-- eslint-disable prettier/prettier -->
+<template>
+  <HeaderContent />
+  <router-view />
+  <FooterContent />
+</template>
 
 <script>
 import HeaderContent from "./components/HeaderContent.vue";
@@ -13,11 +18,7 @@ export default {
 };
 </script>
 <!-- eslint-disable prettier/prettier -->
-<template>
-  <HeaderContent />
-  <router-view />
-  <FooterContent />
-</template>
+
 <!-- eslint-disable prettier/prettier -->
 
 <style>
