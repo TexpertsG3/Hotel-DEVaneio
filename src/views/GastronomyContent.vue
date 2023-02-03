@@ -5,9 +5,10 @@
         <header class="row col-12-xl j-center">
           <h2 class="font-size-extra-large">Nosso Restaurante</h2>
         </header>
-
-        <article>
-          <p>
+           <div>
+           </div>
+        <article class="container">
+          <p class="font-size-regular j-center">
             Imagine começar o dia com um café da manhã repleto de delícias!
             Frutas, cereais, iogurtes, croissant, frios, geleias, bolos, tortas
             e omeletes, além de produzirmos o nosso pão de queijo artesanal,
@@ -17,28 +18,31 @@
             saladas diversas, risotos, massas, guarnições, molhos e opções light
             entre as entradas, pratos quentes, acompanhamentos e sobremesas.
           </p>
-          <p>
-            A cada mês um festival gastronômico diferente para você se deliciar!
-          </p>
-
-          <ul class="row gap-2 col-4-xl">
-            <li class="col-12-xl">Janeiro e Fevereiro- Mediterrâneo</li>
-            <li class="col-12-xl">Março e Abril - Italiano e Massas</li>
-            <li class="col-12-xl">Maio e Junho - Fast-Food</li>
-            <li class="col-12-xl">Julho e Agosto - Mexicano</li>
-            <li class="col-12-xl">Setembro e Outubro - Japonês</li>
-            <li class="col-12-xl">Novembro e Dezembro - Comida Brasileira</li>
-          </ul>
         </article>
       </div>
-
-      <div class="row col-6-xl">
-        <img
-          src="@/assets/images/gastronomy/cafe.jpg"
-          alt=""
-          class="img col-12-xl"
-        />
+    </section>
+    <section class="row gap-2 j-center pb-3 pt-3">
+      <header class="row j-center col-12-xl">
+        <h3 class="font-size-large">Festival Gastronômico</h3>
+      </header>
+      <div class="row j-center gap-2">
+        <p>
+          A cada mês um festival gastronômico diferente para você se deliciar!
+        </p>
       </div>
+      <GastronomyCarousel />
     </section>
   </main>
 </template>
+
+<script>
+import GastronomyCarousel from "../components/GatronomyCarousel.vue";
+export default {
+  name: "GastronomyContent",
+  components: {
+    GastronomyCarousel,
+  },
+};
+</script>
+
+<style></style>

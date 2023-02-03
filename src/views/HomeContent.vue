@@ -7,7 +7,6 @@
           <header class="col-12-xl">
             <h2 class="font-size-extra-large">Sobre o nosso Hotel</h2>
           </header>
-
           <article class="row gap-1">
             <p class="">
               A nossa missão é oferecer momentos de lazer e diversão para você e
@@ -25,7 +24,6 @@
             </div>
           </article>
         </div>
-
         <div class="row col-7-xl">
           <img
             src="@/assets/images/home/hotel-small.jpg"
@@ -36,46 +34,31 @@
       </div>
     </section>
 
-    <section class="container" id="rooms">
-      <article >
-        <RoomsCarousel class="row gap-2"/>
-        <!-- <nav class="nav-menu-primary">
-          <ul class="">
-            <li>
-              <a
-                href="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c.html"
-                target="accommodations__iframe"
-                class=""
-                >Acomodação C</a
-              >
-            </li>
-            <li>
-              <a
-                href="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c-sharp.html"
-                target="accommodations__iframe"
-                class=""
-                >Acomodação C#</a
-              >
-            </li>
-            <li>
-              <a
-                href="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c-plus-plus.html"
-                target="accommodations__iframe"
-                class=""
-                >Acomodação C++</a
-              >
-            </li>
-          </ul>
-        </nav> -->
-<!--
-        <iframe
-          src="http://localhost:5173/Hotel-DEVaneio/src/pages/accommodations/iframe/accommodation-c.html"
-          name="accommodations__iframe"
-          title="Acomodações"
-          class="accommodations__iframe col-12-xl"
-        ></iframe> -->
-      </article>
-    </section>
+    <div class="container row gap-3 pt-3 pb-3">
+      <section class="row">
+        <article class="row a-center a-item-center j-space-between">
+          <div class="row gap-2 a-center a-item-center">
+            <h2 class="font-size-extra-large">Nossas Acomodações</h2>
+            <div class="col-7-xl">
+              <img
+                src="../assets/images/accommodations/quarto-c2.jpg"
+                alt=""
+                class="img col-12-xl"
+              />
+            </div>
+            <div class="row col-4-xl gap-2">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Temporibus nemo alias a impedit praesentium aliquam, ratione
+                nisi expedita libero deserunt dolore maiores vel eveniet soluta
+                provident porro accusamus ducimus voluptatum?
+              </p>
+              <a href="/rooms" class="btn-primary color-white">Saiba Mais</a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
 
     <div class="bg-primary-lighten-4">
       <section class="container pt-3 pb-3" id="gastronomy">
@@ -109,12 +92,10 @@
 </template>
 <!-- eslint-disable prettier/prettier -->
 <script>
-import RoomsCarousel from "@/components/RoomsCarousel.vue";
+// import RoomsCarousel from "@/components/RoomsCarousel.vue";
 
 export default {
   name: "HomeContent",
-  components: {
-    RoomsCarousel,
-  },
+  components: {},
 };
 </script>
