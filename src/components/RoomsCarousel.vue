@@ -3,67 +3,100 @@
   <section class="container">
     <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
       <SplideSlide>
-        <img
-          src="@/assets/images/accommodations/quarto-c.jpg"
-          alt="Sample 1"
-          class="img"
-        />
-        <div class="row col-12-xl gap-2 col-2-lg md-2">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-            nemo alias a impedit praesentium aliquam, ratione nisi expedita
-            libero deserunt dolore maiores vel eveniet soluta provident porro
-            accusamus ducimus voluptatum?
-          </p>
-          <a
-            href="/reservations"
-            target="_blank"
-            class="btn-primary color-white"
-            >Faça sua Reserva</a
-          >
-        </div>
+        <section class="row container j-space-evenly">
+          <div class="col-6-xl">
+            <img
+              src="../assets/images/accommodations/quarto-c.jpg"
+              alt=""
+              class="img col-12-xl"
+            />
+          </div>
+          <div class="row gap-2 col-4-xl a-center a-item-center">
+            <header class="row col-12-xl">
+              <h2 class="row font-size-large">Acomodação C</h2>
+            </header>
+            <article class="row a-center a-item-center j-space-between">
+              <div class="row col-12-xl gap-2">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Temporibus nemo alias a impedit praesentium aliquam, ratione
+                  nisi expedita libero deserunt dolore maiores vel eveniet
+                  soluta provident porro accusamus ducimus voluptatum?
+                </p>
+                <a
+                  href="/reservations"
+                  target="_blank"
+                  class="btn-primary color-white"
+                  >Faça sua Reserva</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
       </SplideSlide>
-      <SplideSlide class="container row md-2">
-        <img
-          class="img"
-          src="@/assets/images/accommodations/quarto_c-plus-plus.jpg"
-          alt="Sample 2"
-        />
-        <div class="row col-12-xl gap-2 col-2-lg md-2">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-            nemo alias a impedit praesentium aliquam, ratione nisi expedita
-            libero deserunt dolore maiores vel eveniet soluta provident porro
-            accusamus ducimus voluptatum?
-          </p>
-          <a
-            href="/reservations"
-            target="_blank"
-            class="btn-primary color-white"
-            >Faça sua Reserva</a
-          >
-        </div>
+      <SplideSlide>
+        <section class="row container j-space-evenly">
+          <div class="col-6-xl">
+            <img
+              src="../assets/images/accommodations/quarto-c2.jpg"
+              alt=""
+              class="img col-12-xl"
+            />
+          </div>
+          <div class="row gap-2 col-4-xl a-center a-item-center">
+            <header class="row col-12-xl">
+              <h2 class="row font-size-large">Acomodação C++</h2>
+            </header>
+            <article class="row a-center a-item-center j-space-between">
+              <div class="row col-12-xl gap-2">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Temporibus nemo alias a impedit praesentium aliquam, ratione
+                  nisi expedita libero deserunt dolore maiores vel eveniet
+                  soluta provident porro accusamus ducimus voluptatum?
+                </p>
+                <a
+                  href="/reservations"
+                  target="_blank"
+                  class="btn-primary color-white"
+                  >Faça sua Reserva</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
       </SplideSlide>
-      <SplideSlide class="row md-2">
-        <img
-          class="img"
-          src="@/assets/images/accommodations/quarto_c-sharp.jpg"
-          alt="Sample 2"
-        />
-        <div class="row col-12-xl gap-2 col-2-lg md-2">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-            nemo alias a impedit praesentium aliquam, ratione nisi expedita
-            libero deserunt dolore maiores vel eveniet soluta provident porro
-            accusamus ducimus voluptatum?
-          </p>
-          <a
-            href="/reservations"
-            target="_blank"
-            class="btn-primary color-white"
-            >Faça sua Reserva</a
-          >
-        </div>
+       <SplideSlide>
+        <section class="row container j-space-evenly">
+          <div class="col-6-xl">
+            <img
+              src="../assets/images/accommodations/quarto_c-sharp.jpg"
+              alt=""
+              class="img col-12-xl"
+            />
+          </div>
+          <div class="row gap-2 col-4-xl a-center a-item-center">
+            <header class="row col-12-xl">
+              <h2 class="row font-size-large">Acomodação C#</h2>
+            </header>
+            <article class="row a-center a-item-center j-space-between">
+              <div class="row col-12-xl gap-2">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Temporibus nemo alias a impedit praesentium aliquam, ratione
+                  nisi expedita libero deserunt dolore maiores vel eveniet
+                  soluta provident porro accusamus ducimus voluptatum?
+                </p>
+                <a
+                  href="/reservations"
+                  target="_blank"
+                  class="btn-primary color-white"
+                  >Faça sua Reserva</a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
       </SplideSlide>
     </Splide>
   </section>
@@ -84,3 +117,17 @@ export default {
   },
 };
 </script>
+
+<style>
+.splide__arrow svg {
+    fill: black !important;
+}
+.splide__pagination__page:hover {
+    background: black;
+}
+.splide__pagination__page.is-active {
+    background: black;
+}
+</style>
+
+

@@ -22,9 +22,6 @@
       </div>
     </section>
     <section class="row gap-2 j-center pb-3 pt-3">
-      <header class="row j-center col-12-xl">
-        <h3 class="font-size-large">Festival Gastronômico</h3>
-      </header>
       <div class="row j-center gap-2">
         <p>
           A cada mês um festival gastronômico diferente para você se deliciar!

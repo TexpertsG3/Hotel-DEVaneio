@@ -24,7 +24,7 @@
             </div>
           </article>
         </div>
-        <div class="row col-7-xl">
+        <div class="row col-6-xl">
           <img
             src="@/assets/images/home/hotel-small.jpg"
             alt="Fachada do Hotel"
@@ -37,16 +37,17 @@
     <div class="container row gap-3 pt-3 pb-3">
       <section class="row">
         <article class="row a-center a-item-center j-space-between">
-          <div class="row gap-2 a-center a-item-center">
+          <div class="col-6-xl">
+            <img
+              src="../assets/images/accommodations/quarto-c2.jpg"
+              alt=""
+              class="img col-12-xl"
+            />
+          </div>
+          <div class="row col-4-xl gap-2 a-center a-item-center">
             <h2 class="font-size-extra-large">Nossas Acomodações</h2>
-            <div class="col-7-xl">
-              <img
-                src="../assets/images/accommodations/quarto-c2.jpg"
-                alt=""
-                class="img col-12-xl"
-              />
-            </div>
-            <div class="row col-4-xl gap-2">
+
+            <div class="row col-12-xl gap-2">
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Temporibus nemo alias a impedit praesentium aliquam, ratione
