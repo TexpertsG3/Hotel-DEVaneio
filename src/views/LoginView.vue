@@ -6,15 +6,15 @@
 
       <div class="row col-12-xl gap-1">
         <label>Usuário</label>
-        <input type="text" name="username" id="username" placeholder=" Insira seu usuário" class="input-primary col-12-xl" />
+        <input v-model="username" type="text" name="username" id="username" placeholder=" Insira seu usuário" class="input-primary col-12-xl" />
       </div>
 
       <div class="row col-12-xl gap-1">
         <label>Senha</label>
-        <input type="password" name="password" id="password" placeholder=" Insira sua senha" class="input-primary col-12-xl" />
+        <input v-model="password" type="password" name="password" id="password" placeholder=" Insira sua senha" class="input-primary col-12-xl" />
       </div>
 
-      <input type="button" id="btn_login" class="btn-primary color-white" value="Entrar">
+      <input type="button" id="btn_login" class="btn-primary color-white" value="Entrar" @click="handleLogin">
 
     </form>
 
@@ -44,6 +44,67 @@
 <!-- eslint-disable prettier/prettier -->
 <script>
 export default {
-  name: "LoginView",
+  data() {
+    return {
+      login : [
+      "Albino",
+      "albino@tex.com",
+      "Raissa",
+      "raissa@tex.com",
+      "Fernando",
+      "fernando@tex.com",
+      "Bruno",
+      "bruno@tex.com",
+      "Italo",
+      "italo@tex.com",
+      "Jefferson",
+      "jefferson@tex.com",
+      "Daniel",
+      "daniel@tex.com",
+      "Amanda",
+      "amanda@tex.com",
+      "Fabricio",
+      "fabricio@tex.com",
+      "Rafael",
+      "rafael@tex.com",
+    ],
+      senha: '1234',
+      username: "",
+      password: "",
+      logged : document.getElementById("header__logged"),
+      logIn : document.getElementById("header__login"),
+      nameLogged: document.getElementById("header__user-name")
+    };
+  },
+  methods: {
+    validateAccess(input, validStrings) {
+      return validStrings.includes(input)
+    },
+    validateEmail(email) {
+      return /^\S+@\S+\.\S+$/.test(email);
+    },
+    validateCase(email) {
+      return /[A-Z]/.test(email);
+    },
+    handleLogin() {
+      console.log(this.login);
+     if (this.validateAccess(this.username, this.login) && this.validateAccess(this.password, this.senha)) {
+      //Armazene o usuário logado no localStorage
+       localStorage.setItem("user", this.username);
+       this.logged.style.display = "flex";
+       this.logIn.style.display = "none";
+       this.nameLogged.style.display = "flex";
+       this.nameLogged.innerText = this.username
+
+      //Redirecione o usuário para a página inicial
+       this.$router.push({ path: "/" });
+     } else {
+      //Mostre uma mensagem de erro ao usuário
+       alert("Usuário ou senha inválidos");
+     }
+    },
+  },
 };
 </script>
+
+

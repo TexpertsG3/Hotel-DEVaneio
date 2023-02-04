@@ -19,7 +19,6 @@ var loginTemp = [
   "fabricio@tex.com",
   "Rafael",
   "rafael@tex.com",
-  ,
 ];
 
 var loginAdmin = ["admin", "admin@tex.com"];
