@@ -3,23 +3,22 @@
   <section class="container">
     <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
       <SplideSlide>
-        <section class="container">
-          <div class="row gap-2 a-center a-item-center">
-            <header class="row col-12-xl j-center">
+        <section class="row container j-space-evenly">
+          <div class="col-6-xl">
+            <img
+              src="@/assets/images/gastronomy/mediterranea.jpg"
+              alt=""
+              class="img col-12-xl"
+            />
+          </div>
+          <div class="row gap-2 a-center col-4-xl a-item-center">
+            <header class="row col-12-xl">
               <h2 class="row font-size-large">
                 Festival de comida mediterrânea
               </h2>
             </header>
             <article class="row a-center a-item-center j-space-between">
-              <div class="col-7-xl">
-                <img
-                  src="@/assets/images/gastronomy/mediterranea.jpg"
-                  alt=""
-                  class="img col-10-xl"
-                />
-              </div>
-
-              <div class="row col-4-xl gap-2">
+              <div class="row col-12-xl gap-2">
                 <p>
                   Nos meses de Janeiro e Fevereiro venha apreciar o nosso
                   festival mediterrâneo, com ingredientes sempre frescos e
@@ -31,21 +30,20 @@
         </section>
       </SplideSlide>
       <SplideSlide>
-        <section class="container">
-          <div class="row gap-2 a-center a-item-center">
-            <header class="row col-12-xl j-center">
+        <section class="row container j-space-evenly">
+          <div class="col-6-xl">
+            <img
+              src="@/assets/images/gastronomy/italiana.jpg"
+              alt=""
+              class="img col-12-xl"
+            />
+          </div>
+          <div class="row gap-2 col-4-xl a-center a-item-center">
+            <header class="row col-12-xl">
               <h2 class="row font-size-large">Festival de comida Italiana</h2>
             </header>
             <article class="row a-center a-item-center j-space-between">
-              <div class="col-7-xl">
-                <img
-                  src="@/assets/images/gastronomy/italiana.jpg"
-                  alt=""
-                  class="img col-12-xl"
-                />
-              </div>
-
-              <div class="row col-4-xl gap-2">
+              <div class="row col-12-xl gap-2">
                 <p>
                   Nos meses de Março e Abril, a "Nonna" invade a nossa cozinha,
                   e você não pode deixar de apreciar as massas frescas
@@ -59,21 +57,20 @@
         </section>
       </SplideSlide>
       <SplideSlide>
-        <section class="container">
-          <div class="row gap-2 a-center a-item-center">
-            <header class="row col-12-xl j-center">
+        <section class="row container j-space-evenly">
+          <div class="col-6-xl">
+            <img
+              src="@/assets/images/gastronomy/fastfood.jpg"
+              alt=""
+              class="img col-12-xl"
+            />
+          </div>
+          <div class="row gap-2 col-4-xl a-center a-item-center">
+            <header class="row col-12-xl">
               <h2 class="row font-size-large">Festival de Fast Food</h2>
             </header>
             <article class="row a-center a-item-center j-space-between">
-              <div class="col-7-xl">
-                <img
-                  src="@/assets/images/gastronomy/fastfood.jpg"
-                  alt=""
-                  class="img col-12-xl"
-                />
-              </div>
-
-              <div class="row col-4-xl gap-2">
+              <div class="row col-12-xl gap-2">
                 <p>
                   Nos meses de Maio e Junho aproveite os mais diversos lanches
                   de todos os lugares do mundo! Que tal montar o seu
@@ -85,21 +82,20 @@
         </section>
       </SplideSlide>
       <SplideSlide>
-        <section class="container">
-          <div class="row gap-2 a-center a-item-center">
-            <header class="row col-12-xl j-center">
+        <section class="row container j-space-evenly">
+          <div class="col-6-xl">
+            <img
+              src="@/assets/images/gastronomy/mexicana.jpg"
+              alt=""
+              class="img col-12-xl"
+            />
+          </div>
+          <div class="row gap-2 col-4-xl a-center a-item-center">
+            <header class="row col-12-xl">
               <h2 class="row font-size-large">Festival de comida Mexicana</h2>
             </header>
             <article class="row a-center a-item-center j-space-between">
-              <div class="col-7-xl">
-                <img
-                  src="@/assets/images/gastronomy/mexicana.jpg"
-                  alt=""
-                  class="img col-12-xl"
-                />
-              </div>
-
-              <div class="row col-4-xl gap-2">
+              <div class="row col-12-xl gap-2">
                 <p>
                   Nos meses de Julho e Agosto você vai ser transportado ao
                   México através dessa culinária tão espetacular! Venha
@@ -111,21 +107,20 @@
         </section>
       </SplideSlide>
       <SplideSlide>
-        <section class="container">
-          <div class="row gap-2 a-center a-item-center">
-            <header class="row col-12-xl j-center">
+        <section class="row container j-space-evenly">
+          <div class="col-6-xl">
+            <img
+              src="@/assets/images/gastronomy/japonesa.jpg"
+              alt=""
+              class="img col-12-xl"
+            />
+          </div>
+          <div class="row gap-2 col-4-xl a-center a-item-center">
+            <header class="row col-12-xl">
               <h2 class="row font-size-large">Festival de comida Japonesa</h2>
             </header>
             <article class="row a-center a-item-center j-space-between">
-              <div class="col-7-xl">
-                <img
-                  src="@/assets/images/gastronomy/japonesa.jpg"
-                  alt=""
-                  class="img col-12-xl"
-                />
-              </div>
-
-              <div class="row col-4-xl gap-2">
+              <div class="row col-12-xl gap-2">
                 <p>
                   Irasshaimase! Nos meses de Setembro e Outubro a nossa cozinha
                   viaja ao outro lado do mundo, e te presenteia com a culinária
@@ -137,21 +132,20 @@
         </section>
       </SplideSlide>
       <SplideSlide>
-        <section class="container">
-          <div class="row gap-2 a-center a-item-center">
-            <header class="row col-12-xl j-center">
+        <section class="row container j-space-evenly">
+          <div class="col-6-xl">
+            <img
+              src="@/assets/images/gastronomy/cheese-g2c4761ed0_640.jpg"
+              alt=""
+              class="img col-12-xl"
+            />
+          </div>
+          <div class="row gap-2 col-4-xl a-center a-item-center">
+            <header class="row col-12-xl">
               <h2 class="row font-size-large">Festival de comida Brasileira</h2>
             </header>
             <article class="row a-center a-item-center j-space-between">
-              <div class="col-7-xl">
-                <img
-                  src="@/assets/images/gastronomy/cheese-g2c4761ed0_640.jpg"
-                  alt=""
-                  class="img col-12-xl"
-                />
-              </div>
-
-              <div class="row col-4-xl gap-2">
+              <div class="row col-12-xl gap-2">
                 <p>
                   Dizem que tudo termina em pizza, mas aqui termina em Feijoada,
                   Muqueca e toda a diversidade da nossa culinária brasileira.
@@ -182,3 +176,15 @@ export default {
   },
 };
 </script>
+
+<style>
+.splide__arrow svg {
+  fill: black !important;
+}
+.splide__pagination__page:hover {
+  background: black;
+}
+.splide__pagination__page.is-active {
+  background: black;
+}
+</style>
