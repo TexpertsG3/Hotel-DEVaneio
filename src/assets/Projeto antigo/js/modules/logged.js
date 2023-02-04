@@ -1,13 +1,13 @@
-import { loginTemp, senhaTemp } from "./users.js";
+import { loginTemp } from "./users.js";
 import { validateAccess } from "./validation.js";
 
-var btn_login = document.getElementById("btn_login");
-var hello_user = document.getElementById("hello_user");
+// var btn_login = document.getElementById("btn_login");
+// var hello_user = document.getElementById("hello_user");
 var out_user = document.getElementById("out_user");
 
 function verificaUser() {
-  const usuario = localStorage.getItem("usuario");
-  const senha = localStorage.getItem("senha");
+  localStorage.getItem("usuario");
+  localStorage.getItem("senha");
   document.querySelector(
     "#hello_user"
   ).innerText = `Olá, ${localStorage.getItem(`usuario`)}`;

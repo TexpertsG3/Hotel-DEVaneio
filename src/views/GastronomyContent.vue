@@ -5,8 +5,7 @@
         <header class="row col-12-xl j-center">
           <h2 class="font-size-extra-large">Nosso Restaurante</h2>
         </header>
-           <div>
-           </div>
+        <div></div>
         <article class="container">
           <p class="font-size-regular j-center">
             Imagine começar o dia com um café da manhã repleto de delícias!
