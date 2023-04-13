@@ -7,15 +7,14 @@
           <img
             src="@/assets/images/logo/logo_sem_fundo.png"
             alt="Logo"
-            class="col-12-xl"
+            class="col-12-sm"
           />
         </a>
         <a id="header__login" href="/login" class="btn-primary">Login</a>
         <div id="header__logged" class="row a-item-center gap-2">
           <p id="header__user-name" class="color-white"></p>
           <a id="header__logout" class="btn-primary color-white" href="/login" @click="logout"
-            >Sair</a
-          >
+            >Sair</a>
 
         </div>
         <nav class="nav-menu-primary color-white">

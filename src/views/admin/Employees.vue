@@ -155,6 +155,8 @@
             <option value="serviço">Serviço de Quarto</option>
             <option value="gerencia">Gerência</option>
             <option value="concierge">Concierge</option>
+            <!-- Pegar o valor, duas chaves  -->
+            
           </select>
         </td>
         <td>

@@ -48,15 +48,11 @@ function compileToFunction(template, options) {
         // by the server, the template should not contain any user data.
         template = el ? el.innerHTML : ``;
     }
-    const opts = shared.extend({
+    const { code } = compilerDom.compile(template, shared.extend({
         hoistStatic: true,
         onError: onError ,
         onWarn: e => onError(e, true) 
-    }, options);
-    if (!opts.isCustomElement && typeof customElements !== 'undefined') {
-        opts.isCustomElement = tag => !!customElements.get(tag);
-    }
-    const { code } = compilerDom.compile(template, opts);
+    }, options));
     function onError(err, asWarning = false) {
         const message = asWarning
             ? err.message

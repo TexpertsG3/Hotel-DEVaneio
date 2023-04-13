@@ -44,15 +44,11 @@ function compileToFunction(template, options) {
         // by the server, the template should not contain any user data.
         template = el ? el.innerHTML : ``;
     }
-    const opts = shared.extend({
+    const { code } = compilerDom.compile(template, shared.extend({
         hoistStatic: true,
         onError: undefined,
         onWarn: shared.NOOP
-    }, options);
-    if (!opts.isCustomElement && typeof customElements !== 'undefined') {
-        opts.isCustomElement = tag => !!customElements.get(tag);
-    }
-    const { code } = compilerDom.compile(template, opts);
+    }, options));
     // The wildcard import results in a huge object with every export
     // with keys that cannot be mangled, and can be quite heavy size-wise.
     // In the global build we know `Vue` is available globally so we can avoid

@@ -14,7 +14,7 @@
             />
           </div>
           <div></div>
-          <div>
+          <div class="col-6-xl">
             <ul>
               <li>
                 <i class="fa-solid fa-person-swimming"></i> Piscina interna e

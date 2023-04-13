@@ -18,16 +18,16 @@
 
 @mixin link-under($color) {
     @extend %base-link;
-    text-decoration: underline;
+    text-decoration: underline !important;
 
     &:hover {
-        color: $color;
+        color: $color !important;
     }
 }
 
 @each $key, $value in colors.$colors {
     .link-#{$key} {
-        @include link($value);
+        @include link($value); 
     }
 
     .link-under-#{$key} {
