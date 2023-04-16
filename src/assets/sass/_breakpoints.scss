@@ -32,3 +32,18 @@ $breakpoints: (
     @content;
   }
 }
+
+.header__logo {
+  @include xs {
+    width: 180px;
+  }
+  @include sm{
+
+  }
+}
+
+#logo {
+  @include xs {
+    width: 180px;
+  }
+}

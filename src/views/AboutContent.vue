@@ -32,9 +32,11 @@
               <li><i class="fa-solid fa-car"></i> Estacionamento</li>
               <li><i class="fa-solid fa-champagne-glasses"></i>Frigobar</li>
               <li><i class="fa-regular fa-snowflake"></i>Ar-condicionado</li>
-              <li> <i class="fa-solid fa-children"></i> Espaço Kids com monitores</li>
-              <li> <i class="fa-solid fa-mug-hot"></i> Coffe Lab Java</li>
-              <li> <i class="fa-solid fa-spa"></i> Spa Ruby</li>
+              <li>
+                <i class="fa-solid fa-children"></i> Espaço Kids com monitores
+              </li>
+              <li><i class="fa-solid fa-mug-hot"></i> Coffe Lab Java</li>
+              <li><i class="fa-solid fa-spa"></i> Spa Ruby</li>
             </ul>
           </div>
           <p class="j-center">

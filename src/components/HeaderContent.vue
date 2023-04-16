@@ -8,14 +8,19 @@
             src="@/assets/images/logo/logo_sem_fundo.png"
             alt="Logo"
             class="col-12-sm"
+            id="logo"
           />
         </a>
         <a id="header__login" href="/login" class="btn-primary">Login</a>
         <div id="header__logged" class="row a-item-center gap-2">
           <p id="header__user-name" class="color-white"></p>
-          <a id="header__logout" class="btn-primary color-white" href="/login" @click="logout"
-            >Sair</a>
-
+          <a
+            id="header__logout"
+            class="btn-primary color-white"
+            href="/login"
+            @click="logout"
+            >Sair</a
+          >
         </div>
         <nav class="nav-menu-primary color-white">
           <NavBar />
@@ -26,16 +31,22 @@
   </div>
 </template>
 <!-- eslint-disable prettier/prettier -->
+<!-- 
+<style>
+
+</style> -->
+
 <script>
 import NavBar from "./NavBar.vue";
 export default {
   name: "HeaderContent",
   components: {
     NavBar,
-  },methods:{
-    logout(){
-      localStorage.clear()
-    }
-  }
+  },
+  methods: {
+    logout() {
+      localStorage.clear();
+    },
+  },
 };
 </script>

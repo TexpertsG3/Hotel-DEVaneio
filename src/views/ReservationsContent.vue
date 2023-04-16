@@ -83,8 +83,7 @@
               value="1"
               class="col-2-xl input-primary color-secondary"
             />
-          </div>
-               <input
+            <input
               type="number"
               name="children"
               id="children"
@@ -92,6 +91,7 @@
               value="1"
               class="col-2-xl input-primary color-secondary"
             />
+          </div> 
           </div>
         <label class="col-12-xl">Escolha o quarto</label>
 
