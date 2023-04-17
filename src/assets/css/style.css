@@ -742,14 +742,45 @@ a {
   display: none;
 }
 
+/*Responsividade Header e NavBar*/
 @media (min-width: 0) {
   .header__logo {
     width: 180px;
   }
 }
+
 @media (min-width: 0) {
   #logo {
     width: 180px;
+  }
+}
+
+@media (min-width: 0) {
+  .nav-menu-primary ul li {
+    flex: 1 1 80px;
+  }
+}
+
+@media (min-width: 420px) {
+  .nav-menu-primary ul li {
+    flex: 1 1 100px;
+  }
+}
+@media (min-width: 480px) {
+  .nav-menu-primary ul li {
+    flex: 1 1 140px;
+  }
+}
+
+@media (min-width: 640px) {
+  .nav-menu-primary ul li {
+    flex: 1 1 180px;
+  }
+}
+@media (min-width: 720px) {
+  .nav-menu-primary ul li {
+    flex: 1 1;
+    flex-basis: fit-content;
   }
 }
 

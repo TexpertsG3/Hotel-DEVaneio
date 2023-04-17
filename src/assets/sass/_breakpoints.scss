@@ -33,17 +33,45 @@ $breakpoints: (
   }
 }
 
+/*Responsividade Header e NavBar*/
 .header__logo {
   @include xs {
     width: 180px;
-  }
-  @include sm{
-
   }
 }
 
 #logo {
   @include xs {
     width: 180px;
+  }
+}
+
+.nav-menu-primary ul li {
+  @include xs {
+    flex: 1 1 80px;
+  }
+}
+
+@media (min-width: 420px) {
+  .nav-menu-primary ul li {
+    flex: 1 1 100px;
+  }
+}
+
+.nav-menu-primary ul li {
+  @include sm {
+    flex: 1 1 140px;
+  }
+}
+  @media (min-width: 640px) {
+    .nav-menu-primary ul li {
+      flex: 1 1 180px;
+    }
+  }
+
+ .nav-menu-primary ul li{ 
+  @include md {
+    flex: 1 1;
+    flex-basis: fit-content;
   }
 }
