@@ -1,0 +1,26 @@
+@use "../base";
+@use "../variables" as variables;
+@use "../colors" as colors;
+
+@mixin input($color) {
+    font-family: variables.$base-font;
+    font-size: variables.$font-size-base;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background-color: #efefef;
+    padding: 0 variables.$base-padding;
+    line-height: 2em;
+    height: 2em;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: $color;
+    }
+}
+
+@each $key, $value in colors.$colors {
+    .input-#{$key} {
+        @include input($value);
+    }
+}
