@@ -89,7 +89,8 @@ $breakpoints: (
 }
 
 .aboutHomeMobile,
-.roomsHomeMobile {
+.roomsHomeMobile,
+.gastronomyHomeMobile {
   @include xs {
     padding: 10px;
   }
@@ -99,7 +100,8 @@ $breakpoints: (
 }
 
 .aboutHomeTablet,
-.roomsHomeTablet {
+.roomsHomeTablet,
+.gastronomyHomeTablet {
   @include xs {
     display: none;
   }

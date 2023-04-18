@@ -126,10 +126,7 @@
               lembranças. A celebração da vida em momentos únicos e
               inesquecíveis.
             </p>
-            <a
-              class="btn-secondary-wbg color-secondary"
-              href="@/views/GastronomyContent.vue"
-            >
+            <a class="btn-secondary-wbg color-secondary" href="/gastronomy">
               Saiba mais
             </a>
           </div>
@@ -145,30 +142,28 @@
     <!-- Gastronomia Home versão mobile -->
     <div class="gastronomyHomeMobile bg-primary-lighten-4">
       <section class="container pt-3 pb-3" id="gastronomy">
-        <article class="row j-space-between">
-          <div class="row col-4-xl a-item-center a-center gap-1">
-            <h2 class="font-size-extra-large">Nossa Cozinha</h2>
-            <p>
-              Nosso objetivo é transformar o alimento em arte, nós buscamos te
-              oferecer o melhor da gastronomia, com experiências sensoriais,
-              descoberta de aromas e sabores que nos levam à deliciosas
-              lembranças. A celebração da vida em momentos únicos e
-              inesquecíveis.
-            </p>
-            <a
-              class="btn-secondary-wbg color-secondary"
-              href="@/views/GastronomyContent.vue"
-            >
-              Saiba mais
-            </a>
-          </div>
+        <header class="col-12-xs">
+          <h2 class="font-size-large col-12-xs">Nossa Cozinha</h2>
+        </header>
 
+        <article class="row gap-1 col-12-xs j-center">
+          <p class="">
+            Nosso objetivo é transformar o alimento em arte, nós buscamos te
+            oferecer o melhor da gastronomia, com experiências sensoriais,
+            descoberta de aromas e sabores que nos levam à deliciosas
+            lembranças. A celebração da vida em momentos únicos e inesquecíveis.
+          </p>
           <img
             src="@/assets/images/gastronomy/cozinha-gastronomia.jpg"
             alt=""
-            class="img col-7-xl"
+            class="img col-7-xs"
           />
         </article>
+        <div class="row col-12-xs mt-1 j-center">
+          <a class="btn-secondary-wbg color-secondary" href="/gastronomy">
+            Saiba mais
+          </a>
+        </div>
       </section>
     </div>
   </main>

@@ -14,14 +14,14 @@
             /></a>
             <!--ícones das redes sociais --->
             <div class="row col-12-xl gap-2 j-center">
-              <a href=""
+              <a href="https://www.instagram.com/"
                 ><i class="fa-brands fa-instagram font-size-large"></i></a>
-              <a href=""
+              <a href="https://pt-br.facebook.com/"
                 ><i class="fa-brands fa-facebook font-size-large"></i></a>
-              <a href=""
+              <a href="https://twitter.com/home"
                 ><i class="fa-brands fa-twitter font-size-large"></i></a>
-              <a href="">
-                <i class="fa-brands fa-youtube font-size-large"></i></a>
+              <!-- <a href="">
+                <i class="fa-brands fa-youtube font-size-large"></i></a> -->
             </div>
           </div>
           <div class="row col-3-xl">
