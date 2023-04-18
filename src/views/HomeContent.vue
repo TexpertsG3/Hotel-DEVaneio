@@ -1,7 +1,7 @@
 <!-- eslint-disable prettier/prettier -->
 <template>
   <main>
-    <!-- About Home tablet/desktop -->
+    <!-- About Home versão tablet/desktop -->
     <section class="aboutHomeTablet container pt-3 pb-3" id="about">
       <div class="row j-space-between">
         <!--  -->
@@ -37,7 +37,7 @@
         </div>
       </div>
     </section>
-    <!-- About home mobile -->
+    <!-- About Home versão mobile -->
     <section class="aboutHomeMobile container pt-3 pb-3" id="aboutMobile">
       <div class="row">
         <!--  -->
@@ -63,7 +63,7 @@
       </div>
     </section>
 
-    <!-- Acomodações Home tablet/desktop -->
+    <!-- Acomodações Home versão tablet/desktop -->
     <div class="roomsHomeTablet container row gap-3 pt-3 pb-3">
       <section class="row">
         <article class="row a-center a-item-center j-space-between">
@@ -90,33 +90,60 @@
         </article>
       </section>
     </div>
-    <!-- Acomodações Home mobile-->
+    <!-- Acomodações versão Home mobile-->
     <div class="roomsHomeMobile container row gap-3 pt-3 pb-3">
       <section class="row">
-        <article class="row a-center a-item-center j-space-between">
-          <div class="col-6-xl">
-            <img
-              src="../assets/images/accommodations/quarto-c2.jpg"
-              alt=""
-              class="img col-12-xl"
-            />
-          </div>
-          <div class="row col-4-xl gap-2 a-center a-item-center">
-            <h2 class="font-size-extra-large">Nossas Acomodações</h2>
+        <header class="col-12-xs">
+          <h2 class="fontHeader font-size-regular">Nossas Acomodações</h2>
+        </header>
 
-            <div class="row col-12-xl gap-2">
-              <p>
-                Nossas acomodações foram planejadas para oferecer o máximo
-                conforto e tecnologia para os nossos hóspedes.
-              </p>
-              <a href="/rooms" class="btn-primary color-white">Saiba Mais</a>
-            </div>
+        <article class="row gap-1 col-12-xs j-center">
+          <p class="">
+            Nossas acomodações foram planejadas para oferecer o máximo conforto
+            e tecnologia para os nossos hóspedes.
+          </p>
+          <img
+            src="../assets/images/accommodations/quarto-c2.jpg"
+            alt=""
+            class="img col-8-xs"
+          />
+        </article>
+        <div class="row col-12-xs mt-1 j-center">
+          <a href="/rooms" class="btn-primary color-white">Saiba Mais</a>
+        </div>
+      </section>
+    </div>
+    <!-- Gastronomia Home versão tablet/desktop -->
+    <div class="gastronomyHomeTablet bg-primary-lighten-4">
+      <section class="container pt-3 pb-3" id="gastronomy">
+        <article class="row j-space-between">
+          <div class="row col-4-xl a-item-center a-center gap-1">
+            <h2 class="font-size-extra-large">Nossa Cozinha</h2>
+            <p>
+              Nosso objetivo é transformar o alimento em arte, nós buscamos te
+              oferecer o melhor da gastronomia, com experiências sensoriais,
+              descoberta de aromas e sabores que nos levam à deliciosas
+              lembranças. A celebração da vida em momentos únicos e
+              inesquecíveis.
+            </p>
+            <a
+              class="btn-secondary-wbg color-secondary"
+              href="@/views/GastronomyContent.vue"
+            >
+              Saiba mais
+            </a>
           </div>
+
+          <img
+            src="@/assets/images/gastronomy/cozinha-gastronomia.jpg"
+            alt=""
+            class="img col-7-xl"
+          />
         </article>
       </section>
     </div>
-
-    <div class="bg-primary-lighten-4">
+    <!-- Gastronomia Home versão mobile -->
+    <div class="gastronomyHomeMobile bg-primary-lighten-4">
       <section class="container pt-3 pb-3" id="gastronomy">
         <article class="row j-space-between">
           <div class="row col-4-xl a-item-center a-center gap-1">
