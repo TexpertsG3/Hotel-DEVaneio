@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
 // eslint-disable-next-line import/no-unresolved
-import HomeAdmin from '@/views/admin/HomeContent.vue';
+import HomeAdmin from '../views/admin/HomeAdmin.vue';
 // eslint-disable-next-line import/no-unresolved
-import Guests from '@/views/admin/Guests.vue';
+import Guests from '@/views/admin/GuestsView.vue';
 // eslint-disable-next-line import/no-unresolved
-import Employees from '@/views/admin/Employees.vue';
+import Employees from '@/views/admin/EmployeesView.vue';
 // eslint-disable-next-line import/no-unresolved
 import ReservationsAdmin from '@/views/admin/ReservationsAdmin.vue';
 // eslint-disable-next-line import/no-unresolved
@@ -34,11 +34,12 @@ const routes = [
   {
     path: '/login',
     name: 'login',
-    component: LoginView,
+    component: LoginView
   },
 ];
+
 const routerAdmin = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 

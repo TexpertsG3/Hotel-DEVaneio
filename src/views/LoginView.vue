@@ -76,72 +76,78 @@
       <input class="btn-primary color-white" type="button" id="btn_register" value="Registrar" />
     </form>
   </div>
+
+  <div >{{hospedes}}</div>
 </template>
 <!-- eslint-disable prettier/prettier -->
 <script>
-export default {
-  data() {
-    return {
-      login: [
-        'Albino',
-        'albino@tex.com',
-        'Raissa',
-        'raissa@tex.com',
-        'Fernando',
-        'fernando@tex.com',
-        'Bruno',
-        'bruno@tex.com',
-        'Italo',
-        'italo@tex.com',
-        'Jefferson',
-        'jefferson@tex.com',
-        'Daniel',
-        'daniel@tex.com',
-        'Amanda',
-        'amanda@tex.com',
-        'Fabricio',
-        'fabricio@tex.com',
-        'Rafael',
-        'rafael@tex.com',
-      ],
-      senha: '1234',
-      username: '',
-      password: '',
-      logged: document.getElementById('header__logged'),
-      logIn: document.getElementById('header__login'),
-      nameLogged: document.getElementById('header__user-name'),
-    };
-  },
-  methods: {
-    validateAccess(input, validStrings) {
-      return validStrings.includes(input);
-    },
-    validateEmail(email) {
-      return /^\S+@\S+\.\S+$/.test(email);
-    },
-    validateCase(email) {
-      return /[A-Z]/.test(email);
-    },
-    handleLogin() {
-      console.log(this.login);
-      if (
-        this.validateAccess(this.username, this.login) &&
-        this.validateAccess(this.password, this.senha)
-      ) {
-        // Armazene o usuário logado no localStorage
-        localStorage.setItem('user', this.username);
-        this.logged.style.display = 'flex';
-        this.logIn.style.display = 'none';
-        this.nameLogged.style.display = 'flex';
-        this.nameLogged.innerText = this.username;
+import { onMounted, ref } from 'vue';
+// eslint-disable-next-line import/extensions,import/no-unresolved
+import { api } from '@/services/api';
 
-        // Redirecione o usuário para a página inicial
-        this.$router.push({ path: '/' });
+export default {
+  name: 'LoginView',
+  setup() {
+    const admins = ref([]);
+    const fetchAdmins = () => api.get('/admin').then((response) =>
+      (admins.value = response.data),
+    );
+
+    const hospedes = ref([]);
+
+    const fetchHospedes = () => api.get('/hospede').then((response) =>
+      (hospedes.value = response.data),
+    );
+
+    onMounted(() => {
+      fetchAdmins();
+      fetchHospedes();
+    });
+
+    const username = ref('');
+    const password = ref('');
+    const logged = ref(document.getElementById('header__logged'));
+    const logIn = ref(document.getElementById('header__login'));
+    const nameLogged = ref(document.getElementById('header__user-name'));
+
+    function handleLogin() {
+      let tipoDeUsuario;
+      const correspondeAdmin = admins.value.find(
+        admin => admin.email === username.value && admin.senha === password.value);
+
+      const correspondeHospede = hospedes.value.find(hospede => hospede.email === username.value && hospede.senha === password.value);
+
+      if (correspondeAdmin) {
+        localStorage.setItem('userAdmin', correspondeAdmin.nome);
+        logged.value.style.display = 'flex';
+        logIn.value.style.display = 'none';
+        nameLogged.value.style.display = 'flex';
+        nameLogged.value.innerText = correspondeAdmin.nome;
+
+        tipoDeUsuario = 'admin';
+
+      }else if (correspondeHospede){
+        localStorage.setItem('userHospede', correspondeHospede.nome);
+        logged.value.style.display = 'flex';
+        logIn.value.style.display = 'none';
+        nameLogged.value.style.display = 'flex';
+        nameLogged.value.innerText = correspondeHospede.nome;
+
+        tipoDeUsuario = 'hospede';
+
       } else {
         // Mostre uma mensagem de erro ao usuário
         alert('Usuário ou senha inválidos');
       }
-    },
+
+      // eslint-disable-next-line no-unused-expressions
+      tipoDeUsuario === 'admin' ?  window.location.href = 'http://localhost:5173/HomeAdmin' :  window.location.href = 'http://localhost:5173/';
+
+    }
+
+    return { admins, hospedes, username, password, logged, logIn, nameLogged, handleLogin };
   },
 };
+
 </script>
+

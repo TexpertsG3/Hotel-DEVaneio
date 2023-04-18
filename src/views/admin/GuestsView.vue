@@ -11,7 +11,11 @@
 <!--        }-->
 <!--    </script> &ndash;&gt;-->
 
-<!--<template></template>-->
+<template>
+  <div>
+
+  </div>
+</template>
 
 <!--<script></script>-->
 

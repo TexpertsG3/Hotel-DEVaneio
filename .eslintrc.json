@@ -24,6 +24,7 @@
         "variables": false
       }
     ],
+    "no-console": "off",
     "semi": [
       "error",
       "always"
@@ -43,6 +44,9 @@
         "after": true
       }
     ],
-    "vue/no-multi-spaces": 0
+    "vue/no-multi-spaces": 0,
+    "no-unused-vars": "off",
+    "no-return-assign": "off",
+    "no-alert": "off"
   }
 }

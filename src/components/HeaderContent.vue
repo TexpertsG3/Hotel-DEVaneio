@@ -23,6 +23,7 @@
 </template>
 <!-- eslint-disable prettier/prettier -->
 <script>
+import { ref } from 'vue';
 import NavBar from './NavBar.vue';
 
 export default {
@@ -30,9 +31,21 @@ export default {
   components: {
     NavBar,
   },
+  data(){
+    return {
+      logged : document.getElementById('header__logged'),
+      logIn : document.getElementById('header__login'),
+      nameLogged : document.getElementById('header__user-name')
+    };
+  },
   methods: {
-    logout() {
-      localStorage.clear();
+    verify(){
+      if(localStorage.getItem('userName')){
+        this.logged.value.style.display = 'flex';
+        this.logIn.value.style.display = 'none';
+        this.nameLogged.value.style.display = 'flex';
+        this.nameLogged.value.innerText = localStorage.getItem('userName');
+      }
     },
   },
 };
