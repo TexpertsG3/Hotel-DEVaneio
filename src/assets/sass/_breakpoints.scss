@@ -34,15 +34,16 @@ $breakpoints: (
 }
 
 /*Responsividade Header e NavBar*/
-.header__logo {
+.header__logo,
+#logo {
   @include xs {
-    width: 180px;
+    width: 120px;
   }
 }
 
-#logo {
+.header__login {
   @include xs {
-    width: 180px;
+    font-size: 0.8rem;
   }
 }
 
@@ -63,15 +64,63 @@ $breakpoints: (
     flex: 1 1 140px;
   }
 }
-  @media (min-width: 640px) {
-    .nav-menu-primary ul li {
-      flex: 1 1 180px;
-    }
+@media (min-width: 640px) {
+  .nav-menu-primary ul li {
+    flex: 1 1 180px;
   }
+}
 
- .nav-menu-primary ul li{ 
+.nav-menu-primary ul li {
   @include md {
     flex: 1 1;
     flex-basis: fit-content;
   }
 }
+
+/*Reponsividade Home*/
+.fontHeader {
+  @include xs {
+    font-size: 32px;
+    padding: 10px;
+  }
+  @include xl {
+    font-size: 48px;
+  }
+}
+
+.aboutHomeMobile,
+.roomsHomeMobile {
+  @include xs {
+    padding: 10px;
+  }
+  @include xl {
+    display: none;
+  }
+}
+
+.aboutHomeTablet,
+.roomsHomeTablet {
+  @include xs {
+    display: none;
+  }
+  @include xl {
+    display: flex;
+  }
+}
+
+/*Modelo para usar na responsividade
+{
+@include xs{
+  }
+@include sm{
+  }
+@include md{
+  }
+@include lg{
+  }
+@include xl{
+  }  
+}
+
+
+*/

@@ -1,16 +1,16 @@
 @use "variables" as variables;
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 $font-sizes: (
-    "small": 0.8,
-    "regular": 1,
-    "large": 2,
-    "extra-large": 3
+  "small": 0.8,
+  "regular": 1,
+  "large": 2,
+  "extra-large": 3,
 );
 
 @each $key, $value in $font-sizes {
-    .font-size-#{$key} {
-        font-size: variables.$font-size-base * $value !important; 
-    }
+  .font-size-#{$key} {
+    font-size: variables.$font-size-base * $value;
+  }
 }

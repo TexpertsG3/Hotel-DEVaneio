@@ -699,19 +699,19 @@ a {
 }
 
 .font-size-small {
-  font-size: 12.8px !important;
+  font-size: 12.8px;
 }
 
 .font-size-regular {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
 .font-size-large {
-  font-size: 32px !important;
+  font-size: 32px;
 }
 
 .font-size-extra-large {
-  font-size: 48px !important;
+  font-size: 48px;
 }
 
 .container {
@@ -744,14 +744,15 @@ a {
 
 /*Responsividade Header e NavBar*/
 @media (min-width: 0) {
-  .header__logo {
-    width: 180px;
+  .header__logo,
+  #logo {
+    width: 120px;
   }
 }
 
 @media (min-width: 0) {
-  #logo {
-    width: 180px;
+  .header__login {
+    font-size: 0.8rem;
   }
 }
 
@@ -784,6 +785,61 @@ a {
   }
 }
 
+/*Reponsividade Home*/
+@media (min-width: 0) {
+  .fontHeader {
+    font-size: 32px;
+    padding: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .fontHeader {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 0) {
+  .aboutHomeMobile,
+  .roomsHomeMobile {
+    padding: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .aboutHomeMobile,
+  .roomsHomeMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 0) {
+  .aboutHomeTablet,
+  .roomsHomeTablet {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .aboutHomeTablet,
+  .roomsHomeTablet {
+    display: flex;
+  }
+}
+
+/*Modelo para usar na responsividade
+{
+@include xs{
+  }
+@include sm{
+  }
+@include md{
+  }
+@include lg{
+  }
+@include xl{
+  }  
+}
+
+
+*/
 .pd-0 {
   padding: 0px;
 }
