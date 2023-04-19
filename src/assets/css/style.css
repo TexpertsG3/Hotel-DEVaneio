@@ -801,14 +801,16 @@ a {
 @media (min-width: 0) {
   .aboutHomeMobile,
   .roomsHomeMobile,
-  .gastronomyHomeMobile {
-    padding: 10px;
+  .gastronomyHomeMobile,
+  .footerMobile {
+    padding: 20px;
   }
 }
 @media (min-width: 1200px) {
   .aboutHomeMobile,
   .roomsHomeMobile,
-  .gastronomyHomeMobile {
+  .gastronomyHomeMobile,
+  .footerMobile {
     display: none;
   }
 }
@@ -816,14 +818,28 @@ a {
 @media (min-width: 0) {
   .aboutHomeTablet,
   .roomsHomeTablet,
-  .gastronomyHomeTablet {
+  .gastronomyHomeTablet,
+  .footerTablet {
     display: none;
   }
 }
 @media (min-width: 1200px) {
   .aboutHomeTablet,
   .roomsHomeTablet,
-  .gastronomyHomeTablet {
+  .gastronomyHomeTablet,
+  .footerTablet {
+    display: flex;
+  }
+}
+
+@media (min-width: 0) {
+  .navBarFooter li {
+    display: inline-block;
+    margin: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .navBarFooter li {
     display: flex;
   }
 }
@@ -1507,6 +1523,30 @@ a {
 
 .a-item-center {
   align-items: center;
+}
+
+.t-value {
+  text-align: left;
+}
+
+.t-value {
+  text-align: right;
+}
+
+.t-value {
+  text-align: center;
+}
+
+.t-value {
+  text-align: justify;
+}
+
+.t-value {
+  text-align: initial;
+}
+
+.t-value {
+  text-align: inherit;
 }
 
 .btn-primary {

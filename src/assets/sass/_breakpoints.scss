@@ -90,9 +90,10 @@ $breakpoints: (
 
 .aboutHomeMobile,
 .roomsHomeMobile,
-.gastronomyHomeMobile {
+.gastronomyHomeMobile,
+.footerMobile {
   @include xs {
-    padding: 10px;
+    padding: 20px;
   }
   @include xl {
     display: none;
@@ -101,12 +102,23 @@ $breakpoints: (
 
 .aboutHomeTablet,
 .roomsHomeTablet,
-.gastronomyHomeTablet {
+.gastronomyHomeTablet,
+.footerTablet {
   @include xs {
     display: none;
   }
-  @include xl {
+  @include xl{
     display: flex;
+  }
+}
+
+.navBarFooter li{
+  @include xs {
+    display: inline-block;
+    margin: 10px;
+  }
+  @include xl {
+     display: flex;
   }
 }
 

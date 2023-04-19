@@ -5,6 +5,7 @@
     <section class="aboutHomeTablet container pt-3 pb-3" id="about">
       <div class="row j-space-between">
         <!--  -->
+       
         <div class="infoAboutHome row col-4-xl a-center gap-1">
           <header class="col-12-xl">
             <h2 class="fontHeader font-size-extra-large">
@@ -28,13 +29,7 @@
             </div>
           </article>
         </div>
-        <div class="imgAboutHome row col-6-xl">
-          <img
-            src="@/assets/images/home/hotel-small.jpg"
-            alt="Fachada do Hotel"
-            class="img col-12-xl"
-          />
-        </div>
+       
       </div>
     </section>
     <!-- About Home versão mobile -->
@@ -99,7 +94,7 @@
 
         <article class="row gap-1 col-12-xs j-center">
           <p class="">
-            Nossas acomodações foram planejadas para oferecer o máximo conforto
+            Nossas acomodações foram planejadas para oferecer o máximo de conforto
             e tecnologia para os nossos hóspedes.
           </p>
           <img
@@ -118,7 +113,7 @@
       <section class="container pt-3 pb-3" id="gastronomy">
         <article class="row j-space-between">
           <div class="row col-4-xl a-item-center a-center gap-1">
-            <h2 class="font-size-extra-large">Nossa Cozinha</h2>
+            <h2 class="font-size-extra-large">Gastronomia</h2>
             <p>
               Nosso objetivo é transformar o alimento em arte, nós buscamos te
               oferecer o melhor da gastronomia, com experiências sensoriais,
@@ -143,15 +138,12 @@
     <div class="gastronomyHomeMobile bg-primary-lighten-4">
       <section class="container pt-3 pb-3" id="gastronomy">
         <header class="col-12-xs">
-          <h2 class="font-size-large col-12-xs">Nossa Cozinha</h2>
+          <h2 class="font-size-large col-12-xs">Gastronomia</h2>
         </header>
 
         <article class="row gap-1 col-12-xs j-center">
           <p class="">
-            Nosso objetivo é transformar o alimento em arte, nós buscamos te
-            oferecer o melhor da gastronomia, com experiências sensoriais,
-            descoberta de aromas e sabores que nos levam à deliciosas
-            lembranças. A celebração da vida em momentos únicos e inesquecíveis.
+            Nosso objetivo é transformar o alimento em arte, nós buscamos te oferecer o melhor da gastronomia, com experiências sensoriais, descoberta de aromas e sabores que nos levam à deliciosas lembranças. A celebração da vida em momentos únicos e inesquecíveis.
           </p>
           <img
             src="@/assets/images/gastronomy/cozinha-gastronomia.jpg"

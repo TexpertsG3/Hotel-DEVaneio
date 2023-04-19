@@ -4,7 +4,7 @@
       <div class="row">
         <div class="row gap-2 a-center a-item-center">
           <header class="row col-12-xl j-center">
-            <h2 class="font-size-extra-large">Nosso Restaurante</h2>
+            <h2 class="font-size-extra-large">Gastronomia</h2>
           </header>
           <div class="row col-12-xl gap-2 j-center">
             <p class="row col-6-xl">

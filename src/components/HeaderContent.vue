@@ -1,7 +1,7 @@
 <!-- eslint-disable prettier/prettier -->
 <template>
   <div class="bg-secondary">
-    <header class="container header">
+    <header class="containerHeader container header">
       <div class="row j-space-between col-12-xl a-center a-item-center">
         <a href="/" class="header__logo col-1-xl">
           <img
