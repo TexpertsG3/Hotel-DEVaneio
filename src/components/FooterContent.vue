@@ -94,8 +94,8 @@
             <div class="row col-12-xs pt-3 pb-3 j-space-evenly">
               <!-- Endereço -->
               <div class="row col-5xs gap-1 j-center">
-                <h3 class="col-12-xs t-center">Endereço</h3>
-                <p class="col-12-xs t-center">
+                <h3 class="col-12-xs">Endereço</h3>
+                <p class="col-12-xs">
                   Via Costeira, n° 34, <br />
                   Parque das Dunas<br />
                   Natal - RN, Brasil.
@@ -103,10 +103,8 @@
               </div>
               <!-- Contato -->
               <div class="row col-5-xs gap-1 j-center">
-                <h3 class="col-12-xs t-center">Contato</h3>
-                <a
-                  href="tel:+5584999999999"
-                  class="link-secondary col-12-xs t-center"
+                <h3 class="col-12-xs">Contato</h3>
+                <a href="tel:+5584999999999" class="link-secondary col-12-xs"
                   >(84) 99999-9999</a
                 >
                 <a
