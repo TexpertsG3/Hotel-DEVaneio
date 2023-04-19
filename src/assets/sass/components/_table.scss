@@ -1,0 +1,46 @@
+@use "../variables" as variables;
+@use "../colors" as colors;
+
+@mixin table($color) {
+  border: none;
+  border-spacing: 0;
+  text-align: center;
+
+  tr {
+    transition: variables.$base-transition;
+
+    &:nth-child(odd) {
+      border: none;
+      background-color: lighten($color, 30%);
+    }
+
+    &:nth-child(even) {
+      border: none;
+      background-color: lighten($color, 40%);
+    }
+
+    &:first-child { 
+      background-color: lighten($color, 10%);
+    }
+
+    &:hover:not(tr:first-child) {
+      background-color: lighten($color, 20%);
+    }
+  }
+
+  th {
+    border: none;
+    padding: variables.$base-padding;
+  }
+
+  td {
+    border: none;
+    padding: variables.$base-padding;
+  }
+}
+
+@each $key, $value in colors.$colors {
+  .table-#{$key} {
+    @include table($value);
+  }
+}

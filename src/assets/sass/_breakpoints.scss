@@ -1,0 +1,140 @@
+$breakpoints: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+/*Responsividade Header e NavBar*/
+.header__logo,
+#logo {
+  @include xs {
+    width: 120px;
+  }
+}
+
+.header__login {
+  @include xs {
+    font-size: 0.8rem;
+  }
+}
+
+.nav-menu-primary ul li {
+  @include xs {
+    flex: 1 1 80px;
+  }
+}
+
+@media (min-width: 420px) {
+  .nav-menu-primary ul li {
+    flex: 1 1 100px;
+  }
+}
+
+.nav-menu-primary ul li {
+  @include sm {
+    flex: 1 1 140px;
+  }
+}
+@media (min-width: 640px) {
+  .nav-menu-primary ul li {
+    flex: 1 1 180px;
+  }
+}
+
+.nav-menu-primary ul li {
+  @include md {
+    flex: 1 1;
+    flex-basis: fit-content;
+  }
+}
+
+/*Reponsividade Home*/
+.fontHeader {
+  @include xs {
+    font-size: 32px;
+    padding: 10px;
+  }
+  @include xl {
+    font-size: 48px;
+  }
+}
+
+.aboutHomeMobile,
+.roomsHomeMobile,
+.gastronomyHomeMobile,
+.footerMobile {
+  @include xs {
+    padding: 20px;
+  }
+  @include xl {
+    display: none;
+  }
+}
+
+.aboutHomeTablet,
+.roomsHomeTablet,
+.gastronomyHomeTablet,
+.footerTablet {
+  @include xs {
+    display: none;
+  }
+  @include xl{
+    display: flex;
+  }
+}
+
+.navBarFooter li{
+  @include xs {
+    display: inline-block;
+    margin: 10px;
+  }
+  @include xl {
+     display: flex;
+  }
+}
+
+/*Modelo para usar na responsividade
+{
+@include xs{
+  }
+@include sm{
+  }
+@include md{
+  }
+@include lg{
+  }
+@include xl{
+  }  
+}
+
+
+*/
