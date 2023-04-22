@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
 // eslint-disable-next-line import/no-unresolved
-import about from '@/views/AboutContent.vue';
+import AboutContent from '@/views/AboutContent.vue';
 // eslint-disable-next-line import/no-unresolved
-import Gastronomy from '@/views/GastronomyContent.vue';
+import GastronomyContent from '@/views/GastronomyContent.vue';
 // eslint-disable-next-line import/no-unresolved
-import Rooms from '@/views/RoomsContent.vue';
+import RoomsContent from '@/views/RoomsContent.vue';
 // eslint-disable-next-line import/no-unresolved
 import ContactUs from '@/views/ContactUs.vue';
 // eslint-disable-next-line import/no-unresolved
@@ -18,7 +18,7 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    component: about,
+    component: AboutContent,
   },
   {
     path: '/',
@@ -38,12 +38,12 @@ const routes = [
   {
     path: '/gastronomy',
     name: 'gastronomy',
-    component: Gastronomy,
+    component: GastronomyContent,
   },
   {
     path: '/rooms',
     name: 'rooms',
-    component: Rooms,
+    component: RoomsContent,
   },
   {
     path: '/login',

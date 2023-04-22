@@ -5,34 +5,38 @@
     <div class="container">
       <div class="row">
         <div class="row pt-3 pb-3 j-space-between">
-          <div class="row col-2-xl gap-1">
+          <div class="row col-2-xl col-2-lg col-2-md gap-1">
             <!-- Logo -->
-            <a href="/" class="col-12-xl"
+            <a href="/" class="col-12-xl col-12-lg col-12-md"
               ><img
                 src="@/assets/images/logo/logo.png"
                 alt="Logo DEV.aneio"
-                class="img col-12-xl"
+                class="img col-12-xl col-12-lg col-12-md"
             /></a>
           </div>
-          <div class="row col-3-xl">
+          <div class="row col-3-xl col-3-lg col-3-md">
             <ul class="row gap-1 a-center">
-              <NavBar class="col-12-xl" />
+              <NavBar class="col-12-xl col-12-lg col-12-md" />
             </ul>
           </div>
-          <div class="row col-3-xl gap-1 a-center">
-            <h3 class="col-12-xl">Nosso Endereço</h3>
-            <p>
+          <div class="row col-3-xl col-3-lg col-3-md gap-1 a-center">
+            <h3 class="col-12-xl col-12-lg col-12-md">Nosso Endereço</h3>
+            <p class="">
               Via Costeira, n° 34, <br />
               Parque das Dunas<br />
               Natal - RN, Brasil.
             </p>
           </div>
-          <div class="row col-2-xl a-center gap-1">
-            <h3 class="col-12-xl">Contato</h3>
-            <a href="tel:+5584999999999" class="link-secondary col-12-xl"
+          <div class="row col-2-xl col-2-lg col-2-md a-center gap-1">
+            <h3 class="col-12-xl col-2-lg col-2-md">Contato</h3>
+            <a
+              href="tel:+5584999999999"
+              class="link-secondary col-12-xl col-12-lg col-12-md"
               >(84) 99999-9999</a
             >
-            <a href="tel:+5584999999999" class="link-secondary col-12-xl"
+            <a
+              href="tel:+5584999999999"
+              class="link-secondary col-12-xl col-12-lg col-12-md"
               >(84) 88888-8888</a
             >
           </div>
@@ -40,11 +44,11 @@
 
         <span class="spacer bg-secondary"></span>
 
-        <div class="row pt-1 pb-1 j-center col-12-xl">
+        <div class="row pt-1 pb-1 j-center col-12-xl col-12-lg col-12-md">
           <p>&copy; Todos os direitos reservados 2023</p>
         </div>
         <!--ícones das redes sociais --->
-        <div class="row col-12-xl gap-2 j-center">
+        <div class="row col-12-xl col-12-lg col-12-md gap-2 j-center">
           <a href="https://www.instagram.com/" target="blank"
             ><i class="fa-brands fa-instagram font-size-large"></i
           ></a>
@@ -93,9 +97,9 @@
           <div class="row col-12-xs gap-1">
             <div class="row col-12-xs pt-3 pb-3 j-space-evenly">
               <!-- Endereço -->
-              <div class="row col-5xs gap-1 j-center">
-                <h3 class="col-12-xs">Endereço</h3>
-                <p class="col-12-xs">
+              <div class="row col-5-xs gap-1 j-center">
+                <h3 class="col-12-xs t-center">Endereço</h3>
+                <p class="col-12-xs t-center">
                   Via Costeira, n° 34, <br />
                   Parque das Dunas<br />
                   Natal - RN, Brasil.
@@ -103,13 +107,15 @@
               </div>
               <!-- Contato -->
               <div class="row col-5-xs gap-1 j-center">
-                <h3 class="col-12-xs">Contato</h3>
-                <a href="tel:+5584999999999" class="link-secondary col-12-xs"
+                <h3 class="col-12-xs t-center">Contato</h3>
+                <a
+                  href="tel:+5584999999999"
+                  class="t-center link-secondary col-12-xs"
                   >(84) 99999-9999</a
                 >
                 <a
                   href="tel:+5584999999999"
-                  class="link-secondary col-12-xs t-center"
+                  class="t-center link-secondary col-12-xs t-center"
                   >(84) 88888-8888</a
                 >
               </div>
@@ -142,10 +148,10 @@
 </template>
 
 <script>
-import NavBar from './NavBar.vue';
+import NavBar from "./NavBar.vue";
 
 export default {
-  name: 'FooterContent',
+  name: "FooterContent",
   components: { NavBar },
 };
 </script>

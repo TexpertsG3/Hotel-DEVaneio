@@ -1,4 +1,4 @@
-<!-- eslint-disable prettier/prettier -->
+eslint-disable prettier/prettier
 <template>
   <main class="container">
     <section class="row gap-2 j-center pb-3 pt-3">

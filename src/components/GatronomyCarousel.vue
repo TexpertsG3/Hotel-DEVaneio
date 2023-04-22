@@ -5,24 +5,17 @@
       <SplideSlide>
         <section class="row container j-space-evenly">
           <div class="col-6-xl">
-            <img
-              src="@/assets/images/gastronomy/mediterranea.jpg"
-              alt=""
-              class="img col-12-xl"
-            />
+            <img src="@/assets/images/gastronomy/mediterranea.jpg" alt="" class="img col-12-xl" />
           </div>
           <div class="row gap-2 a-center col-4-xl a-item-center">
             <header class="row col-12-xl">
-              <h2 class="row font-size-large">
-                Festival de comida mediterrânea
-              </h2>
+              <h2 class="row font-size-large">Festival de comida mediterrânea</h2>
             </header>
             <article class="row a-center a-item-center j-space-between">
               <div class="row col-12-xl gap-2">
                 <p>
-                  Nos meses de Janeiro e Fevereiro venha apreciar o nosso
-                  festival mediterrâneo, com ingredientes sempre frescos e
-                  selecionados!
+                  Nos meses de Janeiro e Fevereiro venha apreciar o nosso festival mediterrâneo, com
+                  ingredientes sempre frescos e selecionados!
                 </p>
               </div>
             </article>
@@ -32,11 +25,7 @@
       <SplideSlide>
         <section class="row container j-space-evenly">
           <div class="col-6-xl">
-            <img
-              src="@/assets/images/gastronomy/italiana.jpg"
-              alt=""
-              class="img col-12-xl"
-            />
+            <img src="@/assets/images/gastronomy/italiana.jpg" alt="" class="img col-12-xl" />
           </div>
           <div class="row gap-2 col-4-xl a-center a-item-center">
             <header class="row col-12-xl">
@@ -45,10 +34,9 @@
             <article class="row a-center a-item-center j-space-between">
               <div class="row col-12-xl gap-2">
                 <p>
-                  Nos meses de Março e Abril, a "Nonna" invade a nossa cozinha,
-                  e você não pode deixar de apreciar as massas frescas
-                  acompanhadas dos mais diversos molhos!! E, ainda, teremos um
-                  espaço reservado para ensinar você que quer "colocar a mão
+                  Nos meses de Março e Abril, a "Nonna" invade a nossa cozinha, e você não pode
+                  deixar de apreciar as massas frescas acompanhadas dos mais diversos molhos!! E,
+                  ainda, teremos um espaço reservado para ensinar você que quer "colocar a mão
                   massa"!!
                 </p>
               </div>
@@ -59,11 +47,7 @@
       <SplideSlide>
         <section class="row container j-space-evenly">
           <div class="col-6-xl">
-            <img
-              src="@/assets/images/gastronomy/fastfood.jpg"
-              alt=""
-              class="img col-12-xl"
-            />
+            <img src="@/assets/images/gastronomy/fastfood.jpg" alt="" class="img col-12-xl" />
           </div>
           <div class="row gap-2 col-4-xl a-center a-item-center">
             <header class="row col-12-xl">
@@ -72,9 +56,8 @@
             <article class="row a-center a-item-center j-space-between">
               <div class="row col-12-xl gap-2">
                 <p>
-                  Nos meses de Maio e Junho aproveite os mais diversos lanches
-                  de todos os lugares do mundo! Que tal montar o seu
-                  personalizado com ingredientes repletos de sabor!!
+                  Nos meses de Maio e Junho aproveite os mais diversos lanches de todos os lugares
+                  do mundo! Que tal montar o seu personalizado com ingredientes repletos de sabor!!
                 </p>
               </div>
             </article>
@@ -84,11 +67,7 @@
       <SplideSlide>
         <section class="row container j-space-evenly">
           <div class="col-6-xl">
-            <img
-              src="@/assets/images/gastronomy/mexicana.jpg"
-              alt=""
-              class="img col-12-xl"
-            />
+            <img src="@/assets/images/gastronomy/mexicana.jpg" alt="" class="img col-12-xl" />
           </div>
           <div class="row gap-2 col-4-xl a-center a-item-center">
             <header class="row col-12-xl">
@@ -97,9 +76,9 @@
             <article class="row a-center a-item-center j-space-between">
               <div class="row col-12-xl gap-2">
                 <p>
-                  Nos meses de Julho e Agosto você vai ser transportado ao
-                  México através dessa culinária tão espetacular! Venha
-                  aproveitar o melhor que a cozinha mexicana tem a oferecer!
+                  Nos meses de Julho e Agosto você vai ser transportado ao México através dessa
+                  culinária tão espetacular! Venha aproveitar o melhor que a cozinha mexicana tem a
+                  oferecer!
                 </p>
               </div>
             </article>
@@ -109,11 +88,7 @@
       <SplideSlide>
         <section class="row container j-space-evenly">
           <div class="col-6-xl">
-            <img
-              src="@/assets/images/gastronomy/japonesa.jpg"
-              alt=""
-              class="img col-12-xl"
-            />
+            <img src="@/assets/images/gastronomy/japonesa.jpg" alt="" class="img col-12-xl" />
           </div>
           <div class="row gap-2 col-4-xl a-center a-item-center">
             <header class="row col-12-xl">
@@ -122,9 +97,8 @@
             <article class="row a-center a-item-center j-space-between">
               <div class="row col-12-xl gap-2">
                 <p>
-                  Irasshaimase! Nos meses de Setembro e Outubro a nossa cozinha
-                  viaja ao outro lado do mundo, e te presenteia com a culinária
-                  japonesa repleta de sabor e qualidade!
+                  Irasshaimase! Nos meses de Setembro e Outubro a nossa cozinha viaja ao outro lado
+                  do mundo, e te presenteia com a culinária japonesa repleta de sabor e qualidade!
                 </p>
               </div>
             </article>
@@ -147,10 +121,9 @@
             <article class="row a-center a-item-center j-space-between">
               <div class="row col-12-xl gap-2">
                 <p>
-                  Dizem que tudo termina em pizza, mas aqui termina em Feijoada,
-                  Muqueca e toda a diversidade da nossa culinária brasileira.
-                  Nos meses de Novembro e Dezembro, você conheçaa culinária do
-                  nosso país, venha viajar nessa explosão de sabores.
+                  Dizem que tudo termina em pizza, mas aqui termina em Feijoada, Muqueca e toda a
+                  diversidade da nossa culinária brasileira. Nos meses de Novembro e Dezembro, você
+                  conheçaa culinária do nosso país, venha viajar nessa explosão de sabores.
                 </p>
               </div>
             </article>
