@@ -1,22 +1,23 @@
-<!-- &lt;!&ndash; SCRIPT PARA RESOLVER &ndash;&gt;-->
-<!--&lt;!&ndash; <script>-->
-<!--        if (!localStorage.getItem("loggedUser")) {-->
-<!--            window.location.href = "http://localhost:5173/Hotel-DEVaneio/src/pages/login.html";-->
-<!--        }-->
 
-<!--        let user = JSON.parse(localStorage.getItem("loggedUser"));-->
+<!-- SCRIPT PARA RESOLVER -->
+<!-- <script>
+        if (!localStorage.getItem("loggedUser")) {
+            window.location.href = "http://localhost:5173/Hotel-DEVaneio/src/pages/login.html";
+        }
 
-<!--        if (user.roles !== "ROLE_ADMIN") {-->
-<!--            window.location.href = "http://localhost:5173/Hotel-DEVaneio/";-->
-<!--        }-->
-<!--    </script> &ndash;&gt;-->
+        let user = JSON.parse(localStorage.getItem("loggedUser"));
 
-<template>
-  <div>
+        if (user.roles !== "ROLE_ADMIN") {
+            window.location.href = "http://localhost:5173/Hotel-DEVaneio/";
+        }
+    </script> -->
 
-  </div>
+
+    <!-- <template>
 </template>
 
-<!--<script></script>-->
+<script>
+</script>
 
-<!--<style></style>-->
+<style>
+</style> -->

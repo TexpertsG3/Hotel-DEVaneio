@@ -12,23 +12,48 @@
             <i class="fa-sharp fa-solid fa-xmark font-size-large"></i>
           </div>
           <div class="col-12-xl">
-            <input type="checkbox" id="service-1" name="service-1" value="Café da Manhã" />
+            <input
+              type="checkbox"
+              id="service-1"
+              name="service-1"
+              value="Café da Manhã"
+            />
             <label for="service-1">Passeio nas Dunas</label>
           </div>
           <div class="col-12-xl">
-            <input type="checkbox" id="service-2" name="service-2" value="Guia Turístico" />
+            <input
+              type="checkbox"
+              id="service-2"
+              name="service-2"
+              value="Guia Turístico"
+            />
             <label for="service-2">Guia Turístico</label>
           </div>
           <div class="col-12-xl">
-            <input type="checkbox" id="service-3" name="service-3" value="Tratamento no Spa" />
+            <input
+              type="checkbox"
+              id="service-3"
+              name="service-3"
+              value="Tratamento no Spa"
+            />
             <label for="service-3">Tratamento no Spa</label>
           </div>
           <div class="col-12-xl">
-            <input type="checkbox" id="service-4" name="service-3" value="Auditório para eventos" />
+            <input
+              type="checkbox"
+              id="service-4"
+              name="service-3"
+              value="Auditório para eventos"
+            />
             <label for="service-3">Auditório para eventos</label>
           </div>
           <div class="col-12-xl">
-            <input type="checkbox" id="service-5" name="service-3" value="Espaço Kids" />
+            <input
+              type="checkbox"
+              id="service-5"
+              name="service-3"
+              value="Espaço Kids"
+            />
             <label for="service-3">Espaço Kids - Game developer</label>
           </div>
         </div>
@@ -58,20 +83,22 @@
               value="1"
               class="col-2-xl input-primary color-secondary"
             />
+            <input
+              type="number"
+              name="children"
+              id="children"
+              min="1"
+              value="1"
+              class="col-2-xl input-primary color-secondary"
+            />
+          </div> 
           </div>
-          <input
-            type="number"
-            name="children"
-            id="children"
-            min="1"
-            value="1"
-            class="col-2-xl input-primary color-secondary"
-          />
-        </div>
         <label class="col-12-xl">Escolha o quarto</label>
 
         <div class="row gap-2 col-8-xl">
-          <div class="row j-space-between bg-grey-lighten-5 pd-1 input-selectable-primary">
+          <div
+            class="row j-space-between bg-grey-lighten-5 pd-1 input-selectable-primary"
+          >
             <label for="room-1" class="row j-space-between col-11-xl">
               <img
                 src="http://localhost:5173/Hotel-DEVaneio/src/assets/images/accommodations/quarto-c.jpg"
@@ -82,8 +109,9 @@
               <div class="col-8-xl">
                 <h2>Acomodação C</h2>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, magnam
-                  architecto. Quibusdam dicta dolor enim, sint repudiandae ad excepturi accusantium.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci, magnam architecto. Quibusdam dicta dolor enim, sint
+                  repudiandae ad excepturi accusantium.
                 </p>
                 <p>R$ 99,00</p>
               </div>
@@ -103,8 +131,9 @@
               <div class="col-8-xl">
                 <h2>Acomodação C#</h2>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, magnam
-                  architecto. Quibusdam dicta dolor enim, sint repudiandae ad excepturi accusantium.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci, magnam architecto. Quibusdam dicta dolor enim, sint
+                  repudiandae ad excepturi accusantium.
                 </p>
                 <p>R$ 199,00</p>
               </div>
@@ -124,14 +153,20 @@
               <div class="col-8-xl">
                 <h2>Acomodação C++</h2>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, magnam
-                  architecto. Quibusdam dicta dolor enim, sint repudiandae ad excepturi accusantium.
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Adipisci, magnam architecto. Quibusdam dicta dolor enim, sint
+                  repudiandae ad excepturi accusantium.
                 </p>
                 <p>R$ 299,00</p>
               </div>
             </label>
 
-            <input type="radio" name="room" id="room-3" value="Acomodação C++" />
+            <input
+              type="radio"
+              name="room"
+              id="room-3"
+              value="Acomodação C++"
+            />
           </div>
         </div>
 
@@ -149,7 +184,10 @@
             <p class="col-12-xl">Pessoas: <span id="resume-persons"></span></p>
             <p class="col-12-xl">Preço: <span id="resume-price"></span></p>
           </div>
-          <button class="col-12-xl link-under-primary color-secondary" id="services">
+          <button
+            class="col-12-xl link-under-primary color-secondary"
+            id="services"
+          >
             Adcionar mais SERVIÇOS
           </button>
           <div class="row j-center col-12-xl">
@@ -165,3 +203,4 @@
     </section>
   </main>
 </template>
+
