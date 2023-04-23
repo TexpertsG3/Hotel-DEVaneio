@@ -1,4 +1,4 @@
-<!-- eslint-disable prettier/prettier -->
+eslint-disable prettier/prettier
 <template>
   <main class="container">
     <section class="row gap-2 j-center pb-3 pt-3">
@@ -24,9 +24,10 @@
 </template>
 
 <script>
-import RoomsCarousel from "../components/RoomsCarousel.vue";
+import RoomsCarousel from '../components/RoomsCarousel.vue';
+
 export default {
-  name: "RoomsContent",
+  name: 'RoomsContent',
   components: {
     RoomsCarousel,
   },

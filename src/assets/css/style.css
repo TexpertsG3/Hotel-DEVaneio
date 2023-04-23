@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 .bg-primary {
   background-color: #a2a648 !important;
@@ -738,6 +739,14 @@ a {
   border-radius: 12px;
 }
 
+.img-fit {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
 .d-none {
   display: none;
 }
@@ -798,19 +807,71 @@ a {
   }
 }
 
-@media (min-width: 0) {
-  .aboutHomeMobile,
-  .roomsHomeMobile,
-  .gastronomyHomeMobile,
-  .footerMobile {
-    padding: 20px;
+@media (min-width: 480px) {
+  .titleHome {
+    font-size: 25px;
+  }
+}
+@media (min-width: 720px) {
+  .titleHome {
+    font-size: 30px;
+  }
+}
+@media (min-width: 960px) {
+  .titleHome {
+    font-size: 35px;
   }
 }
 @media (min-width: 1200px) {
+  .titleHome {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 480px) {
+  .imgHome {
+    height: fit-content;
+  }
+}
+@media (min-width: 720px) {
+  .imgHome {
+    height: fit-content;
+  }
+}
+@media (min-width: 960px) {
+  .imgHome {
+    height: fit-content;
+  }
+}
+
+@media (min-width: 480px) {
+  .fullArticle {
+    display: none;
+  }
+}
+@media (min-width: 720px) {
+  .fullArticle {
+    display: flex;
+  }
+}
+
+@media (min-width: 720px) {
+  .smallArticle {
+    display: none;
+  }
+}
+
+@media (min-width: 0) {
   .aboutHomeMobile,
   .roomsHomeMobile,
-  .gastronomyHomeMobile,
-  .footerMobile {
+  .gastronomyHomeMobile {
+    padding: 20px;
+  }
+}
+@media (min-width: 480px) {
+  .aboutHomeMobile,
+  .roomsHomeMobile,
+  .gastronomyHomeMobile {
     display: none;
   }
 }
@@ -818,17 +879,40 @@ a {
 @media (min-width: 0) {
   .aboutHomeTablet,
   .roomsHomeTablet,
-  .gastronomyHomeTablet,
+  .gastronomyHomeTablet {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  .aboutHomeTablet,
+  .roomsHomeTablet,
+  .gastronomyHomeTablet {
+    display: flex;
+    padding: 20px;
+  }
+}
+
+/*Responsividade Footer*/
+@media (min-width: 0) {
+  .footerMobile {
+    padding: 20px;
+  }
+}
+@media (min-width: 720px) {
+  .footerMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 0) {
   .footerTablet {
     display: none;
   }
 }
-@media (min-width: 1200px) {
-  .aboutHomeTablet,
-  .roomsHomeTablet,
-  .gastronomyHomeTablet,
+@media (min-width: 720px) {
   .footerTablet {
     display: flex;
+    padding: 20px;
   }
 }
 
@@ -844,9 +928,51 @@ a {
   }
 }
 
+/*Responsividade página About*/
+@media (min-width: 960px) {
+  .smallArticleAbout {
+    display: none;
+  }
+}
+
+@media (min-width: 0) {
+  .fullArticleAbout {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .fullArticleAbout {
+    display: flex;
+  }
+}
+
+@media (min-width: 720px) {
+  .aboutMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 0) {
+  .aboutTablet {
+    display: none;
+  }
+}
+@media (min-width: 720px) {
+  .aboutTablet {
+    display: flex;
+  }
+}
+
 /*Modelo para usar na responsividade
-{
-@include xs{
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+
+classe,id,atirbuto
+{ 
+  @include xs{
   }
 @include sm{
   }
@@ -1525,28 +1651,56 @@ a {
   align-items: center;
 }
 
-.t-value {
+.t-left {
   text-align: left;
 }
 
-.t-value {
+.t-right {
   text-align: right;
 }
 
-.t-value {
+.t-center {
   text-align: center;
 }
 
-.t-value {
+.t-justify {
   text-align: justify;
 }
 
-.t-value {
+.t-initial {
   text-align: initial;
 }
 
-.t-value {
+.t-inherit {
   text-align: inherit;
+}
+
+.a-self-stretch {
+  align-self: stretch;
+}
+
+.a-self-center {
+  align-self: center;
+}
+
+.a-self-flex-start {
+  align-self: flex-start;
+}
+
+.a-self-flex-end {
+  align-self: flex-end;
+}
+
+.a-self-baseline {
+  align-self: baseline;
+}
+
+.a-self-safe center {
+  align-self: safe center;
+}
+
+.a-self-unsafe center {
+  align-self: unsafe center;
 }
 
 .btn-primary {

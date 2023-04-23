@@ -62,6 +62,15 @@ $position: (
 );
 $item-position: (flex-start, flex-end, center);
 $text-align: (left, right, center, justify, initial, inherit);
+$align-self: (
+  stretch,
+  center,
+  flex-start,
+  flex-end,
+  baseline,
+  safe center,
+  unsafe center
+);
 
 @each $value in $position {
   .j-#{$value} {
@@ -87,7 +96,14 @@ $text-align: (left, right, center, justify, initial, inherit);
 
 //text-align
 @each $value in $text-align {
-  .t-#{value} {
+  .t-#{$value} {
     text-align: $value;
+  }
+}
+
+//align-self
+@each $value in $align-self {
+  .a-self-#{$value} {
+    align-self: $value;
   }
 }

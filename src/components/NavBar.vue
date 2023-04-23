@@ -8,34 +8,34 @@
 
 <script>
 export default {
-  name: "NavBar",
+  name: 'NavBar',
 
   data() {
     return {
       menu: [
         {
-          item: "Home",
-          valor: "/",
+          item: 'Home',
+          valor: '/',
         },
         {
-          item: "Sobre",
-          valor: "/about",
+          item: 'Sobre',
+          valor: '/about',
         },
         {
-          item: "Acomodações",
-          valor: "/rooms",
+          item: 'Acomodações',
+          valor: '/rooms',
         },
         {
-          item: "Gastronomia",
-          valor: "/gastronomy",
+          item: 'Gastronomia',
+          valor: '/gastronomy',
         },
         {
-          item: "Reservas",
-          valor: "/reservations",
+          item: 'Reservas',
+          valor: '/reservations',
         },
         {
-          item: "Contato",
-          valor: "/contact-us",
+          item: 'Contato',
+          valor: '/contact-us',
         },
       ],
     };

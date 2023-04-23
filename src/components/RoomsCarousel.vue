@@ -103,14 +103,14 @@
 </template>
 <!-- eslint-disable prettier/prettier -->
 <script>
-import { Splide, SplideSlide } from "@splidejs/vue-splide";
-import "@splidejs/vue-splide/css";
-import "@splidejs/vue-splide/css/skyblue";
-import "@splidejs/vue-splide/css/sea-green";
-import "@splidejs/vue-splide/css/core";
+import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import '@splidejs/vue-splide/css';
+import '@splidejs/vue-splide/css/skyblue';
+import '@splidejs/vue-splide/css/sea-green';
+import '@splidejs/vue-splide/css/core';
 
 export default {
-  name: "RoomsCarousel",
+  name: 'RoomsCarousel',
   components: {
     Splide,
     SplideSlide,

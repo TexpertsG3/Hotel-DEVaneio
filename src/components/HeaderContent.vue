@@ -37,9 +37,10 @@
 </style> -->
 
 <script>
-import NavBar from "./NavBar.vue";
+import NavBar from './NavBar.vue';
+
 export default {
-  name: "HeaderContent",
+  name: 'HeaderContent',
   components: {
     NavBar,
   },

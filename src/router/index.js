@@ -1,47 +1,53 @@
-/* eslint-disable prettier/prettier*/
-import { createRouter, createWebHistory } from "vue-router";
-import about from "@/views/AboutContent.vue";
-import Gastronomy from "@/views/GastronomyContent.vue";
-import Rooms from "@/views/RoomsContent.vue";
-import ContactUs from "@/views/ContactUs.vue";
-import ReservationsContent from "@/views/ReservationsContent.vue";
-import HomeContent from "@/views/HomeContent.vue";
-import LoginView from "@/views/LoginView.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+// eslint-disable-next-line import/no-unresolved
+import AboutContent from '@/views/AboutContent.vue';
+// eslint-disable-next-line import/no-unresolved
+import GastronomyContent from '@/views/GastronomyContent.vue';
+// eslint-disable-next-line import/no-unresolved
+import RoomsContent from '@/views/RoomsContent.vue';
+// eslint-disable-next-line import/no-unresolved
+import ContactUs from '@/views/ContactUs.vue';
+// eslint-disable-next-line import/no-unresolved
+import ReservationsContent from '@/views/ReservationsContent.vue';
+// eslint-disable-next-line import/no-unresolved
+import HomeContent from '@/views/HomeContent.vue';
+// eslint-disable-next-line import/no-unresolved
+import LoginView from '@/views/LoginView.vue';
 
 const routes = [
   {
-    path: "/about",
-    name: "about",
-    component: about,
+    path: '/about',
+    name: 'about',
+    component: AboutContent,
   },
   {
-    path: "/",
-    name: "home",
+    path: '/',
+    name: 'home',
     component: HomeContent,
   },
   {
-    path: "/reservations",
-    name: "reservations",
+    path: '/reservations',
+    name: 'reservations',
     component: ReservationsContent,
   },
   {
-    path: "/contact-us",
-    name: "contactus",
+    path: '/contact-us',
+    name: 'contactus',
     component: ContactUs,
   },
   {
-    path: "/gastronomy",
-    name: "gastronomy",
-    component: Gastronomy,
+    path: '/gastronomy',
+    name: 'gastronomy',
+    component: GastronomyContent,
   },
   {
-    path: "/rooms",
-    name: "rooms",
-    component: Rooms,
+    path: '/rooms',
+    name: 'rooms',
+    component: RoomsContent,
   },
   {
-    path: "/login",
-    name: "login",
+    path: '/login',
+    name: 'login',
     component: LoginView,
   },
 ];

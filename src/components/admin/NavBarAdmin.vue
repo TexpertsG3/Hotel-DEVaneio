@@ -8,25 +8,25 @@
 
 <script>
 export default {
-  name: "NavBarAdmin",
+  name: 'NavBarAdmin',
   data() {
     return {
       menu: [
         {
-          item: "HomeAdmin",
-          valor: "/",
+          item: 'HomeAdmin',
+          valor: '/',
         },
         {
-          item: "Funcionários",
-          valor: "/employees",
+          item: 'Funcionários',
+          valor: '/employees',
         },
         {
-          item: "Hóspedes",
-          valor: "/guests",
+          item: 'Hóspedes',
+          valor: '/guests',
         },
         {
-          item: "Reservas",
-          valor: "/reservationsAdmin",
+          item: 'Reservas',
+          valor: '/reservationsAdmin',
         },
       ],
     };

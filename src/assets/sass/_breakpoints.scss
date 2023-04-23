@@ -88,43 +88,147 @@ $breakpoints: (
   }
 }
 
+.titleHome {
+  @include sm {
+    font-size: 25px;
+  }
+  @include md {
+    font-size: 30px;
+  }
+  @include lg {
+    font-size: 35px;
+  }
+  @include xl {
+    font-size: 48px;
+  }
+}
+
+.imgHome {
+  @include sm {
+    height: fit-content;
+  }
+  @include md {
+    height: fit-content;
+  }
+  @include lg {
+    height: fit-content;
+  }
+}
+
+.fullArticle {
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: flex;
+  }
+}
+
+.smallArticle {
+  @include md {
+    display: none;
+  }
+}
+
 .aboutHomeMobile,
 .roomsHomeMobile,
-.gastronomyHomeMobile,
-.footerMobile {
+.gastronomyHomeMobile {
   @include xs {
     padding: 20px;
   }
-  @include xl {
+  @include sm {
     display: none;
   }
 }
 
 .aboutHomeTablet,
 .roomsHomeTablet,
-.gastronomyHomeTablet,
+.gastronomyHomeTablet {
+  @include xs {
+    display: none;
+  }
+  @include sm {
+    display: flex;
+    padding: 20px;
+  }
+}
+
+/*Responsividade Footer*/
+.footerMobile {
+  @include xs {
+    padding: 20px;
+  }
+  @include md {
+    display: none;
+  }
+}
+
 .footerTablet {
   @include xs {
     display: none;
   }
-  @include xl{
+  @include md {
     display: flex;
+    padding: 20px;
   }
 }
 
-.navBarFooter li{
+.navBarFooter li {
   @include xs {
     display: inline-block;
     margin: 10px;
   }
   @include xl {
-     display: flex;
+    display: flex;
+  }
+}
+
+/*Responsividade página About*/
+
+.smallArticleAbout {
+  @include lg {
+    display: none;
+  }
+}
+
+.fullArticleAbout {
+  @include xs {
+    display: none;
+  }
+  @include lg {
+    display: flex;
+  }
+}
+
+// .imgAbout1,
+// .imgAbout2,
+// .imgAbout3,
+// .imgAbout4
+.aboutMobile {
+  @include md {
+    display: none;
+  }
+}
+
+.aboutTablet {
+  @include xs {
+    display: none;
+  }
+  @include md{
+    display: flex;
   }
 }
 
 /*Modelo para usar na responsividade
-{
-@include xs{
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+
+classe,id,atirbuto
+{ 
+  @include xs{
   }
 @include sm{
   }

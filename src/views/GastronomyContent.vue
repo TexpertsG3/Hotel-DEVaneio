@@ -34,9 +34,10 @@
 </template>
 
 <script>
-import GastronomyCarousel from "../components/GatronomyCarousel.vue";
+import GastronomyCarousel from '../components/GatronomyCarousel.vue';
+
 export default {
-  name: "GastronomyContent",
+  name: 'GastronomyContent',
   components: {
     GastronomyCarousel,
   },

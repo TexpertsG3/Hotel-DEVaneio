@@ -1,10 +1,9 @@
-<!-- SCRIPT PARA RESOLVER -->
+<!-- <template>
+  <div></div>
+</template> -->
 
-<template>
-</template>
+<!--<script>-->
+<!--</script>-->
 
-<script>
-</script>
-
-<style>
-</style>
+<!--<style>-->
+<!-- </style> -->

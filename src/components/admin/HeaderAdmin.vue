@@ -27,9 +27,10 @@
 </template>
 <!-- eslint-disable prettier/prettier -->
 <script>
-import NavBarAdmin from "./NavBarAdmin.vue";
+import NavBarAdmin from './NavBarAdmin.vue';
+
 export default {
-  name: "HeaderAdmin",
+  name: 'HeaderAdmin',
   components: {
     NavBarAdmin,
   },
