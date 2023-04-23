@@ -1,0 +1,26 @@
+@use "../base" as base;
+@use "../variables" as variables;
+@use "../breakpoints" as bp;
+
+.header {
+  //@include base.flex-layout;
+  //@include base.flex-a-center;
+  padding: variables.$base-padding;
+
+  .header__main {
+    @include base.flex-layout;
+    @include base.flex-a-center;
+    padding: variables.$base-padding 0;
+    justify-content: space-between;
+    width: 100%;
+
+    .header__logo {
+      @include base.flex-layout;
+      @include base.flex-a-center;
+    }
+    .header__login {
+      @include base.flex-layout;
+      @include base.flex-a-center;
+    }
+  }
+}

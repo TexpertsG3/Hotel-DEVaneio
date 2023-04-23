@@ -1,0 +1,33 @@
+@use "../base" as base;
+@use "../variables" as variables;
+@use "../colors" as colors;
+
+@mixin nav-menu($color) {
+  @include base.flex-layout;
+  @include base.flex-a-center;
+  width: 100%;
+
+  ul {
+    @include base.flex-layout;
+    @include base.flex-a-center;
+    padding: variables.$base-padding 0;
+    width: 100%;
+    gap: variables.$base-padding * 2;
+    justify-content: center;
+
+    li {
+      a {
+        transition: variables.$base-transition;
+        &:hover {
+          color: $color;
+        }
+      }
+    }
+  }
+}
+
+@each $key, $value in colors.$colors {
+  .nav-menu-#{$key} {
+    @include nav-menu($value);
+  }
+}

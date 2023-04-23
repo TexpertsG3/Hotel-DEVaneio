@@ -1,0 +1,49 @@
+$primary: #a2a648;
+$secondary: #262626;
+$grey: #aaaaaa;
+$white: white;
+$red: red;
+$green: green;
+$yellow: yellow;
+
+$colors: (
+        "primary": $primary ,
+        "secondary": $secondary,
+        "grey": $grey,
+        "white": white,
+        "red": $red,
+        "green": $green,
+        "yellow": $yellow
+);
+
+@each $key, $value in $colors {
+  .bg-#{$key} {
+    background-color: $value !important;
+  }
+
+  .color-#{$key} {
+    color: $value !important;
+  }
+
+  @for $i from 1 through 6 {
+    @if lighten($value, 5 * $i) != white {
+      .bg-#{$key}-lighten-#{$i} {
+        background-color: lighten($value, 5 * $i) !important;
+      }
+
+      .color-#{$key}-lighten-#{$i} {
+        color: lighten($value, 5 * $i) !important;
+      }
+    }
+
+    @if darken($value, 5 * $i) != black {
+      .bg-#{$key}-darken-#{$i} {
+        background-color: darken($value, 5 * $i) !important;
+      }
+
+      .color-#{$key}-darken-#{$i} {
+        color: darken($value, 5 * $i) !important;
+      }
+    }
+  }
+}
