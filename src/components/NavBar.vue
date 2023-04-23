@@ -9,6 +9,7 @@
 <script>
 export default {
   name: 'NavBar',
+
   data() {
     return {
       menu: [
@@ -17,7 +18,7 @@ export default {
           valor: '/',
         },
         {
-          item: 'Sobre nós',
+          item: 'Sobre',
           valor: '/about',
         },
         {
@@ -33,7 +34,7 @@ export default {
           valor: '/reservations',
         },
         {
-          item: 'Fale Conosco',
+          item: 'Contato',
           valor: '/contact-us',
         },
       ],

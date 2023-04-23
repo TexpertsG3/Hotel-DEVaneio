@@ -77,77 +77,62 @@
     </form>
   </div>
 
-  <div >{{hospedes}}</div>
+  <div>{{ hospedes }}</div>
 </template>
 <!-- eslint-disable prettier/prettier -->
 <script>
 import { onMounted, ref } from 'vue';
 // eslint-disable-next-line import/extensions,import/no-unresolved
 import { api } from '@/services/api';
-
 export default {
   name: 'LoginView',
   setup() {
     const admins = ref([]);
-    const fetchAdmins = () => api.get('/admin').then((response) =>
-      (admins.value = response.data),
-    );
-
+    const fetchAdmins = () => api.get('/admin').then((response) => (admins.value = response.data));
     const hospedes = ref([]);
-
-    const fetchHospedes = () => api.get('/hospede').then((response) =>
-      (hospedes.value = response.data),
-    );
-
+    const fetchHospedes = () =>
+      api.get('/hospede').then((response) => (hospedes.value = response.data));
     onMounted(() => {
       fetchAdmins();
       fetchHospedes();
     });
-
     const username = ref('');
     const password = ref('');
     const logged = ref(document.getElementById('header__logged'));
     const logIn = ref(document.getElementById('header__login'));
     const nameLogged = ref(document.getElementById('header__user-name'));
-
     function handleLogin() {
       let tipoDeUsuario;
       const correspondeAdmin = admins.value.find(
-        admin => admin.email === username.value && admin.senha === password.value);
-
-      const correspondeHospede = hospedes.value.find(hospede => hospede.email === username.value && hospede.senha === password.value);
-
+        (admin) => admin.email === username.value && admin.senha === password.value
+      );
+      const correspondeHospede = hospedes.value.find(
+        (hospede) => hospede.email === username.value && hospede.senha === password.value
+      );
       if (correspondeAdmin) {
         localStorage.setItem('userAdmin', correspondeAdmin.nome);
         logged.value.style.display = 'flex';
         logIn.value.style.display = 'none';
         nameLogged.value.style.display = 'flex';
         nameLogged.value.innerText = correspondeAdmin.nome;
-
         tipoDeUsuario = 'admin';
-
-      }else if (correspondeHospede){
+      } else if (correspondeHospede) {
         localStorage.setItem('userHospede', correspondeHospede.nome);
         logged.value.style.display = 'flex';
         logIn.value.style.display = 'none';
         nameLogged.value.style.display = 'flex';
         nameLogged.value.innerText = correspondeHospede.nome;
-
         tipoDeUsuario = 'hospede';
-
       } else {
         // Mostre uma mensagem de erro ao usuário
         alert('Usuário ou senha inválidos');
       }
-
       // eslint-disable-next-line no-unused-expressions
-      tipoDeUsuario === 'admin' ?  window.location.href = 'http://localhost:5173/HomeAdmin' :  window.location.href = 'http://localhost:5173/';
-
+      tipoDeUsuario === 'admin'
+        ? (window.location.href = 'http://localhost:5173/HomeAdmin')
+        : (window.location.href = 'http://localhost:5173/');
     }
-
     return { admins, hospedes, username, password, logged, logIn, nameLogged, handleLogin };
   },
 };
-
 </script>
-

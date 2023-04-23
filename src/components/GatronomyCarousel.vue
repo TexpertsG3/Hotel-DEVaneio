@@ -136,13 +136,9 @@
 <!-- eslint-disable prettier/prettier -->
 <script>
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
-// eslint-disable-next-line import/no-unresolved
 import '@splidejs/vue-splide/css';
-// eslint-disable-next-line import/no-unresolved
 import '@splidejs/vue-splide/css/skyblue';
-// eslint-disable-next-line import/no-unresolved
 import '@splidejs/vue-splide/css/sea-green';
-// eslint-disable-next-line import/no-unresolved
 import '@splidejs/vue-splide/css/core';
 
 export default {
@@ -158,11 +154,9 @@ export default {
 .splide__arrow svg {
   fill: black !important;
 }
-
 .splide__pagination__page:hover {
   background: black;
 }
-
 .splide__pagination__page.is-active {
   background: black;
 }

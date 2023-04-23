@@ -52,8 +52,25 @@ $grid-columns: 12;
 }
 
 // position
-$position: (flex-start, flex-end, center, space-between, space-around, space-evenly);
+$position: (
+  flex-start,
+  flex-end,
+  center,
+  space-between,
+  space-around,
+  space-evenly
+);
 $item-position: (flex-start, flex-end, center);
+$text-align: (left, right, center, justify, initial, inherit);
+$align-self: (
+  stretch,
+  center,
+  flex-start,
+  flex-end,
+  baseline,
+  safe center,
+  unsafe center
+);
 
 @each $value in $position {
   .j-#{$value} {
@@ -74,5 +91,19 @@ $item-position: (flex-start, flex-end, center);
   //Align
   .a-item-#{$value} {
     align-items: $value;
+  }
+}
+
+//text-align
+@each $value in $text-align {
+  .t-#{$value} {
+    text-align: $value;
+  }
+}
+
+//align-self
+@each $value in $align-self {
+  .a-self-#{$value} {
+    align-self: $value;
   }
 }
