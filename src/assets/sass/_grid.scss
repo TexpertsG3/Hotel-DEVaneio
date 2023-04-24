@@ -61,7 +61,7 @@ $position: (
   space-evenly
 );
 $item-position: (flex-start, flex-end, center);
-$text-align: (left, right, center, justify, initial, inherit);
+$text-align: (left, right, center, justify, initial, inherit, -webkit-center);
 $align-self: (
   stretch,
   center,

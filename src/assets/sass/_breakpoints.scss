@@ -219,7 +219,34 @@ $breakpoints: (
   }
 }
 
-/*Modelo para usar na responsividade
+
+/*Reponsividade Login */
+.loginMobile{
+    @include xs{
+  display: flex;
+    }
+@include sm{
+display: none;
+}
+}
+
+.loginTablet{
+ 
+  @include xs{
+    display: none;
+  }
+@include sm{
+  display: flex;
+  }
+}
+
+
+
+/*Modelo para usar na responsividade e no html
+
+html: col-12-xl col-12-lg col-12-md col-12-sm col-12-xs 
+
+
   "xs": 0,
   "sm": 480px,
   "md": 720px,

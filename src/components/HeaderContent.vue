@@ -13,7 +13,7 @@
         </a>
         <a id="header__login" href="/login" class="btn-primary">Login</a>
         <div id="header__logged" class="row a-item-center gap-2">
-          <p id="header__user-name" class="color-white"></p>
+          <p id="header__username" class="color-white"></p>
           <a
             id="header__logout"
             class="btn-primary color-white"

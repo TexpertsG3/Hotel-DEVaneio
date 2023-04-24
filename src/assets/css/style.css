@@ -963,7 +963,34 @@ a {
   }
 }
 
-/*Modelo para usar na responsividade
+/*Reponsividade Login */
+@media (min-width: 0) {
+  .loginMobile {
+    display: flex;
+  }
+}
+@media (min-width: 480px) {
+  .loginMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 0) {
+  .loginTablet {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  .loginTablet {
+    display: flex;
+  }
+}
+
+/*Modelo para usar na responsividade e no html
+
+html: col-12-xl col-12-lg col-12-md col-12-sm col-12-xs 
+
+
   "xs": 0,
   "sm": 480px,
   "md": 720px,
@@ -1673,6 +1700,10 @@ classe,id,atirbuto
 
 .t-inherit {
   text-align: inherit;
+}
+
+.t--webkit-center {
+  text-align: -webkit-center;
 }
 
 .a-self-stretch {
