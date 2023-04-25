@@ -1,31 +1,9 @@
-<!-- <template>
-  <HeaderContent />
-  <FooterContent />
-</template>
-
-<script>
-import HeaderContent from '../components/HeaderContent.vue'
-import FooterContent from '../components/FooterContent.vue'
-import FormContato from '../components/forms/FormContato.vue'
-
-export default {
-  name: "ContactUs",
-  components: {
-    HeaderContent,
-    FooterContent,
-    FormContato,
-  },
-};
-</script>
-
-<style scoped></style> -->
-
 <template>
   <main>
     <section class="container row j-center">
-      <header class="row col-12-xl j-center">
+      <header class="row col-12-xl col-12-lg col-12-md col-12-sm col-12-xs j-center">
         <h1 class="font-size-large">Como podemos ajudar você?</h1>
-        <div class="row col-12-xl j-center">
+        <div class="row col-12-xl col-12-lg col-12-md col-12-sm col-12-xs j-center">
           <p>Escreva a sua mensagem e em breve retornaremos o seu contato!</p>
         </div>
       </header>
@@ -33,10 +11,10 @@ export default {
       <form
         action="contact-form"
         method="post"
-        class="row col-6-xl gap-2 pt-1 pb-1"
+        class="row col-6-xl col-6-lg col-6-md col-6-sm col-6-xs gap-2 pt-1 pb-1"
       >
         <legend>Preencha todos os campos</legend>
-        <div class="row col-12-xl">
+        <div class="row col-12-xl col-12-lg col-12-md col-12-sm col-12-xs">
           <label for="nome">Nome</label>
           <input
             type="text"
@@ -44,10 +22,10 @@ export default {
             name="nome"
             placeholder="Nome Completo"
             required
-            class="input-primary col-12-xl"
+            class="input-primary col-12-xl col-12-lg col-12-md col-12-sm col-12-xs"
           />
         </div>
-        <div class="row col-12-xl">
+        <div class="row col-12-xl col-12-lg col-12-md col-12-sm col-12-xs">
           <label for="email">Email</label>
           <input
             type="email"
@@ -55,10 +33,10 @@ export default {
             name="email"
             placeholder="Escreva seu e-mail"
             required
-            class="input-primary col-12-xl"
+            class="input-primary col-12-xl col-12-lg col-12-md col-12-sm col-12-xs"
           />
         </div>
-        <div class="row col-12-xl">
+        <div class="row col-12-xl col-12-lg col-12-md col-12-sm col-12-xs">
           <label for="telefone">Telefone</label>
           <input
             type="text"
@@ -66,12 +44,16 @@ export default {
             name="telefone"
             placeholder="(xx)99999-9999"
             pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}"
-            class="input-primary col-12-xl"
+            class="input-primary col-12-xl col-12-lg col-12-md col-12-sm col-12-xs"
           />
         </div>
-        <div class="row col-12-xl">
+        <div class="row col-12-xl col-12-lg col-12-md col-12-sm col-12-xs">
           <label for="assunto">Assunto</label>
-          <select name="assunto" id="assunto" class="input-primary col-12-xl">
+          <select
+            name="assunto"
+            id="assunto"
+            class="input-primary col-12-xl col-12-lg col-12-md col-12-sm col-12-xs"
+          >
             <option value="selecione">Selecione</option>
             <option value="cancelamento">Cancelamento de Reserva</option>
             <option value="comercial">Comercial</option>
@@ -83,7 +65,7 @@ export default {
             <option value="reclamacao">Reclamação</option>
           </select>
         </div>
-        <div class="row col-12-xl j-center">
+        <div class="row col-12-xl col-12-lg col-12-md col-12-sm col-12-xs j-center">
           <input type="submit" value="Enviar" class="btn-primary color-white" />
         </div>
       </form>

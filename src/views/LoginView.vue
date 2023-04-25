@@ -91,7 +91,7 @@
   </section>
 
   <!-- Versão mobile -->
-  <section class="loginMobile container row j-space-between pt-3 pb-3 t--webkit-center ">
+  <section class="loginMobile container row j-space-between pt-3 pb-3 t--webkit-center">
     <div class="">
       <form class="row col-5-xl col-5-lg col-5-md col-5-sm col-5-xs gap-1 a-center">
         <legend class="font-size-large col-12-xl col-12-lg col-12-md col-12-sm col-12-xs">
