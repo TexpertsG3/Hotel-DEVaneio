@@ -201,7 +201,7 @@ export default {
     const admins = ref([]);
     const fetchAdmins = () => api.get('/admin').then((response) => (admins.value = response.data));
     const hospedes = ref([]);
-    const fetchHospedes = () =>
+    const fetchHospedes = () => console.log(response)
       api.get('/hospede').then((response) => (hospedes.value = response.data));
     onMounted(() => {
       fetchAdmins();

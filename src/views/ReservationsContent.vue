@@ -236,3 +236,54 @@
     </section>
   </main>
 </template>
+
+<script>
+ 
+ import { onMounted, ref } from 'vue';
+// eslint-disable-next-line import/extensions,import/no-unresolved
+import { api } from '@/services/api';
+export default {
+ name:'ReservationsContent',
+ setup(){
+const checkin = new Date(document.getElementById("check-in").value);
+const checkout = new Date(document.getElementById("check-out").value);
+const numAdults = parseInt(document.getElementById("adults").value);
+const numChildren = parseInt(document.getElementById("children").value);
+//Como eu coloco aqui os tipos de quarto?
+const roomsType = document.getElementById("room-1").value;
+//Como eu coloco os serviços?
+const services = document.querySelectorAll('')
+
+//Calcular o número de noites
+const oneDay = 24 * 60 * 60 * 1000; //número de milissegundos em um dia
+const numNights = Math.floor((checkout-checkin) / oneDay);
+
+//Preço da acomodação
+let roomPrice;
+switch (roomType){
+  case "room-1":
+    roomPrice = 99;
+    break;
+    case "room-2":
+      roomPrice = 199;
+      break;
+      case "room-3":
+        roomPrice = 299;
+        break;
+}
+const totalRoomPrice = roomPrice * numNights;
+
+// Preço dos serviços adicionais (vamos colocar o mesmo preço em todos e fazer um for? Ou coloca preços diferentes e faz um swithc?)
+let totalServicesPrice = 0;
+
+//Crianças até 12 anos pagam metade
+const childPrice = roomPrice/2;
+const totalChildPrice = childPrice * numChildren * numNights;
+
+//Valor total da reserva
+const totalPrice = totalRoomPrice + totalServicesPrice + totalChildPrice;
+
+ } 
+}
+</script>
+
